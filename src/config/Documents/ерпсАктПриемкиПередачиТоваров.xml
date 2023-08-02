@@ -1,0 +1,1466 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Document uuid="bd490a3d-1cad-4e1f-992a-bfd8710e907b">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ерпсАктПриемкиПередачиТоваров" category="Object">
+				<xr:TypeId>a8861171-e68c-4504-80bb-c0527e847d23</xr:TypeId>
+				<xr:ValueId>520c5c51-4c4c-43b3-bf57-d63c160c4fde</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ерпсАктПриемкиПередачиТоваров" category="Ref">
+				<xr:TypeId>b1d63b83-396b-4e2d-8795-a31baa971c65</xr:TypeId>
+				<xr:ValueId>28ad3f46-41dd-431e-a55a-f453997b0fb0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ерпсАктПриемкиПередачиТоваров" category="Selection">
+				<xr:TypeId>0fab5fcc-dc13-4e26-8478-9e9d02339751</xr:TypeId>
+				<xr:ValueId>908c0c1c-b289-4a2b-a076-f4fcfaafa8f7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ерпсАктПриемкиПередачиТоваров" category="List">
+				<xr:TypeId>780d91c9-21f9-4642-a410-88f2443e6639</xr:TypeId>
+				<xr:ValueId>6a3ae3f2-0312-477a-af03-722fdd0d6449</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ерпсАктПриемкиПередачиТоваров" category="Manager">
+				<xr:TypeId>ff39253c-c2c7-4eda-a7cf-8aaae29e6f07</xr:TypeId>
+				<xr:ValueId>1d65d22c-11a4-4965-9d00-e73218ecb390</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ерпсАктПриемкиПередачиТоваров</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акт приемки передачи товаров</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Акт приймання передачі товарів</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Numerator/>
+			<NumberType>String</NumberType>
+			<NumberLength>9</NumberLength>
+			<NumberAllowedLength>Variable</NumberAllowedLength>
+			<NumberPeriodicity>Nonperiodical</NumberPeriodicity>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Posted">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="DeletionMark">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Date">
+					<xr:LinkByType/>
+					<xr:FillChecking>ShowError</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Number">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<BasedOn/>
+			<InputByString>
+				<xr:Field>Document.ерпсАктПриемкиПередачиТоваров.StandardAttribute.Number</xr:Field>
+			</InputByString>
+			<CreateOnInput>Use</CreateOnInput>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<DefaultObjectForm>Document.ерпсАктПриемкиПередачиТоваров.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultListForm>Document.ерпсАктПриемкиПередачиТоваров.Form.ФормаСписка</DefaultListForm>
+			<DefaultChoiceForm/>
+			<AuxiliaryObjectForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<Posting>Allow</Posting>
+			<RealTimePosting>Deny</RealTimePosting>
+			<RegisterRecordsDeletion>AutoDeleteOnUnpost</RegisterRecordsDeletion>
+			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
+			<SequenceFilling>AutoFill</SequenceFilling>
+			<RegisterRecords/>
+			<PostInPrivilegedMode>true</PostInPrivilegedMode>
+			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<DataLockFields/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>Use</FullTextSearch>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<DataHistory>DontUse</DataHistory>
+			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
+			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="b77bbb9d-1aae-42e8-a01a-f7d23ad6e0d5">
+				<Properties>
+					<Name>Организация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Організація</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>true</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>IndexWithAdditionalOrder</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2f0bf088-7ed2-4a5a-9881-94cdaaf1c748">
+				<Properties>
+					<Name>ПредставительОрганизации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представитель организации</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Представник організації</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>true</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9c3231f7-1511-4b3c-97f4-7e551b84a928">
+				<Properties>
+					<Name>Водитель</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Водитель</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Водій</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="fb88df42-512b-4bb6-a172-3c9d47586a81">
+				<Properties>
+					<Name>Перевозчик</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевозчик</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Перевізник</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="a06b01a7-06ac-487c-bb3f-cb51aa030bd5">
+				<Properties>
+					<Name>Авто</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авто</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Авто</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Авто</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="bc79c276-121d-489e-b78b-82688c2e03bf">
+				<Properties>
+					<Name>Прицеп</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прицеп</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Причіп</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Прицепы</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="c59fbaac-beea-4927-b9cb-54156cc2efb8">
+				<Properties>
+					<Name>ПунктРазгрузки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пункт разгрузки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пункт розвантаження</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПунктыРазгрузки</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="be4ec83f-a9ac-4246-9e76-8693badf37cc">
+				<Properties>
+					<Name>Ответственный</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відповідальний</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e33902c4-3765-4f6d-bc8b-d633aacec62a">
+				<Properties>
+					<Name>Комментарий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Коментар</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:string"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="8986b748-cf1a-4968-88db-68bda40c77cc">
+				<Properties>
+					<Name>МаксимальныйКодСтроки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Максимальный код строки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="5588e7c3-cc44-49ef-821a-4be53d8fbfc3">
+				<Properties>
+					<Name>Контрагент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="7902a446-630f-4e53-8a9b-7e4652ad6f5a">
+				<Properties>
+					<Name>Договор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Договор контрагента</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Договір контрагента</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Document.ерпсАктПриемкиПередачиТоваров.Attribute.Контрагент</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+						<xr:Link>
+							<xr:Name>Отбор.Организация</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Document.ерпсАктПриемкиПередачиТоваров.Attribute.Организация</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d9de74ff-d2a6-4496-af39-c6a4f2447953">
+				<Properties>
+					<Name>ЗаявкаНаСозданиеАктовПриемкиПередачи</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Заявка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Use</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>DontUse</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b4cca057-5ced-461b-b933-a8d96e591113">
+				<Properties>
+					<Name>Склад</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b656bc26-4369-4335-b440-08f441577e37">
+				<Properties>
+					<Name>АдрессДоставки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адресс доставки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Адреса доставки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="3394e4ce-4277-40b5-9c3b-ee1fe21b4e8c">
+				<Properties>
+					<Name>ПредставительКонтрагента</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представитель покупателя</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Представник покупця</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>true</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.ГоловнаяОрганизация</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Document.ерпсАктПриемкиПередачиТоваров.Attribute.Организация</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9a3f06d0-cd8e-4d09-8fb4-86d17904337f">
+				<Properties>
+					<Name>Статус</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:EnumRef.ерпсСтатусыАктовПриемкиПередачи</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e88e7cff-57ac-45b1-af13-d35a332147e0">
+				<Properties>
+					<Name>ПериодОтгрузки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период отгрузки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Період відвантаження</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.а_Периоды</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаСписка</Form>
+			<TabularSection uuid="8494a269-a86d-4caa-8188-2d6989c80eb4">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ерпсАктПриемкиПередачиТоваров.Товары" category="TabularSection">
+						<xr:TypeId>463bb200-9792-48b5-bf7f-97f8ca5f4c86</xr:TypeId>
+						<xr:ValueId>fd301d03-bb77-4582-a8ca-c87d6fd09cdf</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ерпсАктПриемкиПередачиТоваров.Товары" category="TabularSectionRow">
+						<xr:TypeId>2d8a3e5f-f335-48e5-ade0-391fc49e35ee</xr:TypeId>
+						<xr:ValueId>afbca10b-cbb3-4928-b35d-3b26f631baf9</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>Товары</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Товары</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<StandardAttributes>
+						<xr:StandardAttribute name="LineNumber">
+							<xr:LinkByType/>
+							<xr:FillChecking>DontCheck</xr:FillChecking>
+							<xr:MultiLine>false</xr:MultiLine>
+							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+							<xr:CreateOnInput>Auto</xr:CreateOnInput>
+							<xr:MaxValue xsi:nil="true"/>
+							<xr:ToolTip/>
+							<xr:ExtendedEdit>false</xr:ExtendedEdit>
+							<xr:Format/>
+							<xr:ChoiceForm/>
+							<xr:QuickChoice>Auto</xr:QuickChoice>
+							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+							<xr:EditFormat/>
+							<xr:PasswordMode>false</xr:PasswordMode>
+							<xr:DataHistory>Use</xr:DataHistory>
+							<xr:MarkNegatives>false</xr:MarkNegatives>
+							<xr:MinValue xsi:nil="true"/>
+							<xr:Synonym/>
+							<xr:Comment/>
+							<xr:FullTextSearch>Use</xr:FullTextSearch>
+							<xr:ChoiceParameterLinks/>
+							<xr:FillValue xsi:nil="true"/>
+							<xr:Mask/>
+							<xr:ChoiceParameters/>
+						</xr:StandardAttribute>
+					</StandardAttributes>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="b6b6d041-8ada-4ef2-bb84-6915daa46227">
+						<Properties>
+							<Name>КодСтроки</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Код строки</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>10</v8:Digits>
+									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="7a71f777-bb55-4df0-8d44-dbc66c0df5d9">
+						<Properties>
+							<Name>Номенклатура</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номенклатура</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Номенклатура</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>ShowError</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters>
+								<app:item name="Отбор.Услуга">
+									<app:value xsi:type="xs:boolean">false</app:value>
+								</app:item>
+								<app:item name="Заголовок">
+									<app:value xsi:type="xs:string">Товары</app:value>
+								</app:item>
+								<app:item name="Отбор.БланкСтрогогоУчета">
+									<app:value xsi:type="xs:boolean">false</app:value>
+								</app:item>
+							</ChoiceParameters>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="77f0ba45-a695-4b6e-a4bb-e8a6232a3fc0">
+						<Properties>
+							<Name>ДополнительныеАртикулы</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные артикулы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Додаткові артикули</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ДополнительныеАртикулы</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="9f55e37f-21e1-476f-af5f-feebe2a43c25">
+						<Properties>
+							<Name>ЕдиницаИзмерения</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Единица измерения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Одиниця виміру</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.КлассификаторЕдиницИзмерения</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>ShowError</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Номенклатура</xr:Name>
+									<xr:DataPath xsi:type="xs:string">0:53de5ae1-60fb-43b8-adfa-305ab44e275e/0:0a4155b0-e434-4aee-a802-02e965b39869</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ChoiceParameters/>
+							<QuickChoice>Use</QuickChoice>
+							<CreateOnInput>DontUse</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="76c3e106-d2dc-45fe-964d-9cd84ab24fee">
+						<Properties>
+							<Name>Количество</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кількість</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>3</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>ShowError</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="46ea9e4d-2a23-4168-ac59-09b057aaa42c">
+						<Properties>
+							<Name>Примечание</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Примечание</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Примітка</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>500</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="255e6359-3abf-4c8d-9e11-4e717ed3c23e">
+						<Properties>
+							<Name>ПунктРазгрузки</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пункт разгрузки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Пункт розвантаження</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ПунктыРазгрузки</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="4cb85996-c654-4e4a-b0a3-715eb005137f">
+						<Properties>
+							<Name>Идентификатор</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Идентификатор</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>25</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="179cd620-0857-479b-9cd0-75d16e1a110b">
+						<Properties>
+							<Name>ДатаОтгрузки</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Дата</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:DateQualifiers>
+									<v8:DateFractions>Date</v8:DateFractions>
+								</v8:DateQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Template>Макет</Template>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

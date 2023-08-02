@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Report uuid="c8baa8d8-ee4d-4034-b1e4-d1268a57ae8d">
+		<InternalInfo>
+			<xr:GeneratedType name="ReportObject.ОтчетПоЗаякам" category="Object">
+				<xr:TypeId>5d2ca58c-6506-4e3a-985c-d39ea0ef47bd</xr:TypeId>
+				<xr:ValueId>8099180a-4d3b-4022-ace1-4ce482a97ef7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ReportManager.ОтчетПоЗаякам" category="Manager">
+				<xr:TypeId>a6be616a-b8ea-4935-813c-6b4ac2eacdf2</xr:TypeId>
+				<xr:ValueId>c35f6846-659d-45c0-be00-3fb23e9e83a1</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОтчетПоЗаякам</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по заякам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Звіт по заявкам</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<MainDataCompositionSchema>Report.ОтчетПоЗаякам.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
+			<DefaultSettingsForm/>
+			<AuxiliarySettingsForm/>
+			<DefaultVariantForm/>
+			<VariantsStorage/>
+			<SettingsStorage/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
+		</ChildObjects>
+	</Report>
+</MetaDataObject>

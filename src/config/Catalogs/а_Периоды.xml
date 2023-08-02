@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Catalog uuid="1cb6fb56-4d3b-45dc-a9ab-3a44825065e8">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.а_Периоды" category="Object">
+				<xr:TypeId>968cd225-5b7a-4f96-8558-f21bac63b3a1</xr:TypeId>
+				<xr:ValueId>97d242b3-7fe3-43c5-8c96-a96ccf2fe86d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.а_Периоды" category="Ref">
+				<xr:TypeId>b097b4f1-7bda-4514-84e1-b130dfef0124</xr:TypeId>
+				<xr:ValueId>cac2e21a-0f17-496b-a256-6e0b9711ebd5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.а_Периоды" category="Selection">
+				<xr:TypeId>529211ef-3005-4fbb-b7e1-1bf4fcaa0677</xr:TypeId>
+				<xr:ValueId>c16b59a8-755a-4ea1-81e3-15d15c45e763</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.а_Периоды" category="List">
+				<xr:TypeId>b28fb9ff-c8cd-4f68-857b-516ebeb0d66e</xr:TypeId>
+				<xr:ValueId>20c04702-534a-41bf-bd56-0b1c4499f907</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.а_Периоды" category="Manager">
+				<xr:TypeId>66c1f33f-600a-4272-b4a3-0ef161adc702</xr:TypeId>
+				<xr:ValueId>3fc88351-0a25-48d7-a709-149e24e8bbcd</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>а_Периоды</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Периоды</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Періоди</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Hierarchical>false</Hierarchical>
+			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
+			<LimitLevelCount>false</LimitLevelCount>
+			<LevelCount>2</LevelCount>
+			<FoldersOnTop>true</FoldersOnTop>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Owners/>
+			<SubordinationUse>ToItems</SubordinationUse>
+			<CodeLength>9</CodeLength>
+			<DescriptionLength>25</DescriptionLength>
+			<CodeType>String</CodeType>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+			<CodeSeries>WholeCatalog</CodeSeries>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<DefaultPresentation>AsDescription</DefaultPresentation>
+			<Characteristics/>
+			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
+			<EditType>InDialog</EditType>
+			<QuickChoice>false</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<InputByString>
+				<xr:Field>Catalog.а_Периоды.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.а_Периоды.StandardAttribute.Code</xr:Field>
+			</InputByString>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<DefaultObjectForm>Catalog.а_Периоды.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultFolderForm/>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<DefaultFolderChoiceForm/>
+			<AuxiliaryObjectForm/>
+			<AuxiliaryFolderForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<AuxiliaryFolderChoiceForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<BasedOn/>
+			<DataLockFields/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>Use</FullTextSearch>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<CreateOnInput>Use</CreateOnInput>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<DataHistory>DontUse</DataHistory>
+			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
+			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="60da6c56-fcda-4b05-9e0b-b0087f3ebe94">
+				<Properties>
+					<Name>ПредставлениеПериода</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Представлення</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:string"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

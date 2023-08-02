@@ -27,12 +27,12 @@
 			<Name>СчетНаОплатуПоставщика</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>uk</v8:lang>
-					<v8:content>Рахунок на оплату постачальника</v8:content>
-				</v8:item>
-				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Счет на оплату поставщика</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Рахунок на оплату постачальника</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>(Общ)</Comment>

@@ -132,6 +132,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.СпособыОтраженияРасходовПоАмортизацииОСБухгалтерскийУчет</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СпециальныеРежимыЗарплатаКадры</v8:Type>
 				<v8:Type>cfg:AccumulationRegisterRecordSet.КнигаДоходовРасходовПоЕдиномуНалогу</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ВерсииОбъектов</v8:Type>
 				<v8:Type>cfg:AccumulationRegisterRecordSet.РеализованныеТоварыКомитентов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ИндексИнфляции</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.МинимальнаяОплатаТруда</v8:Type>
@@ -155,7 +156,6 @@
 				<v8:Type>cfg:AccumulationRegisterRecordSet.НДФЛПоСотрудникам</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ЛьготыПоНДФЛСотрудников</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПлановыеУдержания</v8:Type>
-				<v8:Type>cfg:InformationRegisterRecordSet.ВерсииОбъектов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СостоянияОСОрганизаций</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.НаследованиеНастроекПравОбъектов</v8:Type>
 				<v8:Type>cfg:AccumulationRegisterRecordSet.ПродажиВРазрезеГарантийныхСроковНалоговыйУчет</v8:Type>

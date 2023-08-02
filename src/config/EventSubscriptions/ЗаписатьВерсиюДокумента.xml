@@ -26,6 +26,7 @@
 				<v8:Type>cfg:DocumentObject.ВыработкаНМА</v8:Type>
 				<v8:Type>cfg:DocumentObject.ОтражениеЗарплатыВУчете</v8:Type>
 				<v8:Type>cfg:DocumentObject.СписаниеНМА</v8:Type>
+				<v8:Type>cfg:DocumentObject.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи</v8:Type>
 				<v8:Type>cfg:DocumentObject.Приложение2КНалоговойНакладной</v8:Type>
 				<v8:Type>cfg:DocumentObject.ПоступлениеНМА</v8:Type>
 				<v8:Type>cfg:DocumentObject.СчетНаОплатуПокупателю</v8:Type>
@@ -77,6 +78,7 @@
 				<v8:Type>cfg:DocumentObject.ИзменениеПараметровРасчетаИндексации</v8:Type>
 				<v8:Type>cfg:DocumentObject.ПеремещениеТоваров</v8:Type>
 				<v8:Type>cfg:DocumentObject.Приложение1КНалоговойНакладной</v8:Type>
+				<v8:Type>cfg:DocumentObject.ерпсАктПриемкиПередачиТоваров</v8:Type>
 				<v8:Type>cfg:DocumentObject.КорректировкаДолга</v8:Type>
 				<v8:Type>cfg:DocumentObject.ПеремещениеМалоценныхАктивовВЭксплуатации</v8:Type>
 				<v8:Type>cfg:DocumentObject.УстановкаГарантийныхСроковНалоговыйУчет</v8:Type>

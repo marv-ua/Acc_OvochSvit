@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВозвратнаяТара.НомерСтроки</dataPath>
+			<field>ВозвратнаяТара.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование.Ссылка</dataPath>
+			<field>Оборудование.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектыСтроительства.НомерСтроки</dataPath>
+			<field>ОбъектыСтроительства.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидОперации</dataPath>
+			<field>ВидОперации</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>Оборудование</dataPath>
+			<field>Оборудование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Авто</dataPath>
+			<field>Авто</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УдалитьУчитыватьНДС</dataPath>
+			<field>УдалитьУчитыватьНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияДанных</dataPath>
+			<field>ВерсияДанных</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВозвратнаяТара.Ссылка</dataPath>
+			<field>ВозвратнаяТара.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектыСтроительства.Ссылка</dataPath>
+			<field>ОбъектыСтроительства.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номер</dataPath>
+			<field>Номер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕРПСПеревозчик</dataPath>
+			<field>ЕРПСПеревозчик</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проведен</dataPath>
+			<field>Проведен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование.СтавкаНДС</dataPath>
+			<field>Оборудование.СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПунктРазгрузки</dataPath>
+			<field>ПунктРазгрузки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.Сумма</dataPath>
+			<field>БланкиСтрогогоУчета.Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоговорКонтрагента</dataPath>
+			<field>ДоговорКонтрагента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ерпсПунктПогрузки</dataPath>
+			<field>ерпсПунктПогрузки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетУчетаРасчетовСКонтрагентом</dataPath>
+			<field>СчетУчетаРасчетовСКонтрагентом</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетУчетаРасчетовПоАвансам</dataPath>
+			<field>СчетУчетаРасчетовПоАвансам</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сделка</dataPath>
+			<field>Сделка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетУчетаРасчетовПоТаре</dataPath>
+			<field>СчетУчетаРасчетовПоТаре</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВалютаДокумента</dataPath>
+			<field>ВалютаДокумента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерВходящегоДокумента</dataPath>
+			<field>НомерВходящегоДокумента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование.Количество</dataPath>
+			<field>Оборудование.Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВходящегоДокумента</dataPath>
+			<field>ДатаВходящегоДокумента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ответственный</dataPath>
+			<field>Ответственный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектыСтроительства.СуммаНДС</dataPath>
+			<field>ОбъектыСтроительства.СуммаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комментарий</dataPath>
+			<field>Комментарий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование.СчетУчетаБУ</dataPath>
+			<field>Оборудование.СчетУчетаБУ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КратностьВзаиморасчетов</dataPath>
+			<field>КратностьВзаиморасчетов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КурсВзаиморасчетов</dataPath>
+			<field>КурсВзаиморасчетов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаВключаетНДС</dataPath>
+			<field>СуммаВключаетНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.НалоговоеНазначение</dataPath>
+			<field>БланкиСтрогогоУчета.НалоговоеНазначение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНДСПропорциональноКредит</dataPath>
+			<field>СуммаНДСПропорциональноКредит</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетУчетаРасчетовПоТареПоАвансам</dataPath>
+			<field>СчетУчетаРасчетовПоТареПоАвансам</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаДокумента</dataPath>
+			<field>СуммаДокумента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЦен</dataPath>
+			<field>ТипЦен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Прицеп</dataPath>
+			<field>Прицеп</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РучнаяКорректировка</dataPath>
+			<field>РучнаяКорректировка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектыСтроительства.СтатьяЗатрат</dataPath>
+			<field>ОбъектыСтроительства.СтатьяЗатрат</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетУчетаНДС</dataPath>
+			<field>СчетУчетаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолученоВ_ЭлектронномВиде</dataPath>
+			<field>ПолученоВ_ЭлектронномВиде</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетУчетаНДСПодтвержденный</dataPath>
+			<field>СчетУчетаНДСПодтвержденный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНДСПропорциональноВсего</dataPath>
+			<field>СуммаНДСПропорциональноВсего</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕстьАвансДо01042011</dataPath>
+			<field>ЕстьАвансДо01042011</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование.НалоговоеНазначение</dataPath>
+			<field>Оборудование.НалоговоеНазначение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаВДВРПоАвансуДо01042011</dataPath>
+			<field>СуммаВДВРПоАвансуДо01042011</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование.СуммаНДС</dataPath>
+			<field>Оборудование.СуммаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.НомерСтроки</dataPath>
+			<field>Товары.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Звит1С_DOC_ID</dataPath>
+			<field>Звит1С_DOC_ID</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектыСтроительства.ОбъектСтроительства</dataPath>
+			<field>ОбъектыСтроительства.ОбъектСтроительства</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаличиеОригинала</dataPath>
+			<field>НаличиеОригинала</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументОснование</dataPath>
+			<field>ДокументОснование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СвереноПН</dataPath>
+			<field>СвереноПН</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Водитель</dataPath>
+			<field>Водитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование.НомерСтроки</dataPath>
+			<field>Оборудование.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование.Номенклатура</dataPath>
+			<field>Оборудование.Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование.ЕдиницаИзмерения</dataPath>
+			<field>Оборудование.ЕдиницаИзмерения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование.Коэффициент</dataPath>
+			<field>Оборудование.Коэффициент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование.Цена</dataPath>
+			<field>Оборудование.Цена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование.Сумма</dataPath>
+			<field>Оборудование.Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВозвратнаяТара.Сумма</dataPath>
+			<field>ВозвратнаяТара.Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектыСтроительства.Сумма</dataPath>
+			<field>ОбъектыСтроительства.Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектыСтроительства.СтавкаНДС</dataPath>
+			<field>ОбъектыСтроительства.СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВозвратнаяТара.СчетУчетаБУ</dataPath>
+			<field>ВозвратнаяТара.СчетУчетаБУ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектыСтроительства.СчетУчетаБУ</dataPath>
+			<field>ОбъектыСтроительства.СчетУчетаБУ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВозвратнаяТара.НалоговоеНазначение</dataPath>
+			<field>ВозвратнаяТара.НалоговоеНазначение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектыСтроительства.НалоговоеНазначение</dataPath>
+			<field>ОбъектыСтроительства.НалоговоеНазначение</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>ВозвратнаяТара</dataPath>
+			<field>ВозвратнаяТара</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>ОбъектыСтроительства</dataPath>
+			<field>ОбъектыСтроительства</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.Цена</dataPath>
+			<field>БланкиСтрогогоУчета.Цена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Ссылка</dataPath>
+			<field>Товары.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Номенклатура</dataPath>
+			<field>Товары.Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.ЕдиницаИзмерения</dataPath>
+			<field>Товары.ЕдиницаИзмерения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Коэффициент</dataPath>
+			<field>Товары.Коэффициент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Количество</dataPath>
+			<field>Товары.Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Цена</dataPath>
+			<field>Товары.Цена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.Сумма</dataPath>
+			<field>Товары.Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.СтавкаНДС</dataPath>
+			<field>Товары.СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.СуммаНДС</dataPath>
+			<field>Товары.СуммаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.СчетУчетаБУ</dataPath>
+			<field>Товары.СчетУчетаБУ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.ЦенаВРознице</dataPath>
+			<field>Товары.ЦенаВРознице</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.СуммаВРознице</dataPath>
+			<field>Товары.СуммаВРознице</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.НалоговоеНазначение</dataPath>
+			<field>Товары.НалоговоеНазначение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.СтавкаНДСВРознице</dataPath>
+			<field>Товары.СтавкаНДСВРознице</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Товары.НаименованиеПоставщика</dataPath>
+			<field>Товары.НаименованиеПоставщика</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВозвратнаяТара.Количество</dataPath>
+			<field>ВозвратнаяТара.Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>Товары</dataPath>
+			<field>Товары</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.Ссылка</dataPath>
+			<field>Услуги.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.НомерСтроки</dataPath>
+			<field>Услуги.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.Номенклатура</dataPath>
+			<field>Услуги.Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.Содержание</dataPath>
+			<field>Услуги.Содержание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.Количество</dataPath>
+			<field>Услуги.Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.Цена</dataPath>
+			<field>Услуги.Цена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.СуммаНДС</dataPath>
+			<field>БланкиСтрогогоУчета.СуммаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.Сумма</dataPath>
+			<field>Услуги.Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.СтавкаНДС</dataPath>
+			<field>Услуги.СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.СуммаНДС</dataPath>
+			<field>Услуги.СуммаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.СчетЗатрат</dataPath>
+			<field>Услуги.СчетЗатрат</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.Субконто1</dataPath>
+			<field>Услуги.Субконто1</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.Субконто2</dataPath>
+			<field>Услуги.Субконто2</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.Субконто3</dataPath>
+			<field>Услуги.Субконто3</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.НалоговоеНазначение</dataPath>
+			<field>Услуги.НалоговоеНазначение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Услуги.НалоговоеНазначениеДоходовИЗатрат</dataPath>
+			<field>Услуги.НалоговоеНазначениеДоходовИЗатрат</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>Услуги</dataPath>
+			<field>Услуги</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВозвратнаяТара.Номенклатура</dataPath>
+			<field>ВозвратнаяТара.Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВозвратнаяТара.Цена</dataPath>
+			<field>ВозвратнаяТара.Цена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.Ссылка</dataPath>
+			<field>БланкиСтрогогоУчета.Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.НомерСтроки</dataPath>
+			<field>БланкиСтрогогоУчета.НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.Номенклатура</dataPath>
+			<field>БланкиСтрогогоУчета.Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.Количество</dataPath>
+			<field>БланкиСтрогогоУчета.Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.СтавкаНДС</dataPath>
+			<field>БланкиСтрогогоУчета.СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.СчетУчетаБУ</dataPath>
+			<field>БланкиСтрогогоУчета.СчетУчетаБУ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.ЦенаНоминальная</dataPath>
+			<field>БланкиСтрогогоУчета.ЦенаНоминальная</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.СуммаНоминальная</dataPath>
+			<field>БланкиСтрогогоУчета.СуммаНоминальная</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.ЕдиницаИзмерения</dataPath>
+			<field>БланкиСтрогогоУчета.ЕдиницаИзмерения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.СчетУчетаЗабалансовыйБУ</dataPath>
+			<field>БланкиСтрогогоУчета.СчетУчетаЗабалансовыйБУ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БланкиСтрогогоУчета.Коэффициент</dataPath>
+			<field>БланкиСтрогогоУчета.Коэффициент</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>БланкиСтрогогоУчета</dataPath>
+			<field>БланкиСтрогогоУчета</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ПоступлениеТоваровУслуг.Ссылка КАК Ссылка,
+	ПоступлениеТоваровУслуг.ВерсияДанных КАК ВерсияДанных,
+	ПоступлениеТоваровУслуг.ПометкаУдаления КАК ПометкаУдаления,
+	ПоступлениеТоваровУслуг.Номер КАК Номер,
+	ПоступлениеТоваровУслуг.Дата КАК Дата,
+	ПоступлениеТоваровУслуг.Проведен КАК Проведен,
+	ПоступлениеТоваровУслуг.ВидОперации КАК ВидОперации,
+	ПоступлениеТоваровУслуг.Организация КАК Организация,
+	ПоступлениеТоваровУслуг.Склад КАК Склад,
+	ПоступлениеТоваровУслуг.Контрагент КАК Контрагент,
+	ПоступлениеТоваровУслуг.ДоговорКонтрагента КАК ДоговорКонтрагента,
+	ПоступлениеТоваровУслуг.СчетУчетаРасчетовСКонтрагентом КАК СчетУчетаРасчетовСКонтрагентом,
+	ПоступлениеТоваровУслуг.СчетУчетаРасчетовПоАвансам КАК СчетУчетаРасчетовПоАвансам,
+	ПоступлениеТоваровУслуг.СчетУчетаРасчетовПоТаре КАК СчетУчетаРасчетовПоТаре,
+	ПоступлениеТоваровУслуг.ВалютаДокумента КАК ВалютаДокумента,
+	ПоступлениеТоваровУслуг.НомерВходящегоДокумента КАК НомерВходящегоДокумента,
+	ПоступлениеТоваровУслуг.ДатаВходящегоДокумента КАК ДатаВходящегоДокумента,
+	ПоступлениеТоваровУслуг.Ответственный КАК Ответственный,
+	ПоступлениеТоваровУслуг.Комментарий КАК Комментарий,
+	ПоступлениеТоваровУслуг.КратностьВзаиморасчетов КАК КратностьВзаиморасчетов,
+	ПоступлениеТоваровУслуг.КурсВзаиморасчетов КАК КурсВзаиморасчетов,
+	ПоступлениеТоваровУслуг.СуммаВключаетНДС КАК СуммаВключаетНДС,
+	ПоступлениеТоваровУслуг.СчетУчетаРасчетовПоТареПоАвансам КАК СчетУчетаРасчетовПоТареПоАвансам,
+	ПоступлениеТоваровУслуг.СуммаДокумента КАК СуммаДокумента,
+	ПоступлениеТоваровУслуг.ТипЦен КАК ТипЦен,
+	ПоступлениеТоваровУслуг.РучнаяКорректировка КАК РучнаяКорректировка,
+	ПоступлениеТоваровУслуг.Сделка КАК Сделка,
+	ПоступлениеТоваровУслуг.УдалитьУчитыватьНДС КАК УдалитьУчитыватьНДС,
+	ПоступлениеТоваровУслуг.СчетУчетаНДС КАК СчетУчетаНДС,
+	ПоступлениеТоваровУслуг.СчетУчетаНДСПодтвержденный КАК СчетУчетаНДСПодтвержденный,
+	ПоступлениеТоваровУслуг.СуммаНДСПропорциональноВсего КАК СуммаНДСПропорциональноВсего,
+	ПоступлениеТоваровУслуг.СуммаНДСПропорциональноКредит КАК СуммаНДСПропорциональноКредит,
+	ПоступлениеТоваровУслуг.ЕстьАвансДо01042011 КАК ЕстьАвансДо01042011,
+	ПоступлениеТоваровУслуг.СуммаВДВРПоАвансуДо01042011 КАК СуммаВДВРПоАвансуДо01042011,
+	ПоступлениеТоваровУслуг.Звит1С_DOC_ID КАК Звит1С_DOC_ID,
+	ПоступлениеТоваровУслуг.НаличиеОригинала КАК НаличиеОригинала,
+	ПоступлениеТоваровУслуг.ПолученоВ_ЭлектронномВиде КАК ПолученоВ_ЭлектронномВиде,
+	ПоступлениеТоваровУслуг.ДокументОснование КАК ДокументОснование,
+	ПоступлениеТоваровУслуг.СвереноПН КАК СвереноПН,
+	ПоступлениеТоваровУслуг.Авто КАК Авто,
+	ПоступлениеТоваровУслуг.ПунктРазгрузки КАК ПунктРазгрузки,
+	ПоступлениеТоваровУслуг.Водитель КАК Водитель,
+	ПоступлениеТоваровУслуг.Прицеп КАК Прицеп,
+	ПоступлениеТоваровУслуг.ЕРПСПеревозчик КАК ЕРПСПеревозчик,
+	ПоступлениеТоваровУслуг.ерпсПунктПогрузки КАК ерпсПунктПогрузки,
+	ПоступлениеТоваровУслуг.Оборудование.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Номенклатура КАК Номенклатура,
+		ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+		Коэффициент КАК Коэффициент,
+		Количество КАК Количество,
+		Цена КАК Цена,
+		Сумма КАК Сумма,
+		СтавкаНДС КАК СтавкаНДС,
+		СуммаНДС КАК СуммаНДС,
+		СчетУчетаБУ КАК СчетУчетаБУ,
+		НалоговоеНазначение КАК НалоговоеНазначение
+	) КАК Оборудование,
+	ПоступлениеТоваровУслуг.ОбъектыСтроительства.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		ОбъектСтроительства КАК ОбъектСтроительства,
+		СтатьяЗатрат КАК СтатьяЗатрат,
+		Сумма КАК Сумма,
+		СтавкаНДС КАК СтавкаНДС,
+		СуммаНДС КАК СуммаНДС,
+		СчетУчетаБУ КАК СчетУчетаБУ,
+		НалоговоеНазначение КАК НалоговоеНазначение
+	) КАК ОбъектыСтроительства,
+	ПоступлениеТоваровУслуг.Товары.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Номенклатура КАК Номенклатура,
+		ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+		Коэффициент КАК Коэффициент,
+		Количество КАК Количество,
+		Цена КАК Цена,
+		Сумма КАК Сумма,
+		СтавкаНДС КАК СтавкаНДС,
+		СуммаНДС КАК СуммаНДС,
+		СчетУчетаБУ КАК СчетУчетаБУ,
+		ЦенаВРознице КАК ЦенаВРознице,
+		СуммаВРознице КАК СуммаВРознице,
+		НалоговоеНазначение КАК НалоговоеНазначение,
+		СтавкаНДСВРознице КАК СтавкаНДСВРознице,
+		НаименованиеПоставщика КАК НаименованиеПоставщика
+	) КАК Товары,
+	ПоступлениеТоваровУслуг.Услуги.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Номенклатура КАК Номенклатура,
+		Содержание КАК Содержание,
+		Количество КАК Количество,
+		Цена КАК Цена,
+		Сумма КАК Сумма,
+		СтавкаНДС КАК СтавкаНДС,
+		СуммаНДС КАК СуммаНДС,
+		СчетЗатрат КАК СчетЗатрат,
+		Субконто1 КАК Субконто1,
+		Субконто2 КАК Субконто2,
+		Субконто3 КАК Субконто3,
+		НалоговоеНазначение КАК НалоговоеНазначение,
+		НалоговоеНазначениеДоходовИЗатрат КАК НалоговоеНазначениеДоходовИЗатрат
+	) КАК Услуги,
+	ПоступлениеТоваровУслуг.ВозвратнаяТара.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Номенклатура КАК Номенклатура,
+		Количество КАК Количество,
+		Цена КАК Цена,
+		Сумма КАК Сумма,
+		СчетУчетаБУ КАК СчетУчетаБУ,
+		НалоговоеНазначение КАК НалоговоеНазначение
+	) КАК ВозвратнаяТара,
+	ПоступлениеТоваровУслуг.БланкиСтрогогоУчета.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Номенклатура КАК Номенклатура,
+		Количество КАК Количество,
+		Цена КАК Цена,
+		Сумма КАК Сумма,
+		СтавкаНДС КАК СтавкаНДС,
+		СуммаНДС КАК СуммаНДС,
+		СчетУчетаБУ КАК СчетУчетаБУ,
+		НалоговоеНазначение КАК НалоговоеНазначение,
+		ЦенаНоминальная КАК ЦенаНоминальная,
+		СуммаНоминальная КАК СуммаНоминальная,
+		СчетУчетаЗабалансовыйБУ КАК СчетУчетаЗабалансовыйБУ,
+		ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+		Коэффициент КАК Коэффициент
+	) КАК БланкиСтрогогоУчета
+ИЗ
+	Документ.ПоступлениеТоваровУслуг КАК ПоступлениеТоваровУслуг</query>
+	</dataSet>
+	<parameter>
+		<name>ПериодОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">FromBeginningOfThisMonth</v8:variant>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:userSettingID>50208cff-6ce7-435c-946b-b5284de21030</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:userSettingID>ef9c062e-7477-4e20-8d59-5708dbd8f44c</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">МакетОформленияОтчетовНаСКД</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Together</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Резервы товаров на складах</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:itemsUserSettingID>79c2dd0d-3200-4421-aef2-c178d659e430</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -183,13 +183,6 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Save>
-				<Field>Объект.ВидПеревозки</Field>
-				<Field>Объект.Водитель</Field>
-				<Field>Объект.ГосНомерПрицепа</Field>
-				<Field>Объект.МаркаИГосНомерАвтомобиля</Field>
-				<Field>Объект.Перевозчик</Field>
-				<Field>Объект.ПунктПогрузки</Field>
-				<Field>Объект.ПунктРазгрузки</Field>
 				<Field>Объект.ТипЦен</Field>
 			</Save>
 		</Attribute>

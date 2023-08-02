@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
-	<Constant uuid="4b8c3c82-6e8f-469e-8a80-144361d1d0b2">
+	<Constant uuid="a7249aa0-1ac2-4b11-862e-9d66c8712f03">
 		<InternalInfo>
 			<xr:GeneratedType name="ConstantManager.ИспользоватьВерсионированиеОбъектов" category="Manager">
-				<xr:TypeId>a356e195-b886-4e8c-9381-5ff7a58965c0</xr:TypeId>
-				<xr:ValueId>fbefe7db-be5c-4ce6-9e42-3f6a01e4c633</xr:ValueId>
+				<xr:TypeId>a58fd7f4-9137-4a13-80a8-af1ea3aa840b</xr:TypeId>
+				<xr:ValueId>16bc82f5-7796-4a7f-8c71-b7e1fbcfdcb9</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="ConstantValueManager.ИспользоватьВерсионированиеОбъектов" category="ValueManager">
-				<xr:TypeId>fe6faac9-bdb5-4336-a8a1-8cc2e0447535</xr:TypeId>
-				<xr:ValueId>84dd8359-29d5-4bd6-b8c7-2fd560e3249e</xr:ValueId>
+				<xr:TypeId>4f4e85d5-5907-4a68-ae9d-af2d9b80a719</xr:TypeId>
+				<xr:ValueId>f10f6d5d-a408-4400-99cc-156eb35185a0</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="ConstantValueKey.ИспользоватьВерсионированиеОбъектов" category="ValueKey">
-				<xr:TypeId>a3b052ee-9f7b-5fd1-a871-331937ae54a9</xr:TypeId>
-				<xr:ValueId>eca5eae9-f8eb-5de2-8a18-8efc0aed1ced</xr:ValueId>
+				<xr:TypeId>7a84dd4d-8e93-5b9e-a2a5-ebcccfd08f5c</xr:TypeId>
+				<xr:ValueId>c5d3d4c5-dd46-591d-80d7-e86ee58afef5</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>

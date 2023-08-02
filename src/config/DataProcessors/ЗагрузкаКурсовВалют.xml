@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<DataProcessor uuid="914388dd-0803-4829-b200-6553a11aba83">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ЗагрузкаКурсовВалют" category="Object">
+				<xr:TypeId>c86ed82c-d194-4154-bc5d-4f3e027be427</xr:TypeId>
+				<xr:ValueId>22a5e5d9-8de2-489b-8bea-c4979aec2e8c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ЗагрузкаКурсовВалют" category="Manager">
+				<xr:TypeId>d88ee91b-edc7-4f6d-94fe-fbafcf3e261d</xr:TypeId>
+				<xr:ValueId>a6cbc41b-8da5-4ef7-833e-d22d21e85d4f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЗагрузкаКурсовВалют</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка курсов валют</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантаження курсів валют</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.ЗагрузкаКурсовВалют.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="7587342c-2dbc-4477-bbbb-08e52de347f1">
+				<Properties>
+					<Name>КодДоступа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код доступа к платным сервисам</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Код доступу</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>32</v8:Length>
+							<v8:AllowedLength>Fixed</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="0038789c-6726-4f81-9e23-3538a2b9736b">
+				<Properties>
+					<Name>БукваДиска</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Буква привода с диском ИТС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Буква приводу з диском ІТС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="93dbf680-a9e9-458a-a064-189afcd7e968">
+				<Properties>
+					<Name>НачалоПериодаЗагрузки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало периода загрузки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Початок періоду завантаження</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала периода загрузки курсов валют</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дата початку періоду завантаження курсів валют</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ec6e2780-4c43-4469-91c8-422dad4a2b8d">
+				<Properties>
+					<Name>ОкончаниеПериодаЗагрузки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание периода загрузки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Закінчення періоду завантаження</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата окончания периода загрузки курсов валют</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дата закінчення періоду завантаження курсів валют</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4bc74e94-559d-4749-8788-15110dc08188">
+				<Properties>
+					<Name>ИсточникДанных</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник данных</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Джерело даних</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="c9518b9f-fc97-4057-8f93-3b4adad35c8e">
+				<InternalInfo>
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаКурсовВалют.СписокВалют" category="TabularSection">
+						<xr:TypeId>4943d381-f618-443e-8d80-9df6ffcd72c9</xr:TypeId>
+						<xr:ValueId>5f1437fd-8b0a-4579-a3ef-194b5444269d</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаКурсовВалют.СписокВалют" category="TabularSectionRow">
+						<xr:TypeId>8d4074aa-0e9e-4467-b0f5-f6e0cd204ec1</xr:TypeId>
+						<xr:ValueId>40460cb8-43a7-4093-bfeb-ce329ccbfb0f</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>СписокВалют</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список валют</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Список валют</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<StandardAttributes>
+						<xr:StandardAttribute name="LineNumber">
+							<xr:LinkByType/>
+							<xr:FillChecking>DontCheck</xr:FillChecking>
+							<xr:MultiLine>false</xr:MultiLine>
+							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+							<xr:CreateOnInput>Auto</xr:CreateOnInput>
+							<xr:MaxValue xsi:nil="true"/>
+							<xr:ToolTip/>
+							<xr:ExtendedEdit>false</xr:ExtendedEdit>
+							<xr:Format/>
+							<xr:ChoiceForm/>
+							<xr:QuickChoice>Auto</xr:QuickChoice>
+							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+							<xr:EditFormat/>
+							<xr:PasswordMode>false</xr:PasswordMode>
+							<xr:DataHistory>Use</xr:DataHistory>
+							<xr:MarkNegatives>false</xr:MarkNegatives>
+							<xr:MinValue xsi:nil="true"/>
+							<xr:Synonym/>
+							<xr:Comment/>
+							<xr:FullTextSearch>Use</xr:FullTextSearch>
+							<xr:ChoiceParameterLinks/>
+							<xr:FillValue xsi:nil="true"/>
+							<xr:Mask/>
+							<xr:ChoiceParameters/>
+						</xr:StandardAttribute>
+					</StandardAttributes>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="cc10a5b9-da99-45f4-b7f7-24c10a1431ee">
+						<Properties>
+							<Name>КодВалюты</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Код валюты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Код валюти</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>3</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Цифровой код валюты по классификатору валют</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Цифровий код валюти по класифікатору валют</v8:content>
+								</v8:item>
+							</ToolTip>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:type="xs:string"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="d398b64c-37e8-4cdc-bb94-da10b67dfce0">
+						<Properties>
+							<Name>Валюта</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Валюта</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Валюта</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Символьный код валюты по классификатору валют</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Символьний код валюти за класифікатором валют</v8:content>
+								</v8:item>
+							</ToolTip>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:type="xr:DesignTimeRef">Catalog.Валюты.EmptyRef</FillValue>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>DontUse</QuickChoice>
+							<CreateOnInput>Use</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="5d2e75dd-88b9-49c5-b5b0-fbb0c8ecc316">
+						<Properties>
+							<Name>ДатаКурса</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата курса</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Дата курсу</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:DateQualifiers>
+									<v8:DateFractions>Date</v8:DateFractions>
+								</v8:DateQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата последней загрузки курса</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Дата останнього завантаження курсу</v8:content>
+								</v8:item>
+							</ToolTip>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:type="xs:dateTime">0001-01-01T00:00:00</FillValue>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="edf63cc2-55d5-4497-bbf9-3b92f7e84a3e">
+						<Properties>
+							<Name>Курс</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Курс</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Курс</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>10</v8:Digits>
+									<v8:FractionDigits>4</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Последний загруженный курс</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Останній завантажений курс</v8:content>
+								</v8:item>
+							</ToolTip>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:type="xs:decimal">0</FillValue>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="18c04b75-76e6-488d-97da-f145364235e0">
+						<Properties>
+							<Name>Кратность</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кратность</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кратність</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>10</v8:Digits>
+									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кратность валюты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Кратність валюти</v8:content>
+								</v8:item>
+							</ToolTip>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:type="xs:decimal">0</FillValue>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="96cccbae-7ee8-487d-a894-a5359db9624d">
+						<Properties>
+							<Name>Загружать</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загружать</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Завантажувати</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загружать курс</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Завантажувати курс</v8:content>
+								</v8:item>
+							</ToolTip>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="911c41ce-6f1d-4b14-bf83-d1f56ea57c53">
+						<Properties>
+							<Name>Представление</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Представление</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Представлення</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>50</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Название валюты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Назва валюти</v8:content>
+								</v8:item>
+							</ToolTip>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:type="xs:string"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="3c8bffff-c083-4e8a-bd7e-82be9385a120">
+						<Properties>
+							<Name>СимвольныйКод</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Символьный код</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Символьний код</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>10</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Символьный код валюты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Символьний код валюти</v8:content>
+								</v8:item>
+							</ToolTip>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:type="xs:string"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Form>Форма</Form>
+			<Form>СообщенияОбОшибках</Form>
+			<Form>ПараметрыПрописиВалюты</Form>
+			<Form>ПодборВалютИзКлассификатора</Form>
+			<Template>КлассификаторВалют</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

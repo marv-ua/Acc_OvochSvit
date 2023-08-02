@@ -29,10 +29,6 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
-		<Metadata>InformationRegister.ВерсииОбъектов</Metadata>
-		<AutoRecord>Deny</AutoRecord>
-	</Item>
-	<Item>
 		<Metadata>InformationRegister.ЗамерыКомментарииСтатистики</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -446,6 +442,10 @@
 	</Item>
 	<Item>
 		<Metadata>Catalog.РассылкиОтчетов</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>InformationRegister.ВерсииОбъектов</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>

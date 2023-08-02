@@ -28,7 +28,7 @@
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
-				<xr:ObjectId>4457b6d3-592c-4994-a541-34403a507381</xr:ObjectId>
+				<xr:ObjectId>7ef90d01-e57c-496a-bf9c-bd5920005250</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
@@ -1043,6 +1043,8 @@
 			<CommonPicture>Этап3</CommonPicture>
 			<CommonPicture>Этап4</CommonPicture>
 			<CommonPicture>Ярлык</CommonPicture>
+			<CommonPicture>ПереключательВыключен</CommonPicture>
+			<CommonPicture>ПереключательВключен</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
 			<SessionParameter>ВерсииШаблоновОграниченияДоступа</SessionParameter>
@@ -1212,6 +1214,10 @@
 			<Role>ЧтениеНачисленнойЗарплаты</Role>
 			<Role>ЧтениеОбщейБухгалтерскойНСИ</Role>
 			<Role>ЧтениеРассылокОтчетов</Role>
+			<Role>ЕРПССогласованиеРеализации</Role>
+			<Role>ерпсИспользованиеАктаПриемкиПередачи</Role>
+			<Role>ерпсЧтениеИПросмотрАктаПриемаПередачи</Role>
+			<Role>епрсРазрешитьРедактированиеЗагруженныхКолонокАкта</Role>
 			<CommonTemplate>ИнструкцияКакВыполнитьУстановкуОбновленияВручную</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие_uk</CommonTemplate>
@@ -1245,6 +1251,8 @@
 			<CommonTemplate>СоответствиеТэговОбщимФормам</CommonTemplate>
 			<CommonTemplate>СправкаРасчет</CommonTemplate>
 			<CommonTemplate>СтруктураПодчиненности</CommonTemplate>
+			<CommonTemplate>МакетЗаголовкаОтчетовНаСКД</CommonTemplate>
+			<CommonTemplate>МакетОформленияОтчетовНаСКД</CommonTemplate>
 			<FilterCriterion>ДокументыПоДоговоруКонтрагента</FilterCriterion>
 			<FilterCriterion>ДокументыПоКонтрагенту</FilterCriterion>
 			<FilterCriterion>СвязанныеДокументы</FilterCriterion>
@@ -1993,6 +2001,16 @@
 			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиент</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйПовтИсп</CommonModule>
+			<CommonModule>ерпсАктПриемкиПередачиСервер</CommonModule>
+			<CommonModule>КомпоновкаДанныхСервер</CommonModule>
+			<CommonModule>КомпоновкаДанныхКлиент</CommonModule>
+			<CommonModule>ФормыСервер</CommonModule>
+			<CommonModule>ОбщегоНазначенияСервер</CommonModule>
+			<CommonModule>ГлобальныйКлиентСервер</CommonModule>
+			<CommonModule>МодульДокументаСервер</CommonModule>
+			<CommonModule>ФормыКлиент</CommonModule>
+			<CommonModule>ФормыКлиентСервер</CommonModule>
+			<CommonModule>кд_ЭлектроннаяПочта</CommonModule>
 			<CommonAttribute>ОбластьДанныхВспомогательныеДанные</CommonAttribute>
 			<CommonAttribute>ОбластьДанныхОсновныеДанные</CommonAttribute>
 			<ExchangePlan>АвтономнаяРабота</ExchangePlan>
@@ -2274,6 +2292,7 @@
 			<ScheduledJob>УстановкаПериодаРассчитанныхИтогов</ScheduledJob>
 			<ScheduledJob>ЧтениеНовостейСлужбыПоддержки</ScheduledJob>
 			<ScheduledJob>ЭкспортОценкиПроизводительности</ScheduledJob>
+			<ScheduledJob>ЗагрузкаКурсовВалют</ScheduledJob>
 			<SettingsStorage>ХранилищеВариантовОтчетов</SettingsStorage>
 			<FunctionalOption>АктуальнаяДатаОбновленияПовторноИспользуемыхЗначенийМРО</FunctionalOption>
 			<FunctionalOption>ВариантыВерсионированияОбъектов</FunctionalOption>
@@ -2784,6 +2803,8 @@
 			<Constant>ХранитьФайлыВТомахНаДиске</Constant>
 			<Constant>ЧасовойПоясОбластиДанных</Constant>
 			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
+			<Constant>ерпсПапкаТоваровФОП</Constant>
+			<Constant>ерпсПапкаТоваровТОВ</Constant>
 			<CommonForm>АвтономнаяРабота</CommonForm>
 			<CommonForm>АвтономнаяРаботаВМоделиСервиса</CommonForm>
 			<CommonForm>АутентификацияВСервисе</CommonForm>
@@ -2911,6 +2932,7 @@
 			<CommonForm>ФормаУстановкиЗначенийРеквизитовНоменклатуры</CommonForm>
 			<CommonForm>ФормаЦеныИВалюта</CommonForm>
 			<CommonForm>ЭлектроннаяПодпись</CommonForm>
+			<CommonForm>ерпсНастройкиЗагрузкиДляАктов</CommonForm>
 			<Catalog>АвансовыйОтчетПрисоединенныеФайлы</Catalog>
 			<Catalog>АктОбОказанииПроизводственныхУслугПрисоединенныеФайлы</Catalog>
 			<Catalog>АктСверкиВзаиморасчетовПрисоединенныеФайлы</Catalog>
@@ -2994,6 +3016,9 @@
 			<Catalog>ОбособленныеПодразделенияОрганизаций</Catalog>
 			<Catalog>ОбщиеВнешниеКомпоненты</Catalog>
 			<Catalog>ОбщиеДанныеИнформационногоЦентра</Catalog>
+			<Catalog>Авто</Catalog>
+			<Catalog>ВидУпаковки</Catalog>
+			<Catalog>ПунктыРазгрузки</Catalog>
 			<Catalog>ОбъектыСтроительства</Catalog>
 			<Catalog>ОперацияБухПрисоединенныеФайлы</Catalog>
 			<Catalog>Организации</Catalog>
@@ -3087,7 +3112,15 @@
 			<Catalog>ФизическиеЛица</Catalog>
 			<Catalog>ФинансовыеИнвестиции</Catalog>
 			<Catalog>ЦенныеБумаги</Catalog>
+			<Catalog>АдресаДоставки</Catalog>
+			<Catalog>Прицепы</Catalog>
 			<Catalog>ШаблоныЗаданийОчереди</Catalog>
+			<Catalog>Регионы</Catalog>
+			<Catalog>ДополнительныеАртикулы</Catalog>
+			<Catalog>ерпсАктПриемкиПередачиТоваровПрисоединенныеФайлы</Catalog>
+			<Catalog>НастройкиСистемыОтчеты</Catalog>
+			<Catalog>СохраненныеНастройкиОтчетов</Catalog>
+			<Catalog>а_Периоды</Catalog>
 			<Document>АвансовыйОтчет</Document>
 			<Document>АктОбОказанииПроизводственныхУслуг</Document>
 			<Document>АктСверкиВзаиморасчетов</Document>
@@ -3203,6 +3236,7 @@
 			<Document>УдалитьВводНачальныхОстатковПоЗарплате</Document>
 			<Document>УдалитьВводСведенийОБанковскихКарточкахРаботников</Document>
 			<Document>УдалитьВводСведенийОПлановыхНачисленияхРаботниковОрганизаций</Document>
+			<Document>ТТН</Document>
 			<Document>УдалитьКадровоеПеремещениеОрганизаций</Document>
 			<Document>УдалитьНачислениеКоммунальногоНалога</Document>
 			<Document>УдалитьОтражениеЗарплатыВРеглУчете</Document>
@@ -3214,6 +3248,8 @@
 			<Document>УстановкаКоэффициентаПропорциональногоОтнесенияНДСНаКредит</Document>
 			<Document>УстановкаПорядкаЗакрытияПодразделений</Document>
 			<Document>УстановкаЦенНоменклатуры</Document>
+			<Document>ерпсЗаявкаНаСозданиеАктовПриемкиПередачи</Document>
+			<Document>ерпсАктПриемкиПередачиТоваров</Document>
 			<DocumentNumerator>НумераторНалоговыхДокументов</DocumentNumerator>
 			<Sequence>ДокументыОрганизаций</Sequence>
 			<DocumentJournal>Деньги</DocumentJournal>
@@ -3460,9 +3496,10 @@
 			<Enum>ФорматыХраненияОдностраничныхФайлов</Enum>
 			<Enum>ЦветностиИзображения</Enum>
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
+			<Enum>ерпсСтатусыАктовПриемкиПередачи</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализДвиженийДенежныхСредств</Report>
-			<Report>АнализЖурналаРегистрации</Report>
+			<Report>ДатыЗапретаЗагрузки</Report>
 			<Report>АнализНачисленийИУдержаний</Report>
 			<Report>АнализРасходовНаОплатуТруда</Report>
 			<Report>АнализСубконто</Report>
@@ -3470,29 +3507,29 @@
 			<Report>ВедомостьАмортизацииНМАБухгалтерскийУчет</Report>
 			<Report>ВедомостьАмортизацииОСБухгалтерскийУчет</Report>
 			<Report>ГлавнаяКнига</Report>
-			<Report>ДатыЗапретаЗагрузки</Report>
 			<Report>ДатыЗапретаИзменения</Report>
 			<Report>ДинамикаЗадолженностиПокупателей</Report>
 			<Report>ДинамикаЗадолженностиПоставщикам</Report>
+			<Report>ИспользуемыеВнешниеРесурсы</Report>
 			<Report>ДоходыРасходы</Report>
 			<Report>ЗадолженностьПокупателей</Report>
 			<Report>ЗадолженностьПокупателейПоСрокамДолга</Report>
 			<Report>ЗадолженностьПоставщикам</Report>
 			<Report>ЗадолженностьПоставщикамПоСрокамДолга</Report>
 			<Report>ИнвентарнаяКнигаОС</Report>
-			<Report>ИспользуемыеВнешниеРесурсы</Report>
+			<Report>МестаИспользованияСсылок</Report>
 			<Report>КарточкаСубконто</Report>
 			<Report>КарточкаСчета</Report>
 			<Report>КассоваяКнига</Report>
 			<Report>КнигаДоходовПоЕдиномуНалогу</Report>
 			<Report>КнигаДоходовРасходовПоЕдиномуНалогу</Report>
-			<Report>МестаИспользованияСсылок</Report>
 			<Report>ОборотноСальдоваяВедомость</Report>
+			<Report>ОбъемНенужныхФайлов</Report>
 			<Report>ОборотноСальдоваяВедомостьПоСчету</Report>
 			<Report>ОборотныеСредства</Report>
 			<Report>ОборотыМеждуСубконто</Report>
 			<Report>ОборотыСчета</Report>
-			<Report>ОбъемНенужныхФайлов</Report>
+			<Report>ОценкаПроизводительности</Report>
 			<Report>ОжидаемыйИПодтвержденныйНДСПриобретений</Report>
 			<Report>ОжидаемыйИПодтвержденныйНДСПродаж</Report>
 			<Report>ОжидаемыйИПодтвержденныйНДСПродажПоДнямРозница</Report>
@@ -3503,14 +3540,14 @@
 			<Report>ОтчетПоНДФЛ</Report>
 			<Report>ОтчетПоПроводкам</Report>
 			<Report>ОтчетыПоСотрудникам</Report>
-			<Report>ОценкаПроизводительности</Report>
-			<Report>ПоступленияДенежныхСредств</Report>
 			<Report>ПраваДоступа</Report>
+			<Report>ПоступленияДенежныхСредств</Report>
+			<Report>ПроверкаЦелостностиТома</Report>
 			<Report>ПроверкаСуммыВходящегоНДС</Report>
 			<Report>ПроверкаСуммыОбязательствПоНДС</Report>
-			<Report>ПроверкаЦелостностиТома</Report>
 			<Report>ПрогрессОтложенногоОбновления</Report>
 			<Report>Продажи</Report>
+			<Report>РегламентированныйОтчетМенеджерЗвит1С</Report>
 			<Report>ПродажиПоМесяцам</Report>
 			<Report>РасходыДенежныхСредств</Report>
 			<Report>РасчетЗатратНаУлучшениеОС</Report>
@@ -3532,44 +3569,47 @@
 			<Report>РегламентированныйОтчетЗанятостьГражданСДопГарантиями</Report>
 			<Report>РегламентированныйОтчетЗапросКОбщемуРееструНалоговыхНакладных</Report>
 			<Report>РегламентированныйОтчетМастерВыгрузкиРегламентированнойОтчетности</Report>
-			<Report>РегламентированныйОтчетМенеджерЗвит1С</Report>
 			<Report>РегламентированныйОтчетНалоговаяНакладная</Report>
+			<Report>РегламентированныйОтчетПервичныеДокументыЗвит1С</Report>
 			<Report>РегламентированныйОтчетОбОбъемахРеализованныхУслуг</Report>
 			<Report>РегламентированныйОтчетОСобственномКапитале</Report>
 			<Report>РегламентированныйОтчетОСуммахДебиторскойИКредиторскойЗадолженности</Report>
 			<Report>РегламентированныйОтчетОСуммахПолученныхЛьготВНалогообложении</Report>
 			<Report>РегламентированныйОтчетОСуммеСбораНаРазвитиеВиноградарства</Report>
-			<Report>РегламентированныйОтчетПервичныеДокументыЗвит1С</Report>
-			<Report>РегламентированныйОтчетПоТруду</Report>
 			<Report>РегламентированныйОтчетПриложение2КНалоговойНакладной</Report>
+			<Report>РегламентированныйОтчетПоТруду</Report>
+			<Report>РегламентированныйОтчетРасчетЕдиногоНалогаВоенноеПоложение</Report>
 			<Report>РегламентированныйОтчетРасчетДоходовИЕСВФизЛиц</Report>
 			<Report>РегламентированныйОтчетРасчетЕдиногоНалога</Report>
-			<Report>РегламентированныйОтчетРасчетЕдиногоНалогаВоенноеПоложение</Report>
 			<Report>РегламентированныйОтчетРасчетЕдиногоНалогаФизЛиц</Report>
+			<Report>РегламентированныйОтчетФорма1ДФ</Report>
 			<Report>РегламентированныйОтчетРеестрНалоговыхНакладных</Report>
 			<Report>РегламентированныйОтчетУведомлениеОПриемеРаботника</Report>
 			<Report>РегламентированныйОтчетУточняющийРасчетДекларацияНДС</Report>
 			<Report>РегламентированныйОтчетФинансовыйРезультат</Report>
-			<Report>РегламентированныйОтчетФорма1ДФ</Report>
+			<Report>СведенияОПользователях</Report>
 			<Report>РегламентированныйОтчетФорма5</Report>
 			<Report>РегламентированныйОтчетФСС</Report>
 			<Report>РегламентированныйОтчетФССБезработица</Report>
 			<Report>РегламентированныйОтчетФССНесчастныйСлучай</Report>
 			<Report>РегламентированныйОтчетЦеныПром</Report>
 			<Report>РеестрДокументов</Report>
-			<Report>СведенияОПользователях</Report>
+			<Report>ТоварныйОтчет</Report>
 			<Report>СводныеПроводки</Report>
 			<Report>СправкаРасчетКалькуляцияСебестоимости</Report>
 			<Report>СправкаРасчетПереоценкаВалютныхСредств</Report>
 			<Report>СправкаРасчетРаспределенияКосвенныхРасходов</Report>
 			<Report>СправкаРасчетСебестоимостиПродукцииИУслуг</Report>
 			<Report>СправкаРасчетСписаниеРБП</Report>
-			<Report>ТоварныйОтчет</Report>
 			<Report>УниверсальныйОтчет</Report>
+			<Report>АнализЖурналаРегистрации</Report>
 			<Report>УниверсальныйОтчетПоМетаданным</Report>
 			<Report>УчетДоходовРасходовПоЕдиномуНалогу</Report>
 			<Report>ШахматнаяВедомость</Report>
 			<Report>ЭкспрессПроверкаВеденияУчета</Report>
+			<Report>ерпсСравнениеАтковПриемкиПередачиТоваров</Report>
+			<Report>БазовыйОтчет</Report>
+			<Report>ОтчетПоЗаякам</Report>
 			<DataProcessor>АвтоматическоеИзвлечениеТекстов</DataProcessor>
 			<DataProcessor>АктивныеПользователи</DataProcessor>
 			<DataProcessor>БлокировкаРаботыПользователей</DataProcessor>
@@ -3689,6 +3729,13 @@
 			<DataProcessor>ФормированиеНалоговыхНакладныхПоРознице</DataProcessor>
 			<DataProcessor>ФормированиеНалоговыхНакладныхПоРозницеБезНоменклатурногоСостава</DataProcessor>
 			<DataProcessor>ФормированиеПлатежныхДокументовПоНалогам</DataProcessor>
+			<DataProcessor>ерпсСозданиеАктаПриемаПередачиТовара</DataProcessor>
+			<DataProcessor>ерпсСравнениеДвухФайловЕксель</DataProcessor>
+			<DataProcessor>ЗагрузкаКурсовВалют</DataProcessor>
+			<DataProcessor>ИнструментЗапросник</DataProcessor>
+			<DataProcessor>ИнструментКонсольКода</DataProcessor>
+			<DataProcessor>ИнструментПроведениеДокументов</DataProcessor>
+			<DataProcessor>ВыгрузкаЗагрузкаДанныхXML</DataProcessor>
 			<InformationRegister>АвансыСотрудникам</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанныхОбластейДанных</InformationRegister>

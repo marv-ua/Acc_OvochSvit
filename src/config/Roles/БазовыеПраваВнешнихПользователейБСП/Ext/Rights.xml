@@ -488,17 +488,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ИспользоватьВерсионированиеОбъектов</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>SessionParameter.ВыполняетсяОбновлениеИБ</name>
 		<right>
 			<name>Get</name>
@@ -1132,6 +1121,17 @@
 	</object>
 	<object>
 		<name>Constant.ОграничиватьДоступНаУровнеЗаписейУниверсально</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ИспользоватьВерсионированиеОбъектов</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

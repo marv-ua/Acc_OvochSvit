@@ -87,6 +87,12 @@
 					<CommandSource>Form</CommandSource>
 					<ExtendedTooltip name="КомандыФормыРасширеннаяПодсказка" id="80"/>
 				</ButtonGroup>
+				<Button name="ЗагрузитьКурсыВалют" id="89">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ЗагрузитьКурсыВалют</CommandName>
+					<BackColor>#CCFFCC</BackColor>
+					<ExtendedTooltip name="ЗагрузитьКурсыВалютРасширеннаяПодсказка" id="90"/>
+				</Button>
 				<Button name="ФормаЗагрузитьКурсыВалютНСИС" id="87">
 					<Type>CommandBarButton</Type>
 					<CommandName>Form.Command.ЗагрузитьКурсыВалютНСИС</CommandName>
@@ -305,8 +311,6 @@
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
 					</dcsset:conditionalAppearance>
-					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
-					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>
 			</Settings>
 		</Attribute>
@@ -382,6 +386,33 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьКурсыВалютНСИС</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьКурсыВалют" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить курсы валют...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити курси валют...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить курсы валют с веб-сайта finance.ua</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити курси валют з веб-сайта finance.ua</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьКурсыВалют</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.СтандартныеПодсистемыВЛокальномРежиме</Item>
+			</FunctionalOptions>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>

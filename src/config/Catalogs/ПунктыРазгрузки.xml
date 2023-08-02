@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Catalog uuid="19e1688d-b0c7-42b0-b4ee-fd7209029682">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПунктыРазгрузки" category="Object">
+				<xr:TypeId>6250008c-0e7b-4164-9995-7c0013fd6919</xr:TypeId>
+				<xr:ValueId>f49347bd-9bc8-4095-a1ec-c9974c674fa9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПунктыРазгрузки" category="Ref">
+				<xr:TypeId>1b019233-f3af-465a-95c8-df9da01c5379</xr:TypeId>
+				<xr:ValueId>08ad7808-c39a-4814-9441-19d3fa15f960</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПунктыРазгрузки" category="Selection">
+				<xr:TypeId>88119221-1e15-4e54-835c-8f11f667f83b</xr:TypeId>
+				<xr:ValueId>3c430d5e-beee-4b2d-9cbc-a0f269f97344</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПунктыРазгрузки" category="List">
+				<xr:TypeId>d58c6722-0808-49f6-8c76-729bbda8e8a9</xr:TypeId>
+				<xr:ValueId>a69f70a1-042a-46ed-88a5-e932b1f44217</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПунктыРазгрузки" category="Manager">
+				<xr:TypeId>5d201066-ab57-42f9-82d5-2954409a95c8</xr:TypeId>
+				<xr:ValueId>65097c37-6a2a-4e1a-a6b1-f3cd6e40ec4c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПунктыРазгрузки</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пункты разгрузки</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Hierarchical>false</Hierarchical>
+			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
+			<LimitLevelCount>false</LimitLevelCount>
+			<LevelCount>2</LevelCount>
+			<FoldersOnTop>true</FoldersOnTop>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Owners/>
+			<SubordinationUse>ToItems</SubordinationUse>
+			<CodeLength>9</CodeLength>
+			<DescriptionLength>150</DescriptionLength>
+			<CodeType>String</CodeType>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+			<CodeSeries>WholeCatalog</CodeSeries>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<DefaultPresentation>AsDescription</DefaultPresentation>
+			<Characteristics/>
+			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
+			<EditType>InDialog</EditType>
+			<QuickChoice>false</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<InputByString>
+				<xr:Field>Catalog.ПунктыРазгрузки.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.ПунктыРазгрузки.StandardAttribute.Code</xr:Field>
+			</InputByString>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<DefaultObjectForm>Catalog.ПунктыРазгрузки.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultFolderForm/>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<DefaultFolderChoiceForm/>
+			<AuxiliaryObjectForm/>
+			<AuxiliaryFolderForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<AuxiliaryFolderChoiceForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<BasedOn/>
+			<DataLockFields/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>Use</FullTextSearch>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<CreateOnInput>Use</CreateOnInput>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<DataHistory>DontUse</DataHistory>
+			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
+			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="1cff18e7-c4ab-448d-80e3-317f21efa1f4">
+				<Properties>
+					<Name>КонтактноеЛицо</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактное лицо</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Контактна особа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:string"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2efb83d6-e0aa-46bc-8678-91ee7d0eda29">
+				<Properties>
+					<Name>КонтактныеДанные</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактные данные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Контактні дані</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:string"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

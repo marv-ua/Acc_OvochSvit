@@ -489,6 +489,11 @@
 														<Event name="OnChange">ФизлицоУНЗРПриИзменении</Event>
 													</Events>
 												</InputField>
+												<InputField name="Права" id="700">
+													<DataPath>Сотрудник.Права</DataPath>
+													<ContextMenu name="ПраваКонтекстноеМеню" id="701"/>
+													<ExtendedTooltip name="ПраваРасширеннаяПодсказка" id="702"/>
+												</InputField>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="РегистрационныеНомераПояснения" id="589">

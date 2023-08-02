@@ -70,17 +70,17 @@
 					<CommandSource>Form</CommandSource>
 					<ExtendedTooltip name="ГруппаКомандыExtendedTooltip" id="102"/>
 				</ButtonGroup>
-				<Button name="ОтправитьПоЭлектроннойПочте" id="143">
+				<Button name="ОтправитьПоЭлектроннойПочте" id="149">
 					<Type>CommandBarButton</Type>
 					<Representation>Picture</Representation>
 					<CommandName>CommonCommand.ОтправитьПоЭлектроннойПочте</CommandName>
-					<DataPath>Items.Список.CurrentData.Ref</DataPath>
+					<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 					<Picture>
 						<xr:Ref>CommonPicture.ОтправитьЭлектронноеПисьмо</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-					<ExtendedTooltip name="ОтправитьПоЭлектроннойПочтеРасширеннаяПодсказка" id="144"/>
+					<ExtendedTooltip name="ОтправитьПоЭлектроннойПочтеРасширеннаяПодсказка" id="150"/>
 				</Button>
 				<Button name="Справка" id="82">
 					<Type>CommandBarButton</Type>
@@ -203,6 +203,7 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="130"/>
 			</SearchControlAddition>
 			<Events>
+				<Event name="Selection">СписокВыбор</Event>
 				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
 				<Event name="BeforeRowChange">СписокПередНачаломИзменения</Event>
 				<Event name="BeforeLoadUserSettingsAtServer">СписокПередЗагрузкойПользовательскихНастроекНаСервере</Event>
@@ -224,13 +225,13 @@
 					<ExtendedTooltip name="ЕстьФайлыРасширеннаяПодсказка" id="142"/>
 				</PictureField>
 				<LabelField name="Дата" id="4">
-					<DataPath>Список.Date</DataPath>
+					<DataPath>Список.Дата</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="ДатаExtendedTooltip" id="110"/>
 				</LabelField>
 				<LabelField name="Номер" id="6">
-					<DataPath>Список.Number</DataPath>
+					<DataPath>Список.Номер</DataPath>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="НомерКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="НомерExtendedTooltip" id="111"/>
@@ -297,12 +298,40 @@
 					<ExtendedTooltip name="КомментарийExtendedTooltip" id="119"/>
 				</LabelField>
 				<LabelField name="Ссылка" id="131">
-					<DataPath>Список.Ref</DataPath>
+					<DataPath>Список.Ссылка</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
 					<ContextMenu name="СсылкаКонтекстноеМеню" id="132"/>
 					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="133"/>
+				</LabelField>
+				<LabelField name="СсылкаРегион" id="151">
+					<DataPath>Список.Ссылка.Регион</DataPath>
+					<ContextMenu name="СсылкаРегионКонтекстноеМеню" id="152"/>
+					<ExtendedTooltip name="СсылкаРегионРасширеннаяПодсказка" id="153"/>
+				</LabelField>
+				<CheckBoxField name="ВозвратРН" id="143">
+					<DataPath>Список.ВозвратРН</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВозвратРНКонтекстноеМеню" id="144"/>
+					<ExtendedTooltip name="ВозвратРНРасширеннаяПодсказка" id="145"/>
+				</CheckBoxField>
+				<CheckBoxField name="ОригиналТТН" id="146">
+					<DataPath>Список.ОригиналТТН</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОригиналТТНКонтекстноеМеню" id="147"/>
+					<ExtendedTooltip name="ОригиналТТНРасширеннаяПодсказка" id="148"/>
+				</CheckBoxField>
+				<CheckBoxField name="Погоджено" id="154">
+					<DataPath>Список.Погоджено</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПогодженоКонтекстноеМеню" id="155"/>
+					<ExtendedTooltip name="ПогодженоРасширеннаяПодсказка" id="156"/>
+				</CheckBoxField>
+				<LabelField name="ерпсВес" id="157">
+					<DataPath>Список.ерпсВес</DataPath>
+					<ContextMenu name="ерпсВесКонтекстноеМеню" id="158"/>
+					<ExtendedTooltip name="ерпсВесРасширеннаяПодсказка" id="159"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -313,31 +342,30 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
-			<UseAlways>
-				<Field>Список.Ref</Field>
-			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	ДокументРеализацияТоваровУслуг.Ссылка,
-	ДокументРеализацияТоваровУслуг.ПометкаУдаления,
-	ДокументРеализацияТоваровУслуг.Номер,
-	ДокументРеализацияТоваровУслуг.Дата,
-	ДокументРеализацияТоваровУслуг.Проведен,
-	ДокументРеализацияТоваровУслуг.ВидОперации,
-	ДокументРеализацияТоваровУслуг.Организация,
-	ДокументРеализацияТоваровУслуг.Склад,
-	ДокументРеализацияТоваровУслуг.Контрагент,
-	ДокументРеализацияТоваровУслуг.ДоговорКонтрагента,
-	ДокументРеализацияТоваровУслуг.ТипЦен,
-	ДокументРеализацияТоваровУслуг.ВалютаДокумента,
-	ДокументРеализацияТоваровУслуг.СуммаВключаетНДС,
-	ДокументРеализацияТоваровУслуг.Грузополучатель,
-	ДокументРеализацияТоваровУслуг.БанковскийСчетОрганизации,
-	ДокументРеализацияТоваровУслуг.СуммаДокумента,
-	ДокументРеализацияТоваровУслуг.Ответственный,
-	ДокументРеализацияТоваровУслуг.Комментарий,
+	ДокументРеализацияТоваровУслуг.Ссылка КАК Ссылка,
+	ДокументРеализацияТоваровУслуг.ПометкаУдаления КАК ПометкаУдаления,
+	ДокументРеализацияТоваровУслуг.Номер КАК Номер,
+	ДокументРеализацияТоваровУслуг.Дата КАК Дата,
+	ДокументРеализацияТоваровУслуг.Проведен КАК Проведен,
+	ДокументРеализацияТоваровУслуг.ВидОперации КАК ВидОперации,
+	ДокументРеализацияТоваровУслуг.Организация КАК Организация,
+	ДокументРеализацияТоваровУслуг.Склад КАК Склад,
+	ДокументРеализацияТоваровУслуг.Контрагент КАК Контрагент,
+	ДокументРеализацияТоваровУслуг.ДоговорКонтрагента КАК ДоговорКонтрагента,
+	ДокументРеализацияТоваровУслуг.ТипЦен КАК ТипЦен,
+	ДокументРеализацияТоваровУслуг.ВалютаДокумента КАК ВалютаДокумента,
+	ДокументРеализацияТоваровУслуг.СуммаВключаетНДС КАК СуммаВключаетНДС,
+	ДокументРеализацияТоваровУслуг.Грузополучатель КАК Грузополучатель,
+	ДокументРеализацияТоваровУслуг.БанковскийСчетОрганизации КАК БанковскийСчетОрганизации,
+	ДокументРеализацияТоваровУслуг.СуммаДокумента КАК СуммаДокумента,
+	ДокументРеализацияТоваровУслуг.Ответственный КАК Ответственный,
+	ДокументРеализацияТоваровУслуг.Комментарий КАК Комментарий,
+	ДокументРеализацияТоваровУслуг.ВозвратРН КАК ВозвратРН,
+	ДокументРеализацияТоваровУслуг.ОригиналТТН КАК ОригиналТТН,
 	ВЫБОР
 		КОГДА ДокументРеализацияТоваровУслуг.РучнаяКорректировка = ИСТИНА
 			ТОГДА ВЫБОР
@@ -355,19 +383,20 @@
 				ИНАЧЕ 0
 			КОНЕЦ
 	КОНЕЦ КАК СостояниеДокумента,
-	ДокументРеализацияТоваровУслуг.РучнаяКорректировка,
+	ДокументРеализацияТоваровУслуг.РучнаяКорректировка КАК РучнаяКорректировка,
 	ВЫБОР
 		КОГДА НаличиеФайлов.ЕстьФайлы ЕСТЬ NULL
 			ТОГДА 1
 		КОГДА НаличиеФайлов.ЕстьФайлы
 			ТОГДА 0
 		ИНАЧЕ 1
-	КОНЕЦ КАК ЕстьФайлы
+	КОНЕЦ КАК ЕстьФайлы,
+	ДокументРеализацияТоваровУслуг.Погоджено КАК Погоджено
+	,ДокументРеализацияТоваровУслуг.ерпсВес КАК ерпсВес
 ИЗ
 	Документ.РеализацияТоваровУслуг КАК ДокументРеализацияТоваровУслуг
 		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.НаличиеФайлов КАК НаличиеФайлов
-		ПО ДокументРеализацияТоваровУслуг.Ссылка = НаличиеФайлов.ОбъектСФайлами}
-</QueryText>
+		ПО ДокументРеализацияТоваровУслуг.Ссылка = НаличиеФайлов.ОбъектСФайлами}</QueryText>
 				<MainTable>Document.РеализацияТоваровУслуг</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -388,8 +417,6 @@
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
 					</dcsset:conditionalAppearance>
-					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
-					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>
 			</Settings>
 		</Attribute>

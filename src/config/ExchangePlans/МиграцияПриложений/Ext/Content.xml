@@ -121,10 +121,6 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
-		<Metadata>InformationRegister.ВерсииОбъектов</Metadata>
-		<AutoRecord>Deny</AutoRecord>
-	</Item>
-	<Item>
 		<Metadata>InformationRegister.ПервоначальныеСведенияНМАНалоговыйУчет</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -965,10 +961,6 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
-		<Metadata>Constant.ИспользоватьВерсионированиеОбъектов</Metadata>
-		<AutoRecord>Deny</AutoRecord>
-	</Item>
-	<Item>
 		<Metadata>Catalog.ВерсииРасширений</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -1773,6 +1765,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>InformationRegister.ВерсииОбъектов</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>InformationRegister.НачислениеАмортизацииОСБухгалтерскийУчет</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -2078,6 +2074,10 @@
 	</Item>
 	<Item>
 		<Metadata>Catalog.СпецификацииНоменклатуры</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Constant.ИспользоватьВерсионированиеОбъектов</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>

@@ -89,6 +89,7 @@
 				<v8:Type>cfg:DocumentRef.ВводСведенийОбИндексированномДоходе</v8:Type>
 				<v8:Type>cfg:DocumentRef.РегистрацияАвансовВНалоговомУчете</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОтчетКомиссионераОПродажах</v8:Type>
+				<v8:Type>cfg:DocumentRef.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОтчетКомитентуОПродажах</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПодготовкаКПередачеОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ЗакрытиеМесяца</v8:Type>
@@ -112,6 +113,7 @@
 				<v8:Type>cfg:DocumentRef.ПлатежноеПоручение</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеГрафиковАмортизацииОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.РеализацияУслугПоПереработке</v8:Type>
+				<v8:Type>cfg:DocumentRef.ерпсАктПриемкиПередачиТоваров</v8:Type>
 				<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВозвратТоваровПоставщику</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИнвентаризацияНЗП</v8:Type>

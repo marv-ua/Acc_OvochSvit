@@ -62,6 +62,7 @@
 				<v8:Type>cfg:DocumentRef.ЗаявкаНаПокупкуПродажуВалюты</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВедомостьНаВыплатуЗарплаты</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОтчетКомиссионераОПродажах</v8:Type>
+				<v8:Type>cfg:DocumentRef.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОтчетКомитентуОПродажах</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПодготовкаКПередачеОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВыработкаОС</v8:Type>
@@ -76,6 +77,7 @@
 				<v8:Type>cfg:DocumentRef.ВедомостьНаВыплатуЗарплатыВБанк</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеГрафиковАмортизацииОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.РеализацияУслугПоПереработке</v8:Type>
+				<v8:Type>cfg:DocumentRef.ерпсАктПриемкиПередачиТоваров</v8:Type>
 				<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВозвратТоваровПоставщику</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИнвентаризацияНЗП</v8:Type>
@@ -118,6 +120,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Доверенность.Attribute.Сделка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ДокументРасчетовСКонтрагентом.Attribute.ДокументОснование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеНалоговогоНазначенияЗапасов.TabularSection.Товары.Attribute.ДокументОприходования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеПараметровРасчетаИндексации.Attribute.ДокументОснование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаДолга.Attribute.Сделка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаДолга.TabularSection.СуммыДолга.Attribute.Сделка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаЗаписейРегистров.TabularSection.ЗаполнениеДвижений.Attribute.Документ</xr:Item>
@@ -134,6 +137,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетКомиссионераОПродажах.Attribute.СделкаПоПриобретению</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетКомиссионераОПродажах.Attribute.СделкаПоРеализации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетОРозничныхПродажах.Attribute.ИнвентаризацияТоваровНаСкладе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетОРозничныхПродажах.TabularSection.Товары.Attribute.ДокументПродажи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетОРозничныхПродажах.TabularSection.Товары.Attribute.ДокументОприходования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетПроизводстваЗаСмену.TabularSection.Материалы.Attribute.ДокументОприходования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаНМА.Attribute.Сделка</xr:Item>
@@ -162,6 +166,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеНаРасчетныйСчет.TabularSection.РасшифровкаПлатежа.Attribute.ДокументПередачиОС</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеНМА.Attribute.Сделка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеТоваровУслуг.Attribute.Сделка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеТоваровУслуг.Attribute.ДокументОснование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Приложение1КНалоговойНакладной.Attribute.НалоговаяНакладная</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Приложение2КНалоговойНакладной.Attribute.НалоговаяНакладная</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Приложение2КНалоговойНакладной.Attribute.ДокументОснование</xr:Item>
@@ -174,6 +179,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.РасходныйКассовыйОрдер.TabularSection.РасшифровкаПлатежа.Attribute.Сделка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.РасходныйКассовыйОрдер.TabularSection.ВыплатаЗаработнойПлаты.Attribute.Ведомость</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТоваровУслуг.Attribute.Сделка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТоваровУслуг.Attribute.ерпсАктПриемкиПередачи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТоваровУслуг.TabularSection.Товары.Attribute.ДокументОприходования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияУслугПоПереработке.Attribute.Сделка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.РегистрацияВходящегоНалоговогоДокумента.Attribute.ДокументОснование</xr:Item>
@@ -188,8 +194,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеТоваров.TabularSection.Товары.Attribute.ДокументОприходования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ТребованиеНакладная.Attribute.ДокументОснование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ТребованиеНакладная.TabularSection.Материалы.Attribute.ДокументОприходования</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеПараметровРасчетаИндексации.Attribute.ДокументОснование</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетОРозничныхПродажах.TabularSection.Товары.Attribute.ДокументПродажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсАктПриемкиПередачиТоваров.Attribute.ЗаявкаНаСозданиеАктовПриемкиПередачи</xr:Item>
 			</Content>
 			<DefaultForm/>
 			<AuxiliaryForm/>

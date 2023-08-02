@@ -30,6 +30,7 @@
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьСинхронизациюДанныхВЛокальномРежиме</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ОграничиватьДоступНаУровнеЗаписей</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ПрефиксУзлаРаспределеннойИнформационнойБазы</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьВерсионированиеОбъектов</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ДатаОбновленияПовторноИспользуемыхЗначенийМРО</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ПроверятьЭлектронныеПодписиНаСервере</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ХранитьФайлыВТомахНаДиске</v8:Type>
@@ -46,7 +47,6 @@
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьГруппыПользователей</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьОбщиеДополнительныеЗначения</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьНесколькоПроизводственныхКалендарей</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьВерсионированиеОбъектов</v8:Type>
 			</Type>
 		</Properties>
 	</DefinedType>

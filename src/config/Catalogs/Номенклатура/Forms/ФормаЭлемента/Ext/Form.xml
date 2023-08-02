@@ -263,6 +263,11 @@
 					<ContextMenu name="АртикулКонтекстноеМеню" id="117"/>
 					<ExtendedTooltip name="АртикулExtendedTooltip" id="226"/>
 				</InputField>
+				<InputField name="ВидУпаковки" id="316">
+					<DataPath>Объект.ВидУпаковки</DataPath>
+					<ContextMenu name="ВидУпаковкиКонтекстноеМеню" id="317"/>
+					<ExtendedTooltip name="ВидУпаковкиРасширеннаяПодсказка" id="318"/>
+				</InputField>
 				<UsualGroup name="ГруппаЕдиницаТекст" id="92">
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>

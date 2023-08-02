@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
-	<InformationRegister uuid="0b13cad5-91ae-4cd1-a620-9a315ae8024c">
+	<InformationRegister uuid="8e280110-cf33-4683-a84b-bdab01f4b781">
 		<InternalInfo>
 			<xr:GeneratedType name="InformationRegisterRecord.ВерсииОбъектов" category="Record">
-				<xr:TypeId>a9da2bc5-5a31-4b09-a650-cf06b3a0e8c6</xr:TypeId>
-				<xr:ValueId>a232db53-fc88-40f1-8df4-2061d91d08fd</xr:ValueId>
+				<xr:TypeId>05eed30a-8299-436d-b761-142336cd089d</xr:TypeId>
+				<xr:ValueId>e025ee42-221e-4ca2-ac9d-3825f972d6dc</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterManager.ВерсииОбъектов" category="Manager">
-				<xr:TypeId>2e9f8fa9-2ea9-40e0-b1d8-62c99c7868e7</xr:TypeId>
-				<xr:ValueId>ffc30151-897d-4761-90a0-430d6d04fb20</xr:ValueId>
+				<xr:TypeId>8cc66b2b-b4ed-49b5-875f-473b581268ad</xr:TypeId>
+				<xr:ValueId>62a41a09-35c1-475a-9854-6198d075efa6</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterSelection.ВерсииОбъектов" category="Selection">
-				<xr:TypeId>bbb16b42-2be8-49f2-8c9b-4a0d3a7d536e</xr:TypeId>
-				<xr:ValueId>16f5cc67-80a1-4838-99ee-4138d06e9b6f</xr:ValueId>
+				<xr:TypeId>4d70c372-79d7-486e-b744-185f4bd141b4</xr:TypeId>
+				<xr:ValueId>a8454cce-ee73-4de6-880b-774c14d9fd05</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterList.ВерсииОбъектов" category="List">
-				<xr:TypeId>e5f32b2b-6841-44db-a3d9-c23fdf2eae93</xr:TypeId>
-				<xr:ValueId>b2cd82da-6850-4abe-9e7f-1bbafee10480</xr:ValueId>
+				<xr:TypeId>5a196e02-ec94-4cde-8b78-4d221be3ad12</xr:TypeId>
+				<xr:ValueId>a3211ea2-e775-4347-ac36-3c2075249acc</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordSet.ВерсииОбъектов" category="RecordSet">
-				<xr:TypeId>f79ed9af-7b11-42f4-a97d-6fdb4bc2aca0</xr:TypeId>
-				<xr:ValueId>a3c79808-8173-4651-a6a3-1fbeee6352f7</xr:ValueId>
+				<xr:TypeId>ce168a23-40b8-4605-997d-c6a12e4a4163</xr:TypeId>
+				<xr:ValueId>342629d1-eb99-4ad8-aec2-3b59f31da685</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordKey.ВерсииОбъектов" category="RecordKey">
-				<xr:TypeId>7d5432a6-533f-48ca-b437-489f1053c702</xr:TypeId>
-				<xr:ValueId>b12d70d3-57e4-400e-8295-f0fcfa2bb9f4</xr:ValueId>
+				<xr:TypeId>e87f0275-8852-48e0-a98f-4f58bc4fd13a</xr:TypeId>
+				<xr:ValueId>86d4f5ec-7b75-4dff-9e22-8561f8881356</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordManager.ВерсииОбъектов" category="RecordManager">
-				<xr:TypeId>aa9c4af3-bc12-4077-8cc4-bbf6e56008c7</xr:TypeId>
-				<xr:ValueId>cd2115ab-b9bc-4b22-9acf-e651ee17ce32</xr:ValueId>
+				<xr:TypeId>f25a1306-8672-4fc0-aa43-694fcbd0f69f</xr:TypeId>
+				<xr:ValueId>46f345ca-15ad-41f0-b3fa-a5c2c42e9f26</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -192,7 +192,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="d0634a8e-676f-4f49-9a38-7cb80cfa9fdf">
+			<Resource uuid="99ce84d3-fb9a-4155-952a-452da8647561">
 				<Properties>
 					<Name>ВерсияОбъекта</Name>
 					<Synonym>
@@ -244,7 +244,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Attribute uuid="59bb5271-4cc7-45aa-8e2a-f556a4afa2dc">
+			<Attribute uuid="92a98c09-e498-4adf-bfe5-b40aa0af141b">
 				<Properties>
 					<Name>АвторВерсии</Name>
 					<Synonym>
@@ -298,7 +298,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="81dd61e5-fe02-4272-a525-affda9b606ca">
+			<Attribute uuid="52acf4a1-ff31-477c-a88d-a58917411796">
 				<Properties>
 					<Name>ДатаВерсии</Name>
 					<Synonym>
@@ -900,7 +900,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Dimension uuid="0f6f8fd9-b3af-4d06-bc47-bdad238d15b7">
+			<Dimension uuid="b0bb9f65-d937-4319-bf50-a62c4b1e8e0e">
 				<Properties>
 					<Name>Объект</Name>
 					<Synonym>
@@ -961,7 +961,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="460e76d2-4ed6-464e-bf9c-a6bcf920aaf2">
+			<Dimension uuid="36cf41bc-ee88-45c0-9de1-6636a1706ffd">
 				<Properties>
 					<Name>НомерВерсии</Name>
 					<Synonym>

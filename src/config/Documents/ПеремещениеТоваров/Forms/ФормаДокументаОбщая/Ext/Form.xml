@@ -1161,6 +1161,76 @@
 						</Table>
 					</ChildItems>
 				</Page>
+				<Page name="ерпсГруппаДополнительно" id="653">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Додатково</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ерпс группа дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ерпсГруппаДополнительноРасширеннаяПодсказка" id="654"/>
+					<ChildItems>
+						<UsualGroup name="ерпсГруппаДоставка" id="655">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Ерпс группа доставка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ерпсГруппаДоставкаРасширеннаяПодсказка" id="656"/>
+							<ChildItems>
+								<InputField name="Авто" id="657">
+									<DataPath>Объект.Авто</DataPath>
+									<ContextMenu name="АвтоКонтекстноеМеню" id="658"/>
+									<ExtendedTooltip name="АвтоРасширеннаяПодсказка" id="659"/>
+								</InputField>
+								<InputField name="Прицеп" id="660">
+									<DataPath>Объект.Прицеп</DataPath>
+									<ContextMenu name="ПрицепКонтекстноеМеню" id="661"/>
+									<ExtendedTooltip name="ПрицепРасширеннаяПодсказка" id="662"/>
+								</InputField>
+								<InputField name="Водитель" id="663">
+									<DataPath>Объект.Водитель</DataPath>
+									<ContextMenu name="ВодительКонтекстноеМеню" id="664"/>
+									<ExtendedTooltip name="ВодительРасширеннаяПодсказка" id="665"/>
+								</InputField>
+								<InputField name="ЕРПСПеревозчик" id="666">
+									<DataPath>Объект.ЕРПСПеревозчик</DataPath>
+									<ContextMenu name="ЕРПСПеревозчикКонтекстноеМеню" id="667"/>
+									<ExtendedTooltip name="ЕРПСПеревозчикРасширеннаяПодсказка" id="668"/>
+								</InputField>
+								<InputField name="ерпсПунктПогрузки" id="672">
+									<DataPath>Объект.ерпсПунктПогрузки</DataPath>
+									<ContextMenu name="ерпсПунктПогрузкиКонтекстноеМеню" id="673"/>
+									<ExtendedTooltip name="ерпсПунктПогрузкиРасширеннаяПодсказка" id="674"/>
+								</InputField>
+								<InputField name="ПунктРазгрузки" id="669">
+									<DataPath>Объект.ПунктРазгрузки</DataPath>
+									<ContextMenu name="ПунктРазгрузкиКонтекстноеМеню" id="670"/>
+									<ExtendedTooltip name="ПунктРазгрузкиРасширеннаяПодсказка" id="671"/>
+								</InputField>
+								<InputField name="ерпсВес" id="675">
+									<DataPath>Объект.ерпсВес</DataPath>
+									<ContextMenu name="ерпсВесКонтекстноеМеню" id="676"/>
+									<ExtendedTooltip name="ерпсВесРасширеннаяПодсказка" id="677"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 		<UsualGroup name="ГруппаПодвал" id="75">

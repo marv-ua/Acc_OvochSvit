@@ -46,6 +46,7 @@
 			<Subsystem>ДоходыИЗатраты</Subsystem>
 			<Subsystem>Налоги</Subsystem>
 			<Subsystem>Прочее</Subsystem>
+			<Subsystem>а_Прочие</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

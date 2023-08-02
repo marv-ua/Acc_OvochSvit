@@ -5,12 +5,12 @@
 			<Name>ПФ_MXL_ПереоценкаТоваровВРознице</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Переоценка товаров в рознице</v8:content>
-				</v8:item>
-				<v8:item>
 					<v8:lang>uk</v8:lang>
 					<v8:content>Переоцінка товарів у роздробі</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переоценка товаров в рознице</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<DataProcessor uuid="2c78151b-bf2e-4394-bdc8-395879956944">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ИнструментЗапросник" category="Object">
+				<xr:TypeId>4d4a2044-f86b-4d7a-a18b-e65d373ea684</xr:TypeId>
+				<xr:ValueId>5532ac6e-22fa-4426-a51d-420be8cd1489</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ИнструментЗапросник" category="Manager">
+				<xr:TypeId>2ed75788-34ba-44c9-bc3c-29181e511e04</xr:TypeId>
+				<xr:ValueId>a4059017-8f21-4d46-b281-9a996801f085</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ИнструментЗапросник</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструмент: Консоль запросов с обработкой</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Інструмент: Консоль запитів з обробкою</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.ИнструментЗапросник.Form.ФормаУпр</DefaultForm>
+			<AuxiliaryForm>DataProcessor.ИнструментЗапросник.Form.ФормаУпр</AuxiliaryForm>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="cbc7954c-3f7f-4175-8c70-cbc97a520f25">
+				<Properties>
+					<Name>ПоказатьУправлениеВерсиями</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показать управление версиями</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="d8775048-92ad-4bc1-9bcc-dd8fa742ccd8">
+				<InternalInfo>
+					<xr:GeneratedType name="DataProcessorTabularSection.ИнструментЗапросник.РезультатЗапроса" category="TabularSection">
+						<xr:TypeId>add6b50c-85d4-4ec2-b55c-56627761868a</xr:TypeId>
+						<xr:ValueId>75cefcc0-5bc2-4a91-8591-532169794dff</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ИнструментЗапросник.РезультатЗапроса" category="TabularSectionRow">
+						<xr:TypeId>6a480dba-c38e-481b-b041-fe182c21098c</xr:TypeId>
+						<xr:ValueId>d79e7eed-500c-4a34-80db-1ae2448cea16</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>РезультатЗапроса</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат запроса</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<StandardAttributes>
+						<xr:StandardAttribute name="LineNumber">
+							<xr:LinkByType/>
+							<xr:FillChecking>DontCheck</xr:FillChecking>
+							<xr:MultiLine>false</xr:MultiLine>
+							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+							<xr:CreateOnInput>Auto</xr:CreateOnInput>
+							<xr:MaxValue xsi:nil="true"/>
+							<xr:ToolTip/>
+							<xr:ExtendedEdit>false</xr:ExtendedEdit>
+							<xr:Format/>
+							<xr:ChoiceForm/>
+							<xr:QuickChoice>Auto</xr:QuickChoice>
+							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+							<xr:EditFormat/>
+							<xr:PasswordMode>false</xr:PasswordMode>
+							<xr:DataHistory>Use</xr:DataHistory>
+							<xr:MarkNegatives>false</xr:MarkNegatives>
+							<xr:MinValue xsi:nil="true"/>
+							<xr:Synonym/>
+							<xr:Comment/>
+							<xr:FullTextSearch>Use</xr:FullTextSearch>
+							<xr:ChoiceParameterLinks/>
+							<xr:FillValue xsi:nil="true"/>
+							<xr:Mask/>
+							<xr:ChoiceParameters/>
+						</xr:StandardAttribute>
+					</StandardAttributes>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+			<Form>Форма</Form>
+			<Form>ВыборСтрокиДереваЗапросов</Form>
+			<Form>ТекстЗапроса</Form>
+			<Form>ОтображениеДанных</Form>
+			<Form>ПараметрМоментВремениГраница</Form>
+			<Form>ПараметрСписокЗначений</Form>
+			<Form>ТаблицаЗначений</Form>
+			<Form>Результат</Form>
+			<Form>ВыполнениеАлгоритма</Form>
+			<Form>ВариантыЗапросаДляБуфера</Form>
+			<Form>Справка</Form>
+			<Form>ВерсииЗапроса</Form>
+			<Form>ТабличныйДокумент</Form>
+			<Form>ФормаУпр</Form>
+			<Form>ПараметрыЗапросаУпр</Form>
+			<Form>ПараметрМоментВремениГраницаУпр</Form>
+			<Form>СписокЗначенийУпр</Form>
+			<Form>ФормаВыбораВТУпр</Form>
+			<Form>ПоследниеФайлыЗапросов</Form>
+			<Form>ВыборСтрокиДереваЗапросовУпр</Form>
+			<Form>ФормаТаблицыЗначенийУпр</Form>
+			<Form>ФормаВыборкиУпр</Form>
+			<Form>ВыполнениеАлгоритмаУпр</Form>
+			<Form>ВерсииЗапросаУпр</Form>
+			<Form>РезультатУпр</Form>
+			<Form>ФормаОтладкиВМодулеУпр</Form>
+			<Form>ИсторияВерсий</Form>
+			<Form>НастройкаТехнологическогоЖурнала</Form>
+			<Form>ВариантыЗапросаДляБуфераУпр</Form>
+			<Form>ВыборТипаУпр</Form>
+			<Form>Раскраска</Form>
+			<Template>Справка</Template>
+			<Template>Версии</Template>
+			<Template>ОтладкаЗапросаИзМодуля</Template>
+			<Template>ВерсииУпр</Template>
+			<Template>КонфигФайловойВерсии</Template>
+			<Template>КонфигКлиентСервернойВерсии</Template>
+			<Template>ХукКлавы</Template>
+			<Template>HTMLАлгоритма</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

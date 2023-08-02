@@ -516,11 +516,46 @@
 												</PictureDecoration>
 											</ChildItems>
 										</UsualGroup>
-										<InputField name="ДокументУдостоверяющийЛичность" id="21">
-											<DataPath>Объект.ДокументУдостоверяющийЛичность</DataPath>
-											<ContextMenu name="ДокументУдостоверяющийЛичностьКонтекстноеМеню" id="22"/>
-											<ExtendedTooltip name="ДокументУдостоверяющийЛичностьРасширеннаяПодсказка" id="215"/>
-										</InputField>
+										<UsualGroup name="Группа1" id="385">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="386"/>
+											<ChildItems>
+												<InputField name="ДокументУдостоверяющийЛичность" id="21">
+													<DataPath>Объект.ДокументУдостоверяющийЛичность</DataPath>
+													<ContextMenu name="ДокументУдостоверяющийЛичностьКонтекстноеМеню" id="22"/>
+													<ExtendedTooltip name="ДокументУдостоверяющийЛичностьРасширеннаяПодсказка" id="215"/>
+												</InputField>
+												<InputField name="КодПДФО" id="387">
+													<DataPath>Объект.КодПДФО</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>ПДФО</v8:content>
+														</v8:item>
+													</Title>
+													<OpenButton>false</OpenButton>
+													<ContextMenu name="КодПДФОКонтекстноеМеню" id="388"/>
+													<ExtendedTooltip name="КодПДФОРасширеннаяПодсказка" id="389"/>
+													<Events>
+														<Event name="OnChange">КодПДФОПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="КодВоенныеСбор" id="390">
+													<DataPath>Объект.КодВоенныеСбор</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Війск. зб.</v8:content>
+														</v8:item>
+													</Title>
+													<OpenButton>false</OpenButton>
+													<ContextMenu name="КодВоенныеСборКонтекстноеМеню" id="391"/>
+													<ExtendedTooltip name="КодВоенныеСборРасширеннаяПодсказка" id="392"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</Page>
 							</ChildItems>

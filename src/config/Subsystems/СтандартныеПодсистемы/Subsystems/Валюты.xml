@@ -33,6 +33,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеКурсовВалют</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьАльтернативныйСерверДляЗагрузкиКурсовВалют</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ФинансУа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаКурсовВалют</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -42,12 +42,14 @@
 				<v8:Type>cfg:DocumentRef.ПередачаТоваров</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПоступлениеНаРасчетныйСчет</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОтчетКомиссионераОПродажах</v8:Type>
+				<v8:Type>cfg:DocumentRef.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОтчетКомитентуОПродажах</v8:Type>
 				<v8:Type>cfg:DocumentRef.РегистрацияВходящегоНалоговогоДокумента</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПриходныйКассовыйОрдер</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВедомостьНаВыплатуЗарплатыВБанк</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПлатежноеПоручение</v8:Type>
 				<v8:Type>cfg:DocumentRef.РеализацияУслугПоПереработке</v8:Type>
+				<v8:Type>cfg:DocumentRef.ерпсАктПриемкиПередачиТоваров</v8:Type>
 				<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВозвратТоваровПоставщику</v8:Type>
 				<v8:Type>cfg:DocumentRef.РегистрУчета</v8:Type>

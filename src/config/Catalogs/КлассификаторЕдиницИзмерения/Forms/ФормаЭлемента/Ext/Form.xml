@@ -23,6 +23,11 @@
 			<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="6"/>
 			<ExtendedTooltip name="НаименованиеПолноеРасширеннаяПодсказка" id="11"/>
 		</InputField>
+		<InputField name="Вес" id="16">
+			<DataPath>Объект.Вес</DataPath>
+			<ContextMenu name="ВесКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ВесРасширеннаяПодсказка" id="18"/>
+		</InputField>
 		<LabelField name="ТекстРучногоИзменения" id="7">
 			<DataPath>ТекстРучногоИзменения</DataPath>
 			<TitleLocation>None</TitleLocation>

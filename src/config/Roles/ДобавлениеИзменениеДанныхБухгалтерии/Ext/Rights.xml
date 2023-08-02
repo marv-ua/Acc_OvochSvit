@@ -1276,6 +1276,45 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.АдресаДоставки</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.НаборыДополнительныхРеквизитовИСведений.StandardAttribute.Predefined</name>
 		<right>
 			<name>View</name>
@@ -1665,50 +1704,6 @@
 	</object>
 	<object>
 		<name>Document.УдалитьВводСведенийОБанковскихКарточкахРаботников.TabularSection.РаботникиОрганизации</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Active</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.LineNumber</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Recorder</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Period</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -2174,17 +2169,6 @@
 	</object>
 	<object>
 		<name>InformationRegister.УдалитьКоллизииПриОбмене.Resource.РезультатРассмотренияКоллизии</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.Dimension.Объект</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -3796,6 +3780,45 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ПунктыРазгрузки</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.УдалитьВводСведенийОБанковскихКарточкахРаботников.Attribute.Комментарий</name>
 		<right>
 			<name>View</name>
@@ -4197,6 +4220,45 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.а_Периоды</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.СписаниеСРасчетногоСчета</name>
 		<right>
 			<name>Read</name>
@@ -4414,6 +4476,45 @@
 		<name>Subsystem.Отчеты.Subsystem.ОтчетыДляРуководителя.Subsystem.ДенежныеСредства</name>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Прицепы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -8057,6 +8158,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ВерсииОбъектов.Dimension.НомерВерсии</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ПеремещениеНМА</name>
 		<right>
 			<name>Read</name>
@@ -10627,17 +10739,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ВерсииОбъектов.Dimension.НомерВерсии</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DocumentJournal.ПараметрыАмортизацииНМА</name>
 		<right>
 			<name>Read</name>
@@ -11449,17 +11550,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Constant.ИспользоватьВерсионированиеОбъектов</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Subsystem.Отчеты.Subsystem.СтандартныеОтчеты</name>
 		<right>
 			<name>View</name>
@@ -11749,6 +11839,45 @@
 		<name>Report.ЗадолженностьПокупателей.Command.ЗадолженностьПокупателейПоДоговорам</name>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидУпаковки</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -12480,6 +12609,17 @@
 	</object>
 	<object>
 		<name>InformationRegister.УдалитьОчередьЗаданий.Resource.ЗапланированныйМоментЗапуска</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.Attribute.ДатаВерсии</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -13580,17 +13720,6 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.Attribute.АвторВерсии</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -19055,17 +19184,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ВерсииОбъектов.Attribute.ДатаВерсии</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения.Attribute.МногострочноеПолеВвода</name>
 		<right>
 			<name>View</name>
@@ -20731,6 +20849,50 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Active</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.LineNumber</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Recorder</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Period</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>CommonCommand.ДополнительнаяИнформация</name>
 		<right>
 			<name>View</name>
@@ -21336,6 +21498,17 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.Attribute.АвторВерсии</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -22332,6 +22505,17 @@
 	</object>
 	<object>
 		<name>Document.УдалитьВводСведенийОБанковскихКарточкахРаботников.TabularSection.РаботникиОрганизации.Attribute.СпособВыплаты</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.Resource.ВерсияОбъекта</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -23792,6 +23976,45 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Авто</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ВедомостьНаВыплатуЗарплатыВКассу.Attribute.Комментарий</name>
 		<right>
 			<name>View</name>
@@ -24203,6 +24426,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ИспользоватьВерсионированиеОбъектов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -25230,6 +25464,17 @@
 	</object>
 	<object>
 		<name>Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.Страна</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.Dimension.Объект</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -29718,17 +29963,6 @@
 	</object>
 	<object>
 		<name>Document.УдалитьУвольнениеИзОрганизаций.Attribute.Организация</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.Resource.ВерсияОбъекта</name>
 		<right>
 			<name>View</name>
 			<value>false</value>

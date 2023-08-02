@@ -368,6 +368,11 @@
 					<ContextMenu name="СсылкаКонтекстноеМеню" id="107"/>
 					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="108"/>
 				</LabelField>
+				<LabelField name="ерпсВес" id="117">
+					<DataPath>Список.ерпсВес</DataPath>
+					<ContextMenu name="ерпсВесКонтекстноеМеню" id="118"/>
+					<ExtendedTooltip name="ерпсВесРасширеннаяПодсказка" id="119"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -414,6 +419,7 @@
 			КОНЕЦ
 	КОНЕЦ КАК СостояниеДокумента,
 	ДокументПеремещениеТоваров.МоментВремени
+	,ДокументПеремещениеТоваров.ерпсВес КАК ерпсВес
 ИЗ
 	Документ.ПеремещениеТоваров КАК ДокументПеремещениеТоваров</QueryText>
 				<MainTable>Document.ПеремещениеТоваров</MainTable>
@@ -436,8 +442,6 @@
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
 					</dcsset:conditionalAppearance>
-					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
-					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>
 			</Settings>
 		</Attribute>

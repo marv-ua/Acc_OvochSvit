@@ -29,6 +29,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НоменклатураГТД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НоминальнаяСтоимостьБланковСтрогогоУчета</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КлассификаторКОАТУУ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополнительныеАртикулы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

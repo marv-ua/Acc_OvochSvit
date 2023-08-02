@@ -112,6 +112,7 @@
 				<v8:Type>cfg:DocumentRef.СписаниеДепонентовВДоходыОрганизаций</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеСостоянияОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВедомостьНаВыплатуЗарплатыВБанк</v8:Type>
+				<v8:Type>cfg:DocumentRef.ТТН</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеГрафиковАмортизацииОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.РеализацияУслугПоПереработке</v8:Type>
 				<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>

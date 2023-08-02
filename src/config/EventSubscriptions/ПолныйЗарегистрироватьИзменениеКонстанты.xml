@@ -32,6 +32,7 @@
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьДатыЗапретаИзменения</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ТипЦенПлановойСебестоимостиНоменклатуры</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ОграничиватьДоступНаУровнеЗаписей</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьВерсионированиеОбъектов</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ПроверятьЭлектронныеПодписиНаСервере</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ОграничиватьДоступНаУровнеЗаписейУниверсально</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ОграничиватьДоступНаУровнеЗаписейПодразделенияОрганизаций</v8:Type>
@@ -72,7 +73,6 @@
 				<v8:Type>cfg:ConstantValueManager.ВыполнятьЗамерыПроизводительности</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьУдалениеПомеченныхОбъектов</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьНесколькоПроизводственныхКалендарей</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьВерсионированиеОбъектов</v8:Type>
 			</Source>
 			<Event>BeforeWrite</Event>
 			<Handler>CommonModule.ОбменДаннымиРИБСобытия.ПолныйЗарегистрироватьИзменениеКонстантыПередЗаписью</Handler>

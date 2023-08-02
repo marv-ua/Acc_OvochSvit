@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Group>AlwaysHorizontal</Group>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="32">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<Button name="ПровестиДокументы" id="38">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.ПровестиДокументы</CommandName>
+					<ExtendedTooltip name="ПровестиДокументыРасширеннаяПодсказка" id="39"/>
+				</Button>
+				<Button name="УпорядочитьДокументы" id="40">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.УпорядочитьДокументы</CommandName>
+					<ExtendedTooltip name="УпорядочитьДокументыРасширеннаяПодсказка" id="41"/>
+				</Button>
+				<Button name="КорректировкаПриходных" id="78">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КорректировкаПриходных</CommandName>
+					<ExtendedTooltip name="КорректировкаПриходныхРасширеннаяПодсказка" id="79"/>
+				</Button>
+				<Button name="УдалитьЛишниеПартии" id="80">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.УдалитьЛишниеПартии</CommandName>
+					<ExtendedTooltip name="УдалитьЛишниеПартииРасширеннаяПодсказка" id="81"/>
+				</Button>
+				<Button name="ЗаполнитьПоследовательность" id="68">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗаполнитьПоследовательность</CommandName>
+					<ExtendedTooltip name="ЗаполнитьПоследовательностьРасширеннаяПодсказка" id="69"/>
+				</Button>
+				<Button name="ВосстановитьПоследовательность" id="70">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВосстановитьПоследовательность</CommandName>
+					<ExtendedTooltip name="ВосстановитьПоследовательностьРасширеннаяПодсказка" id="71"/>
+				</Button>
+				<UsualGroup name="Группа4" id="45">
+					<Group>Vertical</Group>
+					<VerticalSpacing>Half</VerticalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<InputField name="Пауза" id="75">
+							<DataPath>Объект.Пауза</DataPath>
+							<ContextMenu name="ПаузаКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="ПаузаРасширеннаяПодсказка" id="77"/>
+						</InputField>
+						<CheckBoxField name="ПропускатьНепроведенные" id="42">
+							<DataPath>Объект.ПропускатьНепроведенные</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПропускатьНепроведенныеКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="ПропускатьНепроведенныеРасширеннаяПодсказка" id="44"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПродолжатьПриБлокировке" id="47">
+							<DataPath>Объект.ПродолжатьПриБлокировке</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПродолжатьПриБлокировкеКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ПродолжатьПриБлокировкеРасширеннаяПодсказка" id="49"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПерезаполнятьАвтоматическиПриСдвигеПоследовательностиНазад" id="72">
+							<DataPath>Объект.ПерезаполнятьАвтоматическиПриСдвигеПоследовательностиНазад</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПерезаполнятьАвтоматическиПриСдвигеПоследовательностиНазадКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="ПерезаполнятьАвтоматическиПриСдвигеПоследовательностиНазадРасширеннаяПодсказка" id="74"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="СписокДокументовДляПроведения" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<Width>94</Width>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<HorizontalStretch>false</HorizontalStretch>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СписокДокументовДляПроведения</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокДокументовДляПроведенияКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокДокументовДляПроведенияКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокДокументовДляПроведенияРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокДокументовДляПроведенияСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>СписокДокументовДляПроведения</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокДокументовДляПроведенияСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокДокументовДляПроведенияСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокДокументовДляПроведенияСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>СписокДокументовДляПроведения</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокДокументовДляПроведенияСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокДокументовДляПроведенияСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокДокументовДляПроведенияУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>СписокДокументовДляПроведения</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокДокументовДляПроведенияУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокДокументовДляПроведенияУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СписокДокументовДляПроведенияНомерСтроки" id="50">
+					<DataPath>Объект.СписокДокументовДляПроведения.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокДокументовДляПроведенияНомерСтрокиКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="СписокДокументовДляПроведенияНомерСтрокиРасширеннаяПодсказка" id="52"/>
+				</LabelField>
+				<CheckBoxField name="СписокДокументовДляПроведенияПроводить" id="65">
+					<DataPath>Объект.СписокДокументовДляПроведения.Проводить</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокДокументовДляПроведенияПроводитьКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="СписокДокументовДляПроведенияПроводитьРасширеннаяПодсказка" id="67"/>
+				</CheckBoxField>
+				<InputField name="СписокДокументовДляПроведенияДокумент" id="53">
+					<DataPath>Объект.СписокДокументовДляПроведения.Документ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокДокументовДляПроведенияДокументКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="СписокДокументовДляПроведенияДокументРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="СписокДокументовДляПроведенияДатаДокумента" id="56">
+					<DataPath>Объект.СписокДокументовДляПроведения.ДатаДокумента</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокДокументовДляПроведенияДатаДокументаКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="СписокДокументовДляПроведенияДатаДокументаРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="СписокДокументовДляПроведенияДатаПроведения" id="59">
+					<DataPath>Объект.СписокДокументовДляПроведения.ДатаПроведения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проведен</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокДокументовДляПроведенияДатаПроведенияКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="СписокДокументовДляПроведенияДатаПроведенияРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="СписокДокументовДляПроведенияЗатраченоВремени" id="62">
+					<DataPath>Объект.СписокДокументовДляПроведения.ЗатраченоВремени</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Затрачено</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокДокументовДляПроведенияЗатраченоВремениКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СписокДокументовДляПроведенияЗатраченоВремениРасширеннаяПодсказка" id="64"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИнструментПроведениеДокументов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокДокументовДляПроведения</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.СписокДокументовДляПроведения.Проводить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:BorderColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ПровестиДокументы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Провести документы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Провести документи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Провести документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПровестиДокументы</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="УпорядочитьДокументы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упорядочить документы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Упорядкувати документи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упорядочить документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SortListAsc</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УпорядочитьДокументы</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗаполнитьПоследовательность" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить последовательность</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити послідоність</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить последовательность</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоследовательность</Action>
+		</Command>
+		<Command name="ВосстановитьПоследовательность" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Восстановить последовательность</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відновити послідовність</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Восстановить последовательность</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВосстановитьПоследовательность</Action>
+		</Command>
+		<Command name="КорректировкаПриходных" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корректировка приходных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Коригування прибуткових</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Корректировка приходных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КорректировкаПриходных</Action>
+		</Command>
+		<Command name="УдалитьЛишниеПартии" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить лишние партии</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Виділити лишні партії</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Удалить лишние партии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьЛишниеПартии</Action>
+		</Command>
+	</Commands>
+</Form>

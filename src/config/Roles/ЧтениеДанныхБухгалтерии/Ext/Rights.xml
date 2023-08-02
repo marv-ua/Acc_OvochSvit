@@ -1876,50 +1876,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Active</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.LineNumber</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Recorder</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Period</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>CommonCommand.ПолезнаяИнформацияПоРазделуПокупки</name>
 		<right>
 			<name>View</name>
@@ -2559,17 +2515,6 @@
 	</object>
 	<object>
 		<name>Catalog.ДоговорыКонтрагентов.Attribute.Комментарий</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.Dimension.Объект</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -9109,6 +9054,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ВерсииОбъектов.Dimension.НомерВерсии</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ОтчетКомитентуОПродажах.TabularSection.Товары.Attribute.СтавкаНДС</name>
 		<right>
 			<name>Edit</name>
@@ -11926,17 +11882,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ВерсииОбъектов.Dimension.НомерВерсии</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>AccumulationRegister.ВыпускПродукцииУслугБухгалтерскийУчет.Dimension.Подразделение</name>
 		<right>
 			<name>Edit</name>
@@ -12776,17 +12721,6 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Constant.ИспользоватьВерсионированиеОбъектов</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -14063,6 +13997,17 @@
 	</object>
 	<object>
 		<name>Document.КомплектацияНоменклатуры.Attribute.Номенклатура</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.Attribute.ДатаВерсии</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -15504,17 +15449,6 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.Attribute.АвторВерсии</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -22063,17 +21997,6 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ВерсииОбъектов.Attribute.ДатаВерсии</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения.Attribute.МногострочноеПолеВвода</name>
 		<right>
 			<name>View</name>
@@ -23890,6 +23813,50 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Active</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.LineNumber</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Recorder</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Period</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ПоступлениеНМА.Attribute.СчетУчетаРасчетовСКонтрагентом</name>
 		<right>
 			<name>Edit</name>
@@ -24745,6 +24712,17 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.Attribute.АвторВерсии</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -25954,6 +25932,17 @@
 	</object>
 	<object>
 		<name>Document.ОтчетКомиссионераОПродажах.Attribute.Организация</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.Resource.ВерсияОбъекта</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -28126,6 +28115,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ИспользоватьВерсионированиеОбъектов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.РасходыБудущихПериодов.Attribute.СубконтоБУ3</name>
 		<right>
 			<name>Edit</name>
@@ -29267,6 +29267,17 @@
 	</object>
 	<object>
 		<name>Catalog.Организации.TabularSection.КонтактнаяИнформация.Attribute.Страна</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.Dimension.Объект</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -34107,17 +34118,6 @@
 	</object>
 	<object>
 		<name>Document.УдалитьУвольнениеИзОрганизаций.Attribute.Организация</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.Resource.ВерсияОбъекта</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>

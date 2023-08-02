@@ -32,7 +32,7 @@
 				<CommandSource>Form</CommandSource>
 				<ExtendedTooltip name="ФормаПрочиеКомандыРасширеннаяПодсказка" id="405"/>
 			</ButtonGroup>
-			<ButtonGroup name="ГруппаВажныеКоманды" id="596">
+			<ButtonGroup name="ГруппаВажныеКоманды" id="615">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -53,9 +53,9 @@
 						<v8:content>Група важливі команди</v8:content>
 					</v8:item>
 				</ToolTip>
-				<ExtendedTooltip name="ГруппаВажныеКомандыРасширеннаяПодсказка" id="597"/>
+				<ExtendedTooltip name="ГруппаВажныеКомандыРасширеннаяПодсказка" id="616"/>
 				<ChildItems>
-					<Button name="ОтправитьПоЭлектроннойПочте" id="594">
+					<Button name="ОтправитьПоЭлектроннойПочте" id="617">
 						<Type>CommandBarButton</Type>
 						<Representation>Picture</Representation>
 						<CommandName>CommonCommand.ОтправитьПоЭлектроннойПочте</CommandName>
@@ -65,7 +65,7 @@
 							<xr:LoadTransparent>true</xr:LoadTransparent>
 						</Picture>
 						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-						<ExtendedTooltip name="ОтправитьПоЭлектроннойПочтеРасширеннаяПодсказка" id="595"/>
+						<ExtendedTooltip name="ОтправитьПоЭлектроннойПочтеРасширеннаяПодсказка" id="618"/>
 					</Button>
 				</ChildItems>
 			</ButtonGroup>
@@ -77,6 +77,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
 		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
@@ -319,6 +320,11 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаЦеныИВалютаРасширеннаяПодсказка" id="418"/>
 							<ChildItems>
+								<InputField name="Регион" id="619">
+									<DataPath>Объект.Регион</DataPath>
+									<ContextMenu name="РегионКонтекстноеМеню" id="620"/>
+									<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="621"/>
+								</InputField>
 								<LabelField name="ЦеныИВалюта" id="224">
 									<DataPath>ЦеныИВалюта</DataPath>
 									<TitleTextColor>style:FormBackColor</TitleTextColor>
@@ -339,6 +345,40 @@
 										<Event name="Click">ЦеныИВалютаНажатие</Event>
 									</Events>
 								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="область" id="628">
+							<Title>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Область</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Область</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="областьРасширеннаяПодсказка" id="629"/>
+							<ChildItems>
+								<CheckBoxField name="ОригиналТТН" id="609">
+									<DataPath>Объект.ОригиналТТН</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОригиналТТНКонтекстноеМеню" id="610"/>
+									<ExtendedTooltip name="ОригиналТТНРасширеннаяПодсказка" id="611"/>
+								</CheckBoxField>
+								<CheckBoxField name="Погоджено" id="625">
+									<DataPath>Объект.Погоджено</DataPath>
+									<Enabled>false</Enabled>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПогодженоКонтекстноеМеню" id="626"/>
+									<ExtendedTooltip name="ПогодженоРасширеннаяПодсказка" id="627"/>
+									<Events>
+										<Event name="OnChange">ПогодженоПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -553,6 +593,12 @@
 									<ContextMenu name="ТоварыНоменклатураАртикулКонтекстноеМеню" id="239"/>
 									<ExtendedTooltip name="ТоварыНоменклатураАртикулРасширеннаяПодсказка" id="441"/>
 								</LabelField>
+								<LabelField name="ТоварыНоменклатураНоменклатураГТД" id="612">
+									<DataPath>Объект.Товары.Номенклатура.НоменклатураГТД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыНоменклатураНоменклатураГТДКонтекстноеМеню" id="613"/>
+									<ExtendedTooltip name="ТоварыНоменклатураНоменклатураГТДРасширеннаяПодсказка" id="614"/>
+								</LabelField>
 								<InputField name="ТоварыНоменклатура" id="79">
 									<DataPath>Объект.Товары.Номенклатура</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -561,6 +607,12 @@
 									<Events>
 										<Event name="OnChange">ТоварыНоменклатураПриИзменении</Event>
 									</Events>
+								</InputField>
+								<InputField name="ТоварыДополнительныйАртикул" id="630">
+									<DataPath>Объект.Товары.ДополнительныйАртикул</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыДополнительныйАртикулКонтекстноеМеню" id="631"/>
+									<ExtendedTooltip name="ТоварыДополнительныйАртикулРасширеннаяПодсказка" id="632"/>
 								</InputField>
 								<InputField name="ТоварыКоличество" id="73">
 									<DataPath>Объект.Товары.Количество</DataPath>
@@ -1489,9 +1541,13 @@
 											<DataPath>Объект.АдресДоставки</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<Width>30</Width>
+											<ChoiceButton>true</ChoiceButton>
 											<ChoiceListButton>true</ChoiceListButton>
 											<ContextMenu name="АдресДоставкиКонтекстноеМеню" id="8"/>
 											<ExtendedTooltip name="АдресДоставкиРасширеннаяПодсказка" id="533"/>
+											<Events>
+												<Event name="StartChoice">АдресДоставкиНачалоВыбора</Event>
+											</Events>
 										</InputField>
 										<InputField name="БанковскийСчетОрганизации" id="9">
 											<DataPath>Объект.БанковскийСчетОрганизации</DataPath>
@@ -1510,6 +1566,31 @@
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="БанковскийСчетОрганизацииКонтекстноеМеню" id="10"/>
 											<ExtendedTooltip name="БанковскийСчетОрганизацииРасширеннаяПодсказка" id="534"/>
+										</InputField>
+										<InputField name="Авто" id="594">
+											<DataPath>Объект.Авто</DataPath>
+											<ContextMenu name="АвтоКонтекстноеМеню" id="595"/>
+											<ExtendedTooltip name="АвтоРасширеннаяПодсказка" id="596"/>
+										</InputField>
+										<InputField name="Водитель" id="603">
+											<DataPath>Объект.Водитель</DataPath>
+											<ContextMenu name="ВодительКонтекстноеМеню" id="604"/>
+											<ExtendedTooltip name="ВодительРасширеннаяПодсказка" id="605"/>
+										</InputField>
+										<InputField name="Прицеп" id="606">
+											<DataPath>Объект.Прицеп</DataPath>
+											<ContextMenu name="ПрицепКонтекстноеМеню" id="607"/>
+											<ExtendedTooltip name="ПрицепРасширеннаяПодсказка" id="608"/>
+										</InputField>
+										<InputField name="ерпсПунктПогрузки" id="636">
+											<DataPath>Объект.ерпсПунктПогрузки</DataPath>
+											<ContextMenu name="ерпсПунктПогрузкиКонтекстноеМеню" id="637"/>
+											<ExtendedTooltip name="ерпсПунктПогрузкиРасширеннаяПодсказка" id="638"/>
+										</InputField>
+										<InputField name="ПунктРазгрузки" id="597">
+											<DataPath>Объект.ПунктРазгрузки</DataPath>
+											<ContextMenu name="ПунктРазгрузкиКонтекстноеМеню" id="598"/>
+											<ExtendedTooltip name="ПунктРазгрузкиРасширеннаяПодсказка" id="599"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -1548,6 +1629,16 @@
 											<Events>
 												<Event name="StartChoice">ПолучилНачалоВыбора</Event>
 											</Events>
+										</InputField>
+										<InputField name="Перевозчик" id="622">
+											<DataPath>Объект.ЕРПСПеревозчик</DataPath>
+											<ContextMenu name="ПеревозчикКонтекстноеМеню" id="623"/>
+											<ExtendedTooltip name="ПеревозчикРасширеннаяПодсказка" id="624"/>
+										</InputField>
+										<InputField name="ерпсВес" id="633">
+											<DataPath>Объект.ерпсВес</DataPath>
+											<ContextMenu name="ерпсВесКонтекстноеМеню" id="634"/>
+											<ExtendedTooltip name="ерпсВесРасширеннаяПодсказка" id="635"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -1739,6 +1830,11 @@
 										<Event name="OnChange">НеОтноситьСебестоимостьЗапасовНаРасходыПоНУПриИзменении</Event>
 									</Events>
 								</CheckBoxField>
+								<InputField name="ерпсАктПриемкиПередачи" id="639">
+									<DataPath>Объект.ерпсАктПриемкиПередачи</DataPath>
+									<ContextMenu name="ерпсАктПриемкиПередачиКонтекстноеМеню" id="640"/>
+									<ExtendedTooltip name="ерпсАктПриемкиПередачиРасширеннаяПодсказка" id="641"/>
+								</InputField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -1958,6 +2054,12 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<CheckBoxField name="ВозвратРН" id="600">
+			<DataPath>Объект.ВозвратРН</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВозвратРНКонтекстноеМеню" id="601"/>
+			<ExtendedTooltip name="ВозвратРНРасширеннаяПодсказка" id="602"/>
+		</CheckBoxField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -2323,6 +2425,17 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Регион" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Регион</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Регионы</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>

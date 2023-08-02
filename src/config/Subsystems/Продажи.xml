@@ -22,11 +22,16 @@
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.УстановитьОсновнуюОрганизацию</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОтчетыПродажи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОбработкиПродажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ерпсСравнениеАтковПриемкиПередачиТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.УстановитьОсновнуюОрганизацию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДополнительныеОтчетыПродажи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПолезнаяИнформацияПоРазделуПродажи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ТоварныйОтчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Регионы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсАктПриемкиПередачиТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоЗаякам</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
