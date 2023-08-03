@@ -278,4 +278,7 @@
 	<Item Period="01.10.2022" Index="1.025"/>
 	<Item Period="01.11.2022" Index="1.007"/>
 	<Item Period="01.12.2022" Index="1.007"/>
+	<Item Period="01.01.2023" Index="1.008"/>
+	<Item Period="01.02.2023" Index="1.007"/>
+	<Item Period="01.03.2023" Index="1.015"/>
 </Items>

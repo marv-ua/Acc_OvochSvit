@@ -6,11 +6,11 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Типовая форма учета доходов и расходов ФОП</v8:content>
+					<v8:content>Типовая форма доходов и расходов ФОП (ЕН с НДС за 2022 г.)</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Типова форма обліку доходів та витрат ФОП</v8:content>
+					<v8:content>Типова форма доходів і витрат ФОП (ЄП з ПДВ за 2022 р.)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -23,7 +23,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Відкрити типову форму обліку доходів та витрат ФОП</v8:content>
+					<v8:content>Відкрити типову форму обліку доходів і витрат ФОП</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture/>

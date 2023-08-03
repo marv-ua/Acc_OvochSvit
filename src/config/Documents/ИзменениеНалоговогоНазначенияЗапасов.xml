@@ -639,6 +639,7 @@
 			<Form>ФормаДокумента</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаВыбора</Form>
+			<Form>ФормаПодбораОстатков</Form>
 			<TabularSection uuid="22d11ee3-e8fe-4b16-8d15-dca7add82027">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ИзменениеНалоговогоНазначенияЗапасов.Товары" category="TabularSection">

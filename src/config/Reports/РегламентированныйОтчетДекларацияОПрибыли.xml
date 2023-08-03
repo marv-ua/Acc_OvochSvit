@@ -349,6 +349,8 @@
 			<Form>ПараметрыОтчета2022Кв2УФ</Form>
 			<Form>ФормаОтчета2023Кв1УФ</Form>
 			<Form>ПараметрыОтчета2023Кв1УФ</Form>
+			<Form>ФормаОтчета2023Кв2УФ</Form>
+			<Form>ПараметрыОтчета2023Кв2УФ</Form>
 			<Template>АрхивСхемXSD</Template>
 			<Template>ПоказателиЗвит1С</Template>
 			<Template>СоставПоказателей2012Кв1</Template>
@@ -494,6 +496,24 @@
 			<Template>ФормаОтчета2023Кв1УФ_ПриложениеМЗЗ</Template>
 			<Template>ФормаОтчета2023Кв1УФ_ПриложениеДИЯ</Template>
 			<Template>ФормаОтчета2023Кв1УФ_СлужебныеДанные</Template>
+			<Template>СоставПоказателей2023Кв2УФ</Template>
+			<Template>ФормаОтчета2023Кв2УФ_Декларация</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеАВ</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеЗП</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеПН</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеТЦ</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеВП</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеРИ</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеПЗ</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеАМ</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеЦП</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеПП</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеКИК</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеМПЗ</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеМЗЗ</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеДИЯ</Template>
+			<Template>ФормаОтчета2023Кв2УФ_ПриложениеОВ</Template>
+			<Template>ФормаОтчета2023Кв2УФ_СлужебныеДанные</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

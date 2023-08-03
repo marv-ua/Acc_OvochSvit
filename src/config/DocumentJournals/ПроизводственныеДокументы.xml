@@ -130,6 +130,7 @@
 					<References>
 						<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеИзПереработки.Attribute.ПодразделениеОрганизации</xr:Item>
 						<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетПроизводстваЗаСмену.Attribute.ПодразделениеОрганизации</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ТребованиеНакладная.Attribute.ПодразделениеОрганизации</xr:Item>
 					</References>
 				</Properties>
 			</Column>

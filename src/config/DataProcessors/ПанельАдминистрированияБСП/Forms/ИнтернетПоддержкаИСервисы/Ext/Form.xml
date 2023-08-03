@@ -775,7 +775,7 @@
 									</v8:item>
 									<v8:item>
 										<v8:lang>uk</v8:lang>
-										<v8:content>Оновлення класифікаторів з файлу на локальному жорсткому диску, мережевий папці або завантаження з Порталу ІТС.</v8:content>
+										<v8:content>Оновлення класифікаторів з файлу на локальному жорсткому диску, мережевій папці або завантаження з Порталу ІТС.</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -1605,88 +1605,6 @@
 				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ОпендатаботГруппаНастройки" id="1866">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Опендатабот.Ризики</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>uk</v8:lang>
-					<v8:content>Опендатабот.Ризики</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>НСИСГруппа настройки</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>uk</v8:lang>
-					<v8:content>НСИС Группа настройка</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Vertical</Group>
-			<Behavior>Collapsible</Behavior>
-			<Collapsed>true</Collapsed>
-			<ControlRepresentation>Picture</ControlRepresentation>
-			<Representation>NormalSeparation</Representation>
-			<ChildItemsWidth>Equal</ChildItemsWidth>
-			<ExtendedTooltip name="ОпендатаботГруппаНастройкиРасширеннаяПодсказка" id="1867"/>
-			<ChildItems>
-				<UsualGroup name="ОпендатаботГруппа" id="1887">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Опендатабот группа</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Опендатабот група</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Опендатабот группа</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Опендатабот група</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>AlwaysHorizontal</Group>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ОпендатаботГруппаРасширеннаяПодсказка" id="1888"/>
-					<ChildItems>
-						<InputField name="ОпендатаботКлючАПИ" id="1871">
-							<DataPath>ОпендатаботКлючАПИ</DataPath>
-							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<ContextMenu name="ОпендатаботКлючАПИКонтекстноеМеню" id="1872"/>
-							<ExtendedTooltip name="ОпендатаботКлючАПИРасширеннаяПодсказка" id="1873"/>
-							<Events>
-								<Event name="OnChange">ОпендатаботКлючАПИПриИзменении</Event>
-							</Events>
-						</InputField>
-						<Button name="КнопкаОпендатаботПроверитьКлючАПИ" id="1889">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ОпендатаботПроверитьКлючАПИ</CommandName>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Проверить</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>Перевірити</v8:content>
-								</v8:item>
-							</Title>
-							<ExtendedTooltip name="КнопкаОпендатаботПроверитьКлючАПИРасширеннаяПодсказка" id="1890"/>
-						</Button>
-					</ChildItems>
-				</UsualGroup>
-			</ChildItems>
-		</UsualGroup>
 		<UsualGroup name="ПактумКонтрагентГруппаНастройки" id="1874">
 			<Title>
 				<v8:item>
@@ -1946,25 +1864,6 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ОпендатаботКлючАПИ" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Пинкод</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>uk</v8:lang>
-					<v8:content>Пінкод</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>60</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="БИПВойтиИлиВыйти" id="1">
@@ -2141,29 +2040,6 @@
 				</v8:item>
 			</Title>
 			<Action>БИПОбновлениеКлассификаторов</Action>
-		</Command>
-		<Command name="ОпендатаботПроверитьКлючАПИ" id="10">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Опендатабот проверить пинкод</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>uk</v8:lang>
-					<v8:content>Опендатабот перевірити пінкод</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Опендатабот проверить пинкод</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>uk</v8:lang>
-					<v8:content>Опендатабот перевірити пінкод</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОпендатаботПроверитьКлючАПИ</Action>
 		</Command>
 	</Commands>
 </Form>

@@ -486,6 +486,9 @@
 									<Width>13</Width>
 									<ContextMenu name="ДокументыЗвит1СДатаРегистрацииКонтекстноеМеню" id="67"/>
 									<ExtendedTooltip name="ДокументыЗвит1СДатаРегистрацииРасширеннаяПодсказка" id="68"/>
+									<Events>
+										<Event name="OnChange">ДокументыЗвит1СДатаРегистрацииПриИзменении</Event>
+									</Events>
 								</InputField>
 							</ChildItems>
 						</ColumnGroup>

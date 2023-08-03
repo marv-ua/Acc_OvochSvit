@@ -245,6 +245,11 @@
 										<CommandName>Form.Command.ПодборТовары</CommandName>
 										<ExtendedTooltip name="ТоварыПодборТоварыРасширеннаяПодсказка" id="360"/>
 									</Button>
+									<Button name="ТоварыЗаполнитьПоОстаткам" id="380">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаполнитьПоОстаткам</CommandName>
+										<ExtendedTooltip name="ТоварыЗаполнитьПоОстаткамРасширеннаяПодсказка" id="381"/>
+									</Button>
 									<Button name="ТоварыЗаполнитьПоПартиям" id="361">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ЗаполнитьПоПартиям</CommandName>
@@ -1459,6 +1464,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПодборТовары</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ЗаполнитьПоПартиям" id="2">
@@ -1475,14 +1481,15 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить по партиям</v8:content>
+					<v8:content>Заполнить в строках документ партии, подбирая его из доступных остатков</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Заповнити за партіями</v8:content>
+					<v8:content>Заповнити у рядках документ партії, підбираючи його з доступних залишків</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаполнитьПоПартиям</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОбновитьСуммы" id="3">
@@ -1507,7 +1514,32 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбновитьСуммы</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьПоОстаткам" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить остатками</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити залишками</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по остаткам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити за залишками</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоОстаткам</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 	</Commands>
 </Form>

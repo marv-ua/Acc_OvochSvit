@@ -405,7 +405,7 @@
 												</v8:item>
 												<v8:item>
 													<v8:lang>uk</v8:lang>
-													<v8:content>Ім'я (перемикання оцінки незаповненого)</v8:content>
+													<v8:content>Ім'я (перемикання позначки незаповненого)</v8:content>
 												</v8:item>
 											</Title>
 											<PagesRepresentation>None</PagesRepresentation>
@@ -419,7 +419,7 @@
 														</v8:item>
 														<v8:item>
 															<v8:lang>uk</v8:lang>
-															<v8:content>Ім'я з оцінкою незаповненого</v8:content>
+															<v8:content>Ім'я з позначкою незаповненого</v8:content>
 														</v8:item>
 													</Title>
 													<ExtendedTooltip name="ИмяСОтметкойНезаполненногоРасширеннаяПодсказка" id="241"/>
@@ -443,7 +443,7 @@
 														</v8:item>
 														<v8:item>
 															<v8:lang>uk</v8:lang>
-															<v8:content>Ім'я без оцінки незаповненого</v8:content>
+															<v8:content>Ім'я без позначки незаповненого</v8:content>
 														</v8:item>
 													</Title>
 													<ExtendedTooltip name="ИмяБезОтметкиНезаполненногоРасширеннаяПодсказка" id="246"/>

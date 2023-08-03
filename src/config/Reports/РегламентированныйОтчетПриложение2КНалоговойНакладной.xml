@@ -335,6 +335,7 @@
 			<Form>ФормаОтчета2021Мес3УФ</Form>
 			<Form>ФормаОтчета2022УФ</Form>
 			<Form>ФормаОтчета2023УФ</Form>
+			<Form>ФормаОтчета2023Мес7УФ</Form>
 			<Template>ПоказателиЗвит1С</Template>
 			<Template>СоставПоказателей2009</Template>
 			<Template>J1201202</Template>
@@ -398,6 +399,11 @@
 			<Template>ФормаОтчета2023УФ_НалоговыйДокумент</Template>
 			<Template>ФормаОтчета2023УФ_СлужебныеДанные</Template>
 			<Template>СоставПоказателей2023УФ</Template>
+			<Template>ФормаОтчета2023Мес7УФ_НалоговыйДокумент</Template>
+			<Template>ФормаОтчета2023Мес7УФ_СлужебныеДанные</Template>
+			<Template>СоставПоказателей2023Мес7УФ</Template>
+			<Template>F1201215</Template>
+			<Template>J1201215</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

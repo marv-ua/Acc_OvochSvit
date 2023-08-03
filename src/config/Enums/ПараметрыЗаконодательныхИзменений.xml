@@ -112,6 +112,22 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="b7c03990-38e5-4003-a5ac-55747eafccf9">
+				<Properties>
+					<Name>ДатаНачалаИспользованияФормыНН15</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала использования формы налоговых документов № 15</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дата початку використання форми податкових документів № 15</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

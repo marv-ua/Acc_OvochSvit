@@ -93,11 +93,6 @@
 									</Title>
 									<ExtendedTooltip name="КнопкаЗаполнитьПоВзаиморасчетамРасширеннаяПодсказка" id="43"/>
 								</Button>
-								<Button name="ФормаЗаполнитьПоПоступлениям" id="77">
-									<Type>CommandBarButton</Type>
-									<CommandName>Form.Command.ЗаполнитьПоПоступлениям</CommandName>
-									<ExtendedTooltip name="ФормаЗаполнитьПоПоступлениямРасширеннаяПодсказка" id="78"/>
-								</Button>
 							</ChildItems>
 						</Popup>
 					</ChildItems>
@@ -481,25 +476,6 @@
 			</ToolTip>
 			<Action>ЗаполнитьПоОплате</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
-		</Command>
-		<Command name="ЗаполнитьПоПоступлениям" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Заповнити за надходженнями</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>uk</v8:lang>
-					<v8:content>За надходженнями</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>uk</v8:lang>
-					<v8:content>Заполнить по поступлениям</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ЗаполнитьПоПоступлениям</Action>
 		</Command>
 	</Commands>
 </Form>

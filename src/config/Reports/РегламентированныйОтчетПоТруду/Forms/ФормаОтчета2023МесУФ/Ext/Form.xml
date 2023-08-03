@@ -39,7 +39,7 @@
 					</Button>
 					<Button name="Записать" id="1">
 						<Type>CommandBarButton</Type>
-						<Representation>Text</Representation>
+						<Representation>PictureAndText</Representation>
 						<DefaultButton>true</DefaultButton>
 						<SkipOnInput>false</SkipOnInput>
 						<CommandName>Form.Command.СохранитьОтчет</CommandName>
@@ -187,16 +187,18 @@
 			</ButtonGroup>
 			<Button name="Обновить" id="3">
 				<Type>CommandBarButton</Type>
-				<Representation>Text</Representation>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Command.Обновить</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Refresh</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
 				<ToolTipRepresentation>None</ToolTipRepresentation>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ОбновитьExtendedTooltip" id="151"/>
 			</Button>
 			<Button name="ОткрытьФормуНастроек" id="4">
 				<Type>CommandBarButton</Type>
-				<Representation>Text</Representation>
 				<SkipOnInput>false</SkipOnInput>
 				<CommandName>Form.Command.ОткрытьФормуНастроек</CommandName>
 				<ToolTipRepresentation>None</ToolTipRepresentation>
@@ -2015,8 +2017,12 @@
 					<v8:content>Настройка...</v8:content>
 				</v8:item>
 			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.ReportSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ОткрытьФормуНастроек</Action>
-			<Representation>Text</Representation>
+			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОчиститьОтчет" id="7">
@@ -2068,13 +2074,17 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Записать</v8:content>
+					<v8:content>Сохранить</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Записати</v8:content>
+					<v8:content>Зберегти</v8:content>
 				</v8:item>
 			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>СохранитьОтчет</Action>
 			<Representation>Text</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>

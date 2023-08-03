@@ -24,7 +24,7 @@
 		</Properties>
 		<ChildObjects>
 			<Subsystem>НСИС</Subsystem>
-			<Subsystem>Опендатабот</Subsystem>
+			<Subsystem>НеИспользуетсяОпендатабот</Subsystem>
 			<Subsystem>Пактум_СервисКонтрагент</Subsystem>
 		</ChildObjects>
 	</Subsystem>
