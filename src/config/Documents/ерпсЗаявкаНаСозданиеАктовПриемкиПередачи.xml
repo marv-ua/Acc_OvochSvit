@@ -781,6 +781,7 @@
 			<Form>ФормаДокумента</Form>
 			<Form>ФормаВыбораКонтрагента</Form>
 			<Form>ФормаСписка</Form>
+			<Form>ФормаУстановкиРеквизитовПоУмолчанию</Form>
 			<TabularSection uuid="a6c60c37-15fd-488d-8f4a-8586094eea61">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи.Товары" category="TabularSection">
