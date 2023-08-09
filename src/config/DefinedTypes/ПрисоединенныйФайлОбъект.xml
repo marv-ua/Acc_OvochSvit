@@ -58,6 +58,7 @@
 				<v8:Type>cfg:CatalogObject.Приложение2КНалоговойНакладнойПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ДепонированиеЗарплатыПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПриходныйКассовыйОрдерПрисоединенныеФайлы</v8:Type>
+				<v8:Type>cfg:CatalogObject.ерпсАктПриемкиПередачиТоваровПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПриемНаРаботуПрисоединенныеФайлы</v8:Type>
 			</Type>
 		</Properties>

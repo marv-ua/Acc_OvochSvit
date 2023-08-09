@@ -35,6 +35,7 @@
 				<v8:Type>cfg:DocumentObject.РасходныйКассовыйОрдер</v8:Type>
 				<v8:Type>cfg:DocumentObject.ВедомостьНаВыплатуЗарплатыВБанк</v8:Type>
 				<v8:Type>cfg:DocumentObject.ПлатежноеПоручение</v8:Type>
+				<v8:Type>cfg:DocumentObject.ерпсАктПриемкиПередачиТоваров</v8:Type>
 				<v8:Type>cfg:DocumentObject.КорректировкаДолга</v8:Type>
 				<v8:Type>cfg:DocumentObject.ОтчетКомиссионераОПродажах</v8:Type>
 				<v8:Type>cfg:DocumentObject.ПриемНаРаботу</v8:Type>

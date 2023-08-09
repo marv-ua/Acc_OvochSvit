@@ -47,6 +47,7 @@
 				<v8:Type>cfg:CatalogManager.РасходныйКассовыйОрдерПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogManager.ВозвратТоваровПоставщикуПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogManager.ПриходныйКассовыйОрдерПрисоединенныеФайлы</v8:Type>
+				<v8:Type>cfg:CatalogManager.ерпсАктПриемкиПередачиТоваровПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogManager.ПриемНаРаботуПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogManager.ВозвратТоваровОтПокупателяПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogManager.АвансовыйОтчетПрисоединенныеФайлы</v8:Type>
