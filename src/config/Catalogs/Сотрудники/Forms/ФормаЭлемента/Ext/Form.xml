@@ -494,6 +494,16 @@
 													<ContextMenu name="ПраваКонтекстноеМеню" id="701"/>
 													<ExtendedTooltip name="ПраваРасширеннаяПодсказка" id="702"/>
 												</InputField>
+												<InputField name="а_Авто" id="703">
+													<DataPath>Сотрудник.а_Авто</DataPath>
+													<ContextMenu name="а_АвтоКонтекстноеМеню" id="704"/>
+													<ExtendedTooltip name="а_АвтоРасширеннаяПодсказка" id="705"/>
+												</InputField>
+												<InputField name="а_Прицеп" id="706">
+													<DataPath>Сотрудник.а_Прицеп</DataPath>
+													<ContextMenu name="а_ПрицепКонтекстноеМеню" id="707"/>
+													<ExtendedTooltip name="а_ПрицепРасширеннаяПодсказка" id="708"/>
+												</InputField>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="РегистрационныеНомераПояснения" id="589">

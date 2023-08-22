@@ -21,6 +21,7 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.а_Периоды</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПунктыРазгрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.а_НастройкиЗагрузкиЗаявок</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

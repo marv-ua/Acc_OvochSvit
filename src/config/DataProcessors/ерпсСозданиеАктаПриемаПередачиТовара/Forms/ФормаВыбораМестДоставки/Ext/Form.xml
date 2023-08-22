@@ -72,6 +72,7 @@
 					<Button name="ВыбранныеМестаДобавитьПункт" id="79">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ДобавитьПункт</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 						<ExtendedTooltip name="ВыбранныеМестаДобавитьПунктРасширеннаяПодсказка" id="80"/>
 					</Button>
 					<Button name="ВыбранныеМестаВыбратьВсеВидыЦен" id="69">
@@ -83,6 +84,21 @@
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ИсключитьВсеМеста</CommandName>
 						<ExtendedTooltip name="ВыбранныеМестаИсключитьВсеВидыЦенРасширеннаяПодсказка" id="72"/>
+					</Button>
+					<Button name="ФильтрВыбранные" id="81">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ФильтрВыбранные</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выбранные</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Обрані</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФильтрВыбранныеРасширеннаяПодсказка" id="82"/>
 					</Button>
 				</ChildItems>
 			</AutoCommandBar>
@@ -701,6 +717,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДобавитьПункт</Action>
+		</Command>
+		<Command name="ФильтрВыбранные" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Фильтр выбранные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Фильтр выбранные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ФильтрВыбранные</Action>
 		</Command>
 	</Commands>
 	<Parameters>

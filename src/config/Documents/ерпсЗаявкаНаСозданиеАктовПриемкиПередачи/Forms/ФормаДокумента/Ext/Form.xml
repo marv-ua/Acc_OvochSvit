@@ -71,6 +71,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -187,6 +188,7 @@
 					<ExtendedTooltip name="ГруппаШапкаПравоРасширеннаяПодсказка" id="57"/>
 					<ChildItems>
 						<LabelDecoration name="Декорация1" id="58">
+							<Visible>false</Visible>
 							<ContextMenu name="Декорация1КонтекстноеМеню" id="59"/>
 							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="60"/>
 						</LabelDecoration>
@@ -205,6 +207,62 @@
 							<ContextMenu name="СкладКонтекстноеМеню" id="126"/>
 							<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="127"/>
 						</InputField>
+						<Table name="ИтогиПоВодителям" id="203">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<Height>3</Height>
+							<HeightInTableRows>3</HeightInTableRows>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<HorizontalStretch>false</HorizontalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ИтогиПоВодителям</DataPath>
+							<Font ref="style:SmallTextFont" kind="StyleItem"/>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ИтогиПоВодителямКонтекстноеМеню" id="204"/>
+							<AutoCommandBar name="ИтогиПоВодителямКоманднаяПанель" id="205"/>
+							<ExtendedTooltip name="ИтогиПоВодителямРасширеннаяПодсказка" id="206"/>
+							<SearchStringAddition name="ИтогиПоВодителямСтрокаПоиска" id="207">
+								<AdditionSource>
+									<Item>ИтогиПоВодителям</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИтогиПоВодителямСтрокаПоискаКонтекстноеМеню" id="208"/>
+								<ExtendedTooltip name="ИтогиПоВодителямСтрокаПоискаРасширеннаяПодсказка" id="209"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИтогиПоВодителямСостояниеПросмотра" id="210">
+								<AdditionSource>
+									<Item>ИтогиПоВодителям</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИтогиПоВодителямСостояниеПросмотраКонтекстноеМеню" id="211"/>
+								<ExtendedTooltip name="ИтогиПоВодителямСостояниеПросмотраРасширеннаяПодсказка" id="212"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИтогиПоВодителямУправлениеПоиском" id="213">
+								<AdditionSource>
+									<Item>ИтогиПоВодителям</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИтогиПоВодителямУправлениеПоискомКонтекстноеМеню" id="214"/>
+								<ExtendedTooltip name="ИтогиПоВодителямУправлениеПоискомРасширеннаяПодсказка" id="215"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ИтогиПоВодителямВодитель" id="216">
+									<DataPath>ИтогиПоВодителям.Водитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИтогиПоВодителямВодительКонтекстноеМеню" id="217"/>
+									<ExtendedTooltip name="ИтогиПоВодителямВодительРасширеннаяПодсказка" id="218"/>
+								</InputField>
+								<InputField name="ИтогиПоВодителямИтог" id="219">
+									<DataPath>ИтогиПоВодителям.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИтогиПоВодителямИтогКонтекстноеМеню" id="220"/>
+									<ExtendedTooltip name="ИтогиПоВодителямИтогРасширеннаяПодсказка" id="221"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -254,6 +312,33 @@
 							<ContextMenu name="ТоварыКонтекстноеМеню" id="20"/>
 							<AutoCommandBar name="ТоварыКоманднаяПанель" id="21">
 								<ChildItems>
+									<Popup name="ТоварыГруппаЗагрузка" id="193">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Загрузка</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Завантаження</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Товары группа загрузка</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ТоварыГруппаЗагрузкаРасширеннаяПодсказка" id="194"/>
+										<ChildItems>
+											<Button name="ТоварыЗагрузитьЗаявку" id="195">
+												<Type>CommandBarButton</Type>
+												<Visible>false</Visible>
+												<CommandName>Form.Command.ЗагрузитьЗаявку</CommandName>
+												<ExtendedTooltip name="ТоварыЗагрузитьЗаявкуРасширеннаяПодсказка" id="196"/>
+											</Button>
+										</ChildItems>
+									</Popup>
 									<Button name="ТоварыЗагрузитьИзВнешнегоФайла" id="65">
 										<Type>CommandBarButton</Type>
 										<Representation>PictureAndText</Representation>
@@ -291,6 +376,9 @@
 								<ContextMenu name="ТоварыУправлениеПоискомКонтекстноеМеню" id="30"/>
 								<ExtendedTooltip name="ТоварыУправлениеПоискомРасширеннаяПодсказка" id="31"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ТоварыПриИзменении</Event>
+							</Events>
 							<ChildItems>
 								<LabelField name="ТоварыНомерСтроки" id="32">
 									<DataPath>Объект.Товары.LineNumber</DataPath>
@@ -413,6 +501,23 @@
 							<ContextMenu name="ПунктыРазгрузкиКонтекстноеМеню" id="77"/>
 							<AutoCommandBar name="ПунктыРазгрузкиКоманднаяПанель" id="78">
 								<ChildItems>
+									<ButtonGroup name="ПунктыРазгрузкиГруппа8" id="201">
+										<ExtendedTooltip name="ПунктыРазгрузкиГруппа8РасширеннаяПодсказка" id="202"/>
+										<ChildItems>
+											<Button name="ПунктыРазгрузкиСортироватьСписокПоВозрастанию" id="197">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ПунктыРазгрузки.StandardCommand.SortListAsc</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ПунктыРазгрузкиСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="198"/>
+											</Button>
+											<Button name="ПунктыРазгрузкиСортироватьСписокПоУбыванию" id="199">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.ПунктыРазгрузки.StandardCommand.SortListDesc</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ПунктыРазгрузкиСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="200"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
 									<Button name="ПунктыРазгрузкиОбновитьПунктыРазгрузки" id="187">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ОбновитьПунктыРазгрузки</CommandName>
@@ -450,6 +555,9 @@
 								<ContextMenu name="ПунктыРазгрузкиУправлениеПоискомКонтекстноеМеню" id="87"/>
 								<ExtendedTooltip name="ПунктыРазгрузкиУправлениеПоискомРасширеннаяПодсказка" id="88"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ПунктыРазгрузкиПриИзменении</Event>
+							</Events>
 							<ChildItems>
 								<LabelField name="ПунктыРазгрузкиНомерСтроки" id="89">
 									<DataPath>Объект.ПунктыРазгрузки.LineNumber</DataPath>
@@ -547,10 +655,10 @@
 									</ChildItems>
 								</ColumnGroup>
 								<ColumnGroup name="ПунктыРазгрузкиГруппа3" id="162">
+									<Group>Horizontal</Group>
 									<ExtendedTooltip name="ПунктыРазгрузкиГруппа3РасширеннаяПодсказка" id="163"/>
 									<ChildItems>
 										<ColumnGroup name="ПунктыРазгрузкиГруппа6" id="177">
-											<Group>Horizontal</Group>
 											<ExtendedTooltip name="ПунктыРазгрузкиГруппа6РасширеннаяПодсказка" id="178"/>
 											<ChildItems>
 												<InputField name="ПунктыРазгрузкиВодитель" id="146">
@@ -558,33 +666,36 @@
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="ПунктыРазгрузкиВодительКонтекстноеМеню" id="147"/>
 													<ExtendedTooltip name="ПунктыРазгрузкиВодительРасширеннаяПодсказка" id="148"/>
+													<Events>
+														<Event name="OnChange">ПунктыРазгрузкиВодительПриИзменении</Event>
+													</Events>
 												</InputField>
-												<InputField name="ПунктыРазгрузкиПеревозчик" id="155">
-													<DataPath>Объект.ПунктыРазгрузки.Перевозчик</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ПунктыРазгрузкиПеревозчикКонтекстноеМеню" id="156"/>
-													<ExtendedTooltip name="ПунктыРазгрузкиПеревозчикРасширеннаяПодсказка" id="157"/>
-												</InputField>
+												<ColumnGroup name="ПунктыРазгрузкиГруппа7" id="179">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ПунктыРазгрузкиГруппа7РасширеннаяПодсказка" id="180"/>
+													<ChildItems>
+														<InputField name="ПунктыРазгрузкиАвто" id="149">
+															<DataPath>Объект.ПунктыРазгрузки.Авто</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ПунктыРазгрузкиАвтоКонтекстноеМеню" id="150"/>
+															<ExtendedTooltip name="ПунктыРазгрузкиАвтоРасширеннаяПодсказка" id="151"/>
+														</InputField>
+														<InputField name="ПунктыРазгрузкиПрицеп" id="152">
+															<DataPath>Объект.ПунктыРазгрузки.Прицеп</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ПунктыРазгрузкиПрицепКонтекстноеМеню" id="153"/>
+															<ExtendedTooltip name="ПунктыРазгрузкиПрицепРасширеннаяПодсказка" id="154"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
 											</ChildItems>
 										</ColumnGroup>
-										<ColumnGroup name="ПунктыРазгрузкиГруппа7" id="179">
-											<Group>Horizontal</Group>
-											<ExtendedTooltip name="ПунктыРазгрузкиГруппа7РасширеннаяПодсказка" id="180"/>
-											<ChildItems>
-												<InputField name="ПунктыРазгрузкиПрицеп" id="152">
-													<DataPath>Объект.ПунктыРазгрузки.Прицеп</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ПунктыРазгрузкиПрицепКонтекстноеМеню" id="153"/>
-													<ExtendedTooltip name="ПунктыРазгрузкиПрицепРасширеннаяПодсказка" id="154"/>
-												</InputField>
-												<InputField name="ПунктыРазгрузкиАвто" id="149">
-													<DataPath>Объект.ПунктыРазгрузки.Авто</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ПунктыРазгрузкиАвтоКонтекстноеМеню" id="150"/>
-													<ExtendedTooltip name="ПунктыРазгрузкиАвтоРасширеннаяПодсказка" id="151"/>
-												</InputField>
-											</ChildItems>
-										</ColumnGroup>
+										<InputField name="ПунктыРазгрузкиПеревозчик" id="155">
+											<DataPath>Объект.ПунктыРазгрузки.Перевозчик</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПунктыРазгрузкиПеревозчикКонтекстноеМеню" id="156"/>
+											<ExtendedTooltip name="ПунктыРазгрузкиПеревозчикРасширеннаяПодсказка" id="157"/>
+										</InputField>
 									</ChildItems>
 								</ColumnGroup>
 							</ChildItems>
@@ -669,6 +780,46 @@
 			<Type>
 				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="ИтогиПоВодителям" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Итоги по водителям</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Водитель" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Водитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
@@ -816,6 +967,30 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СохранитьЗначенияПоУмолчанию</Action>
+		</Command>
+		<Command name="ЗагрузитьЗаявку" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить заявку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити заявку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загрузить заявку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ФорматExcel2007</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьЗаявку</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>

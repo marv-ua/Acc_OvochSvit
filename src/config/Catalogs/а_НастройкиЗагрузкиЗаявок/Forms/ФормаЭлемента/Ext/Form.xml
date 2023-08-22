@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="28">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Контрагент" id="7">
+			<DataPath>Объект.Контрагент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">КонтрагентПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ТипФайла" id="10">
+			<DataPath>Объект.ТипФайла</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТипФайлаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТипФайлаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ПерваяСтрока" id="13">
+			<DataPath>Объект.ПерваяСтрока</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПерваяСтрокаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПерваяСтрокаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="33">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<InputField name="СтрокаПунктРазгрузки" id="16">
+					<DataPath>Объект.СтрокаПунктРазгрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СтрокаПунктРазгрузкиКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="СтрокаПунктРазгрузкиРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="КолонкаПунктРазгрузки" id="30">
+					<DataPath>Объект.КолонкаПунктРазгрузки</DataPath>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<ContextMenu name="КолонкаПунктРазгрузкиКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="КолонкаПунктРазгрузкиРасширеннаяПодсказка" id="32"/>
+					<Events>
+						<Event name="OnChange">КолонкаПунктРазгрузкиПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="КолонкаАртикул" id="22">
+			<DataPath>Объект.КолонкаАртикул</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КолонкаАртикулКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="КолонкаАртикулРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="КолонкаНоменклатуры" id="19">
+			<DataPath>Объект.КолонкаНоменклатуры</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КолонкаНоменклатурыКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КолонкаНоменклатурыРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="КолонкаКоличество" id="25">
+			<DataPath>Объект.КолонкаКоличество</DataPath>
+			<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КолонкаКоличествоКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="КолонкаКоличествоРасширеннаяПодсказка" id="27"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.а_НастройкиЗагрузкиЗаявок</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
