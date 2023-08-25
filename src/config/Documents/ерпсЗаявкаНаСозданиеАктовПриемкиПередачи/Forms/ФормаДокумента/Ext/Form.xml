@@ -207,81 +207,69 @@
 							<ContextMenu name="СкладКонтекстноеМеню" id="126"/>
 							<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="127"/>
 						</InputField>
-						<UsualGroup name="Группа1" id="234">
-							<Group>AlwaysHorizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="235"/>
+						<Table name="ИтогиПоВодителям" id="203">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<HeightInTableRows>4</HeightInTableRows>
+							<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<VerticalStretch>false</VerticalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ИтогиПоВодителям</DataPath>
+							<Font ref="style:SmallTextFont" kind="StyleItem"/>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ИтогиПоВодителямКонтекстноеМеню" id="204"/>
+							<AutoCommandBar name="ИтогиПоВодителямКоманднаяПанель" id="205"/>
+							<ExtendedTooltip name="ИтогиПоВодителямРасширеннаяПодсказка" id="206"/>
+							<SearchStringAddition name="ИтогиПоВодителямСтрокаПоиска" id="207">
+								<AdditionSource>
+									<Item>ИтогиПоВодителям</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИтогиПоВодителямСтрокаПоискаКонтекстноеМеню" id="208"/>
+								<ExtendedTooltip name="ИтогиПоВодителямСтрокаПоискаРасширеннаяПодсказка" id="209"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИтогиПоВодителямСостояниеПросмотра" id="210">
+								<AdditionSource>
+									<Item>ИтогиПоВодителям</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИтогиПоВодителямСостояниеПросмотраКонтекстноеМеню" id="211"/>
+								<ExtendedTooltip name="ИтогиПоВодителямСостояниеПросмотраРасширеннаяПодсказка" id="212"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИтогиПоВодителямУправлениеПоиском" id="213">
+								<AdditionSource>
+									<Item>ИтогиПоВодителям</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИтогиПоВодителямУправлениеПоискомКонтекстноеМеню" id="214"/>
+								<ExtendedTooltip name="ИтогиПоВодителямУправлениеПоискомРасширеннаяПодсказка" id="215"/>
+							</SearchControlAddition>
 							<ChildItems>
-								<Table name="ИтогиПоВодителям" id="203">
-									<Representation>List</Representation>
-									<CommandBarLocation>None</CommandBarLocation>
-									<ReadOnly>true</ReadOnly>
-									<HeightInTableRows>4</HeightInTableRows>
-									<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
-									<Header>false</Header>
-									<AutoInsertNewRow>true</AutoInsertNewRow>
-									<VerticalStretch>false</VerticalStretch>
-									<EnableStartDrag>true</EnableStartDrag>
-									<EnableDrag>true</EnableDrag>
-									<DataPath>ИтогиПоВодителям</DataPath>
-									<Font ref="style:SmallTextFont" kind="StyleItem"/>
-									<RowFilter xsi:nil="true"/>
-									<ContextMenu name="ИтогиПоВодителямКонтекстноеМеню" id="204"/>
-									<AutoCommandBar name="ИтогиПоВодителямКоманднаяПанель" id="205"/>
-									<ExtendedTooltip name="ИтогиПоВодителямРасширеннаяПодсказка" id="206"/>
-									<SearchStringAddition name="ИтогиПоВодителямСтрокаПоиска" id="207">
-										<AdditionSource>
-											<Item>ИтогиПоВодителям</Item>
-											<Type>SearchStringRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="ИтогиПоВодителямСтрокаПоискаКонтекстноеМеню" id="208"/>
-										<ExtendedTooltip name="ИтогиПоВодителямСтрокаПоискаРасширеннаяПодсказка" id="209"/>
-									</SearchStringAddition>
-									<ViewStatusAddition name="ИтогиПоВодителямСостояниеПросмотра" id="210">
-										<AdditionSource>
-											<Item>ИтогиПоВодителям</Item>
-											<Type>ViewStatusRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="ИтогиПоВодителямСостояниеПросмотраКонтекстноеМеню" id="211"/>
-										<ExtendedTooltip name="ИтогиПоВодителямСостояниеПросмотраРасширеннаяПодсказка" id="212"/>
-									</ViewStatusAddition>
-									<SearchControlAddition name="ИтогиПоВодителямУправлениеПоиском" id="213">
-										<AdditionSource>
-											<Item>ИтогиПоВодителям</Item>
-											<Type>SearchControl</Type>
-										</AdditionSource>
-										<ContextMenu name="ИтогиПоВодителямУправлениеПоискомКонтекстноеМеню" id="214"/>
-										<ExtendedTooltip name="ИтогиПоВодителямУправлениеПоискомРасширеннаяПодсказка" id="215"/>
-									</SearchControlAddition>
-									<ChildItems>
-										<InputField name="ИтогиПоВодителямВодитель" id="216">
-											<DataPath>ИтогиПоВодителям.Водитель</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ИтогиПоВодителямВодительКонтекстноеМеню" id="217"/>
-											<ExtendedTooltip name="ИтогиПоВодителямВодительРасширеннаяПодсказка" id="218"/>
-										</InputField>
-										<InputField name="ИтогиПоВодителямАвто" id="228">
-											<DataPath>ИтогиПоВодителям.Авто</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ShowInHeader>false</ShowInHeader>
-											<ContextMenu name="ИтогиПоВодителямАвтоКонтекстноеМеню" id="229"/>
-											<ExtendedTooltip name="ИтогиПоВодителямАвтоРасширеннаяПодсказка" id="230"/>
-										</InputField>
-										<InputField name="ИтогиПоВодителямИтог" id="219">
-											<DataPath>ИтогиПоВодителям.Количество</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ИтогиПоВодителямИтогКонтекстноеМеню" id="220"/>
-											<ExtendedTooltip name="ИтогиПоВодителямИтогРасширеннаяПодсказка" id="221"/>
-										</InputField>
-									</ChildItems>
-								</Table>
-								<PictureDecoration name="Декорация2" id="231">
-									<ContextMenu name="Декорация2КонтекстноеМеню" id="232"/>
-									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="233"/>
-								</PictureDecoration>
+								<InputField name="ИтогиПоВодителямВодитель" id="216">
+									<DataPath>ИтогиПоВодителям.Водитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИтогиПоВодителямВодительКонтекстноеМеню" id="217"/>
+									<ExtendedTooltip name="ИтогиПоВодителямВодительРасширеннаяПодсказка" id="218"/>
+								</InputField>
+								<InputField name="ИтогиПоВодителямАвто" id="228">
+									<DataPath>ИтогиПоВодителям.Авто</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<ContextMenu name="ИтогиПоВодителямАвтоКонтекстноеМеню" id="229"/>
+									<ExtendedTooltip name="ИтогиПоВодителямАвтоРасширеннаяПодсказка" id="230"/>
+								</InputField>
+								<InputField name="ИтогиПоВодителямИтог" id="219">
+									<DataPath>ИтогиПоВодителям.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИтогиПоВодителямИтогКонтекстноеМеню" id="220"/>
+									<ExtendedTooltip name="ИтогиПоВодителямИтогРасширеннаяПодсказка" id="221"/>
+								</InputField>
 							</ChildItems>
-						</UsualGroup>
+						</Table>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -328,7 +316,15 @@
 							<EnableDrag>true</EnableDrag>
 							<DataPath>Объект.Товары</DataPath>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ТоварыКонтекстноеМеню" id="20"/>
+							<ContextMenu name="ТоварыКонтекстноеМеню" id="20">
+								<ChildItems>
+									<Button name="ТоварыКонтекстноеМенюОбработано" id="231">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Обработано</CommandName>
+										<ExtendedTooltip name="ТоварыКонтекстноеМенюОбработаноРасширеннаяПодсказка" id="232"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
 							<AutoCommandBar name="ТоварыКоманднаяПанель" id="21">
 								<ChildItems>
 									<Popup name="ТоварыГруппаЗагрузка" id="193">
@@ -534,7 +530,15 @@
 							<EnableDrag>true</EnableDrag>
 							<DataPath>Объект.ПунктыРазгрузки</DataPath>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ПунктыРазгрузкиКонтекстноеМеню" id="77"/>
+							<ContextMenu name="ПунктыРазгрузкиКонтекстноеМеню" id="77">
+								<ChildItems>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюОбработано" id="233">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Обработано</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюОбработаноРасширеннаяПодсказка" id="234"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
 							<AutoCommandBar name="ПунктыРазгрузкиКоманднаяПанель" id="78">
 								<ChildItems>
 									<ButtonGroup name="ПунктыРазгрузкиГруппа8" id="201">
@@ -889,6 +893,118 @@
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТоварыНомерСтроки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТоварыЗагруженнаяНоменклатура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТоварыЗагруженныйДополнительныеАртикулы</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТоварыНоменклатура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТоварыДополнительныеАртикулы</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТоварыЕдиницаИзмерения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТоварыЗагруженноеКоличество</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТоварыКоличество</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТоварыАдресДоставки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТоварыИдентификатор</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТоварыПримечание</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТоварыЗагрузитьЗаявку</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Товары.Обработано</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ДобавленныйРеквизитФон</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиНомерСтроки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиОрганизация</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиСклад</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиКонтрагент</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиДоговор</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиПунктРазгрузки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиДатаОтгрузки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиКоличество</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиКонтактноеЛицо</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиКонтактныеДанные</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиВодитель</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиАвто</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиПрицеп</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиПеревозчик</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.Обработано</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ДобавленныйРеквизитФон</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
 		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
@@ -1037,6 +1153,30 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗагрузитьЗаявку</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Обработано" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработано</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обработано</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обработано</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СинхронизацияДанныхКоллизия</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обработано</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
