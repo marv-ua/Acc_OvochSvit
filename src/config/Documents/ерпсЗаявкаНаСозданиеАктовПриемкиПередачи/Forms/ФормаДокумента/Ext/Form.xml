@@ -221,7 +221,15 @@
 							<DataPath>ИтогиПоВодителям</DataPath>
 							<Font ref="style:SmallTextFont" kind="StyleItem"/>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ИтогиПоВодителямКонтекстноеМеню" id="204"/>
+							<ContextMenu name="ИтогиПоВодителямКонтекстноеМеню" id="204">
+								<ChildItems>
+									<Button name="ИтогиПоВодителямКонтекстноеМенюПечатьЗаявкиПоВодителю" id="235">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПечатьЗаявкиПоВодителю</CommandName>
+										<ExtendedTooltip name="ИтогиПоВодителямКонтекстноеМенюПечатьЗаявкиПоВодителюРасширеннаяПодсказка" id="236"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
 							<AutoCommandBar name="ИтогиПоВодителямКоманднаяПанель" id="205"/>
 							<ExtendedTooltip name="ИтогиПоВодителямРасширеннаяПодсказка" id="206"/>
 							<SearchStringAddition name="ИтогиПоВодителямСтрокаПоиска" id="207">
@@ -536,6 +544,11 @@
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.Обработано</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюОбработаноРасширеннаяПодсказка" id="234"/>
+									</Button>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаказНаСборку" id="237">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПечатьЗаказНаСборку</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаказНаСборкуРасширеннаяПодсказка" id="238"/>
 									</Button>
 								</ChildItems>
 							</ContextMenu>
@@ -1178,6 +1191,53 @@
 			</Picture>
 			<Action>Обработано</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПечатьЗаявкиПоВодителю" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать заявки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк заявки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Печать заявки по водителю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьЗаявкиПоВодителю</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПечатьЗаказНаСборку" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ на сборку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заказ на сборку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Печать заказ на сборку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьЗаказНаСборку</Action>
 		</Command>
 	</Commands>
 </Form>
