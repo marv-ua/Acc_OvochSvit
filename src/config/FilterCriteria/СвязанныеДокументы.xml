@@ -194,6 +194,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеТоваров.TabularSection.Товары.Attribute.ДокументОприходования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ТребованиеНакладная.Attribute.ДокументОснование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ТребованиеНакладная.TabularSection.Материалы.Attribute.ДокументОприходования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи.Attribute.ДокументОснования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсАктПриемкиПередачиТоваров.Attribute.ЗаявкаНаСозданиеАктовПриемкиПередачи</xr:Item>
 			</Content>
 			<DefaultForm/>
