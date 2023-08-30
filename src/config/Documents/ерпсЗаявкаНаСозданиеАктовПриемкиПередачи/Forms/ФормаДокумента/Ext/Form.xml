@@ -517,6 +517,22 @@
 									<ContextMenu name="ТоварыИдентификаторКонтекстноеМеню" id="182"/>
 									<ExtendedTooltip name="ТоварыИдентификаторРасширеннаяПодсказка" id="183"/>
 								</InputField>
+								<InputField name="ТоварыЗаказаноВЭтотДень" id="247">
+									<DataPath>Объект.Товары.ЗаказаноВЭтотДень</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заказ.</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Замовл.</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыЗаказаноВЭтотДеньКонтекстноеМеню" id="248"/>
+									<ExtendedTooltip name="ТоварыЗаказаноВЭтотДеньРасширеннаяПодсказка" id="249"/>
+								</InputField>
 								<InputField name="ТоварыПримечание" id="44">
 									<DataPath>Объект.Товары.Примечание</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -840,6 +856,30 @@
 			<UseAlways>
 				<Field>Объект.RegisterRecords</Field>
 			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.Товары">
+					<Column name="ЗаказаноВЭтотДень" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заказано в этот день</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Замовлено в цей день</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>15</v8:Digits>
+								<v8:FractionDigits>3</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
 		</Attribute>
 		<Attribute name="СкладПоУмолчанию" id="2">
 			<Title>
