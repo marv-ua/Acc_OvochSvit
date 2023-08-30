@@ -128,8 +128,8 @@
 			Т.Ссылка) КАК ТТ
 		ПО (ТТ.Ссылка = ЗаявкаТовары.Ссылка)
 			И (ТТ.ПунктРазгрузки = ЗаявкаТовары.ПунктРазгрузки)
-ГДЕ
-	Заявка.Проведен
+//ГДЕ
+//	Заявка.Проведен
 {ГДЕ
 	(Заявка.Ссылка В (&amp;Заявка)),
 	(Заявка.Дата МЕЖДУ &amp;ПериодНачало И &amp;ПериодКонец)}</query>
@@ -682,7 +682,6 @@
 							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:use>false</dcsset:use>
 							<dcsset:field>Примечание</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
