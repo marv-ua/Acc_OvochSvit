@@ -1,0 +1,3392 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="249">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="250"/>
+			<ChildItems>
+				<InputField name="Период" id="246">
+					<DataPath>Период</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Месяц</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Місяць</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Left</TitleLocation>
+					<Width>22</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="247"/>
+					<ExtendedTooltip name="ПериодExtendedTooltip" id="248"/>
+					<Events>
+						<Event name="OnChange">ПериодПриИзменении</Event>
+						<Event name="AutoComplete">ПериодАвтоПодбор</Event>
+						<Event name="StartChoice">ПериодНачалоВыбора</Event>
+						<Event name="TextEditEnd">ПериодОкончаниеВводаТекста</Event>
+						<Event name="ChoiceProcessing">ПериодОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОрганизацияПодразделение" id="237">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа организация подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа организация подразделение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОрганизацияПодразделениеРасширеннаяПодсказка" id="238"/>
+			<ChildItems>
+				<InputField name="Организация" id="211">
+					<DataPath>Объект.Организация</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Організація</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="212"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="213"/>
+					<Events>
+						<Event name="OnChange">ОрганизацияПриИзменении</Event>
+						<Event name="StartChoice">ОрганизацияНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="Подразделение" id="259">
+					<DataPath>Объект.Подразделение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Підрозділ</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="260"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="261"/>
+					<Events>
+						<Event name="OnChange">ПодразделениеПриИзменении</Event>
+						<Event name="StartChoice">ПодразделениеНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа8" id="297">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="298"/>
+			<ChildItems>
+				<InputField name="Календарь" id="214">
+					<DataPath>Объект.Календарь</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Календарь</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Календар</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КалендарьКонтекстноеМеню" id="215"/>
+					<ExtendedTooltip name="КалендарьРасширеннаяПодсказка" id="216"/>
+					<Events>
+						<Event name="OnChange">КалендарьПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="ОткрытьКалендари" id="299">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОткрытьКалендари</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відкрити</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОткрытьКалендариРасширеннаяПодсказка" id="300"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="264">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="265"/>
+		</UsualGroup>
+		<Pages name="Группа4" id="271">
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="272"/>
+			<ChildItems>
+				<Page name="Группа5" id="273">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Табель</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Табель</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="274"/>
+					<ChildItems>
+						<Table name="Основная" id="1">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.Основная</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОсновнаяКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="ОсновнаяКоманднаяПанель" id="3">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ОсновнаяЗаполнитьАвтоматически" id="317">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ЗаполнитьАвтоматически</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Заполнить сотрудниками</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Заповнити співробітниками</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ОсновнаяЗаполнитьАвтоматическиРасширеннаяПодсказка" id="318"/>
+									</Button>
+									<Button name="ОсновнаяРассчитатьВсех" id="319">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.РассчитатьВсех</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.ExecuteTask</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Рассчитать всех</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Розрахувати всіх</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ОсновнаяРассчитатьВсехРасширеннаяПодсказка" id="320"/>
+									</Button>
+									<Button name="ОсновнаяДобавить" id="315">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.Основная.StandardCommand.Add</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Добавить сотрудника</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Додати співробітника</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ОсновнаяДобавитьРасширеннаяПодсказка" id="316"/>
+									</Button>
+									<Button name="ОсновнаяРассчитатьТекущего" id="321">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.РассчитатьТекущего</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Forward</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Рассчитать текущего</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Розрахувати поточного</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ОсновнаяРассчитатьТекущегоРасширеннаяПодсказка" id="322"/>
+									</Button>
+									<Button name="ОсновнаяПечать" id="323">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.Печать</CommandName>
+										<BackColor>style:FormBackColor</BackColor>
+										<BorderColor>style:ButtonBorderColor</BorderColor>
+										<Picture>
+											<xr:Ref>StdPicture.Print</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Печать</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Друк</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ОсновнаяПечатьРасширеннаяПодсказка" id="324"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ОсновнаяРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ОсновнаяСтрокаПоиска" id="301">
+								<AdditionSource>
+									<Item>Основная</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОсновнаяСтрокаПоискаКонтекстноеМеню" id="302"/>
+								<ExtendedTooltip name="ОсновнаяСтрокаПоискаРасширеннаяПодсказка" id="303"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОсновнаяСостояниеПросмотра" id="304">
+								<AdditionSource>
+									<Item>Основная</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОсновнаяСостояниеПросмотраКонтекстноеМеню" id="305"/>
+								<ExtendedTooltip name="ОсновнаяСостояниеПросмотраРасширеннаяПодсказка" id="306"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОсновнаяУправлениеПоиском" id="307">
+								<AdditionSource>
+									<Item>Основная</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОсновнаяУправлениеПоискомКонтекстноеМеню" id="308"/>
+								<ExtendedTooltip name="ОсновнаяУправлениеПоискомРасширеннаяПодсказка" id="309"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОсновнаяНомерСтроки" id="783">
+									<DataPath>Объект.Основная.LineNumber</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>№</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<FixingInTable>Left</FixingInTable>
+									<ContextMenu name="ОсновнаяНомерСтрокиКонтекстноеМеню" id="784"/>
+									<ExtendedTooltip name="ОсновнаяНомерСтрокиРасширеннаяПодсказка" id="785"/>
+								</LabelField>
+								<ColumnGroup name="ОсновнаяГруппа63" id="776">
+									<ExtendedTooltip name="ОсновнаяГруппа63РасширеннаяПодсказка" id="777"/>
+									<ChildItems>
+										<InputField name="ОсновнаяСотрудник" id="786">
+											<DataPath>Объект.Основная.Сотрудник</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<FixingInTable>Left</FixingInTable>
+											<ContextMenu name="ОсновнаяСотрудникКонтекстноеМеню" id="787"/>
+											<ExtendedTooltip name="ОсновнаяСотрудникРасширеннаяПодсказка" id="788"/>
+											<Events>
+												<Event name="OnChange">ОсновнаяСотрудникПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ОсновнаяДолжность" id="789">
+											<DataPath>Объект.Основная.Должность</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ОсновнаяДолжностьКонтекстноеМеню" id="790"/>
+											<ExtendedTooltip name="ОсновнаяДолжностьРасширеннаяПодсказка" id="791"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ОсновнаяТабельныйНомер" id="792">
+									<DataPath>Объект.Основная.ТабельныйНомер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновнаяТабельныйНомерКонтекстноеМеню" id="793"/>
+									<ExtendedTooltip name="ОсновнаяТабельныйНомерРасширеннаяПодсказка" id="794"/>
+								</InputField>
+								<InputField name="ОсновнаяВсего" id="795">
+									<DataPath>Объект.Основная.Всего</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОсновнаяВсегоКонтекстноеМеню" id="796"/>
+									<ExtendedTooltip name="ОсновнаяВсегоРасширеннаяПодсказка" id="797"/>
+								</InputField>
+								<ColumnGroup name="Группа" id="21">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="22"/>
+									<ChildItems>
+										<ColumnGroup name="ОсновнаяГруппа1" id="325">
+											<ExtendedTooltip name="ОсновнаяГруппа1РасширеннаяПодсказка" id="326"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня1" id="798">
+													<DataPath>Объект.Основная.ВидДня1</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня1КонтекстноеМеню" id="799"/>
+													<ExtendedTooltip name="ОсновнаяВидДня1РасширеннаяПодсказка" id="800"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа32" id="534">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа32РасширеннаяПодсказка" id="535"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы1" id="801">
+															<DataPath>Объект.Основная.Часы1</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы1КонтекстноеМеню" id="802"/>
+															<ExtendedTooltip name="ОсновнаяЧасы1РасширеннаяПодсказка" id="803"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние1" id="804">
+															<DataPath>Объект.Основная.Вечерние1</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние1КонтекстноеМеню" id="805"/>
+															<ExtendedTooltip name="ОсновнаяВечерние1РасширеннаяПодсказка" id="806"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные1" id="807">
+															<DataPath>Объект.Основная.Ночные1</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные1КонтекстноеМеню" id="808"/>
+															<ExtendedTooltip name="ОсновнаяНочные1РасширеннаяПодсказка" id="809"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа2" id="327">
+											<ExtendedTooltip name="ОсновнаяГруппа2РасширеннаяПодсказка" id="328"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня2" id="810">
+													<DataPath>Объект.Основная.ВидДня2</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня2КонтекстноеМеню" id="811"/>
+													<ExtendedTooltip name="ОсновнаяВидДня2РасширеннаяПодсказка" id="812"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа33" id="536">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа33РасширеннаяПодсказка" id="537"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы2" id="900">
+															<DataPath>Объект.Основная.Часы2</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы2КонтекстноеМеню" id="901"/>
+															<ExtendedTooltip name="ОсновнаяЧасы2РасширеннаяПодсказка" id="902"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние2" id="903">
+															<DataPath>Объект.Основная.Вечерние2</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние2КонтекстноеМеню" id="904"/>
+															<ExtendedTooltip name="ОсновнаяВечерние2РасширеннаяПодсказка" id="905"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные2" id="906">
+															<DataPath>Объект.Основная.Ночные2</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные2КонтекстноеМеню" id="907"/>
+															<ExtendedTooltip name="ОсновнаяНочные2РасширеннаяПодсказка" id="908"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа3" id="329">
+											<ExtendedTooltip name="ОсновнаяГруппа3РасширеннаяПодсказка" id="330"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня3" id="813">
+													<DataPath>Объект.Основная.ВидДня3</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня3КонтекстноеМеню" id="814"/>
+													<ExtendedTooltip name="ОсновнаяВидДня3РасширеннаяПодсказка" id="815"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа34" id="718">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа34РасширеннаяПодсказка" id="719"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы3" id="915">
+															<DataPath>Объект.Основная.Часы3</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы3КонтекстноеМеню" id="916"/>
+															<ExtendedTooltip name="ОсновнаяЧасы3РасширеннаяПодсказка" id="917"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние3" id="912">
+															<DataPath>Объект.Основная.Вечерние3</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние3КонтекстноеМеню" id="913"/>
+															<ExtendedTooltip name="ОсновнаяВечерние3РасширеннаяПодсказка" id="914"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные3" id="909">
+															<DataPath>Объект.Основная.Ночные3</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные3КонтекстноеМеню" id="910"/>
+															<ExtendedTooltip name="ОсновнаяНочные3РасширеннаяПодсказка" id="911"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа4" id="331">
+											<ExtendedTooltip name="ОсновнаяГруппа4РасширеннаяПодсказка" id="332"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня4" id="816">
+													<DataPath>Объект.Основная.ВидДня4</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня4КонтекстноеМеню" id="817"/>
+													<ExtendedTooltip name="ОсновнаяВидДня4РасширеннаяПодсказка" id="818"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа35" id="720">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа35РасширеннаяПодсказка" id="721"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы4" id="918">
+															<DataPath>Объект.Основная.Часы4</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы4КонтекстноеМеню" id="919"/>
+															<ExtendedTooltip name="ОсновнаяЧасы4РасширеннаяПодсказка" id="920"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние4" id="921">
+															<DataPath>Объект.Основная.Вечерние4</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние4КонтекстноеМеню" id="922"/>
+															<ExtendedTooltip name="ОсновнаяВечерние4РасширеннаяПодсказка" id="923"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные4" id="924">
+															<DataPath>Объект.Основная.Ночные4</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные4КонтекстноеМеню" id="925"/>
+															<ExtendedTooltip name="ОсновнаяНочные4РасширеннаяПодсказка" id="926"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа5" id="333">
+											<ExtendedTooltip name="ОсновнаяГруппа5РасширеннаяПодсказка" id="334"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня5" id="819">
+													<DataPath>Объект.Основная.ВидДня5</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня5КонтекстноеМеню" id="820"/>
+													<ExtendedTooltip name="ОсновнаяВидДня5РасширеннаяПодсказка" id="821"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа36" id="722">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа36РасширеннаяПодсказка" id="723"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы5" id="927">
+															<DataPath>Объект.Основная.Часы5</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы5КонтекстноеМеню" id="928"/>
+															<ExtendedTooltip name="ОсновнаяЧасы5РасширеннаяПодсказка" id="929"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние5" id="930">
+															<DataPath>Объект.Основная.Вечерние5</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние5КонтекстноеМеню" id="931"/>
+															<ExtendedTooltip name="ОсновнаяВечерние5РасширеннаяПодсказка" id="932"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные5" id="933">
+															<DataPath>Объект.Основная.Ночные5</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные5КонтекстноеМеню" id="934"/>
+															<ExtendedTooltip name="ОсновнаяНочные5РасширеннаяПодсказка" id="935"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа6" id="335">
+											<ExtendedTooltip name="ОсновнаяГруппа6РасширеннаяПодсказка" id="336"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня6" id="822">
+													<DataPath>Объект.Основная.ВидДня6</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня6КонтекстноеМеню" id="823"/>
+													<ExtendedTooltip name="ОсновнаяВидДня6РасширеннаяПодсказка" id="824"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа37" id="724">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа37РасширеннаяПодсказка" id="725"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы6" id="936">
+															<DataPath>Объект.Основная.Часы6</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы6КонтекстноеМеню" id="937"/>
+															<ExtendedTooltip name="ОсновнаяЧасы6РасширеннаяПодсказка" id="938"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние6" id="939">
+															<DataPath>Объект.Основная.Вечерние6</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние6КонтекстноеМеню" id="940"/>
+															<ExtendedTooltip name="ОсновнаяВечерние6РасширеннаяПодсказка" id="941"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные6" id="942">
+															<DataPath>Объект.Основная.Ночные6</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные6КонтекстноеМеню" id="943"/>
+															<ExtendedTooltip name="ОсновнаяНочные6РасширеннаяПодсказка" id="944"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа7" id="337">
+											<ExtendedTooltip name="ОсновнаяГруппа7РасширеннаяПодсказка" id="338"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня7" id="825">
+													<DataPath>Объект.Основная.ВидДня7</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня7КонтекстноеМеню" id="826"/>
+													<ExtendedTooltip name="ОсновнаяВидДня7РасширеннаяПодсказка" id="827"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа38" id="726">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа38РасширеннаяПодсказка" id="727"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы7" id="945">
+															<DataPath>Объект.Основная.Часы7</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы7КонтекстноеМеню" id="946"/>
+															<ExtendedTooltip name="ОсновнаяЧасы7РасширеннаяПодсказка" id="947"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние7" id="948">
+															<DataPath>Объект.Основная.Вечерние7</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние7КонтекстноеМеню" id="949"/>
+															<ExtendedTooltip name="ОсновнаяВечерние7РасширеннаяПодсказка" id="950"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные7" id="951">
+															<DataPath>Объект.Основная.Ночные7</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные7КонтекстноеМеню" id="952"/>
+															<ExtendedTooltip name="ОсновнаяНочные7РасширеннаяПодсказка" id="953"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа8" id="339">
+											<ExtendedTooltip name="ОсновнаяГруппа8РасширеннаяПодсказка" id="340"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня8" id="828">
+													<DataPath>Объект.Основная.ВидДня8</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня8КонтекстноеМеню" id="829"/>
+													<ExtendedTooltip name="ОсновнаяВидДня8РасширеннаяПодсказка" id="830"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа39" id="728">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа39РасширеннаяПодсказка" id="729"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы8" id="954">
+															<DataPath>Объект.Основная.Часы8</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы8КонтекстноеМеню" id="955"/>
+															<ExtendedTooltip name="ОсновнаяЧасы8РасширеннаяПодсказка" id="956"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние8" id="957">
+															<DataPath>Объект.Основная.Вечерние8</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние8КонтекстноеМеню" id="958"/>
+															<ExtendedTooltip name="ОсновнаяВечерние8РасширеннаяПодсказка" id="959"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные8" id="960">
+															<DataPath>Объект.Основная.Ночные8</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные8КонтекстноеМеню" id="961"/>
+															<ExtendedTooltip name="ОсновнаяНочные8РасширеннаяПодсказка" id="962"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа9" id="341">
+											<ExtendedTooltip name="ОсновнаяГруппа9РасширеннаяПодсказка" id="342"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня9" id="831">
+													<DataPath>Объект.Основная.ВидДня9</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня9КонтекстноеМеню" id="832"/>
+													<ExtendedTooltip name="ОсновнаяВидДня9РасширеннаяПодсказка" id="833"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа40" id="730">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа40РасширеннаяПодсказка" id="731"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы9" id="963">
+															<DataPath>Объект.Основная.Часы9</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы9КонтекстноеМеню" id="964"/>
+															<ExtendedTooltip name="ОсновнаяЧасы9РасширеннаяПодсказка" id="965"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние9" id="966">
+															<DataPath>Объект.Основная.Вечерние9</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние9КонтекстноеМеню" id="967"/>
+															<ExtendedTooltip name="ОсновнаяВечерние9РасширеннаяПодсказка" id="968"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные9" id="969">
+															<DataPath>Объект.Основная.Ночные9</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные9КонтекстноеМеню" id="970"/>
+															<ExtendedTooltip name="ОсновнаяНочные9РасширеннаяПодсказка" id="971"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа10" id="343">
+											<ExtendedTooltip name="ОсновнаяГруппа10РасширеннаяПодсказка" id="344"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня10" id="834">
+													<DataPath>Объект.Основная.ВидДня10</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня10КонтекстноеМеню" id="835"/>
+													<ExtendedTooltip name="ОсновнаяВидДня10РасширеннаяПодсказка" id="836"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа41" id="732">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа41РасширеннаяПодсказка" id="733"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы10" id="972">
+															<DataPath>Объект.Основная.Часы10</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы10КонтекстноеМеню" id="973"/>
+															<ExtendedTooltip name="ОсновнаяЧасы10РасширеннаяПодсказка" id="974"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние10" id="975">
+															<DataPath>Объект.Основная.Вечерние10</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние10КонтекстноеМеню" id="976"/>
+															<ExtendedTooltip name="ОсновнаяВечерние10РасширеннаяПодсказка" id="977"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные10" id="978">
+															<DataPath>Объект.Основная.Ночные10</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные10КонтекстноеМеню" id="979"/>
+															<ExtendedTooltip name="ОсновнаяНочные10РасширеннаяПодсказка" id="980"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа11" id="345">
+											<ExtendedTooltip name="ОсновнаяГруппа11РасширеннаяПодсказка" id="346"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня11" id="837">
+													<DataPath>Объект.Основная.ВидДня11</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня11КонтекстноеМеню" id="838"/>
+													<ExtendedTooltip name="ОсновнаяВидДня11РасширеннаяПодсказка" id="839"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа42" id="734">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа42РасширеннаяПодсказка" id="735"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы11" id="981">
+															<DataPath>Объект.Основная.Часы11</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы11КонтекстноеМеню" id="982"/>
+															<ExtendedTooltip name="ОсновнаяЧасы11РасширеннаяПодсказка" id="983"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние11" id="984">
+															<DataPath>Объект.Основная.Вечерние11</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние11КонтекстноеМеню" id="985"/>
+															<ExtendedTooltip name="ОсновнаяВечерние11РасширеннаяПодсказка" id="986"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные11" id="987">
+															<DataPath>Объект.Основная.Ночные11</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные11КонтекстноеМеню" id="988"/>
+															<ExtendedTooltip name="ОсновнаяНочные11РасширеннаяПодсказка" id="989"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа12" id="347">
+											<ExtendedTooltip name="ОсновнаяГруппа12РасширеннаяПодсказка" id="348"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня12" id="840">
+													<DataPath>Объект.Основная.ВидДня12</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня12КонтекстноеМеню" id="841"/>
+													<ExtendedTooltip name="ОсновнаяВидДня12РасширеннаяПодсказка" id="842"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа43" id="736">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа43РасширеннаяПодсказка" id="737"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы12" id="990">
+															<DataPath>Объект.Основная.Часы12</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы12КонтекстноеМеню" id="991"/>
+															<ExtendedTooltip name="ОсновнаяЧасы12РасширеннаяПодсказка" id="992"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние12" id="993">
+															<DataPath>Объект.Основная.Вечерние12</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние12КонтекстноеМеню" id="994"/>
+															<ExtendedTooltip name="ОсновнаяВечерние12РасширеннаяПодсказка" id="995"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные12" id="996">
+															<DataPath>Объект.Основная.Ночные12</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные12КонтекстноеМеню" id="997"/>
+															<ExtendedTooltip name="ОсновнаяНочные12РасширеннаяПодсказка" id="998"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа13" id="349">
+											<ExtendedTooltip name="ОсновнаяГруппа13РасширеннаяПодсказка" id="350"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня13" id="843">
+													<DataPath>Объект.Основная.ВидДня13</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня13КонтекстноеМеню" id="844"/>
+													<ExtendedTooltip name="ОсновнаяВидДня13РасширеннаяПодсказка" id="845"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа44" id="738">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа44РасширеннаяПодсказка" id="739"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы13" id="999">
+															<DataPath>Объект.Основная.Часы13</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы13КонтекстноеМеню" id="1000"/>
+															<ExtendedTooltip name="ОсновнаяЧасы13РасширеннаяПодсказка" id="1001"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние13" id="1002">
+															<DataPath>Объект.Основная.Вечерние13</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние13КонтекстноеМеню" id="1003"/>
+															<ExtendedTooltip name="ОсновнаяВечерние13РасширеннаяПодсказка" id="1004"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные13" id="1005">
+															<DataPath>Объект.Основная.Ночные13</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные13КонтекстноеМеню" id="1006"/>
+															<ExtendedTooltip name="ОсновнаяНочные13РасширеннаяПодсказка" id="1007"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа14" id="351">
+											<ExtendedTooltip name="ОсновнаяГруппа14РасширеннаяПодсказка" id="352"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня14" id="846">
+													<DataPath>Объект.Основная.ВидДня14</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня14КонтекстноеМеню" id="847"/>
+													<ExtendedTooltip name="ОсновнаяВидДня14РасширеннаяПодсказка" id="848"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа45" id="740">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа45РасширеннаяПодсказка" id="741"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы14" id="1008">
+															<DataPath>Объект.Основная.Часы14</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы14КонтекстноеМеню" id="1009"/>
+															<ExtendedTooltip name="ОсновнаяЧасы14РасширеннаяПодсказка" id="1010"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние14" id="1011">
+															<DataPath>Объект.Основная.Вечерние14</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние14КонтекстноеМеню" id="1012"/>
+															<ExtendedTooltip name="ОсновнаяВечерние14РасширеннаяПодсказка" id="1013"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные14" id="1014">
+															<DataPath>Объект.Основная.Ночные14</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные14КонтекстноеМеню" id="1015"/>
+															<ExtendedTooltip name="ОсновнаяНочные14РасширеннаяПодсказка" id="1016"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа15" id="353">
+											<ExtendedTooltip name="ОсновнаяГруппа15РасширеннаяПодсказка" id="354"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня15" id="849">
+													<DataPath>Объект.Основная.ВидДня15</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня15КонтекстноеМеню" id="850"/>
+													<ExtendedTooltip name="ОсновнаяВидДня15РасширеннаяПодсказка" id="851"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа46" id="742">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа46РасширеннаяПодсказка" id="743"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы15" id="1017">
+															<DataPath>Объект.Основная.Часы15</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы15КонтекстноеМеню" id="1018"/>
+															<ExtendedTooltip name="ОсновнаяЧасы15РасширеннаяПодсказка" id="1019"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние15" id="1020">
+															<DataPath>Объект.Основная.Вечерние15</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние15КонтекстноеМеню" id="1021"/>
+															<ExtendedTooltip name="ОсновнаяВечерние15РасширеннаяПодсказка" id="1022"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные15" id="1023">
+															<DataPath>Объект.Основная.Ночные15</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные15КонтекстноеМеню" id="1024"/>
+															<ExtendedTooltip name="ОсновнаяНочные15РасширеннаяПодсказка" id="1025"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа16" id="355">
+											<ExtendedTooltip name="ОсновнаяГруппа16РасширеннаяПодсказка" id="356"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня16" id="852">
+													<DataPath>Объект.Основная.ВидДня16</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня16КонтекстноеМеню" id="853"/>
+													<ExtendedTooltip name="ОсновнаяВидДня16РасширеннаяПодсказка" id="854"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа47" id="744">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа47РасширеннаяПодсказка" id="745"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы16" id="1026">
+															<DataPath>Объект.Основная.Часы16</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы16КонтекстноеМеню" id="1027"/>
+															<ExtendedTooltip name="ОсновнаяЧасы16РасширеннаяПодсказка" id="1028"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние16" id="1029">
+															<DataPath>Объект.Основная.Вечерние16</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние16КонтекстноеМеню" id="1030"/>
+															<ExtendedTooltip name="ОсновнаяВечерние16РасширеннаяПодсказка" id="1031"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные16" id="1032">
+															<DataPath>Объект.Основная.Ночные16</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные16КонтекстноеМеню" id="1033"/>
+															<ExtendedTooltip name="ОсновнаяНочные16РасширеннаяПодсказка" id="1034"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа17" id="357">
+											<ExtendedTooltip name="ОсновнаяГруппа17РасширеннаяПодсказка" id="358"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня17" id="855">
+													<DataPath>Объект.Основная.ВидДня17</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня17КонтекстноеМеню" id="856"/>
+													<ExtendedTooltip name="ОсновнаяВидДня17РасширеннаяПодсказка" id="857"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа48" id="746">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа48РасширеннаяПодсказка" id="747"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы17" id="1035">
+															<DataPath>Объект.Основная.Часы17</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы17КонтекстноеМеню" id="1036"/>
+															<ExtendedTooltip name="ОсновнаяЧасы17РасширеннаяПодсказка" id="1037"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние17" id="1038">
+															<DataPath>Объект.Основная.Вечерние17</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние17КонтекстноеМеню" id="1039"/>
+															<ExtendedTooltip name="ОсновнаяВечерние17РасширеннаяПодсказка" id="1040"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные17" id="1041">
+															<DataPath>Объект.Основная.Ночные17</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные17КонтекстноеМеню" id="1042"/>
+															<ExtendedTooltip name="ОсновнаяНочные17РасширеннаяПодсказка" id="1043"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа18" id="359">
+											<ExtendedTooltip name="ОсновнаяГруппа18РасширеннаяПодсказка" id="360"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня18" id="858">
+													<DataPath>Объект.Основная.ВидДня18</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня18КонтекстноеМеню" id="859"/>
+													<ExtendedTooltip name="ОсновнаяВидДня18РасширеннаяПодсказка" id="860"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа49" id="748">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа49РасширеннаяПодсказка" id="749"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы18" id="1044">
+															<DataPath>Объект.Основная.Часы18</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы18КонтекстноеМеню" id="1045"/>
+															<ExtendedTooltip name="ОсновнаяЧасы18РасширеннаяПодсказка" id="1046"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние18" id="1047">
+															<DataPath>Объект.Основная.Вечерние18</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние18КонтекстноеМеню" id="1048"/>
+															<ExtendedTooltip name="ОсновнаяВечерние18РасширеннаяПодсказка" id="1049"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные18" id="1050">
+															<DataPath>Объект.Основная.Ночные18</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные18КонтекстноеМеню" id="1051"/>
+															<ExtendedTooltip name="ОсновнаяНочные18РасширеннаяПодсказка" id="1052"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа19" id="361">
+											<ExtendedTooltip name="ОсновнаяГруппа19РасширеннаяПодсказка" id="362"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня19" id="861">
+													<DataPath>Объект.Основная.ВидДня19</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня19КонтекстноеМеню" id="862"/>
+													<ExtendedTooltip name="ОсновнаяВидДня19РасширеннаяПодсказка" id="863"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа50" id="750">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа50РасширеннаяПодсказка" id="751"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы19" id="1053">
+															<DataPath>Объект.Основная.Часы19</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы19КонтекстноеМеню" id="1054"/>
+															<ExtendedTooltip name="ОсновнаяЧасы19РасширеннаяПодсказка" id="1055"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние19" id="1056">
+															<DataPath>Объект.Основная.Вечерние19</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние19КонтекстноеМеню" id="1057"/>
+															<ExtendedTooltip name="ОсновнаяВечерние19РасширеннаяПодсказка" id="1058"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные19" id="1059">
+															<DataPath>Объект.Основная.Ночные19</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные19КонтекстноеМеню" id="1060"/>
+															<ExtendedTooltip name="ОсновнаяНочные19РасширеннаяПодсказка" id="1061"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа20" id="363">
+											<ExtendedTooltip name="ОсновнаяГруппа20РасширеннаяПодсказка" id="364"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня20" id="864">
+													<DataPath>Объект.Основная.ВидДня20</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня20КонтекстноеМеню" id="865"/>
+													<ExtendedTooltip name="ОсновнаяВидДня20РасширеннаяПодсказка" id="866"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа51" id="752">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа51РасширеннаяПодсказка" id="753"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы20" id="1062">
+															<DataPath>Объект.Основная.Часы20</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы20КонтекстноеМеню" id="1063"/>
+															<ExtendedTooltip name="ОсновнаяЧасы20РасширеннаяПодсказка" id="1064"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние20" id="1065">
+															<DataPath>Объект.Основная.Вечерние20</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние20КонтекстноеМеню" id="1066"/>
+															<ExtendedTooltip name="ОсновнаяВечерние20РасширеннаяПодсказка" id="1067"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные20" id="1068">
+															<DataPath>Объект.Основная.Ночные20</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные20КонтекстноеМеню" id="1069"/>
+															<ExtendedTooltip name="ОсновнаяНочные20РасширеннаяПодсказка" id="1070"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа21" id="365">
+											<ExtendedTooltip name="ОсновнаяГруппа21РасширеннаяПодсказка" id="366"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня21" id="867">
+													<DataPath>Объект.Основная.ВидДня21</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня21КонтекстноеМеню" id="868"/>
+													<ExtendedTooltip name="ОсновнаяВидДня21РасширеннаяПодсказка" id="869"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа52" id="754">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа52РасширеннаяПодсказка" id="755"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы21" id="1071">
+															<DataPath>Объект.Основная.Часы21</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы21КонтекстноеМеню" id="1072"/>
+															<ExtendedTooltip name="ОсновнаяЧасы21РасширеннаяПодсказка" id="1073"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние21" id="1074">
+															<DataPath>Объект.Основная.Вечерние21</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние21КонтекстноеМеню" id="1075"/>
+															<ExtendedTooltip name="ОсновнаяВечерние21РасширеннаяПодсказка" id="1076"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные21" id="1077">
+															<DataPath>Объект.Основная.Ночные21</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные21КонтекстноеМеню" id="1078"/>
+															<ExtendedTooltip name="ОсновнаяНочные21РасширеннаяПодсказка" id="1079"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа22" id="367">
+											<ExtendedTooltip name="ОсновнаяГруппа22РасширеннаяПодсказка" id="368"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня22" id="870">
+													<DataPath>Объект.Основная.ВидДня22</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня22КонтекстноеМеню" id="871"/>
+													<ExtendedTooltip name="ОсновнаяВидДня22РасширеннаяПодсказка" id="872"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа53" id="756">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа53РасширеннаяПодсказка" id="757"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы22" id="1080">
+															<DataPath>Объект.Основная.Часы22</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы22КонтекстноеМеню" id="1081"/>
+															<ExtendedTooltip name="ОсновнаяЧасы22РасширеннаяПодсказка" id="1082"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние22" id="1083">
+															<DataPath>Объект.Основная.Вечерние22</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние22КонтекстноеМеню" id="1084"/>
+															<ExtendedTooltip name="ОсновнаяВечерние22РасширеннаяПодсказка" id="1085"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные22" id="1086">
+															<DataPath>Объект.Основная.Ночные22</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные22КонтекстноеМеню" id="1087"/>
+															<ExtendedTooltip name="ОсновнаяНочные22РасширеннаяПодсказка" id="1088"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа23" id="369">
+											<ExtendedTooltip name="ОсновнаяГруппа23РасширеннаяПодсказка" id="370"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня23" id="873">
+													<DataPath>Объект.Основная.ВидДня23</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня23КонтекстноеМеню" id="874"/>
+													<ExtendedTooltip name="ОсновнаяВидДня23РасширеннаяПодсказка" id="875"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа54" id="758">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа54РасширеннаяПодсказка" id="759"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы23" id="1089">
+															<DataPath>Объект.Основная.Часы23</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы23КонтекстноеМеню" id="1090"/>
+															<ExtendedTooltip name="ОсновнаяЧасы23РасширеннаяПодсказка" id="1091"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние23" id="1092">
+															<DataPath>Объект.Основная.Вечерние23</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние23КонтекстноеМеню" id="1093"/>
+															<ExtendedTooltip name="ОсновнаяВечерние23РасширеннаяПодсказка" id="1094"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные23" id="1095">
+															<DataPath>Объект.Основная.Ночные23</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные23КонтекстноеМеню" id="1096"/>
+															<ExtendedTooltip name="ОсновнаяНочные23РасширеннаяПодсказка" id="1097"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа24" id="371">
+											<ExtendedTooltip name="ОсновнаяГруппа24РасширеннаяПодсказка" id="372"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня24" id="876">
+													<DataPath>Объект.Основная.ВидДня24</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня24КонтекстноеМеню" id="877"/>
+													<ExtendedTooltip name="ОсновнаяВидДня24РасширеннаяПодсказка" id="878"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа55" id="760">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа55РасширеннаяПодсказка" id="761"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы24" id="1098">
+															<DataPath>Объект.Основная.Часы24</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы24КонтекстноеМеню" id="1099"/>
+															<ExtendedTooltip name="ОсновнаяЧасы24РасширеннаяПодсказка" id="1100"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние24" id="1101">
+															<DataPath>Объект.Основная.Вечерние24</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние24КонтекстноеМеню" id="1102"/>
+															<ExtendedTooltip name="ОсновнаяВечерние24РасширеннаяПодсказка" id="1103"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные24" id="1104">
+															<DataPath>Объект.Основная.Ночные24</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные24КонтекстноеМеню" id="1105"/>
+															<ExtendedTooltip name="ОсновнаяНочные24РасширеннаяПодсказка" id="1106"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа25" id="373">
+											<ExtendedTooltip name="ОсновнаяГруппа25РасширеннаяПодсказка" id="374"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня25" id="879">
+													<DataPath>Объект.Основная.ВидДня25</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня25КонтекстноеМеню" id="880"/>
+													<ExtendedTooltip name="ОсновнаяВидДня25РасширеннаяПодсказка" id="881"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа56" id="762">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа56РасширеннаяПодсказка" id="763"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы25" id="1107">
+															<DataPath>Объект.Основная.Часы25</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы25КонтекстноеМеню" id="1108"/>
+															<ExtendedTooltip name="ОсновнаяЧасы25РасширеннаяПодсказка" id="1109"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние25" id="1110">
+															<DataPath>Объект.Основная.Вечерние25</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние25КонтекстноеМеню" id="1111"/>
+															<ExtendedTooltip name="ОсновнаяВечерние25РасширеннаяПодсказка" id="1112"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные25" id="1113">
+															<DataPath>Объект.Основная.Ночные25</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные25КонтекстноеМеню" id="1114"/>
+															<ExtendedTooltip name="ОсновнаяНочные25РасширеннаяПодсказка" id="1115"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа26" id="375">
+											<ExtendedTooltip name="ОсновнаяГруппа26РасширеннаяПодсказка" id="376"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня26" id="882">
+													<DataPath>Объект.Основная.ВидДня26</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня26КонтекстноеМеню" id="883"/>
+													<ExtendedTooltip name="ОсновнаяВидДня26РасширеннаяПодсказка" id="884"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа57" id="764">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа57РасширеннаяПодсказка" id="765"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы26" id="1116">
+															<DataPath>Объект.Основная.Часы26</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы26КонтекстноеМеню" id="1117"/>
+															<ExtendedTooltip name="ОсновнаяЧасы26РасширеннаяПодсказка" id="1118"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние26" id="1119">
+															<DataPath>Объект.Основная.Вечерние26</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние26КонтекстноеМеню" id="1120"/>
+															<ExtendedTooltip name="ОсновнаяВечерние26РасширеннаяПодсказка" id="1121"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные26" id="1122">
+															<DataPath>Объект.Основная.Ночные26</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные26КонтекстноеМеню" id="1123"/>
+															<ExtendedTooltip name="ОсновнаяНочные26РасширеннаяПодсказка" id="1124"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа27" id="377">
+											<ExtendedTooltip name="ОсновнаяГруппа27РасширеннаяПодсказка" id="378"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня27" id="885">
+													<DataPath>Объект.Основная.ВидДня27</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня27КонтекстноеМеню" id="886"/>
+													<ExtendedTooltip name="ОсновнаяВидДня27РасширеннаяПодсказка" id="887"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа58" id="766">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа58РасширеннаяПодсказка" id="767"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы27" id="1125">
+															<DataPath>Объект.Основная.Часы27</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы27КонтекстноеМеню" id="1126"/>
+															<ExtendedTooltip name="ОсновнаяЧасы27РасширеннаяПодсказка" id="1127"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние27" id="1128">
+															<DataPath>Объект.Основная.Вечерние27</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние27КонтекстноеМеню" id="1129"/>
+															<ExtendedTooltip name="ОсновнаяВечерние27РасширеннаяПодсказка" id="1130"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные27" id="1131">
+															<DataPath>Объект.Основная.Ночные27</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные27КонтекстноеМеню" id="1132"/>
+															<ExtendedTooltip name="ОсновнаяНочные27РасширеннаяПодсказка" id="1133"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа28" id="379">
+											<ExtendedTooltip name="ОсновнаяГруппа28РасширеннаяПодсказка" id="380"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня28" id="888">
+													<DataPath>Объект.Основная.ВидДня28</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня28КонтекстноеМеню" id="889"/>
+													<ExtendedTooltip name="ОсновнаяВидДня28РасширеннаяПодсказка" id="890"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа59" id="768">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа59РасширеннаяПодсказка" id="769"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы28" id="1134">
+															<DataPath>Объект.Основная.Часы28</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы28КонтекстноеМеню" id="1135"/>
+															<ExtendedTooltip name="ОсновнаяЧасы28РасширеннаяПодсказка" id="1136"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние28" id="1137">
+															<DataPath>Объект.Основная.Вечерние28</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние28КонтекстноеМеню" id="1138"/>
+															<ExtendedTooltip name="ОсновнаяВечерние28РасширеннаяПодсказка" id="1139"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные28" id="1140">
+															<DataPath>Объект.Основная.Ночные28</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные28КонтекстноеМеню" id="1141"/>
+															<ExtendedTooltip name="ОсновнаяНочные28РасширеннаяПодсказка" id="1142"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа29" id="381">
+											<ExtendedTooltip name="ОсновнаяГруппа29РасширеннаяПодсказка" id="382"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня29" id="891">
+													<DataPath>Объект.Основная.ВидДня29</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня29КонтекстноеМеню" id="892"/>
+													<ExtendedTooltip name="ОсновнаяВидДня29РасширеннаяПодсказка" id="893"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа60" id="770">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа60РасширеннаяПодсказка" id="771"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы29" id="1143">
+															<DataPath>Объект.Основная.Часы29</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы29КонтекстноеМеню" id="1144"/>
+															<ExtendedTooltip name="ОсновнаяЧасы29РасширеннаяПодсказка" id="1145"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние29" id="1146">
+															<DataPath>Объект.Основная.Вечерние29</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние29КонтекстноеМеню" id="1147"/>
+															<ExtendedTooltip name="ОсновнаяВечерние29РасширеннаяПодсказка" id="1148"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные29" id="1149">
+															<DataPath>Объект.Основная.Ночные29</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные29КонтекстноеМеню" id="1150"/>
+															<ExtendedTooltip name="ОсновнаяНочные29РасширеннаяПодсказка" id="1151"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа30" id="383">
+											<ExtendedTooltip name="ОсновнаяГруппа30РасширеннаяПодсказка" id="384"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня30" id="894">
+													<DataPath>Объект.Основная.ВидДня30</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня30КонтекстноеМеню" id="895"/>
+													<ExtendedTooltip name="ОсновнаяВидДня30РасширеннаяПодсказка" id="896"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа61" id="772">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа61РасширеннаяПодсказка" id="773"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы30" id="1152">
+															<DataPath>Объект.Основная.Часы30</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы30КонтекстноеМеню" id="1153"/>
+															<ExtendedTooltip name="ОсновнаяЧасы30РасширеннаяПодсказка" id="1154"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние30" id="1155">
+															<DataPath>Объект.Основная.Вечерние30</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние30КонтекстноеМеню" id="1156"/>
+															<ExtendedTooltip name="ОсновнаяВечерние30РасширеннаяПодсказка" id="1157"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные30" id="1158">
+															<DataPath>Объект.Основная.Ночные30</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные30КонтекстноеМеню" id="1159"/>
+															<ExtendedTooltip name="ОсновнаяНочные30РасширеннаяПодсказка" id="1160"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="ОсновнаяГруппа31" id="385">
+											<ExtendedTooltip name="ОсновнаяГруппа31РасширеннаяПодсказка" id="386"/>
+											<ChildItems>
+												<InputField name="ОсновнаяВидДня31" id="897">
+													<DataPath>Объект.Основная.ВидДня31</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОсновнаяВидДня31КонтекстноеМеню" id="898"/>
+													<ExtendedTooltip name="ОсновнаяВидДня31РасширеннаяПодсказка" id="899"/>
+													<Events>
+														<Event name="OnChange">ОсновнаяВидДняПриИзменении</Event>
+													</Events>
+												</InputField>
+												<ColumnGroup name="ОсновнаяГруппа62" id="774">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ОсновнаяГруппа62РасширеннаяПодсказка" id="775"/>
+													<ChildItems>
+														<InputField name="ОсновнаяЧасы31" id="1161">
+															<DataPath>Объект.Основная.Часы31</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Години</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяЧасы31КонтекстноеМеню" id="1162"/>
+															<ExtendedTooltip name="ОсновнаяЧасы31РасширеннаяПодсказка" id="1163"/>
+														</InputField>
+														<InputField name="ОсновнаяВечерние31" id="1164">
+															<DataPath>Объект.Основная.Вечерние31</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяВечерние31КонтекстноеМеню" id="1165"/>
+															<ExtendedTooltip name="ОсновнаяВечерние31РасширеннаяПодсказка" id="1166"/>
+														</InputField>
+														<InputField name="ОсновнаяНочные31" id="1167">
+															<DataPath>Объект.Основная.Ночные31</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ОсновнаяНочные31КонтекстноеМеню" id="1168"/>
+															<ExtendedTooltip name="ОсновнаяНочные31РасширеннаяПодсказка" id="1169"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+						<InputField name="ПроставитьВидДня" id="266">
+							<DataPath>ПроставитьВидДня</DataPath>
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проставить принудительный вид дня</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Проставити примусовий вид дня</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПроставитьВидДняКонтекстноеМеню" id="267"/>
+							<ExtendedTooltip name="ПроставитьВидДняРасширеннаяПодсказка" id="268"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа6" id="275">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственные лица</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відповідальні особи</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="276"/>
+					<ChildItems>
+						<Button name="ЗаполнитьОтветственныхЛиц" id="781">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьОтветственныхЛиц</CommandName>
+							<ExtendedTooltip name="ЗаполнитьОтветственныхЛицРасширеннаяПодсказка" id="782"/>
+						</Button>
+						<InputField name="РуководительПодразделения" id="277">
+							<DataPath>Объект.РуководительПодразделения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Руководитель</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Керівник</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ContextMenu name="РуководительПодразделенияКонтекстноеМеню" id="278"/>
+							<ExtendedTooltip name="РуководительПодразделенияРасширеннаяПодсказка" id="279"/>
+							<Events>
+								<Event name="OnChange">РуководительПодразделенияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДолжностьРуководителяПодразделения" id="280">
+							<DataPath>Объект.ДолжностьРуководителяПодразделения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Должность руководителя</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Посада керівника</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДолжностьРуководителяПодразделенияКонтекстноеМеню" id="281"/>
+							<ExtendedTooltip name="ДолжностьРуководителяПодразделенияРасширеннаяПодсказка" id="282"/>
+						</InputField>
+						<InputField name="РаботникОтделаКадров" id="283">
+							<DataPath>Объект.РаботникОтделаКадров</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сотрудник ОК</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Співробітник ВК</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ContextMenu name="РаботникОтделаКадровКонтекстноеМеню" id="284"/>
+							<ExtendedTooltip name="РаботникОтделаКадровРасширеннаяПодсказка" id="285"/>
+							<Events>
+								<Event name="OnChange">РаботникОтделаКадровПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДолжностьРаботникаОтделаКадров" id="286">
+							<DataPath>Объект.ДолжностьРаботникаОтделаКадров</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Должность сотрудника ОК</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Посада співробітника ВК</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДолжностьРаботникаОтделаКадровКонтекстноеМеню" id="287"/>
+							<ExtendedTooltip name="ДолжностьРаботникаОтделаКадровРасширеннаяПодсказка" id="288"/>
+						</InputField>
+						<InputField name="Ответственный" id="289">
+							<DataPath>Объект.Ответственный</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ответственный</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Відповідальний</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="290"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="291"/>
+							<Events>
+								<Event name="OnChange">ОтветственныйПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДолжностьОтветственного" id="292">
+							<DataPath>Объект.ДолжностьОтветственного</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Должность ответственного</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Посада відповідального</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДолжностьОтветственногоКонтекстноеМеню" id="293"/>
+							<ExtendedTooltip name="ДолжностьОтветственногоРасширеннаяПодсказка" id="294"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Настройки" id="387">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Налаштування</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="388"/>
+					<ChildItems>
+						<Pages name="Группа9" id="416">
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="417"/>
+							<ChildItems>
+								<Page name="Группа10" id="418">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Условные обозначения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Умовні позначення</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="419"/>
+									<ChildItems>
+										<Table name="табОбозначений" id="422">
+											<Representation>List</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>табОбозначений</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="табОбозначенийКонтекстноеМеню" id="423"/>
+											<AutoCommandBar name="табОбозначенийКоманднаяПанель" id="424">
+												<ChildItems>
+													<Button name="СброситьОбозначения" id="481">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.СброситьОбозначения</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Заполнить обозначения (по умолчанию)</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>Заповнити позначення (за замовчуванням)</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="СброситьОбозначенияРасширеннаяПодсказка" id="482"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="табОбозначенийРасширеннаяПодсказка" id="425"/>
+											<SearchStringAddition name="табОбозначенийСтрокаПоиска" id="426">
+												<AdditionSource>
+													<Item>табОбозначений</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="табОбозначенийСтрокаПоискаКонтекстноеМеню" id="427"/>
+												<ExtendedTooltip name="табОбозначенийСтрокаПоискаРасширеннаяПодсказка" id="428"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="табОбозначенийСостояниеПросмотра" id="429">
+												<AdditionSource>
+													<Item>табОбозначений</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="табОбозначенийСостояниеПросмотраКонтекстноеМеню" id="430"/>
+												<ExtendedTooltip name="табОбозначенийСостояниеПросмотраРасширеннаяПодсказка" id="431"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="табОбозначенийУправлениеПоиском" id="432">
+												<AdditionSource>
+													<Item>табОбозначений</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="табОбозначенийУправлениеПоискомКонтекстноеМеню" id="433"/>
+												<ExtendedTooltip name="табОбозначенийУправлениеПоискомРасширеннаяПодсказка" id="434"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="табОбозначенийВидРасчета" id="435">
+													<DataPath>табОбозначений.ВидРасчета</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вид расчета</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Вид рахунку</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="табОбозначенийВидРасчетаКонтекстноеМеню" id="436"/>
+													<ExtendedTooltip name="табОбозначенийВидРасчетаРасширеннаяПодсказка" id="437"/>
+												</InputField>
+												<InputField name="табОбозначенийОбозначение" id="438">
+													<DataPath>табОбозначений.Обозначение</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Обозначение</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Позначення</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="табОбозначенийОбозначениеКонтекстноеМеню" id="439"/>
+													<ExtendedTooltip name="табОбозначенийОбозначениеРасширеннаяПодсказка" id="440"/>
+												</InputField>
+												<CheckBoxField name="табОбозначенийУчитыватьВыходные" id="441">
+													<DataPath>табОбозначений.УчитыватьВыходные</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Учитывать выходные</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Враховувати вихідні</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="табОбозначенийУчитыватьВыходныеКонтекстноеМеню" id="442"/>
+													<ExtendedTooltip name="табОбозначенийУчитыватьВыходныеРасширеннаяПодсказка" id="443"/>
+												</CheckBoxField>
+												<CheckBoxField name="табОбозначенийУчитыватьПраздничныеДни" id="478">
+													<DataPath>табОбозначений.УчитыватьПраздничныеДни</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Учитывать праздничные дни</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Враховувати святкові дні</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="табОбозначенийУчитыватьПраздничныеДниКонтекстноеМеню" id="479"/>
+													<ExtendedTooltip name="табОбозначенийУчитыватьПраздничныеДниРасширеннаяПодсказка" id="480"/>
+												</CheckBoxField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="Группа11" id="420">
+									<Visible>false</Visible>
+									<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="421"/>
+									<ChildItems>
+										<InputField name="НастройкаТарифДневной" id="389">
+											<DataPath>Объект.НастройкаТарифДневной</DataPath>
+											<ContextMenu name="НастройкаТарифДневнойКонтекстноеМеню" id="390"/>
+											<ExtendedTooltip name="НастройкаТарифДневнойРасширеннаяПодсказка" id="391"/>
+										</InputField>
+										<InputField name="НастройкаТарифЧасовой" id="392">
+											<DataPath>Объект.НастройкаТарифЧасовой</DataPath>
+											<ContextMenu name="НастройкаТарифЧасовойКонтекстноеМеню" id="393"/>
+											<ExtendedTooltip name="НастройкаТарифЧасовойРасширеннаяПодсказка" id="394"/>
+										</InputField>
+										<InputField name="НастройкаОкладПоДням" id="395">
+											<DataPath>Объект.НастройкаОкладПоДням</DataPath>
+											<ContextMenu name="НастройкаОкладПоДнямКонтекстноеМеню" id="396"/>
+											<ExtendedTooltip name="НастройкаОкладПоДнямРасширеннаяПодсказка" id="397"/>
+										</InputField>
+										<InputField name="НастройкаОкладПоЧасам" id="398">
+											<DataPath>Объект.НастройкаОкладПоЧасам</DataPath>
+											<ContextMenu name="НастройкаОкладПоЧасамКонтекстноеМеню" id="399"/>
+											<ExtendedTooltip name="НастройкаОкладПоЧасамРасширеннаяПодсказка" id="400"/>
+										</InputField>
+										<InputField name="НастройкаИндексацияЗарплаты" id="401">
+											<DataPath>Объект.НастройкаИндексацияЗарплаты</DataPath>
+											<ContextMenu name="НастройкаИндексацияЗарплатыКонтекстноеМеню" id="402"/>
+											<ExtendedTooltip name="НастройкаИндексацияЗарплатыРасширеннаяПодсказка" id="403"/>
+										</InputField>
+										<InputField name="НастройкаОплатаПоСреднемуБЛОрганизации" id="404">
+											<DataPath>Объект.НастройкаОплатаПоСреднемуБЛОрганизации</DataPath>
+											<ContextMenu name="НастройкаОплатаПоСреднемуБЛОрганизацииКонтекстноеМеню" id="405"/>
+											<ExtendedTooltip name="НастройкаОплатаПоСреднемуБЛОрганизацииРасширеннаяПодсказка" id="406"/>
+										</InputField>
+										<InputField name="НастройкаОплатаПоСреднемуБЛ" id="407">
+											<DataPath>Объект.НастройкаОплатаПоСреднемуБЛ</DataPath>
+											<ContextMenu name="НастройкаОплатаПоСреднемуБЛКонтекстноеМеню" id="408"/>
+											<ExtendedTooltip name="НастройкаОплатаПоСреднемуБЛРасширеннаяПодсказка" id="409"/>
+										</InputField>
+										<InputField name="НастройкаОплатаПоСреднемуОтп" id="410">
+											<DataPath>Объект.НастройкаОплатаПоСреднемуОтп</DataPath>
+											<ContextMenu name="НастройкаОплатаПоСреднемуОтпКонтекстноеМеню" id="411"/>
+											<ExtendedTooltip name="НастройкаОплатаПоСреднемуОтпРасширеннаяПодсказка" id="412"/>
+										</InputField>
+										<InputField name="НастройкаДоплатаДоМЗП" id="413">
+											<DataPath>Объект.НастройкаДоплатаДоМЗП</DataPath>
+											<ContextMenu name="НастройкаДоплатаДоМЗПКонтекстноеМеню" id="414"/>
+											<ExtendedTooltip name="НастройкаДоплатаДоМЗПРасширеннаяПодсказка" id="415"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+								<Page name="Группа12" id="444">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Продолжительность рабочего дня</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Тривалість робочого дня</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="445"/>
+									<ChildItems>
+										<UsualGroup name="Группа13" id="446">
+											<Group>Horizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="447"/>
+											<ChildItems>
+												<InputField name="ПродолжительностьРабочегоДня" id="448">
+													<DataPath>Объект.ПродолжительностьРабочегоДня</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Продолжительность рабочего дня</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Тривалість робочого дня</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПродолжительностьРабочегоДняКонтекстноеМеню" id="449"/>
+													<ExtendedTooltip name="ПродолжительностьРабочегоДняРасширеннаяПодсказка" id="450"/>
+												</InputField>
+												<InputField name="ПродолжительностьПредпраздничногоДня" id="451">
+													<DataPath>Объект.ПродолжительностьПредпраздничногоДня</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Продолжительность дня перед праздником</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Тривалість дня перед святом</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПродолжительностьПредпраздничногоДняКонтекстноеМеню" id="452"/>
+													<ExtendedTooltip name="ПродолжительностьПредпраздничногоДняРасширеннаяПодсказка" id="453"/>
+												</InputField>
+												<InputField name="ПродолжительностьПятницы" id="454">
+													<DataPath>Объект.ПродолжительностьПятницы</DataPath>
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>пятницы</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПродолжительностьПятницыКонтекстноеМеню" id="455"/>
+													<ExtendedTooltip name="ПродолжительностьПятницыРасширеннаяПодсказка" id="456"/>
+												</InputField>
+												<InputField name="ОсновнойГрафик" id="496">
+													<DataPath>ОсновнойГрафик</DataPath>
+													<ContextMenu name="ОсновнойГрафикКонтекстноеМеню" id="497"/>
+													<ExtendedTooltip name="ОсновнойГрафикРасширеннаяПодсказка" id="498"/>
+												</InputField>
+												<Button name="Заполнить" id="499">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ЗаполнитьОсновнойГрафик</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Заполнить</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Заповнити</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ЗаполнитьРасширеннаяПодсказка" id="500"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа1" id="501">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="502"/>
+											<ChildItems>
+												<UsualGroup name="Группа15" id="506">
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="507"/>
+													<ChildItems>
+														<CheckBoxField name="УчитыватьВечерние" id="522">
+															<DataPath>Объект.УчитыватьВечерние</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Учитывать вечерние</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Враховувати вечірні</v8:content>
+																</v8:item>
+															</Title>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="УчитыватьВечерниеКонтекстноеМеню" id="523"/>
+															<ExtendedTooltip name="УчитыватьВечерниеРасширеннаяПодсказка" id="524"/>
+															<Events>
+																<Event name="OnChange">УчитыватьВечерниеПриИзменении</Event>
+															</Events>
+														</CheckBoxField>
+														<InputField name="ВечерниеС" id="503">
+															<DataPath>Объект.ВечерниеС</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Вечерние с</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Вечірні з</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ВечерниеСКонтекстноеМеню" id="504"/>
+															<ExtendedTooltip name="ВечерниеСРасширеннаяПодсказка" id="505"/>
+														</InputField>
+														<InputField name="ВечерниеПо" id="508">
+															<DataPath>Объект.ВечерниеПо</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>По</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>По</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ВечерниеПоКонтекстноеМеню" id="509"/>
+															<ExtendedTooltip name="ВечерниеПоРасширеннаяПодсказка" id="510"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="Декорация1" id="525">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>  </v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content> </v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация1КонтекстноеМеню" id="526"/>
+													<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="527"/>
+												</LabelDecoration>
+												<UsualGroup name="Группа16" id="511">
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="512"/>
+													<ChildItems>
+														<CheckBoxField name="УчитыватьНочные" id="519">
+															<DataPath>Объект.УчитыватьНочные</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Учитывать ночные</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Враховувати нічні</v8:content>
+																</v8:item>
+															</Title>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="УчитыватьНочныеКонтекстноеМеню" id="520"/>
+															<ExtendedTooltip name="УчитыватьНочныеРасширеннаяПодсказка" id="521"/>
+															<Events>
+																<Event name="OnChange">УчитыватьНочныеПриИзменении</Event>
+															</Events>
+														</CheckBoxField>
+														<InputField name="НочныеС" id="513">
+															<DataPath>Объект.НочныеС</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Ночные с</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Нічні з</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НочныеСКонтекстноеМеню" id="514"/>
+															<ExtendedTooltip name="НочныеСРасширеннаяПодсказка" id="515"/>
+														</InputField>
+														<InputField name="НочныеПо" id="516">
+															<DataPath>Объект.НочныеПо</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>По</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>По</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НочныеПоКонтекстноеМеню" id="517"/>
+															<ExtendedTooltip name="НочныеПоРасширеннаяПодсказка" id="518"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа14" id="457">
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="458"/>
+											<ChildItems>
+												<Table name="табИсключенияСотрудников" id="459">
+													<Representation>List</Representation>
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<EnableStartDrag>true</EnableStartDrag>
+													<EnableDrag>true</EnableDrag>
+													<DataPath>табИсключенияСотрудников</DataPath>
+													<RowFilter xsi:nil="true"/>
+													<ContextMenu name="табИсключенияСотрудниковКонтекстноеМеню" id="460"/>
+													<AutoCommandBar name="табИсключенияСотрудниковКоманднаяПанель" id="461">
+														<ChildItems>
+															<Button name="табИсключенияСотрудниковКнопка1" id="483">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ПодборСотрудников</CommandName>
+																<Title>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Подбор</v8:content>
+																	</v8:item>
+																	<v8:item>
+																		<v8:lang>uk</v8:lang>
+																		<v8:content>Підбір</v8:content>
+																	</v8:item>
+																</Title>
+																<ExtendedTooltip name="табИсключенияСотрудниковКнопка1РасширеннаяПодсказка" id="484"/>
+															</Button>
+														</ChildItems>
+													</AutoCommandBar>
+													<ExtendedTooltip name="табИсключенияСотрудниковРасширеннаяПодсказка" id="462"/>
+													<SearchStringAddition name="табИсключенияСотрудниковСтрокаПоиска" id="463">
+														<AdditionSource>
+															<Item>табИсключенияСотрудников</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="табИсключенияСотрудниковСтрокаПоискаКонтекстноеМеню" id="464"/>
+														<ExtendedTooltip name="табИсключенияСотрудниковСтрокаПоискаРасширеннаяПодсказка" id="465"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="табИсключенияСотрудниковСостояниеПросмотра" id="466">
+														<AdditionSource>
+															<Item>табИсключенияСотрудников</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="табИсключенияСотрудниковСостояниеПросмотраКонтекстноеМеню" id="467"/>
+														<ExtendedTooltip name="табИсключенияСотрудниковСостояниеПросмотраРасширеннаяПодсказка" id="468"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="табИсключенияСотрудниковУправлениеПоиском" id="469">
+														<AdditionSource>
+															<Item>табИсключенияСотрудников</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="табИсключенияСотрудниковУправлениеПоискомКонтекстноеМеню" id="470"/>
+														<ExtendedTooltip name="табИсключенияСотрудниковУправлениеПоискомРасширеннаяПодсказка" id="471"/>
+													</SearchControlAddition>
+													<Events>
+														<Event name="BeforeAddRow">табИсключенияСотрудниковПередНачаломДобавления</Event>
+														<Event name="OnStartEdit">табИсключенияСотрудниковПриНачалеРедактирования</Event>
+														<Event name="OnChange">табИсключенияСотрудниковПриИзменении</Event>
+													</Events>
+													<ChildItems>
+														<InputField name="табИсключенияСотрудниковСотрудник" id="472">
+															<DataPath>табИсключенияСотрудников.Сотрудник</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сотрудник</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Співробітник</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ChoiceParameterLinks>
+																<xr:Link>
+																	<xr:Name>Отбор.ГоловнаяОрганизация</xr:Name>
+																	<xr:DataPath xsi:type="xs:string">1/0:d7f3da16-fe4d-476f-91c8-55b3d6dd792a</xr:DataPath>
+																	<xr:ValueChange>Clear</xr:ValueChange>
+																</xr:Link>
+															</ChoiceParameterLinks>
+															<ContextMenu name="табИсключенияСотрудниковСотрудникКонтекстноеМеню" id="473"/>
+															<ExtendedTooltip name="табИсключенияСотрудниковСотрудникРасширеннаяПодсказка" id="474"/>
+														</InputField>
+														<ColumnGroup name="табИсключенияСотрудниковГруппа1" id="494">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Продолжительность</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Тривалість</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Horizontal</Group>
+															<ShowInHeader>true</ShowInHeader>
+															<ExtendedTooltip name="табИсключенияСотрудниковГруппа1РасширеннаяПодсказка" id="495"/>
+															<ChildItems>
+																<InputField name="табИсключенияСотрудниковПродолжительностьРабочегоДня" id="475">
+																	<DataPath>табИсключенияСотрудников.ПродолжительностьРабочегоДня</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Пятидневный</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>uk</v8:lang>
+																			<v8:content>П'ятиденний</v8:content>
+																		</v8:item>
+																	</Title>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="табИсключенияСотрудниковПродолжительностьРабочегоДняКонтекстноеМеню" id="476"/>
+																	<ExtendedTooltip name="табИсключенияСотрудниковПродолжительностьРабочегоДняРасширеннаяПодсказка" id="477"/>
+																</InputField>
+																<InputField name="табИсключенияСотрудниковПродолжительностьРабочегоДня6" id="491">
+																	<DataPath>табИсключенияСотрудников.ПродолжительностьРабочегоДня6</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="табИсключенияСотрудниковПродолжительностьРабочегоДня6КонтекстноеМеню" id="492"/>
+																	<ExtendedTooltip name="табИсключенияСотрудниковПродолжительностьРабочегоДня6РасширеннаяПодсказка" id="493"/>
+																</InputField>
+															</ChildItems>
+														</ColumnGroup>
+														<InputField name="табИсключенияСотрудниковГрафик" id="485">
+															<DataPath>табИсключенияСотрудников.График</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>График</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Графік</v8:content>
+																</v8:item>
+															</Title>
+															<EditMode>EnterOnInput</EditMode>
+															<ClearButton>true</ClearButton>
+															<ContextMenu name="табИсключенияСотрудниковГрафикКонтекстноеМеню" id="486"/>
+															<ExtendedTooltip name="табИсключенияСотрудниковГрафикРасширеннаяПодсказка" id="487"/>
+															<Events>
+																<Event name="OnChange">табИсключенияСотрудниковГрафикПриИзменении</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="Группа7" id="295">
+			<Visible>false</Visible>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="296"/>
+			<ChildItems>
+				<Button name="ФормаЗаполнитьАвтоматически" id="209">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ЗаполнитьАвтоматически</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ФормаЗаполнитьАвтоматическиРасширеннаяПодсказка" id="210"/>
+				</Button>
+				<Button name="ФормаРасчитать" id="257">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.РассчитатьВсех</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.FixTable</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рассчитать всё</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ФормаРасчитатьРасширеннаяПодсказка" id="258"/>
+				</Button>
+				<Button name="ФормаРассчитатьТекущего" id="262">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.РассчитатьТекущего</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.ExternalDataSourceCube</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рассчитать выделенного</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ФормаРассчитатьТекущегоРасширеннаяПодсказка" id="263"/>
+				</Button>
+				<Button name="Печать" id="269">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.Печать</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Print</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сформировать</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="270"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.а_Табель</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Save>
+				<Field>1/0:0587260e-7171-4bd8-90db-b2d0aa8a1a9b</Field>
+				<Field>1/0:3e1dfe24-4b23-48af-bf35-3a323041075d</Field>
+				<Field>1/0:43ff6c9d-16db-444e-ab25-7e686c8e0b60</Field>
+				<Field>1/0:51adbef3-c1da-4d08-b974-2456fab91d66</Field>
+				<Field>1/0:585c7967-7595-498b-b1ae-b6f9685968ea</Field>
+				<Field>1/0:675fb17a-4165-4947-8787-2e128af19ad2</Field>
+				<Field>1/0:9d21d69a-bd4e-41c7-baf0-712db4ba24f0</Field>
+				<Field>1/0:f3a19a1a-8fed-428f-8066-b22b7b906250</Field>
+				<Field>1/0:fe5d2297-defd-407d-8615-906f642660de</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Период" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидПериода" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ДоступныеПериодыОтчета</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресДанныхКалендаря" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес данных календаря</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроставитьВидДня" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проставить принудительный вид дня</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>2</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="табОбозначений" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб обозначений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВидРасчета" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид расчета</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вид нарахувань</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCalculationTypesRef.Начисления</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Обозначение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обозначение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Позначення</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>2</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="УчитыватьВыходные" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учитывать выходные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Враховувати вихідні</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="УчитыватьПраздничныеДни" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учитывать праздничные дни</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="табИсключенияСотрудников" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключения сотрудников</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Сотрудник" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПродолжительностьРабочегоДня" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжительность рабочего дня</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="График" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>График</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Календари</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПродолжительностьРабочегоДня6" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шестидневный</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Шестиденний</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОсновнойГрафик" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основной график</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Основний графік</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Календари</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="овНормыВремениПоГрафикам" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нормы времени по графикам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Норми часу за графіками</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="График" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>График</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Календари</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НормаЧасов" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Норма часов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="РабочийДень" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Рабочий день</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДатаНачалаРабочегоПериода" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата начала рабочего периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаОкончанияРабочегоПериода" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата окончания рабочего периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьАвтоматически" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить автоматически</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьАвтоматически</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РассчитатьВсех" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать всё</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать всех</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РассчитатьВсех</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РассчитатьТекущего" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать выделенного</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать текущего</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РассчитатьТекущего</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Печать" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьКалендари" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть календари</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть календари</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьКалендари</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СброситьОбозначения" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить обозначения (по умлочанию)</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Скинути позначення (за замовчуванням)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить обозначения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СброситьОбозначения</Action>
+		</Command>
+		<Command name="ПодборСотрудников" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор сотрудников</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор сотрудников</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодборСотрудников</Action>
+		</Command>
+		<Command name="ЗаполнитьОсновнойГрафик" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить основной график</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить основной график</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьОсновнойГрафик</Action>
+		</Command>
+		<Command name="ЗаполнитьОтветственныхЛиц" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить ответственными лицами организации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заповнити відповідальними особами організації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить ответственных лиц</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьОтветственныхЛиц</Action>
+		</Command>
+	</Commands>
+</Form>

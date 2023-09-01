@@ -39,6 +39,7 @@
 			<Subsystem>СтраховыеВзносы</Subsystem>
 			<Subsystem>ВыплатаЗарплаты</Subsystem>
 			<Subsystem>СправочникиИНастройки</Subsystem>
+			<Subsystem>а_Дополнительно</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

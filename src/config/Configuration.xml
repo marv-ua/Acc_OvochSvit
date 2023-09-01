@@ -1218,6 +1218,7 @@
 			<Role>ерпсИспользованиеАктаПриемкиПередачи</Role>
 			<Role>ерпсЧтениеИПросмотрАктаПриемаПередачи</Role>
 			<Role>епрсРазрешитьРедактированиеЗагруженныхКолонокАкта</Role>
+			<Role>а_ИспользованиеТабеля</Role>
 			<CommonTemplate>ИнструкцияКакВыполнитьУстановкуОбновленияВручную</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие_uk</CommonTemplate>
@@ -3247,6 +3248,7 @@
 			<Document>УстановкаЦенНоменклатуры</Document>
 			<Document>ерпсЗаявкаНаСозданиеАктовПриемкиПередачи</Document>
 			<Document>ерпсАктПриемкиПередачиТоваров</Document>
+			<Document>а_Табель</Document>
 			<DocumentNumerator>НумераторНалоговыхДокументов</DocumentNumerator>
 			<Sequence>ДокументыОрганизаций</Sequence>
 			<DocumentJournal>Деньги</DocumentJournal>
