@@ -338,6 +338,7 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>Объект.Товары</DataPath>
+							<SearchStringLocation>CommandBar</SearchStringLocation>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ТоварыКонтекстноеМеню" id="20">
 								<ChildItems>

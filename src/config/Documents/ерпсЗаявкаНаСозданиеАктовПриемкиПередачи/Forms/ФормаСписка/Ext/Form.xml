@@ -114,6 +114,11 @@
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="36"/>
 				</LabelField>
+				<LabelField name="ОписаниеДокумента" id="39">
+					<DataPath>Список.ОписаниеДокумента</DataPath>
+					<ContextMenu name="ОписаниеДокументаКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ОписаниеДокументаРасширеннаяПодсказка" id="41"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
