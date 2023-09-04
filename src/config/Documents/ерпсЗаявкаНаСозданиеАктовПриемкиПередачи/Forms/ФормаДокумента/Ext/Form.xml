@@ -511,6 +511,13 @@
 									<ContextMenu name="ТоварыАдресДоставкиКонтекстноеМеню" id="68"/>
 									<ExtendedTooltip name="ТоварыАдресДоставкиРасширеннаяПодсказка" id="69"/>
 								</InputField>
+								<InputField name="ТоварыДатаОтгрузки" id="250">
+									<DataPath>Объект.Товары.ДатаОтгрузки</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыДатаОтгрузкиКонтекстноеМеню" id="251"/>
+									<ExtendedTooltip name="ТоварыДатаОтгрузкиРасширеннаяПодсказка" id="252"/>
+								</InputField>
 								<InputField name="ТоварыИдентификатор" id="181">
 									<DataPath>Объект.Товары.Идентификатор</DataPath>
 									<Visible>false</Visible>
@@ -641,6 +648,8 @@
 								<ExtendedTooltip name="ПунктыРазгрузкиУправлениеПоискомРасширеннаяПодсказка" id="88"/>
 							</SearchControlAddition>
 							<Events>
+								<Event name="BeforeDeleteRow">ПунктыРазгрузкиПередУдалением</Event>
+								<Event name="BeforeRowChange">ПунктыРазгрузкиПередНачаломИзменения</Event>
 								<Event name="OnChange">ПунктыРазгрузкиПриИзменении</Event>
 							</Events>
 							<ChildItems>
@@ -713,6 +722,9 @@
 											<EditMode>EnterOnInput</EditMode>
 											<ContextMenu name="ПунктыРазгрузкиДатаОтгрузкиКонтекстноеМеню" id="129"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиДатаОтгрузкиРасширеннаяПодсказка" id="130"/>
+											<Events>
+												<Event name="OnChange">ПунктыРазгрузкиДатаОтгрузкиПриИзменении</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
@@ -961,6 +973,20 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаВывозаДоИзменения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата вывоза до изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>

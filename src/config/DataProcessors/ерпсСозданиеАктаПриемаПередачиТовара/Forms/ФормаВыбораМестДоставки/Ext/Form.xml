@@ -69,22 +69,6 @@
 			<ContextMenu name="ВыбранныеМестаКонтекстноеМеню" id="42"/>
 			<AutoCommandBar name="ВыбранныеМестаКоманднаяПанель" id="43">
 				<ChildItems>
-					<Button name="ВыбранныеМестаДобавитьПункт" id="79">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ДобавитьПункт</CommandName>
-						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-						<ExtendedTooltip name="ВыбранныеМестаДобавитьПунктРасширеннаяПодсказка" id="80"/>
-					</Button>
-					<Button name="ВыбранныеМестаВыбратьВсеВидыЦен" id="69">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ВыбратьВсеМеста</CommandName>
-						<ExtendedTooltip name="ВыбранныеМестаВыбратьВсеВидыЦенРасширеннаяПодсказка" id="70"/>
-					</Button>
-					<Button name="ВыбранныеМестаИсключитьВсеВидыЦен" id="71">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ИсключитьВсеМеста</CommandName>
-						<ExtendedTooltip name="ВыбранныеМестаИсключитьВсеВидыЦенРасширеннаяПодсказка" id="72"/>
-					</Button>
 					<Button name="ФильтрВыбранные" id="81">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ФильтрВыбранные</CommandName>
@@ -99,6 +83,32 @@
 							</v8:item>
 						</Title>
 						<ExtendedTooltip name="ФильтрВыбранныеРасширеннаяПодсказка" id="82"/>
+					</Button>
+					<Button name="ВыбранныеМестаВыбратьВсеВидыЦен" id="69">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыбратьВсеМеста</CommandName>
+						<ExtendedTooltip name="ВыбранныеМестаВыбратьВсеВидыЦенРасширеннаяПодсказка" id="70"/>
+					</Button>
+					<Button name="ВыбранныеМестаИсключитьВсеВидыЦен" id="71">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ИсключитьВсеМеста</CommandName>
+						<ExtendedTooltip name="ВыбранныеМестаИсключитьВсеВидыЦенРасширеннаяПодсказка" id="72"/>
+					</Button>
+					<Button name="ВыбранныеМестаДобавитьПункт" id="79">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДобавитьПункт</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Добавить (новый)</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Додати (новий)</v8:content>
+							</v8:item>
+						</Title>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ВыбранныеМестаДобавитьПунктРасширеннаяПодсказка" id="80"/>
 					</Button>
 				</ChildItems>
 			</AutoCommandBar>
@@ -717,6 +727,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДобавитьПункт</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 		<Command name="ФильтрВыбранные" id="5">
 			<Title>
