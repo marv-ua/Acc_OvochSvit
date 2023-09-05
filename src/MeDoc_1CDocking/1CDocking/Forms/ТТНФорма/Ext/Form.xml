@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Формирование ТТН</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Формування ТТН</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="АвтотранспортноеСредство" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автотранспортное средство</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content> Автотранспортний засіб</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автотранспортное средство</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="АвтотранспортноеСредствоРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<InputField name="МаркаАвто" id="40">
+					<DataPath>МаркаАвто</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Марка автомобиля</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Марка автомобіля</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="МаркаАвтоКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="МаркаАвтоРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="НомерАвто" id="46">
+					<DataPath>НомерАвто</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гос. номер автомобиля</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Держ. номер автомобіля</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НомерАвтоКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="НомерАвтоРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ТипАвто" id="64">
+					<DataPath>ТипАвто</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип автомобиля</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Тип автомобіля</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТипАвтоКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ТипАвтоРасширеннаяПодсказка" id="66"/>
+				</InputField>
+				<InputField name="МаркаПриц" id="43">
+					<DataPath>МаркаПриц</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Марка прицепа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Марка причепу</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="МаркаПрицКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="МаркаПрицРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="НомерПриц" id="49">
+					<DataPath>НомерПриц</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гос. номер прицепа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Держ. номер причепу</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НомерПрицКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="НомерПрицРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ТипПриц" id="67">
+					<DataPath>ТипПриц</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип прицепа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Тип причепу</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТипПрицКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ТипПрицРасширеннаяПодсказка" id="69"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="СведенияОДоставке" id="79">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения о доставке</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відомості про доставку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения о доставке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="СведенияОДоставкеРасширеннаяПодсказка" id="80"/>
+			<ChildItems>
+				<InputField name="Закажчик" id="37">
+					<DataPath>ЗакажчикАлко</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказчик</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Замовник</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЗакажчикКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ЗакажчикРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="Перевожчик" id="52">
+					<DataPath>ПеревожчикАлко</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевозчик</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Перевізник</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПеревожчикКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ПеревожчикРасширеннаяПодсказка" id="54"/>
+				</InputField>
+				<InputField name="ВодФИО" id="19">
+					<DataPath>ВодФИО</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Водитель ФИО</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Водій ПІБ</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ВодФИОКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ВодФИОРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="удостоверение" id="70">
+					<DataPath>УдостоверениеВод</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Водитель № удостоверения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Водій №посвідчення</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="удостоверениеКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="удостоверениеРасширеннаяПодсказка" id="72"/>
+				</InputField>
+				<InputField name="СопроводДокумент" id="61">
+					<DataPath>СопроводДокумент</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сопроводительный документ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Супровідний документ</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СопроводДокументКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="СопроводДокументРасширеннаяПодсказка" id="63"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="МестаНазначения" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Места назначения </v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Місця призначення</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Места назначения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="МестаНазначенияРасширеннаяПодсказка" id="82"/>
+			<ChildItems>
+				<InputField name="ПунктПогрузкиН" id="58">
+					<DataPath>ПунктПогрузкиАлкоН</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пункт погрузки название</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пункт навантаження назва</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПунктПогрузкиНКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ПунктПогрузкиНРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="ПунктПогрузкиА" id="55">
+					<DataPath>ПунктПогрузкиАлкоА</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пункт погрузки адрес</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пункт навантаження адресса</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПунктПогрузкиАКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ПунктПогрузкиАРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ГрузополучательФОИ" id="34">
+					<DataPath>ГрузополучательФИО</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Груз получил ФИО</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вантаж отримав ПІБ</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ГрузополучательФОИКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ГрузополучательФОИРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="ГрузополучательДолжность" id="22">
+					<DataPath>ГрузополучательДолжность</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Груз получил должность</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вантаж отримав посада</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ГрузополучательДолжностьКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ГрузополучательДолжностьРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="АкцизныйПодаток1" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акцизный налог</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Акцизний податок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акцизный податок1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="АкцизныйПодаток1РасширеннаяПодсказка" id="84"/>
+			<ChildItems>
+				<InputField name="АкцизныйПодаток" id="16">
+					<DataPath>АкцизныйПодаток</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Акцизный налог</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Акцизний податок</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="АкцизныйПодатокКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="АкцизныйПодатокРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="Группа1" id="75">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<Button name="Сохранить" id="1">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.StandardCommand.SaveValues</CommandName>
+					<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="2"/>
+				</Button>
+				<Button name="Добавить" id="7">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Добавить</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавить</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Додати</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДобавитьРасширеннаяПодсказка" id="8"/>
+				</Button>
+				<Button name="Закрыть" id="73">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="74"/>
+				</Button>
+				<Button name="Востановить" id="3">
+					<Type>CommandBarButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.StandardCommand.RestoreValues</CommandName>
+					<ExtendedTooltip name="ВостановитьРасширеннаяПодсказка" id="4"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.МедоваяСтыковка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="МаркаАвто" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Марка авто</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>МаркаАвто</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="НомерПриц" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер приц</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>НомерПриц</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗакажчикАлко" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закажчик алко</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ЗакажчикАлко</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПеревожчикАлко" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перевожчик алко</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ПеревожчикАлко</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВодФИО" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вод ФИО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ВодФИО</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="УдостоверениеВод" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удостоверение вод</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>УдостоверениеВод</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СопроводДокумент" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопровод документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>СопроводДокумент</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПунктПогрузкиАлкоН" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пункт погрузки алко Н</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ПунктПогрузкиАлкоН</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПунктПогрузкиАлкоА" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пункт погрузки алко А</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ПунктПогрузкиАлкоА</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="НомерАвто" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер авто</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>НомерАвто</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТипАвто" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип авто</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ТипАвто</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="МаркаПриц" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Марка приц</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>МаркаПриц</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТипПриц" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип приц</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ТипПриц</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ГрузополучательДолжность" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Грузополучатель должность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ГрузополучательДолжность</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ГрузополучательФИО" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Грузополучатель ФИО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ГрузополучательФИО</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="АкцизныйПодаток" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акцизный податок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>АкцизныйПодаток</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Добавить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Добавить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
