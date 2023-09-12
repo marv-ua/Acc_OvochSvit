@@ -1219,6 +1219,7 @@
 			<Role>ерпсЧтениеИПросмотрАктаПриемаПередачи</Role>
 			<Role>епрсРазрешитьРедактированиеЗагруженныхКолонокАкта</Role>
 			<Role>а_ИспользованиеТабеля</Role>
+			<Role>а_ЧтениеДобавлениеИзменениеДанныхБухгалтерии</Role>
 			<CommonTemplate>ИнструкцияКакВыполнитьУстановкуОбновленияВручную</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие_uk</CommonTemplate>
@@ -4026,6 +4027,7 @@
 			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
 			<InformationRegister>ШкалаСтавокНалогов</InformationRegister>
 			<InformationRegister>ЭлектронныеПодписи</InformationRegister>
+			<InformationRegister>а_ПаспортныеДанные</InformationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоВзносамВФонды</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоУдержаниям</AccumulationRegister>
