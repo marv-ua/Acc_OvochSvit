@@ -334,6 +334,7 @@
 					<ChildItems>
 						<Table name="Товары" id="19">
 							<Representation>List</Representation>
+							<Footer>true</Footer>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -439,6 +440,7 @@
 								<LabelField name="ТоварыНомерСтроки" id="32">
 									<DataPath>Объект.Товары.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.Товары.RowsCount</FooterDataPath>
 									<ContextMenu name="ТоварыНомерСтрокиКонтекстноеМеню" id="33"/>
 									<ExtendedTooltip name="ТоварыНомерСтрокиРасширеннаяПодсказка" id="34"/>
 								</LabelField>
@@ -493,12 +495,14 @@
 									<DataPath>Объект.Товары.ЗагруженноеКоличество</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.Товары.TotalЗагруженноеКоличество</FooterDataPath>
 									<ContextMenu name="ТоварыЗагруженноеКоличествоКонтекстноеМеню" id="138"/>
 									<ExtendedTooltip name="ТоварыЗагруженноеКоличествоРасширеннаяПодсказка" id="139"/>
 								</InputField>
 								<InputField name="ТоварыКоличество" id="41">
 									<DataPath>Объект.Товары.Количество</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.Товары.TotalКоличество</FooterDataPath>
 									<ContextMenu name="ТоварыКоличествоКонтекстноеМеню" id="42"/>
 									<ExtendedTooltip name="ТоварыКоличествоРасширеннаяПодсказка" id="43"/>
 									<Events>
@@ -572,6 +576,7 @@
 					<ExtendedTooltip name="ГруппаПунктыРазгрузкиРасширеннаяПодсказка" id="75"/>
 					<ChildItems>
 						<Table name="ПунктыРазгрузки" id="76">
+							<Footer>true</Footer>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -657,6 +662,7 @@
 								<LabelField name="ПунктыРазгрузкиНомерСтроки" id="89">
 									<DataPath>Объект.ПунктыРазгрузки.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.ПунктыРазгрузки.RowsCount</FooterDataPath>
 									<ContextMenu name="ПунктыРазгрузкиНомерСтрокиКонтекстноеМеню" id="90"/>
 									<ExtendedTooltip name="ПунктыРазгрузкиНомерСтрокиРасширеннаяПодсказка" id="91"/>
 								</LabelField>
@@ -732,6 +738,7 @@
 								<InputField name="ПунктыРазгрузкиКоличество" id="140">
 									<DataPath>Объект.ПунктыРазгрузки.Количество</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.ПунктыРазгрузки.TotalКоличество</FooterDataPath>
 									<ContextMenu name="ПунктыРазгрузкиКоличествоКонтекстноеМеню" id="141"/>
 									<ExtendedTooltip name="ПунктыРазгрузкиКоличествоРасширеннаяПодсказка" id="142"/>
 								</InputField>
