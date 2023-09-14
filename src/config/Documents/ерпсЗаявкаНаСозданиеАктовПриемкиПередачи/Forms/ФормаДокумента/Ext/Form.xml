@@ -596,6 +596,11 @@
 										<CommandName>Form.Command.ПечатьЗаказНаСборку</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаказНаСборкуРасширеннаяПодсказка" id="238"/>
 									</Button>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюСоздатьАкт" id="253">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьАкт</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСоздатьАктРасширеннаяПодсказка" id="254"/>
+									</Button>
 								</ChildItems>
 							</ContextMenu>
 							<AutoCommandBar name="ПунктыРазгрузкиКоманднаяПанель" id="78">
@@ -1370,6 +1375,25 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьЗаявки</Action>
+		</Command>
+		<Command name="СоздатьАкт" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать Акт</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити Акт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Создать акт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьАкт</Action>
 		</Command>
 	</Commands>
 </Form>
