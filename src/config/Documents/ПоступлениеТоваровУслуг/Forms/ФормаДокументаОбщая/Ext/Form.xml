@@ -187,6 +187,11 @@
 								<Event name="StartChoice">СделкаНачалоВыбора</Event>
 							</Events>
 						</InputField>
+						<InputField name="ПериодОказанияУслуг" id="630">
+							<DataPath>Объект.СрокВыполнения</DataPath>
+							<ContextMenu name="ПериодОказанияУслугКонтекстноеМеню" id="631"/>
+							<ExtendedTooltip name="ПериодОказанияУслугРасширеннаяПодсказка" id="632"/>
+						</InputField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаШапкаПравая" id="226">
