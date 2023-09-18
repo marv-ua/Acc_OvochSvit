@@ -251,25 +251,49 @@
 								<Event name="OnChange">НомерПриИзменении</Event>
 							</Events>
 						</InputField>
-						<InputField name="Дата" id="18">
-							<DataPath>Объект.Дата</DataPath>
+						<UsualGroup name="а_ГруппаДата" id="163">
 							<Title>
 								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>от   </v8:content>
-								</v8:item>
-								<v8:item>
 									<v8:lang>uk</v8:lang>
-									<v8:content>від   </v8:content>
+									<v8:content>А группа дата</v8:content>
 								</v8:item>
 							</Title>
-							<Width>12</Width>
-							<ContextMenu name="ДатаКонтекстноеМеню" id="19"/>
-							<ExtendedTooltip name="ДатаExtendedTooltip" id="116"/>
-							<Events>
-								<Event name="OnChange">ДатаПриИзменении</Event>
-							</Events>
-						</InputField>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>А группа дата</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="а_ГруппаДатаРасширеннаяПодсказка" id="164"/>
+							<ChildItems>
+								<InputField name="Дата" id="18">
+									<DataPath>Объект.Дата</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>от   </v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>від   </v8:content>
+										</v8:item>
+									</Title>
+									<Width>12</Width>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="ДатаExtendedTooltip" id="116"/>
+									<Events>
+										<Event name="OnChange">ДатаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="а_ДатаОкончания" id="165">
+									<DataPath>Объект.а_ДатаОкончания</DataPath>
+									<ContextMenu name="а_ДатаОкончанияКонтекстноеМеню" id="166"/>
+									<ExtendedTooltip name="а_ДатаОкончанияРасширеннаяПодсказка" id="167"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<Pages name="ГруппаСтраницы" id="83">
