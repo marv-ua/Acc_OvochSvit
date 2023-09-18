@@ -596,6 +596,11 @@
 										<CommandName>Form.Command.ПечатьЗаказНаСборку</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаказНаСборкуРасширеннаяПодсказка" id="238"/>
 									</Button>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаявка" id="255">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПечатьЗаявка</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаявкаРасширеннаяПодсказка" id="256"/>
+									</Button>
 									<Button name="ПунктыРазгрузкиКонтекстноеМенюСоздатьАкт" id="253">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.СоздатьАкт</CommandName>
@@ -1394,6 +1399,29 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьАкт</Action>
+		</Command>
+		<Command name="ПечатьЗаявка" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявка по пункту разгрузки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заявка по пункту розвантаження</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Печать заказ на сборку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьЗаявка</Action>
 		</Command>
 	</Commands>
 </Form>
