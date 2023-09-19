@@ -515,6 +515,9 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыАдресДоставкиКонтекстноеМеню" id="68"/>
 									<ExtendedTooltip name="ТоварыАдресДоставкиРасширеннаяПодсказка" id="69"/>
+									<Events>
+										<Event name="OnChange">ТоварыАдресДоставкиПриИзменении</Event>
+									</Events>
 								</InputField>
 								<InputField name="ТоварыДатаОтгрузки" id="250">
 									<DataPath>Объект.Товары.ДатаОтгрузки</DataPath>
@@ -670,13 +673,34 @@
 								<Event name="OnChange">ПунктыРазгрузкиПриИзменении</Event>
 							</Events>
 							<ChildItems>
-								<LabelField name="ПунктыРазгрузкиНомерСтроки" id="89">
-									<DataPath>Объект.ПунктыРазгрузки.LineNumber</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<FooterDataPath>Объект.ПунктыРазгрузки.RowsCount</FooterDataPath>
-									<ContextMenu name="ПунктыРазгрузкиНомерСтрокиКонтекстноеМеню" id="90"/>
-									<ExtendedTooltip name="ПунктыРазгрузкиНомерСтрокиРасширеннаяПодсказка" id="91"/>
-								</LabelField>
+								<ColumnGroup name="ПунктыРазгрузкиГруппа9" id="260">
+									<Group>InCell</Group>
+									<ExtendedTooltip name="ПунктыРазгрузкиГруппа9РасширеннаяПодсказка" id="261"/>
+									<ChildItems>
+										<InputField name="ПунктыРазгрузкиСтатус" id="257">
+											<DataPath>Объект.ПунктыРазгрузки.Статус</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>4</MaxWidth>
+											<InputHint>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Статус...</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="ПунктыРазгрузкиСтатусКонтекстноеМеню" id="258"/>
+											<ExtendedTooltip name="ПунктыРазгрузкиСтатусРасширеннаяПодсказка" id="259"/>
+										</InputField>
+										<LabelField name="ПунктыРазгрузкиНомерСтроки" id="89">
+											<DataPath>Объект.ПунктыРазгрузки.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<FooterDataPath>Объект.ПунктыРазгрузки.RowsCount</FooterDataPath>
+											<ContextMenu name="ПунктыРазгрузкиНомерСтрокиКонтекстноеМеню" id="90"/>
+											<ExtendedTooltip name="ПунктыРазгрузкиНомерСтрокиРасширеннаяПодсказка" id="91"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
 								<ColumnGroup name="ПунктыРазгрузкиГруппа1" id="158">
 									<ExtendedTooltip name="ПунктыРазгрузкиГруппа1РасширеннаяПодсказка" id="159"/>
 									<ChildItems>
