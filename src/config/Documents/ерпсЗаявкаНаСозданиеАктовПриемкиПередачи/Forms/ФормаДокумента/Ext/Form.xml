@@ -407,6 +407,25 @@
 										</Picture>
 										<ExtendedTooltip name="ТоварыЗагрузитьИзВнешнегоФайлаРасширеннаяПодсказка" id="66"/>
 									</Button>
+									<ButtonGroup name="ТоварыГруппа2" id="266">
+										<ExtendedTooltip name="ТоварыГруппа2РасширеннаяПодсказка" id="267"/>
+										<ChildItems>
+											<Button name="ТоварыНайти" id="262">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Товары.StandardCommand.Find</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ТоварыНайтиРасширеннаяПодсказка" id="263"/>
+											</Button>
+											<Button name="ТоварыОтменитьПоиск" id="264">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Item.Товары.StandardCommand.CancelSearch</CommandName>
+												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+												<ExtendedTooltip name="ТоварыОтменитьПоискРасширеннаяПодсказка" id="265"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
 								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="ТоварыРасширеннаяПодсказка" id="22"/>
