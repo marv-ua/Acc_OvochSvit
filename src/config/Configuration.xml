@@ -2009,6 +2009,7 @@
 			<CommonModule>ФормыКлиент</CommonModule>
 			<CommonModule>ФормыКлиентСервер</CommonModule>
 			<CommonModule>кд_ЭлектроннаяПочта</CommonModule>
+			<CommonModule>а_1ДФ</CommonModule>
 			<CommonAttribute>ОбластьДанныхВспомогательныеДанные</CommonAttribute>
 			<CommonAttribute>ОбластьДанныхОсновныеДанные</CommonAttribute>
 			<ExchangePlan>АвтономнаяРабота</ExchangePlan>

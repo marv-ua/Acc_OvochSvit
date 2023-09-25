@@ -539,6 +539,12 @@
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="396"/>
 													<ChildItems>
+														<InputField name="Пол" id="400">
+															<DataPath>Объект.Пол</DataPath>
+															<HorizontalStretch>false</HorizontalStretch>
+															<ContextMenu name="ПолКонтекстноеМеню" id="401"/>
+															<ExtendedTooltip name="ПолРасширеннаяПодсказка" id="402"/>
+														</InputField>
 														<LabelDecoration name="а_ПаспортныеДанные" id="397">
 															<Title formatted="false">
 																<v8:item>
