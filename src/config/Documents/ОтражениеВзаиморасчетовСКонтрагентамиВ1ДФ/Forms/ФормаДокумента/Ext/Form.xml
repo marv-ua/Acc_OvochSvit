@@ -319,6 +319,18 @@
 					<ContextMenu name="НДФЛНалогКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="НДФЛНалогРасширеннаяПодсказка" id="37"/>
 				</InputField>
+				<InputField name="НДФЛПеречисленныйДоход" id="79">
+					<DataPath>Объект.НДФЛ.а_ПеречисленныйДоход</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Наведений дохід (ФОП)</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НДФЛПеречисленныйДоходКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="НДФЛПеречисленныйДоходРасширеннаяПодсказка" id="81"/>
+				</InputField>
 			</ChildItems>
 		</Table>
 		<UsualGroup name="ГруппаКомментарий" id="72">
