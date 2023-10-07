@@ -3122,6 +3122,7 @@
 			<Catalog>а_Периоды</Catalog>
 			<Catalog>а_НастройкиЗагрузкиЗаявок</Catalog>
 			<Catalog>а_ПериодыОказанияУслуг</Catalog>
+			<Catalog>а_Номенклатура</Catalog>
 			<Document>АвансовыйОтчет</Document>
 			<Document>АктОбОказанииПроизводственныхУслуг</Document>
 			<Document>АктСверкиВзаиморасчетов</Document>

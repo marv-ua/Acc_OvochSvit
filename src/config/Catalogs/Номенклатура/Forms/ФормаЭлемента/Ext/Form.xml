@@ -274,6 +274,11 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаЕдиницаТекстExtendedTooltip" id="227"/>
 				</UsualGroup>
+				<InputField name="а_Номенклатура" id="319">
+					<DataPath>Объект.а_Номенклатура</DataPath>
+					<ContextMenu name="а_НоменклатураКонтекстноеМеню" id="320"/>
+					<ExtendedTooltip name="а_НоменклатураРасширеннаяПодсказка" id="321"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<Pages name="ГруппаСтраницы" id="146">
