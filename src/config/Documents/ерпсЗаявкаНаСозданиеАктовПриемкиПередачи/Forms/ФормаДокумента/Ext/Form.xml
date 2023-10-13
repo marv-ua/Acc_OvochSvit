@@ -609,6 +609,11 @@
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ПунктыРазгрузкиКонтекстноеМеню" id="77">
 								<ChildItems>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюЗаменитьВодителя" id="268">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаменитьВодителя</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюЗаменитьВодителяРасширеннаяПодсказка" id="269"/>
+									</Button>
 									<Button name="ПунктыРазгрузкиКонтекстноеМенюОбработано" id="233">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.Обработано</CommandName>
@@ -1481,6 +1486,30 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ПечатьЗаявка</Action>
+		</Command>
+		<Command name="ЗаменитьВодителя" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить водителя</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Замінити водія</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заменить водителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗначокКадры16</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаменитьВодителя</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>
