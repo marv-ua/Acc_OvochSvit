@@ -737,6 +737,14 @@
 								<dcscor:parameter>Шрифт</dcscor:parameter>
 								<dcscor:value xsi:type="v8ui:Font" ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:VerticalAlign">Top</dcscor:value>
+							</dcscor:item>
 						</dcsset:appearance>
 					</dcsset:item>
 					<dcsset:item>
@@ -873,6 +881,7 @@
 								<dcsset:filter/>
 								<dcsset:appearance>
 									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:use>false</dcscor:use>
 										<dcscor:parameter>ЦветФона</dcscor:parameter>
 										<dcscor:value xsi:type="v8ui:Color">web:PowderBlue</dcscor:value>
 									</dcscor:item>
