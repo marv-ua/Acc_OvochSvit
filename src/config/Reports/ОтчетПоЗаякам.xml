@@ -39,6 +39,7 @@
 		</Properties>
 		<ChildObjects>
 			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных1</Template>
 			<Template>СхемаКомпоновкиДанныхЗаказНаСборку</Template>
 		</ChildObjects>
 	</Report>

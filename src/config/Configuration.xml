@@ -206,7 +206,7 @@
 			<MobileApplicationURLs/>
 			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
 			<DefaultInterface/>
-			<DefaultStyle>Style.УПР</DefaultStyle>
+			<DefaultStyle>Style.Основной</DefaultStyle>
 			<DefaultLanguage>Language.Украинский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -367,6 +367,7 @@
 			<StyleItem>ШрифтТекстаМонитораРуководителя</StyleItem>
 			<Style>Основной</Style>
 			<Style>УПР</Style>
+			<Style>Склад</Style>
 			<CommonPicture>GoogleMaps</CommonPicture>
 			<CommonPicture>Skype</CommonPicture>
 			<CommonPicture>Администрирование</CommonPicture>

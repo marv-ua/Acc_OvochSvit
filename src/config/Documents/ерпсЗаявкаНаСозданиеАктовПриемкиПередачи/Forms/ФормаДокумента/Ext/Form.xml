@@ -653,6 +653,11 @@
 												<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 												<ExtendedTooltip name="ПунктыРазгрузкиСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="200"/>
 											</Button>
+											<Button name="ПунктыРазгрузкиСортироватьПоПодтвержденным" id="270">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СортироватьПоПодтвержденным</CommandName>
+												<ExtendedTooltip name="ПунктыРазгрузкиСортироватьПоПодтвержденнымРасширеннаяПодсказка" id="271"/>
+											</Button>
 										</ChildItems>
 									</ButtonGroup>
 									<Button name="ПунктыРазгрузкиОбновитьПунктыРазгрузки" id="187">
@@ -1510,6 +1515,29 @@
 			</Picture>
 			<Action>ЗаменитьВодителя</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СортироватьПоПодтвержденным" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать по подтвержденным</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сортувати за підтвердженими</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сортировать по подтвержденным</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ОбновлениеРО16</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СортироватьПоПодтвержденным</Action>
 		</Command>
 	</Commands>
 </Form>
