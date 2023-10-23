@@ -605,6 +605,10 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>Объект.ПунктыРазгрузки</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
 							<SearchStringLocation>CommandBar</SearchStringLocation>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ПунктыРазгрузкиКонтекстноеМеню" id="77">
