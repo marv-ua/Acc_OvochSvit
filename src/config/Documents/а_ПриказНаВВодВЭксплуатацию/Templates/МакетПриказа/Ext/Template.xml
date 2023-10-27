@@ -1416,7 +1416,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>4.	Строк корисного використання встановити [СрокПолезногоИспользованияБУ], ліквідаційну вартість визначити такою, що дорівнює нулю.</v8:content>
+							<v8:content>4.	Строк корисного використання встановити [СрокПолезногоИспользованияБУ], ліквідаційну вартість визначити такою, що дорівнює [ЛиквидационнаяСтоимость].</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1584,7 +1584,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>18</f>
+					<f>17</f>
 					<tl>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
@@ -1844,8 +1844,48 @@
 		<name>Подвал</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>21</beginRow>
+			<beginRow>29</beginRow>
 			<endRow>38</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Пункт2</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>21</beginRow>
+			<endRow>22</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Пункт3</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>23</beginRow>
+			<endRow>24</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Пункт4</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>25</beginRow>
+			<endRow>26</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Пункт5</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>27</beginRow>
+			<endRow>28</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
