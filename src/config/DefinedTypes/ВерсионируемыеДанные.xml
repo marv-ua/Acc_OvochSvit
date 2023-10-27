@@ -115,6 +115,7 @@
 				<v8:Type>cfg:CatalogRef.ВидыВыплат</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПоступлениеИзПереработки</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеПараметровРасчетаИндексации</v8:Type>
+				<v8:Type>cfg:DocumentRef.а_ПриказНаПокупку</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеНалоговогоНазначенияОС</v8:Type>
 				<v8:Type>cfg:CatalogRef.СтатьиДоходов</v8:Type>
 				<v8:Type>cfg:DocumentRef.Увольнение</v8:Type>

@@ -72,6 +72,7 @@
 				<v8:Type>cfg:DocumentRef.КомплектацияНоменклатуры</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПриходныйКассовыйОрдер</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПоступлениеИзПереработки</v8:Type>
+				<v8:Type>cfg:DocumentRef.а_ПриказНаПокупку</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВыработкаНМА</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеСостоянияОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВедомостьНаВыплатуЗарплатыВБанк</v8:Type>
@@ -196,6 +197,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ТребованиеНакладная.TabularSection.Материалы.Attribute.ДокументОприходования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи.Attribute.ДокументОснования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсАктПриемкиПередачиТоваров.Attribute.ЗаявкаНаСозданиеАктовПриемкиПередачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.а_ПриказНаПокупку.Attribute.ДокументОснование</xr:Item>
 			</Content>
 			<DefaultForm/>
 			<AuxiliaryForm/>

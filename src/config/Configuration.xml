@@ -2253,6 +2253,8 @@
 			<EventSubscription>УстановитьРежимыРаботыФормыСотрудника</EventSubscription>
 			<EventSubscription>УстановитьФункциональныеОпцииОрганизацииБазовая</EventSubscription>
 			<EventSubscription>УстановитьФункциональныеОпцииУчетСтраховыхВзносов</EventSubscription>
+			<EventSubscription>а_ПередЗаписьюДокументаПроверкаНомераПоДатеИОрганизации</EventSubscription>
+			<EventSubscription>а_УстановитьПрефиксИнформационнойБазыИОрганизацииНомеруДокумента</EventSubscription>
 			<ScheduledJob>ЗаполнениеДанныхДляОграниченияДоступа</ScheduledJob>
 			<ScheduledJob>ЗапросЛицензийУникальныхУслуг</ScheduledJob>
 			<ScheduledJob>ЗапускДополнительныхОбработок</ScheduledJob>
@@ -3256,6 +3258,7 @@
 			<Document>ерпсЗаявкаНаСозданиеАктовПриемкиПередачи</Document>
 			<Document>ерпсАктПриемкиПередачиТоваров</Document>
 			<Document>а_Табель</Document>
+			<Document>а_ПриказНаПокупку</Document>
 			<DocumentNumerator>НумераторНалоговыхДокументов</DocumentNumerator>
 			<Sequence>ДокументыОрганизаций</Sequence>
 			<DocumentJournal>Деньги</DocumentJournal>

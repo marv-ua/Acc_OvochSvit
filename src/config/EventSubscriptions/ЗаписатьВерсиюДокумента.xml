@@ -83,6 +83,7 @@
 				<v8:Type>cfg:DocumentObject.ПеремещениеМалоценныхАктивовВЭксплуатации</v8:Type>
 				<v8:Type>cfg:DocumentObject.УстановкаГарантийныхСроковНалоговыйУчет</v8:Type>
 				<v8:Type>cfg:DocumentObject.ПринятиеКУчетуНМА</v8:Type>
+				<v8:Type>cfg:DocumentObject.а_ПриказНаПокупку</v8:Type>
 				<v8:Type>cfg:DocumentObject.ОприходованиеТоваров</v8:Type>
 				<v8:Type>cfg:DocumentObject.ИзменениеНалоговогоНазначенияТЗР</v8:Type>
 				<v8:Type>cfg:DocumentObject.ВыработкаОС</v8:Type>

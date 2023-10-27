@@ -105,6 +105,7 @@
 				<v8:Type>cfg:DocumentRef.ПриходныйКассовыйОрдер</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПоступлениеИзПереработки</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеПараметровРасчетаИндексации</v8:Type>
+				<v8:Type>cfg:DocumentRef.а_ПриказНаПокупку</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеНалоговогоНазначенияОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВыработкаНМА</v8:Type>
 				<v8:Type>cfg:DocumentRef.СписаниеДепонентовВДоходыОрганизаций</v8:Type>

@@ -53,6 +53,7 @@
 			<Subsystem>НематериальныеАктивы</Subsystem>
 			<Subsystem>АмортизацияНМА</Subsystem>
 			<Subsystem>МалоценныеАктивы</Subsystem>
+			<Subsystem>а_Дополнительно</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
