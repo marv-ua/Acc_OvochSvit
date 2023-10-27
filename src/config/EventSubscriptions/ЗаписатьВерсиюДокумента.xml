@@ -72,6 +72,7 @@
 				<v8:Type>cfg:DocumentObject.ИнвентаризацияОС</v8:Type>
 				<v8:Type>cfg:DocumentObject.ПередачаОборудованияВМонтаж</v8:Type>
 				<v8:Type>cfg:DocumentObject.КомплектацияНоменклатуры</v8:Type>
+				<v8:Type>cfg:DocumentObject.а_ПриказНаВВодВЭксплуатацию</v8:Type>
 				<v8:Type>cfg:DocumentObject.СписаниеОС</v8:Type>
 				<v8:Type>cfg:DocumentObject.ИндексацияОС</v8:Type>
 				<v8:Type>cfg:DocumentObject.МодернизацияОС</v8:Type>

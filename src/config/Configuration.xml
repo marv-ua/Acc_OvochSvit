@@ -3259,6 +3259,7 @@
 			<Document>ерпсАктПриемкиПередачиТоваров</Document>
 			<Document>а_Табель</Document>
 			<Document>а_ПриказНаПокупку</Document>
+			<Document>а_ПриказНаВВодВЭксплуатацию</Document>
 			<DocumentNumerator>НумераторНалоговыхДокументов</DocumentNumerator>
 			<Sequence>ДокументыОрганизаций</Sequence>
 			<DocumentJournal>Деньги</DocumentJournal>

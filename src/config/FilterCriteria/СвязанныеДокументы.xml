@@ -86,6 +86,7 @@
 				<v8:Type>cfg:DocumentRef.ИнвентаризацияОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИнвентаризацияТоваровНаСкладе</v8:Type>
 				<v8:Type>cfg:DocumentRef.СчетНаОплатуПоставщика</v8:Type>
+				<v8:Type>cfg:DocumentRef.а_ПриказНаВВодВЭксплуатацию</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеСпособовОтраженияРасходовПоАмортизацииОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПеремещениеОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеПараметровНачисленияАмортизацииОС</v8:Type>
@@ -198,6 +199,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи.Attribute.ДокументОснования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсАктПриемкиПередачиТоваров.Attribute.ЗаявкаНаСозданиеАктовПриемкиПередачи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.а_ПриказНаПокупку.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.а_ПриказНаВВодВЭксплуатацию.Attribute.ДокументОснование</xr:Item>
 			</Content>
 			<DefaultForm/>
 			<AuxiliaryForm/>

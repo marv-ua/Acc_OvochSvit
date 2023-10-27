@@ -142,6 +142,7 @@
 				<v8:Type>cfg:DocumentRef.ИнвентаризацияОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИнвентаризацияТоваровНаСкладе</v8:Type>
 				<v8:Type>cfg:DocumentRef.СчетНаОплатуПоставщика</v8:Type>
+				<v8:Type>cfg:DocumentRef.а_ПриказНаВВодВЭксплуатацию</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПриемНаРаботу</v8:Type>
 				<v8:Type>cfg:CatalogRef.СтатьиНеоперационныхРасходов</v8:Type>
 				<v8:Type>cfg:DocumentRef.РасчетыПоНалогуНаПрибыль</v8:Type>

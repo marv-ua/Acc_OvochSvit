@@ -1888,6 +1888,147 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ПриказНаВВодВЭксплуатацию</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("")
+#Иначе
+// ОсновноеУсловиеЧтение
+// Можно читать если есть доступ к (по или)
+// Организации
+#ПоЗначениям("Документ.а_ПриказНаВВодВЭксплуатацию", "Чтение", "",
+"Организации", "Организация",
+"","",
+"","",
+"","",
+"","","","","","","","",
+"","","","","","","","",
+"","","","","","","",""
+)
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("")
+#Иначе
+// ОсновноеУсловиеЗапись
+// Можно добавлять если есть доступ к (по или)
+// Организации
+#ПоЗначениям("Документ.а_ПриказНаВВодВЭксплуатацию", "", "",
+"Организации", "Организация",
+"","",
+"","",
+"","",
+"","","","","","","","",
+"","","","","","","","",
+"","","","","","","",""
+)
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляОбъекта("")
+#Иначе
+// ОсновноеУсловиеЗапись
+// Можно изменять если есть доступ к (по или)
+// Организации
+#ПоЗначениям("Документ.а_ПриказНаВВодВЭксплуатацию", "", "",
+"Организации", "Организация",
+"","",
+"","",
+"","",
+"","","","","","","","",
+"","","","","","","","",
+"","","","","","","",""
+)
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Report.ШахматнаяВедомость</name>
 		<right>
 			<name>Use</name>
