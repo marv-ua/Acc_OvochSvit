@@ -4380,6 +4380,37 @@
 			<Template>ПФ_MXL_Счёт</Template>
 			<Template>ПФ_MXL_Накладная1</Template>
 			<Template>ПФ_MXL_Накладная2</Template>
+			<Template>а_МакетВыгрузкиВXLS</Template>
+			<Command uuid="89e531ba-bbf0-428f-ba54-2d0522d73b1e">
+				<Properties>
+					<Name>а_СохранитьВXLS</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Cсохранить в XLS</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Зберегти в XLS</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>PictureAndText</Representation>
+					<ToolTip/>
+					<Picture>
+						<xr:Ref>CommonPicture.СохранитьСписок</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>
