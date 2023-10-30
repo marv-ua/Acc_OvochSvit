@@ -1023,7 +1023,7 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>11</f>
+					<f>18</f>
 					<parameter>Номер</parameter>
 				</c>
 			</c>
@@ -1046,7 +1046,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>18</f>
+					<f>19</f>
 					<parameter>ДополнительныеСведения</parameter>
 				</c>
 			</c>
@@ -1075,21 +1075,21 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>19</f>
+					<f>20</f>
 					<parameter>Должность</parameter>
 				</c>
 			</c>
 			<c>
 				<i>22</i>
 				<c>
-					<f>19</f>
+					<f>20</f>
 					<parameter>ФИО</parameter>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>20</defaultFormatIndex>
+	<defaultFormatIndex>21</defaultFormatIndex>
 	<height>30</height>
 	<vgRows>30</vgRows>
 	<merge>
@@ -1270,6 +1270,14 @@
 		<horizontalAlignment>Justify</horizontalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Text</fillType>
+	</format>
+	<format>
+		<font>2</font>
+		<width>24</width>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Parameter</fillType>
 	</format>
 	<format>
 		<font>2</font>
