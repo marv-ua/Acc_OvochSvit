@@ -1063,7 +1063,538 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
+		<index>21</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>17</f>
+					<tl>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>-	[НазначениеИспользования] ([Количество]шт.), </v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
 		<index>22</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>19</f>
+					<tl>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>строк корисного  використання [СрокПолезногоИспользования]</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>23</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>19</f>
+					<tl>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>призначити матеріально відповідальною особою [МОЛДолжность] [ФизЛицо]</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>18</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>25</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1235,7 +1766,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>24</index>
+		<index>27</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1407,7 +1938,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>26</index>
+		<index>29</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1579,7 +2110,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>28</index>
+		<index>31</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -1751,7 +2282,179 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>31</index>
+		<index>33</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>17</f>
+					<tl>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>3.	Бухгалтерії відкрити та вести облік зазначених ОЗ/МНМА.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>2</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>1</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>36</index>
 		<row>
 			<c>
 				<i>2</i>
@@ -1768,28 +2471,28 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>35</index>
+		<index>40</index>
 		<row>
 			<c>
 				<i>2</i>
 				<c>
-					<f>19</f>
+					<f>20</f>
 					<parameter>Должность</parameter>
 				</c>
 			</c>
 			<c>
 				<i>22</i>
 				<c>
-					<f>19</f>
+					<f>20</f>
 					<parameter>ФИО</parameter>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>20</defaultFormatIndex>
-	<height>39</height>
-	<vgRows>39</vgRows>
+	<defaultFormatIndex>21</defaultFormatIndex>
+	<height>44</height>
+	<vgRows>44</vgRows>
 	<merge>
 		<r>1</r>
 		<c>1</c>
@@ -1821,22 +2524,42 @@
 		<w>30</w>
 	</merge>
 	<merge>
+		<r>21</r>
+		<c>2</c>
+		<w>30</w>
+	</merge>
+	<merge>
 		<r>22</r>
+		<c>2</c>
+		<w>30</w>
+	</merge>
+	<merge>
+		<r>23</r>
+		<c>2</c>
+		<w>30</w>
+	</merge>
+	<merge>
+		<r>25</r>
 		<c>1</c>
 		<w>31</w>
 	</merge>
 	<merge>
-		<r>24</r>
+		<r>27</r>
 		<c>1</c>
 		<w>31</w>
 	</merge>
 	<merge>
-		<r>26</r>
+		<r>29</r>
 		<c>1</c>
 		<w>31</w>
 	</merge>
 	<merge>
-		<r>28</r>
+		<r>31</r>
+		<c>1</c>
+		<w>31</w>
+	</merge>
+	<merge>
+		<r>33</r>
 		<c>1</c>
 		<w>31</w>
 	</merge>
@@ -1844,8 +2567,8 @@
 		<name>Подвал</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>29</beginRow>
-			<endRow>38</endRow>
+			<beginRow>34</beginRow>
+			<endRow>43</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -1854,8 +2577,8 @@
 		<name>Пункт2</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>21</beginRow>
-			<endRow>22</endRow>
+			<beginRow>24</beginRow>
+			<endRow>25</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -1864,8 +2587,8 @@
 		<name>Пункт3</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>23</beginRow>
-			<endRow>24</endRow>
+			<beginRow>26</beginRow>
+			<endRow>27</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -1874,8 +2597,8 @@
 		<name>Пункт4</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>25</beginRow>
-			<endRow>26</endRow>
+			<beginRow>28</beginRow>
+			<endRow>29</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -1884,8 +2607,18 @@
 		<name>Пункт5</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>27</beginRow>
-			<endRow>28</endRow>
+			<beginRow>30</beginRow>
+			<endRow>31</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Пункт5МНМА</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>32</beginRow>
+			<endRow>33</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -1896,6 +2629,36 @@
 			<type>Rows</type>
 			<beginRow>20</beginRow>
 			<endRow>20</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>СтрокаМНМА1</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>21</beginRow>
+			<endRow>21</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>СтрокаМНМА2</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>22</beginRow>
+			<endRow>22</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>СтрокаМНМА3</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>23</beginRow>
+			<endRow>23</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -2021,6 +2784,14 @@
 		<horizontalAlignment>Justify</horizontalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Text</fillType>
+	</format>
+	<format>
+		<font>2</font>
+		<width>24</width>
+		<horizontalAlignment>Justify</horizontalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Template</fillType>
+		<indent>3</indent>
 	</format>
 	<format>
 		<font>1</font>

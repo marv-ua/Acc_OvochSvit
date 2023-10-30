@@ -165,6 +165,99 @@
 				<Event name="Click">ДокументОснованиеНажатие</Event>
 			</Events>
 		</LabelField>
+		<Table name="МалоценныеАктивы" id="104">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.МалоценныеАктивы</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="МалоценныеАктивыКонтекстноеМеню" id="105"/>
+			<AutoCommandBar name="МалоценныеАктивыКоманднаяПанель" id="106"/>
+			<ExtendedTooltip name="МалоценныеАктивыРасширеннаяПодсказка" id="107"/>
+			<SearchStringAddition name="МалоценныеАктивыСтрокаПоиска" id="108">
+				<AdditionSource>
+					<Item>МалоценныеАктивы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МалоценныеАктивыСтрокаПоискаКонтекстноеМеню" id="109"/>
+				<ExtendedTooltip name="МалоценныеАктивыСтрокаПоискаРасширеннаяПодсказка" id="110"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="МалоценныеАктивыСостояниеПросмотра" id="111">
+				<AdditionSource>
+					<Item>МалоценныеАктивы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МалоценныеАктивыСостояниеПросмотраКонтекстноеМеню" id="112"/>
+				<ExtendedTooltip name="МалоценныеАктивыСостояниеПросмотраРасширеннаяПодсказка" id="113"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="МалоценныеАктивыУправлениеПоиском" id="114">
+				<AdditionSource>
+					<Item>МалоценныеАктивы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="МалоценныеАктивыУправлениеПоискомКонтекстноеМеню" id="115"/>
+				<ExtendedTooltip name="МалоценныеАктивыУправлениеПоискомРасширеннаяПодсказка" id="116"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="МалоценныеАктивыНомерСтроки" id="117">
+					<DataPath>Объект.МалоценныеАктивы.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МалоценныеАктивыНомерСтрокиКонтекстноеМеню" id="118"/>
+					<ExtendedTooltip name="МалоценныеАктивыНомерСтрокиРасширеннаяПодсказка" id="119"/>
+				</LabelField>
+				<ColumnGroup name="МалоценныеАктивыГруппа1" id="138">
+					<ExtendedTooltip name="МалоценныеАктивыГруппа1РасширеннаяПодсказка" id="139"/>
+					<ChildItems>
+						<InputField name="МалоценныеАктивыФизЛицо" id="129">
+							<DataPath>Объект.МалоценныеАктивы.ФизЛицо</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МалоценныеАктивыФизЛицоКонтекстноеМеню" id="130"/>
+							<ExtendedTooltip name="МалоценныеАктивыФизЛицоРасширеннаяПодсказка" id="131"/>
+						</InputField>
+						<InputField name="МалоценныеАктивыМОЛДолжность" id="135">
+							<DataPath>Объект.МалоценныеАктивы.МОЛДолжность</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МалоценныеАктивыМОЛДолжностьКонтекстноеМеню" id="136"/>
+							<ExtendedTooltip name="МалоценныеАктивыМОЛДолжностьРасширеннаяПодсказка" id="137"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="МалоценныеАктивыГруппа2" id="140">
+					<ExtendedTooltip name="МалоценныеАктивыГруппа2РасширеннаяПодсказка" id="141"/>
+					<ChildItems>
+						<InputField name="МалоценныеАктивыНоменклатура" id="120">
+							<DataPath>Объект.МалоценныеАктивы.Номенклатура</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МалоценныеАктивыНоменклатураКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="МалоценныеАктивыНоменклатураРасширеннаяПодсказка" id="122"/>
+						</InputField>
+						<InputField name="МалоценныеАктивыНазначениеИспользования" id="123">
+							<DataPath>Объект.МалоценныеАктивы.НазначениеИспользования</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МалоценныеАктивыНазначениеИспользованияКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="МалоценныеАктивыНазначениеИспользованияРасширеннаяПодсказка" id="125"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="МалоценныеАктивыГруппа3" id="142">
+					<ExtendedTooltip name="МалоценныеАктивыГруппа3РасширеннаяПодсказка" id="143"/>
+					<ChildItems>
+						<InputField name="МалоценныеАктивыКоличество" id="126">
+							<DataPath>Объект.МалоценныеАктивы.Количество</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МалоценныеАктивыКоличествоКонтекстноеМеню" id="127"/>
+							<ExtendedTooltip name="МалоценныеАктивыКоличествоРасширеннаяПодсказка" id="128"/>
+						</InputField>
+						<InputField name="МалоценныеАктивыЕдиницаИзмерения" id="132">
+							<DataPath>Объект.МалоценныеАктивы.ЕдиницаИзмерения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МалоценныеАктивыЕдиницаИзмеренияКонтекстноеМеню" id="133"/>
+							<ExtendedTooltip name="МалоценныеАктивыЕдиницаИзмеренияРасширеннаяПодсказка" id="134"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
 		<Table name="ОС" id="70">
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
