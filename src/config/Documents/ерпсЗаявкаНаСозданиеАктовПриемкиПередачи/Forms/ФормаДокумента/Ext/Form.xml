@@ -257,6 +257,16 @@
 										<CommandName>Form.Command.ПечатьЗаявкиПоВодителю</CommandName>
 										<ExtendedTooltip name="ИтогиПоВодителямКонтекстноеМенюПечатьЗаявкиПоВодителюРасширеннаяПодсказка" id="236"/>
 									</Button>
+									<Button name="ИтогиПоВодителямКонтекстноеМенюПечатьРНПоВодителю" id="277">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПечатьРНПоВодителю</CommandName>
+										<ExtendedTooltip name="ИтогиПоВодителямКонтекстноеМенюПечатьРНПоВодителюРасширеннаяПодсказка" id="278"/>
+									</Button>
+									<Button name="ИтогиПоВодителямКонтекстноеМенюПечатьТТНПоВодителю" id="279">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПечатьТТНПоВодителю</CommandName>
+										<ExtendedTooltip name="ИтогиПоВодителямКонтекстноеМенюПечатьТТНПоВодителюРасширеннаяПодсказка" id="280"/>
+									</Button>
 								</ChildItems>
 							</ContextMenu>
 							<AutoCommandBar name="ИтогиПоВодителямКоманднаяПанель" id="205"/>
@@ -649,6 +659,16 @@
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.СоздатьАкт</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСоздатьАктРасширеннаяПодсказка" id="254"/>
+									</Button>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюПечатьРНПоПР" id="281">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПечатьРНПоПР</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюПечатьРНПоПРРасширеннаяПодсказка" id="282"/>
+									</Button>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюПечатьТТНПоПР" id="283">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПечатьТТНПоПР</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюПечатьТТНПоПРРасширеннаяПодсказка" id="284"/>
 									</Button>
 								</ChildItems>
 							</ContextMenu>
@@ -1556,6 +1576,102 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>СортироватьПоПодтвержденным</Action>
+		</Command>
+		<Command name="ПечатьТТНПоВодителю" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать ТТН</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк ТТН</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Печать ТТНПо водителю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьТТНПоВодителю</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПечатьТТНПоПР" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать ТТН</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк ТТН</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Печать ТТНПо водителю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьТТНПоПР</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПечатьРНПоВодителю" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать РН</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк РН</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Печать ТТНПо водителю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьРНПоВодителю</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПечатьРНПоПР" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать РН</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк РН</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Печать ТТНПо водителю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьРНПоПР</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>
