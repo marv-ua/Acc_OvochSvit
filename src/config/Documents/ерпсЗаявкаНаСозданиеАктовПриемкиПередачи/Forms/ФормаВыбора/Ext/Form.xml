@@ -80,6 +80,11 @@
 					<ContextMenu name="НомерКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="21"/>
 				</LabelField>
+				<LabelField name="Регион" id="31">
+					<DataPath>Список.Регион</DataPath>
+					<ContextMenu name="РегионКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="33"/>
+				</LabelField>
 				<LabelField name="Комментарий" id="25">
 					<DataPath>Список.Комментарий</DataPath>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="26"/>

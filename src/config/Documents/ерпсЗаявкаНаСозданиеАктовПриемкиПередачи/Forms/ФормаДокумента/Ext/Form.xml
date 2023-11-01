@@ -178,11 +178,23 @@
 							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="116"/>
 							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="117"/>
 						</InputField>
-						<InputField name="ПериодОтгрузки" id="131">
-							<DataPath>Объект.ПериодОтгрузки</DataPath>
-							<ContextMenu name="ПериодОтгрузкиКонтекстноеМеню" id="132"/>
-							<ExtendedTooltip name="ПериодОтгрузкиРасширеннаяПодсказка" id="133"/>
-						</InputField>
+						<UsualGroup name="Группа1" id="272">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="273"/>
+							<ChildItems>
+								<InputField name="ПериодОтгрузки" id="131">
+									<DataPath>Объект.ПериодОтгрузки</DataPath>
+									<ContextMenu name="ПериодОтгрузкиКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="ПериодОтгрузкиРасширеннаяПодсказка" id="133"/>
+								</InputField>
+								<InputField name="Регион" id="274">
+									<DataPath>Объект.Регион</DataPath>
+									<ContextMenu name="РегионКонтекстноеМеню" id="275"/>
+									<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="276"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаШапкаПраво" id="56">
@@ -1235,6 +1247,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьИзВнешнегоФайла</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 		<Command name="СоздатьАкты" id="2">
 			<Title>
@@ -1301,6 +1314,7 @@
 			</Picture>
 			<Action>ОбновитьПунктыРазгрузки</Action>
 			<Representation>TextPicture</Representation>
+			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 		<Command name="Утвердить" id="5">
 			<Title>

@@ -792,23 +792,13 @@
 	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>10</defaultFormatIndex>
-	<height>13</height>
-	<vgRows>13</vgRows>
+	<height>12</height>
+	<vgRows>12</vgRows>
 	<merge>
 		<r>4</r>
 		<c>1</c>
 		<w>3</w>
 	</merge>
-	<namedItem xsi:type="NamedItemCells">
-		<name>Разделитель</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>12</beginRow>
-			<endRow>12</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
 		<name>Строка</name>
 		<area>
@@ -820,10 +810,20 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
-		<name>Шапка</name>
+		<name>Шапка1</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>0</beginRow>
+			<endRow>2</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка2</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>3</beginRow>
 			<endRow>10</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>

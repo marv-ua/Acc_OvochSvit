@@ -99,6 +99,11 @@
 					<ContextMenu name="СкладКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="27"/>
 				</InputField>
+				<LabelField name="Регион" id="42">
+					<DataPath>Список.Регион</DataPath>
+					<ContextMenu name="РегионКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="44"/>
+				</LabelField>
 				<LabelField name="Перевозчик" id="28">
 					<DataPath>Список.Перевозчик</DataPath>
 					<ContextMenu name="ПеревозчикКонтекстноеМеню" id="29"/>

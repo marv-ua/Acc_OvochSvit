@@ -1257,6 +1257,7 @@
 			<CommonTemplate>СтруктураПодчиненности</CommonTemplate>
 			<CommonTemplate>МакетЗаголовкаОтчетовНаСКД</CommonTemplate>
 			<CommonTemplate>МакетОформленияОтчетовНаСКД</CommonTemplate>
+			<CommonTemplate>а_ПФ_MXL_UK_ОЗ1</CommonTemplate>
 			<FilterCriterion>ДокументыПоДоговоруКонтрагента</FilterCriterion>
 			<FilterCriterion>ДокументыПоКонтрагенту</FilterCriterion>
 			<FilterCriterion>СвязанныеДокументы</FilterCriterion>
@@ -3128,6 +3129,7 @@
 			<Catalog>а_НастройкиЗагрузкиЗаявок</Catalog>
 			<Catalog>а_ПериодыОказанияУслуг</Catalog>
 			<Catalog>а_Номенклатура</Catalog>
+			<Catalog>а_Регионы</Catalog>
 			<Document>АвансовыйОтчет</Document>
 			<Document>АктОбОказанииПроизводственныхУслуг</Document>
 			<Document>АктСверкиВзаиморасчетов</Document>

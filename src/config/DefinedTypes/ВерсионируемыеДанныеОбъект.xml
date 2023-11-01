@@ -32,10 +32,12 @@
 				<v8:Type>cfg:CatalogObject.Склады</v8:Type>
 				<v8:Type>cfg:CatalogObject.ДоговорыКонтрагентов</v8:Type>
 				<v8:Type>cfg:CatalogObject.Банки</v8:Type>
+				<v8:Type>cfg:CatalogObject.а_Регионы</v8:Type>
 				<v8:Type>cfg:CatalogObject.КонтактныеЛица</v8:Type>
 				<v8:Type>cfg:CatalogObject.БанковскиеСчета</v8:Type>
 				<v8:Type>cfg:CatalogObject.СтатьиЗатрат</v8:Type>
 				<v8:Type>cfg:CatalogObject.Номенклатура</v8:Type>
+				<v8:Type>cfg:CatalogObject.а_Номенклатура</v8:Type>
 				<v8:Type>cfg:CatalogObject.ДоходыБудущихПериодов</v8:Type>
 				<v8:Type>cfg:CatalogObject.СхемыРеализации</v8:Type>
 				<v8:Type>cfg:CatalogObject.Контрагенты</v8:Type>
