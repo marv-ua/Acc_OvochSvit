@@ -395,6 +395,25 @@
 							<ContextMenu name="НМАСрокПолезногоИспользованияНУКонтекстноеМеню" id="99"/>
 							<ExtendedTooltip name="НМАСрокПолезногоИспользованияНУExtendedTooltip" id="121"/>
 						</InputField>
+						<InputField name="НМАПервоначальнаяСтоимость" id="143">
+							<DataPath>Объект.НМА.ПервоначальнаяСтоимостьБУ</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НМАПервоначальнаяСтоимостьКонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="НМАПервоначальнаяСтоимостьРасширеннаяПодсказка" id="145"/>
+						</InputField>
+						<InputField name="НМАПервоначальнаяСтоимостьНУ" id="146">
+							<DataPath>Объект.НМА.ПервоначальнаяСтоимостьНУ</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НМАПервоначальнаяСтоимостьНУКонтекстноеМеню" id="147"/>
+							<ExtendedTooltip name="НМАПервоначальнаяСтоимостьНУРасширеннаяПодсказка" id="148"/>
+						</InputField>
+						<CheckBoxField name="НМАВключитьНачислениеАмортизацииНУ" id="149">
+							<DataPath>Объект.НМА.ВключитьНачислениеАмортизации</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НМАВключитьНачислениеАмортизацииНУКонтекстноеМеню" id="150"/>
+							<ExtendedTooltip name="НМАВключитьНачислениеАмортизацииНУРасширеннаяПодсказка" id="151"/>
+						</CheckBoxField>
 					</ChildItems>
 				</Table>
 			</ChildItems>

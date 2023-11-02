@@ -95,6 +95,12 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="Регион" id="52">
+			<DataPath>Объект.Регион</DataPath>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="РегионКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="54"/>
+		</InputField>
 		<UsualGroup name="ГруппаДеньВывоза" id="47">
 			<Title>
 				<v8:item>

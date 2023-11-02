@@ -901,6 +901,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Catalog.ГруппыУчетаНачисленийИУдержаний</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Catalog.ПараметрыТиповойОперации</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -1070,6 +1074,10 @@
 	</Item>
 	<Item>
 		<Metadata>InformationRegister.РазмерыЛьготНДФЛ</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Catalog.ВидыПрочихДоходовФизЛиц</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
@@ -1662,6 +1670,10 @@
 	</Item>
 	<Item>
 		<Metadata>InformationRegister.РасчетСебестоимостиПродукцици</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>AccumulationRegister.ОжидаемыеНалоговыеРазницы</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>

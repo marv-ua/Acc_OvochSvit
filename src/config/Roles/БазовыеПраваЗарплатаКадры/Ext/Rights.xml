@@ -473,6 +473,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ГруппыУчетаНачисленийИУдержаний</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.КатегорииЗастрахованныхЛицЕСВ</name>
 		<right>
 			<name>Read</name>
@@ -758,6 +769,17 @@
 	</object>
 	<object>
 		<name>InformationRegister.РазмерыЛьготНДФЛ</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыПрочихДоходовФизЛиц</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

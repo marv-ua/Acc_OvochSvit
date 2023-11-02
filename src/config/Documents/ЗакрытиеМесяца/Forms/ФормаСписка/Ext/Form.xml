@@ -21,6 +21,14 @@
 			</Title>
 			<CommandSource>Form</CommandSource>
 			<ExtendedTooltip name="ГруппаКоманднаяПанельExtendedTooltip" id="32"/>
+			<ChildItems>
+				<Button name="ФормаКомандаГрупповоеСозданиеДоначислениеАмортизацииВНУ" id="40">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.КомандаГрупповоеСозданиеДоначислениеАмортизацииВНУ</CommandName>
+					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+					<ExtendedTooltip name="ФормаКомандаГрупповоеСозданиеДоначислениеАмортизацииВНУРасширеннаяПодсказка" id="41"/>
+				</Button>
+			</ChildItems>
 		</CommandBar>
 		<UsualGroup name="ГруппаБыстрыеОтборы" id="33">
 			<Title>
@@ -245,4 +253,29 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="КомандаГрупповоеСозданиеДоначислениеАмортизацииВНУ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Групповое создание документов "Закрытие месяца" с доначислением амортизации в НУ для ЕН 2%</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Групове створення документів "Закриття місяця" з донарахуванням амортизації у ПО для ЄП 2%</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Групповое создание документов "Закрытие месяца" с доначислением амортизации в налоговом учете для ЕН 2%</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Групове створення документів "Закриття місяця" з донарахуванням амортизації у податковому обліку для ЄП 2%</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаГрупповоеСозданиеДоначислениеАмортизацииВНУ</Action>
+		</Command>
+	</Commands>
 </Form>

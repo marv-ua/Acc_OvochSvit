@@ -34,6 +34,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПараметрыПлатежныхДокументовПоНалогам</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыДоходовНДФЛ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПроизводственныеКалендари</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыУчетаНачисленийИУдержаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтатьиЗатратПоВзносамФОТ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыПрочихДоходовФизЛиц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПодразделенияОрганизаций</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

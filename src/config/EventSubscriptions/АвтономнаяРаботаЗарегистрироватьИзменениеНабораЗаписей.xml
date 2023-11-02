@@ -48,6 +48,7 @@
 				<v8:Type>cfg:AccumulationRegisterRecordSet.ОжидаемыйИПодтвержденныйНДСПриобретений</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПервоначальныеСведенияНМАНалоговыйУчет</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СчетаУчетаПрочие</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.ОжидаемыеНалоговыеРазницы</v8:Type>
 				<v8:Type>cfg:AccumulationRegisterRecordSet.ВзаиморасчетыПоУдержаниям</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.НастройкаНумерацииНалоговыхДокументов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ДанныеПервичныхДокументов</v8:Type>

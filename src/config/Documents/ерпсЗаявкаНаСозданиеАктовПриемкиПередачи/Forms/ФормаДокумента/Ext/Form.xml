@@ -776,12 +776,24 @@
 											<ContextMenu name="ПунктыРазгрузкиОрганизацияКонтекстноеМеню" id="144"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиОрганизацияРасширеннаяПодсказка" id="145"/>
 										</InputField>
-										<InputField name="ПунктыРазгрузкиСклад" id="170">
-											<DataPath>Объект.ПунктыРазгрузки.Склад</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ПунктыРазгрузкиСкладКонтекстноеМеню" id="171"/>
-											<ExtendedTooltip name="ПунктыРазгрузкиСкладРасширеннаяПодсказка" id="172"/>
-										</InputField>
+										<ColumnGroup name="ПунктыРазгрузкиГруппа10" id="285">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ПунктыРазгрузкиГруппа10РасширеннаяПодсказка" id="286"/>
+											<ChildItems>
+												<InputField name="ПунктыРазгрузкиСклад" id="170">
+													<DataPath>Объект.ПунктыРазгрузки.Склад</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПунктыРазгрузкиСкладКонтекстноеМеню" id="171"/>
+													<ExtendedTooltip name="ПунктыРазгрузкиСкладРасширеннаяПодсказка" id="172"/>
+												</InputField>
+												<InputField name="ПунктыРазгрузкиРегион" id="287">
+													<DataPath>Объект.ПунктыРазгрузки.Регион</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПунктыРазгрузкиРегионКонтекстноеМеню" id="288"/>
+													<ExtendedTooltip name="ПунктыРазгрузкиРегионРасширеннаяПодсказка" id="289"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
 									</ChildItems>
 								</ColumnGroup>
 								<ColumnGroup name="ПунктыРазгрузкиГруппа4" id="173">

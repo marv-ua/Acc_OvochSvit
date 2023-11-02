@@ -23,6 +23,7 @@
 		<ChildObjects>
 			<Subsystem>РегламентированнаяОтчетностьОбщая</Subsystem>
 			<Subsystem>УчетнаяПолитикаОрганизаций</Subsystem>
+			<Subsystem>ОбменЗарплата30Бухгалтерия21</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

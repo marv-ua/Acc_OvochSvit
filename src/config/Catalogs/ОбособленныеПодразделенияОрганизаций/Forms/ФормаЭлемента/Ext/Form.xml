@@ -199,8 +199,6 @@
 							<ExtendedTooltip name="ГруппаСведенияОбОтветственныхЛицахExtendedTooltip" id="43"/>
 							<ChildItems>
 								<LabelDecoration name="Декорация9" id="19">
-									<Width>65</Width>
-									<Height>2</Height>
 									<Title formatted="false">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -211,7 +209,6 @@
 											<v8:content>Показані основні відповідальні особи. Подивитися повний список відповідальних, а також вказати період їх роботи можна за посиланням "Усі відповідальні особи"</v8:content>
 										</v8:item>
 									</Title>
-									<VerticalAlign>Top</VerticalAlign>
 									<ContextMenu name="Декорация9КонтекстноеМеню" id="20"/>
 									<ExtendedTooltip name="Декорация9ExtendedTooltip" id="44"/>
 								</LabelDecoration>
@@ -420,7 +417,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Всі відповідальні особи</v8:content>
+					<v8:content>Усі відповідальні особи</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>

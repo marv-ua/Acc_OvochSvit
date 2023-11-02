@@ -101,6 +101,7 @@
 			<Subsystem>УчетНачисленнойЗарплаты</Subsystem>
 			<Subsystem>УчетНДФЛ</Subsystem>
 			<Subsystem>УчетСтраховыхВзносов</Subsystem>
+			<Subsystem>СинхронизацияДанных</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

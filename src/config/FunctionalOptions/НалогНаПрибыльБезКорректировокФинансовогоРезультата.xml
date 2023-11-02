@@ -37,11 +37,6 @@
 				<xr:Object>Document.ВводНачальныхОстатков.TabularSection.ОС.Attribute.НачислятьАмортизациюНУ</xr:Object>
 				<xr:Object>Document.ВводНачальныхОстатков.TabularSection.РасчетыСКонтрагентами.Attribute.КурсВзаиморасчетов</xr:Object>
 				<xr:Object>Document.ВводНачальныхОстатков.TabularSection.РасчетыСКонтрагентами.Attribute.КратностьВзаиморасчетов</xr:Object>
-				<xr:Object>AccountingRegister.Хозрасчетный.Resource.СуммаНУ</xr:Object>
-				<xr:Object>InformationRegister.ПервоначальныеСведенияОСНалоговыйУчет</xr:Object>
-				<xr:Object>InformationRegister.ПервоначальныеСведенияНМАНалоговыйУчет</xr:Object>
-				<xr:Object>InformationRegister.ПараметрыАмортизацииОСНалоговыйУчет</xr:Object>
-				<xr:Object>InformationRegister.НачислениеАмортизацииОСНалоговыйУчет</xr:Object>
 				<xr:Object>Document.ВводВЭксплуатациюОС.Attribute.НачислятьАмортизациюНУ</xr:Object>
 				<xr:Object>Document.ВводВЭксплуатациюОС.Attribute.СрокПолезногоИспользованияНУ</xr:Object>
 				<xr:Object>Document.РеализацияТоваровУслуг.TabularSection.Товары.Attribute.НалоговоеНазначениеДоходовИЗатрат</xr:Object>

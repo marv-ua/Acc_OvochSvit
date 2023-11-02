@@ -55,7 +55,7 @@
 					<xr:CharacteristicValues from="InformationRegister.ДополнительныеСведения">
 						<xr:ObjectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</xr:ObjectField>
 						<xr:TypeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</xr:TypeField>
-						<xr:ValueField>InformationRegister.ДополнительныеСведения.Dimension.Объект</xr:ValueField>
+						<xr:ValueField>InformationRegister.ДополнительныеСведения.Resource.Значение</xr:ValueField>
 					</xr:CharacteristicValues>
 				</xr:Characteristic>
 			</Characteristics>

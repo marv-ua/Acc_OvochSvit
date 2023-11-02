@@ -27,6 +27,16 @@
 				<xr:Object>Document.ВедомостьНаВыплатуЗарплаты.TabularSection.ПараметрыОплаты.Attribute.Физлицо</xr:Object>
 				<xr:Object>Subsystem.ЗарплатаИКадры.Subsystem.ОбменДаннымиСЗУП</xr:Object>
 				<xr:Object>Document.ВводНачальныхОстатков.TabularSection.РасчетыПоЗаработнойПлате.Attribute.ФизическоеЛицо</xr:Object>
+				<xr:Object>Catalog.ГруппыУчетаНачисленийИУдержаний</xr:Object>
+				<xr:Object>Catalog.СпособыОтраженияЗарплатыВРеглУчете</xr:Object>
+				<xr:Object>InformationRegister.СтатьиЗатратПоВзносамФОТ</xr:Object>
+				<xr:Object>Document.ДепонированиеЗарплаты</xr:Object>
+				<xr:Object>Document.СписаниеДепонентовВДоходыОрганизаций</xr:Object>
+				<xr:Object>Catalog.СпособыОтраженияЗарплатыВРеглУчете.Attribute.Описание</xr:Object>
+				<xr:Object>Catalog.ВидыПрочихДоходовФизЛиц</xr:Object>
+				<xr:Object>Document.ОтражениеВзаиморасчетовСКонтрагентамиВ1ДФ.Attribute.ВидДохода</xr:Object>
+				<xr:Object>Document.ОтражениеВзаиморасчетовСКонтрагентамиВ1ДФ.Attribute.ФорматОбмена30</xr:Object>
+				<xr:Object>Document.ОтражениеВзаиморасчетовСКонтрагентамиВ1ДФ.TabularSection.НДФЛ.Attribute.ФизическоеЛицо</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

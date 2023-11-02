@@ -142,6 +142,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ВзаиморасчетыПоВзносамВФонды</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ЕСВПоСотрудникам</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РасчетСебестоимостиПродукцици</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОжидаемыеНалоговыеРазницы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьПлановыеНачисленияРаботниковОрганизаций</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КоэффициентыДляЗаполнениПриложенияСВДекларацииПоПрибыли</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.СтоимостьПриобретенияОСПропорциональноОблагаемыхНДС</xr:Item>

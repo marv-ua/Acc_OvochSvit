@@ -6,6 +6,7 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -80,6 +81,11 @@
 							<ContextMenu name="ВидВыплатыКонтекстноеМеню" id="44"/>
 							<ExtendedTooltip name="ВидВыплатыРасширеннаяПодсказка" id="55"/>
 						</InputField>
+						<InputField name="ВидМестаВыплаты" id="324">
+							<DataPath>Объект.ВидМестаВыплаты</DataPath>
+							<ContextMenu name="ВидМестаВыплатыКонтекстноеМеню" id="325"/>
+							<ExtendedTooltip name="ВидМестаВыплатыРасширеннаяПодсказка" id="326"/>
+						</InputField>
 						<InputField name="ПериодРегистрации" id="7">
 							<DataPath>МесяцНачисленияСтрокой</DataPath>
 							<Title>
@@ -102,6 +108,62 @@
 								<Event name="AutoComplete">ПериодРегистрацииАвтоПодбор</Event>
 								<Event name="Tuning">ПериодРегистрацииРегулирование</Event>
 								<Event name="TextEditEnd">ПериодРегистрацииОкончаниеВводаТекста</Event>
+							</Events>
+						</InputField>
+						<InputField name="ФорматОбмена30" id="327">
+							<DataPath>Объект.ФорматОбмена30</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Формат обмена</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Формат обміну</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>ЗУП 2.5</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>ЗУП 2.5</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:boolean">false</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>BAS 3.0</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>BAS 3.0</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:boolean">true</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ФорматОбмена30КонтекстноеМеню" id="328"/>
+							<ExtendedTooltip name="ФорматОбмена30РасширеннаяПодсказка" id="329"/>
+							<Events>
+								<Event name="OnChange">ФорматОбмена30ПриИзменении</Event>
 							</Events>
 						</InputField>
 					</ChildItems>
@@ -191,6 +253,49 @@
 							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="12"/>
 							<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="61"/>
 						</InputField>
+						<UsualGroup name="ГруппаЗарплатаОтражена" id="330">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа зарплата отражена</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Група зарплата відображена</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗарплатаОтраженаРасширеннаяПодсказка" id="331"/>
+							<ChildItems>
+								<CheckBoxField name="ЗарплатаОтраженаВБухучете" id="332">
+									<DataPath>ВыплатаПроведена</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выплата зарплаты выполнена</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Виплата зарплати виконана</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗарплатаОтраженаВБухучетеКонтекстноеМеню" id="333"/>
+									<ExtendedTooltip name="ЗарплатаОтраженаВБухучетеРасширеннаяПодсказка" id="334"/>
+									<Events>
+										<Event name="OnChange">ЗарплатаОтраженаВБухучетеПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="Бухгалтер" id="335">
+									<DataPath>Объект.Бухгалтер</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="БухгалтерКонтекстноеМеню" id="336"/>
+									<ExtendedTooltip name="БухгалтерРасширеннаяПодсказка" id="337"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 						<CheckBoxField name="ВыплатаДепонентов" id="45">
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
@@ -431,6 +536,12 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ПараметрыОплатыПериодВзаиморасчетовКонтекстноеМеню" id="121"/>
 									<ExtendedTooltip name="ПараметрыОплатыПериодВзаиморасчетовРасширеннаяПодсказка" id="122"/>
+								</InputField>
+								<InputField name="ПараметрыОплатыГруппаУчетаНачислений" id="338">
+									<DataPath>Объект.ПараметрыОплаты.ГруппаУчетаНачислений</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПараметрыОплатыГруппаУчетаНачисленийКонтекстноеМеню" id="339"/>
+									<ExtendedTooltip name="ПараметрыОплатыГруппаУчетаНачисленийРасширеннаяПодсказка" id="340"/>
 								</InputField>
 								<InputField name="ПараметрыОплатыСчетУчета" id="123">
 									<DataPath>Объект.ПараметрыОплаты.СчетУчета</DataPath>
@@ -850,6 +961,21 @@
 				</v8:item>
 			</Title>
 			<Type/>
+		</Attribute>
+		<Attribute name="ВыплатаПроведена" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выплата проведена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Виплату проведено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>

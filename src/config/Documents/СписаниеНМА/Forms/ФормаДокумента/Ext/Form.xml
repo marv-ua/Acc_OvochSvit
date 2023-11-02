@@ -1003,18 +1003,19 @@
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
 				<dcsset:selection>
 					<dcsset:item>
-						<dcsset:field>ОССтоимостьНУ</dcsset:field>
+						<dcsset:field>НМАСтоимостьНУ</dcsset:field>
 					</dcsset:item>
 					<dcsset:item>
-						<dcsset:field>ОСОставшаясяСтоимостьНУ</dcsset:field>
+						<dcsset:field>НМАОставшаясяСтоимостьНУ</dcsset:field>
 					</dcsset:item>
 					<dcsset:item>
-						<dcsset:field>ОСАмортизацияЗаМесяцНУ</dcsset:field>
+						<dcsset:field>НМААмортизацияЗаМесяцНУ</dcsset:field>
 					</dcsset:item>
 					<dcsset:item>
-						<dcsset:field>ОСАмортизацияНУ</dcsset:field>
+						<dcsset:field>НМААмортизацияНУ</dcsset:field>
 					</dcsset:item>
 				</dcsset:selection>
 				<dcsset:filter>

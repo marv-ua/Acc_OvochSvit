@@ -20,6 +20,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиУчетаЗарплаты.Dimension.Организация</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтражениеВРегламентированномУчетеНастройкиОрганизаций.Dimension.Организация</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтатусыПлательщиковЕдиногоНалога.Dimension.Организация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИспользованиеОбменаЗарплата30Бухгалтерия21ПоОрганизациям.Dimension.Организация</xr:Item>
 			</Use>
 		</Properties>
 	</FunctionalOptionsParameter>

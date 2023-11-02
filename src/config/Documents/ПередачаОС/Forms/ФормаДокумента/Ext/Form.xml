@@ -1531,11 +1531,6 @@
 							<dcsset:left xsi:type="dcscor:Field">Объект.ДокПодготовкаКПередачеОС</dcsset:left>
 							<dcsset:comparisonType>Filled</dcsset:comparisonType>
 						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">ПлательщикНалогаНаПрибыль</dcsset:left>
-							<dcsset:comparisonType>Equal</dcsset:comparisonType>
-							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
-						</dcsset:item>
 					</dcsset:item>
 				</dcsset:filter>
 				<dcsset:appearance>
@@ -1568,6 +1563,7 @@
 				</dcsset:appearance>
 			</dcsset:item>
 			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
 				<dcsset:selection>
 					<dcsset:item>
 						<dcsset:field>ОССтоимостьНУ</dcsset:field>

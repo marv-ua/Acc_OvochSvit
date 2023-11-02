@@ -134,13 +134,13 @@
 			</Events>
 			<ChildItems>
 				<LabelField name="Дата" id="4">
-					<DataPath>Список.Date</DataPath>
+					<DataPath>Список.Дата</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="ДатаExtendedTooltip" id="29"/>
 				</LabelField>
 				<LabelField name="Номер" id="6">
-					<DataPath>Список.Number</DataPath>
+					<DataPath>Список.Номер</DataPath>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="НомерКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="НомерExtendedTooltip" id="30"/>
@@ -166,6 +166,42 @@
 					<ContextMenu name="ПериодРегистрацииКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="ПериодРегистрацииExtendedTooltip" id="32"/>
 				</LabelField>
+				<LabelField name="ФорматОбмена30" id="47">
+					<DataPath>Список.ФорматОбмена30</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формат</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Формат</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ФорматОбмена30КонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ФорматОбмена30РасширеннаяПодсказка" id="49"/>
+				</LabelField>
+				<CheckBoxField name="ЗарплатаОтраженаВБухучете" id="50">
+					<DataPath>Список.ЗарплатаОтраженаВБухучете</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отражено</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відображено</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗарплатаОтраженаВБухучетеКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ЗарплатаОтраженаВБухучетеРасширеннаяПодсказка" id="52"/>
+				</CheckBoxField>
+				<LabelField name="Бухгалтер" id="53">
+					<DataPath>Список.Бухгалтер</DataPath>
+					<ContextMenu name="БухгалтерКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="БухгалтерРасширеннаяПодсказка" id="55"/>
+				</LabelField>
 				<LabelField name="Ответственный" id="12">
 					<DataPath>Список.Ответственный</DataPath>
 					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="13"/>
@@ -177,7 +213,7 @@
 					<ExtendedTooltip name="КомментарийExtendedTooltip" id="34"/>
 				</LabelField>
 				<LabelField name="Ссылка" id="16">
-					<DataPath>Список.Ref</DataPath>
+					<DataPath>Список.Ссылка</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -194,24 +230,39 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
-				<Field>Список.Ref</Field>
+				<Field>Список.Ссылка</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	ДокументОтражениеЗарплатыВУчете.Ссылка,
-	ДокументОтражениеЗарплатыВУчете.ПометкаУдаления,
-	ДокументОтражениеЗарплатыВУчете.Номер,
-	ДокументОтражениеЗарплатыВУчете.Дата,
-	ДокументОтражениеЗарплатыВУчете.Проведен,
-	ДокументОтражениеЗарплатыВУчете.Организация,
-	ДокументОтражениеЗарплатыВУчете.ПериодРегистрации,
-	ДокументОтражениеЗарплатыВУчете.Ответственный,
-	ДокументОтражениеЗарплатыВУчете.Комментарий,
-	ДокументОтражениеЗарплатыВУчете.РучнаяКорректировка,
-	ДокументОтражениеЗарплатыВУчете.ОтражениеВУчете,
-	ДокументОтражениеЗарплатыВУчете.МоментВремени,
+	ДокументОтражениеЗарплатыВУчете.Ссылка КАК Ссылка,
+	ДокументОтражениеЗарплатыВУчете.ПометкаУдаления КАК ПометкаУдаления,
+	ДокументОтражениеЗарплатыВУчете.Номер КАК Номер,
+	ДокументОтражениеЗарплатыВУчете.Дата КАК Дата,
+	ДокументОтражениеЗарплатыВУчете.Проведен КАК Проведен,
+	ДокументОтражениеЗарплатыВУчете.Организация КАК Организация,
+	ДокументОтражениеЗарплатыВУчете.ПериодРегистрации КАК ПериодРегистрации,
+	ДокументОтражениеЗарплатыВУчете.Ответственный КАК Ответственный,
+	ДокументОтражениеЗарплатыВУчете.Комментарий КАК Комментарий,
+	ДокументОтражениеЗарплатыВУчете.РучнаяКорректировка КАК РучнаяКорректировка,
+	ДокументОтражениеЗарплатыВУчете.ОтражениеВУчете.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		СчетДт КАК СчетДт,
+		СубконтоДт1 КАК СубконтоДт1,
+		СубконтоДт2 КАК СубконтоДт2,
+		СубконтоДт3 КАК СубконтоДт3,
+		СчетКт КАК СчетКт,
+		СубконтоКт1 КАК СубконтоКт1,
+		СубконтоКт2 КАК СубконтоКт2,
+		СубконтоКт3 КАК СубконтоКт3,
+		Сумма КАК Сумма,
+		НалоговоеНазначениеДоходовИЗатрат КАК НалоговоеНазначениеДоходовИЗатрат,
+		НалоговоеНазначение КАК НалоговоеНазначение,
+		НеОтражатьВБУ КАК НеОтражатьВБУ
+	) КАК ОтражениеВУчете,
+	ДокументОтражениеЗарплатыВУчете.МоментВремени КАК МоментВремени,
 	ВЫБОР
 		КОГДА ДокументОтражениеЗарплатыВУчете.РучнаяКорректировка = ИСТИНА
 			ТОГДА ВЫБОР
@@ -228,8 +279,10 @@
 					ТОГДА 1
 				ИНАЧЕ 0
 			КОНЕЦ
-	КОНЕЦ КАК СостояниеДокумента
-	
+	КОНЕЦ КАК СостояниеДокумента,
+	ДокументОтражениеЗарплатыВУчете.ФорматОбмена30 КАК ФорматОбмена30,
+	ДокументОтражениеЗарплатыВУчете.ЗарплатаОтраженаВБухучете КАК ЗарплатаОтраженаВБухучете,
+	ДокументОтражениеЗарплатыВУчете.Бухгалтер КАК Бухгалтер
 ИЗ
 	Документ.ОтражениеЗарплатыВУчете КАК ДокументОтражениеЗарплатыВУчете</QueryText>
 				<MainTable>Document.ОтражениеЗарплатыВУчете</MainTable>
@@ -307,6 +360,64 @@
 							<v8:item>
 								<v8:lang>uk</v8:lang>
 								<v8:content>Л=uk; ДФ='ММММ гггг'</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ФорматОбмена30</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.ФорматОбмена30</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЗУП 2.5</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>ЗУП 2.5</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ФорматОбмена30</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.ФорматОбмена30</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>BAS 3.0</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>BAS 3.0</v8:content>
 							</v8:item>
 						</dcscor:value>
 					</dcscor:item>

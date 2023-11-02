@@ -30,6 +30,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.СобытияОСОрганизаций</v8:Type>
 				<v8:Type>cfg:AccumulationRegisterRecordSet.ОжидаемыйИПодтвержденныйНДСПриобретений</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПервоначальныеСведенияНМАНалоговыйУчет</v8:Type>
+				<v8:Type>cfg:AccumulationRegisterRecordSet.ОжидаемыеНалоговыеРазницы</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.НастройкаНумерацииНалоговыхДокументов</v8:Type>
 				<v8:Type>cfg:AccumulationRegisterRecordSet.НДСНалоговыйКредит</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.КоэффициентыПропорциональногоОтнесенияНДСНаКредит</v8:Type>

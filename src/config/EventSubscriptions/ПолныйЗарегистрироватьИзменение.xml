@@ -62,6 +62,7 @@
 				<v8:Type>cfg:CatalogObject.ИнвентаризацияТоваровНаСкладеПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.СпособыОкругленияПриВыплатеЗарплаты</v8:Type>
 				<v8:Type>cfg:CatalogObject.СпособыОтраженияРасходовПоАмортизации</v8:Type>
+				<v8:Type>cfg:CatalogObject.ВидыПрочихДоходовФизЛиц</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПользовательскиеНастройкиОтчетов</v8:Type>
 				<v8:Type>cfg:CatalogObject.КонтактныеЛица</v8:Type>
 				<v8:Type>cfg:CatalogObject.БанковскиеСчета</v8:Type>
@@ -140,6 +141,7 @@
 				<v8:Type>cfg:CatalogObject.ВидыВыплат</v8:Type>
 				<v8:Type>cfg:CatalogObject.ИдентификаторыОбъектовМетаданных</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВариантыОтчетов</v8:Type>
+				<v8:Type>cfg:CatalogObject.ГруппыУчетаНачисленийИУдержаний</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВидыДокументовФизическихЛиц</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВидыВзаиморасчетов</v8:Type>
 				<v8:Type>cfg:CatalogObject.СпособыОтраженияЗарплатыВРеглУчете</v8:Type>

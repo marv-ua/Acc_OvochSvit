@@ -286,11 +286,11 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Счет учета расходов в БУ</v8:content>
+							<v8:content>Счет учета доходов в БУ</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>uk</v8:lang>
-							<v8:content>Рахунок обліку витрат у БО</v8:content>
+							<v8:content>Рахунок обліку прибутків у БО</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

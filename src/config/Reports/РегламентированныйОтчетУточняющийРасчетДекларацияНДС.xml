@@ -422,6 +422,8 @@
 			<Form>ПараметрыОтчета2021УФ</Form>
 			<Form>ФормаОтчета2023УФ</Form>
 			<Form>ПараметрыОтчета2023УФ</Form>
+			<Form>ФормаОтчета2023Мес8УФ</Form>
+			<Form>ПараметрыОтчета2023Мес8УФ</Form>
 			<Template>АрхивСхемXSD</Template>
 			<Template>СоставПоказателей2005Кв4</Template>
 			<Template>СоставПоказателей2011Кв1</Template>
@@ -511,6 +513,15 @@
 			<Template>ФормаОтчета2023УФ_Справка</Template>
 			<Template>ФормаОтчета2023УФ_Приложение6</Template>
 			<Template>ФормаОтчета2023УФ_СлужебныеДанные</Template>
+			<Template>СоставПоказателей2023Мес8УФ</Template>
+			<Template>ФормаОтчета2023Мес8УФ_Декларация</Template>
+			<Template>ФормаОтчета2023Мес8УФ_Приложение1</Template>
+			<Template>ФормаОтчета2023Мес8УФ_Приложение2</Template>
+			<Template>ФормаОтчета2023Мес8УФ_Приложение3</Template>
+			<Template>ФормаОтчета2023Мес8УФ_Приложение4</Template>
+			<Template>ФормаОтчета2023Мес8УФ_Справка</Template>
+			<Template>ФормаОтчета2023Мес8УФ_Приложение6</Template>
+			<Template>ФормаОтчета2023Мес8УФ_СлужебныеДанные</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

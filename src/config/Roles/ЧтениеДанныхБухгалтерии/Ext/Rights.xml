@@ -10328,6 +10328,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.ОбменЗарплата30Бухгалтерия21</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.АктСверкиВзаиморасчетов.Attribute.РазбитьПоДоговорам</name>
 		<right>
 			<name>Edit</name>

@@ -6,11 +6,11 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Обмен данными с ЗУП</v8:content>
+					<v8:content>Обмен данными с внешними программами</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Обмін даними з ЗУП</v8:content>
+					<v8:content>Обмін даними із зовнішніми програмами</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>

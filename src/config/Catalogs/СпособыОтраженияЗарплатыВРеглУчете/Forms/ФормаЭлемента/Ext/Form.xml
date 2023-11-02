@@ -588,6 +588,12 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="Описание" id="92">
+			<DataPath>Объект.Описание</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="93"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="94"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

@@ -2026,6 +2026,10 @@
 											<TitleLocation>Left</TitleLocation>
 											<ContextMenu name="КонтактнаяИнформацияПолеДругаяИнформацияОрганизацииКонтекстноеМеню" id="1123"/>
 											<ExtendedTooltip name="КонтактнаяИнформацияПолеДругаяИнформацияОрганизацииРасширеннаяПодсказка" id="1124"/>
+											<Events>
+												<Event name="OnChange">ДругаяИнформацияОрганизацииПриИзменении</Event>
+												<Event name="StartChoice">ДругаяИнформацияОрганизацииНачалоВыбора</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -3649,7 +3653,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Всі відповідальні особи</v8:content>
+					<v8:content>Усі відповідальні особи</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>

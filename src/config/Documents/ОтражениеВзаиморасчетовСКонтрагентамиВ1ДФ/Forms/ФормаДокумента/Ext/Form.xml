@@ -93,11 +93,6 @@
 									</Title>
 									<ExtendedTooltip name="КнопкаЗаполнитьПоВзаиморасчетамРасширеннаяПодсказка" id="43"/>
 								</Button>
-								<Button name="ФормаЗаполнитьПоПоступлениям" id="77">
-									<Type>CommandBarButton</Type>
-									<CommandName>Form.Command.ЗаполнитьПоПоступлениям</CommandName>
-									<ExtendedTooltip name="ФормаЗаполнитьПоПоступлениямРасширеннаяПодсказка" id="78"/>
-								</Button>
 							</ChildItems>
 						</Popup>
 					</ChildItems>
@@ -202,6 +197,67 @@
 								<Event name="Clearing">ПериодНачисленияСтрокойМесяцОчистка</Event>
 							</Events>
 						</InputField>
+						<InputField name="ФорматОбмена30" id="80">
+							<DataPath>Объект.ФорматОбмена30</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обмен данными</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Обмін даними</v8:content>
+								</v8:item>
+							</Title>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChooseType>false</ChooseType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Не используется</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Не використовується</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:boolean">false</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>BAS 3.0</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>BAS 3.0</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:boolean">true</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ФорматОбмена30КонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ФорматОбмена30РасширеннаяПодсказка" id="82"/>
+							<Events>
+								<Event name="OnChange">ФорматОбмена30ПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ВидДохода" id="77">
+							<DataPath>Объект.ВидДохода</DataPath>
+							<ContextMenu name="ВидДоходаКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ВидДоходаРасширеннаяПодсказка" id="79"/>
+						</InputField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Авторизация" id="58">
@@ -299,6 +355,12 @@
 					<ContextMenu name="НДФЛКонтрагентКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="НДФЛКонтрагентРасширеннаяПодсказка" id="28"/>
 				</InputField>
+				<InputField name="НДФЛФизическоеЛицо" id="83">
+					<DataPath>Объект.НДФЛ.ФизическоеЛицо</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НДФЛФизическоеЛицоКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="НДФЛФизическоеЛицоРасширеннаяПодсказка" id="85"/>
+				</InputField>
 				<InputField name="НДФЛВидДохода" id="29">
 					<DataPath>Объект.НДФЛ.ВидДохода</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -318,18 +380,6 @@
 					<FooterDataPath>Объект.НДФЛ.TotalНалог</FooterDataPath>
 					<ContextMenu name="НДФЛНалогКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="НДФЛНалогРасширеннаяПодсказка" id="37"/>
-				</InputField>
-				<InputField name="НДФЛПеречисленныйДоход" id="79">
-					<DataPath>Объект.НДФЛ.а_ПеречисленныйДоход</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>uk</v8:lang>
-							<v8:content>Наведений дохід (ФОП)</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="НДФЛПеречисленныйДоходКонтекстноеМеню" id="80"/>
-					<ExtendedTooltip name="НДФЛПеречисленныйДоходРасширеннаяПодсказка" id="81"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -493,25 +543,6 @@
 			</ToolTip>
 			<Action>ЗаполнитьПоОплате</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
-		</Command>
-		<Command name="ЗаполнитьПоПоступлениям" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Заповнити за надходженнями</v8:content>
-				</v8:item>
-				<v8:item>
-					<v8:lang>uk</v8:lang>
-					<v8:content>За надходженнями</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>uk</v8:lang>
-					<v8:content>Заполнить по поступлениям</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ЗаполнитьПоПоступлениям</Action>
 		</Command>
 	</Commands>
 </Form>

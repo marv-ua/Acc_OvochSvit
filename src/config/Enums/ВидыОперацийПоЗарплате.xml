@@ -448,6 +448,38 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="8ff05d14-d220-4fd8-b92e-9e103179e706">
+				<Properties>
+					<Name>ВозмещениеУщерба</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возмещение ущерба</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Відшкодування шкоди</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="97baf726-f007-4b2b-9109-99e997d1cdf7">
+				<Properties>
+					<Name>УдержаниеНеизрасходованныхПодотчетныхСумм</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удержание неизрасходованных подотчетных сумм</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Утримання невитрачених підзвітних сум</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

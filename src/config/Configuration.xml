@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>NetHelp</Vendor>
-			<Version>2.1.23.2</Version>
+			<Version>2.1.24.3</Version>
 			<UpdateCatalogAddress>http://downloads.bas-soft.eu/tmplts/</UpdateCatalogAddress>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -268,6 +268,7 @@
 			<Subsystem>ЗарплатаКадрыПодсистемы</Subsystem>
 			<Subsystem>ЗарплатаКадрыПриложения</Subsystem>
 			<Subsystem>ИнтернетПоддержкаПользователей</Subsystem>
+			<Subsystem>ОбменБухгалтерия21Зарплата30</Subsystem>
 			<Subsystem>Операции</Subsystem>
 			<Subsystem>ОСИНМА</Subsystem>
 			<Subsystem>Отчеты</Subsystem>
@@ -798,9 +799,9 @@
 			<CommonPicture>ПолужирноеНачертание</CommonPicture>
 			<CommonPicture>ПолученноеПисьмо</CommonPicture>
 			<CommonPicture>Получить</CommonPicture>
-			<CommonPicture>ПоляИСортировки</CommonPicture>
 			<CommonPicture>ПользовательскиеПоля</CommonPicture>
 			<CommonPicture>ПользовательскийМакетУдалить</CommonPicture>
+			<CommonPicture>ПоляИСортировки</CommonPicture>
 			<CommonPicture>Пометка</CommonPicture>
 			<CommonPicture>ПорядокКомпоновки</CommonPicture>
 			<CommonPicture>ПочтовыйСервер</CommonPicture>
@@ -1504,6 +1505,11 @@
 			<CommonModule>ОбменДаннымиВнешнееСоединение</CommonModule>
 			<CommonModule>ОбменДаннымиВызовСервера</CommonModule>
 			<CommonModule>ОбменДаннымиГлобальный</CommonModule>
+			<CommonModule>ОбменДаннымиЗарплата30Бухгалтерия21</CommonModule>
+			<CommonModule>ОбменДаннымиЗарплата30Бухгалтерия21События</CommonModule>
+			<CommonModule>ОбменДаннымиЗарплатаКадры</CommonModule>
+			<CommonModule>ОбменДаннымиЗарплатаКадрыБазовый</CommonModule>
+			<CommonModule>ОбменДаннымиЗарплатаКадрыВнутренний</CommonModule>
 			<CommonModule>ОбменДаннымиКлиент</CommonModule>
 			<CommonModule>ОбменДаннымиОбновлениеСПредыдущейРедакции</CommonModule>
 			<CommonModule>ОбменДаннымиПереопределяемый</CommonModule>
@@ -1997,11 +2003,6 @@
 			<CommonModule>ЭлектроннаяПодписьКлиентПереопределяемый</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьКлиентСервер</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьПереопределяемый</CommonModule>
-			<CommonModule>ЭлектроннаяПодписьСлужебный</CommonModule>
-			<CommonModule>ЭлектроннаяПодписьСлужебныйВызовСервера</CommonModule>
-			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиент</CommonModule>
-			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиентСервер</CommonModule>
-			<CommonModule>ЭлектроннаяПодписьСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ерпсАктПриемкиПередачиСервер</CommonModule>
 			<CommonModule>КомпоновкаДанныхСервер</CommonModule>
 			<CommonModule>КомпоновкаДанныхКлиент</CommonModule>
@@ -2013,10 +2014,16 @@
 			<CommonModule>ФормыКлиентСервер</CommonModule>
 			<CommonModule>кд_ЭлектроннаяПочта</CommonModule>
 			<CommonModule>а_1ДФ</CommonModule>
+			<CommonModule>ЭлектроннаяПодписьСлужебный</CommonModule>
+			<CommonModule>ЭлектроннаяПодписьСлужебныйВызовСервера</CommonModule>
+			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиент</CommonModule>
+			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>ЭлектроннаяПодписьСлужебныйПовтИсп</CommonModule>
 			<CommonAttribute>ОбластьДанныхВспомогательныеДанные</CommonAttribute>
 			<CommonAttribute>ОбластьДанныхОсновныеДанные</CommonAttribute>
 			<ExchangePlan>АвтономнаяРабота</ExchangePlan>
 			<ExchangePlan>МиграцияПриложений</ExchangePlan>
+			<ExchangePlan>ОбменЗарплата30Бухгалтерия21</ExchangePlan>
 			<ExchangePlan>ОбменРозница20Бухгалтерия20</ExchangePlan>
 			<ExchangePlan>ОбменСообщениями</ExchangePlan>
 			<ExchangePlan>ОбменУправлениеНебольшойФирмойБухгалтерияBAS</ExchangePlan>
@@ -2144,6 +2151,8 @@
 			<EventSubscription>ЗаписатьЗависимыеНаборыЗначенийДоступа</EventSubscription>
 			<EventSubscription>ЗаписатьНаборыЗначенийДоступа</EventSubscription>
 			<EventSubscription>ЗаписатьНаборыЗначенийДоступаЗарплатаКадрыБазовая</EventSubscription>
+			<EventSubscription>ЗаписатьНастройкиИспользованияОбменаЗарплата30Бухгалтерия21</EventSubscription>
+			<EventSubscription>ЗаписатьНастройкиИспользованияОбменаЗарплата30Бухгалтерия21ПередУдалением</EventSubscription>
 			<EventSubscription>ЗаполнитьЗначениеРеквизитаУпорядочивания</EventSubscription>
 			<EventSubscription>ЗаполнитьКонтактнуюИнформацию</EventSubscription>
 			<EventSubscription>ЗаполнитьКонтактнуюИнформациюЗарплатаКадрыБазовая</EventSubscription>
@@ -2174,6 +2183,10 @@
 			<EventSubscription>ОбменДаннымиОбменУправлениеТорговлей31Бухгалтерия20ЗарегистрироватьИзменениеДокумента</EventSubscription>
 			<EventSubscription>ОбменДаннымиОбменУправлениеТорговлей31Бухгалтерия20ЗарегистрироватьИзменениеНабораЗаписей</EventSubscription>
 			<EventSubscription>ОбменДаннымиОбменУправлениеТорговлей31Бухгалтерия20ЗарегистрироватьУдаление</EventSubscription>
+			<EventSubscription>ОбменЗарплата30Бухгалтерия21Регистрация</EventSubscription>
+			<EventSubscription>ОбменЗарплата30Бухгалтерия21РегистрацияДокумента</EventSubscription>
+			<EventSubscription>ОбменЗарплата30Бухгалтерия21РегистрацияНабора</EventSubscription>
+			<EventSubscription>ОбменЗарплата30Бухгалтерия21РегистрацияУдаления</EventSubscription>
 			<EventSubscription>ОбменУправлениеНебольшойФирмойБухгалтерияBASЗарегистрироватьИзменение</EventSubscription>
 			<EventSubscription>ОбменУправлениеНебольшойФирмойБухгалтерияBASЗарегистрироватьИзменениеДокумента</EventSubscription>
 			<EventSubscription>ОбменУправлениеНебольшойФирмойБухгалтерияBASЗарегистрироватьИзменениеНаборЗап</EventSubscription>
@@ -2248,14 +2261,14 @@
 			<EventSubscription>УстановитьПрефиксИБКодуСправочникаЗарплатаКадрыБазовая</EventSubscription>
 			<EventSubscription>УстановитьПрефиксИнформационнойБазыИОрганизацииНомеруДокумента</EventSubscription>
 			<EventSubscription>УстановитьПрефиксИнформационнойБазыИОрганизацииНомеруДокументаНДС</EventSubscription>
+			<EventSubscription>а_ПередЗаписьюДокументаПроверкаНомераПоДатеИОрганизации</EventSubscription>
+			<EventSubscription>а_УстановитьПрефиксИнформационнойБазыИОрганизацииНомеруДокумента</EventSubscription>
 			<EventSubscription>УстановитьПрефиксИнформационнойБазыКодуСправочника</EventSubscription>
 			<EventSubscription>УстановитьПрефиксИнформационнойБазыНомеруДокумента</EventSubscription>
 			<EventSubscription>УстановитьПризнакЗаписиНовойОрганизации</EventSubscription>
 			<EventSubscription>УстановитьРежимыРаботыФормыСотрудника</EventSubscription>
 			<EventSubscription>УстановитьФункциональныеОпцииОрганизацииБазовая</EventSubscription>
 			<EventSubscription>УстановитьФункциональныеОпцииУчетСтраховыхВзносов</EventSubscription>
-			<EventSubscription>а_ПередЗаписьюДокументаПроверкаНомераПоДатеИОрганизации</EventSubscription>
-			<EventSubscription>а_УстановитьПрефиксИнформационнойБазыИОрганизацииНомеруДокумента</EventSubscription>
 			<ScheduledJob>ЗаполнениеДанныхДляОграниченияДоступа</ScheduledJob>
 			<ScheduledJob>ЗапросЛицензийУникальныхУслуг</ScheduledJob>
 			<ScheduledJob>ЗапускДополнительныхОбработок</ScheduledJob>
@@ -2328,6 +2341,8 @@
 			<FunctionalOption>ИспользоватьНесколькоОрганизаций</FunctionalOption>
 			<FunctionalOption>ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</FunctionalOption>
 			<FunctionalOption>ИспользоватьНесколькоПроизводственныхКалендарей</FunctionalOption>
+			<FunctionalOption>ИспользоватьОбменЗарплата30Бухгалтерия21ПоВсемОрганизациямЗарплатаКадрыБазовая</FunctionalOption>
+			<FunctionalOption>ИспользоватьОбменЗарплата30Бухгалтерия21ПоОрганизацииЗарплатаКадрыБазовая</FunctionalOption>
 			<FunctionalOption>ИспользоватьОбщиеДополнительныеЗначения</FunctionalOption>
 			<FunctionalOption>ИспользоватьОбщиеДополнительныеРеквизитыИСведения</FunctionalOption>
 			<FunctionalOption>ИспользоватьОнлайнПоддержку</FunctionalOption>
@@ -2685,6 +2700,7 @@
 			<Constant>ИспользоватьНачислениеЗарплаты</Constant>
 			<Constant>ИспользоватьНесколькоОрганизаций</Constant>
 			<Constant>ИспользоватьНесколькоПроизводственныхКалендарей</Constant>
+			<Constant>ИспользоватьОбменЗарплата30Бухгалтерия21ПоВсемОрганизациям</Constant>
 			<Constant>ИспользоватьОбщиеДополнительныеЗначения</Constant>
 			<Constant>ИспользоватьОбщиеДополнительныеРеквизитыИСведения</Constant>
 			<Constant>ИспользоватьОнлайнПоддержку</Constant>
@@ -2806,10 +2822,10 @@
 			<Constant>ФорматСохраненияРегистровУчета</Constant>
 			<Constant>ХранитьФайлыВТомахНаДиске</Constant>
 			<Constant>ЧасовойПоясОбластиДанных</Constant>
-			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
 			<Constant>ерпсПапкаТоваровФОП</Constant>
 			<Constant>ерпсПапкаТоваровТОВ</Constant>
 			<Constant>а_ПроверятьЗаполненностьНоменклатуры</Constant>
+			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
 			<CommonForm>АвтономнаяРабота</CommonForm>
 			<CommonForm>АвтономнаяРаботаВМоделиСервиса</CommonForm>
 			<CommonForm>АутентификацияВСервисе</CommonForm>
@@ -2959,6 +2975,7 @@
 			<Catalog>ВидыЛьготПоНДФЛ</Catalog>
 			<Catalog>ВидыНалоговойДеятельности</Catalog>
 			<Catalog>ВидыОплатОрганизаций</Catalog>
+			<Catalog>ВидыПрочихДоходовФизЛиц</Catalog>
 			<Catalog>ВидыРегистровУчета</Catalog>
 			<Catalog>ВнешниеКомпоненты</Catalog>
 			<Catalog>ВнешниеПользователи</Catalog>
@@ -2970,6 +2987,7 @@
 			<Catalog>ГруппыДоступа</Catalog>
 			<Catalog>ГруппыДоступаФизическихЛиц</Catalog>
 			<Catalog>ГруппыПользователей</Catalog>
+			<Catalog>ГруппыУчетаНачисленийИУдержаний</Catalog>
 			<Catalog>ГТДИмпортПрисоединенныеФайлы</Catalog>
 			<Catalog>ДепонированиеЗарплатыПрисоединенныеФайлы</Catalog>
 			<Catalog>ДоговорыКонтрагентов</Catalog>
@@ -3019,11 +3037,11 @@
 			<Catalog>НомераГТД</Catalog>
 			<Catalog>НСИСДополнительныеФайлы</Catalog>
 			<Catalog>ОбособленныеПодразделенияОрганизаций</Catalog>
-			<Catalog>ОбщиеВнешниеКомпоненты</Catalog>
-			<Catalog>ОбщиеДанныеИнформационногоЦентра</Catalog>
 			<Catalog>Авто</Catalog>
 			<Catalog>ВидУпаковки</Catalog>
 			<Catalog>ПунктыРазгрузки</Catalog>
+			<Catalog>ОбщиеВнешниеКомпоненты</Catalog>
+			<Catalog>ОбщиеДанныеИнформационногоЦентра</Catalog>
 			<Catalog>ОбъектыСтроительства</Catalog>
 			<Catalog>ОперацияБухПрисоединенныеФайлы</Catalog>
 			<Catalog>Организации</Catalog>
@@ -3115,11 +3133,9 @@
 			<Catalog>УчетныеЗаписиЭлектроннойПочты</Catalog>
 			<Catalog>Файлы</Catalog>
 			<Catalog>ФизическиеЛица</Catalog>
-			<Catalog>ФинансовыеИнвестиции</Catalog>
-			<Catalog>ЦенныеБумаги</Catalog>
 			<Catalog>АдресаДоставки</Catalog>
 			<Catalog>Прицепы</Catalog>
-			<Catalog>ШаблоныЗаданийОчереди</Catalog>
+			<Catalog>ФинансовыеИнвестиции</Catalog>
 			<Catalog>Регионы</Catalog>
 			<Catalog>ДополнительныеАртикулы</Catalog>
 			<Catalog>ерпсАктПриемкиПередачиТоваровПрисоединенныеФайлы</Catalog>
@@ -3130,6 +3146,8 @@
 			<Catalog>а_ПериодыОказанияУслуг</Catalog>
 			<Catalog>а_Номенклатура</Catalog>
 			<Catalog>а_Регионы</Catalog>
+			<Catalog>ЦенныеБумаги</Catalog>
+			<Catalog>ШаблоныЗаданийОчереди</Catalog>
 			<Document>АвансовыйОтчет</Document>
 			<Document>АктОбОказанииПроизводственныхУслуг</Document>
 			<Document>АктСверкиВзаиморасчетов</Document>
@@ -3286,6 +3304,7 @@
 			<Enum>ВедениеВзаиморасчетовПоДоговорам</Enum>
 			<Enum>ВерсииПодсистемыОбменаДанными</Enum>
 			<Enum>ВерсииФорматовВыгрузки</Enum>
+			<Enum>ВидыГруппУчетаНачисленийИУдержаний</Enum>
 			<Enum>ВидыДействийКалендаряБухгалтера</Enum>
 			<Enum>ВидыДействияСНачислением</Enum>
 			<Enum>ВидыДеятельностиДляДДС</Enum>
@@ -3507,10 +3526,10 @@
 			<Enum>ФорматыХраненияМногостраничныхФайлов</Enum>
 			<Enum>ФорматыХраненияОдностраничныхФайлов</Enum>
 			<Enum>ЦветностиИзображения</Enum>
-			<Enum>ЮридическоеФизическоеЛицо</Enum>
 			<Enum>ерпсСтатусыАктовПриемкиПередачи</Enum>
 			<Enum>а_ТипыФайловЗагрузки</Enum>
 			<Enum>а_СтатусыЗаявок</Enum>
+			<Enum>ЮридическоеФизическоеЛицо</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализДвиженийДенежныхСредств</Report>
 			<Report>АнализЖурналаРегистрации</Report>
@@ -3805,6 +3824,7 @@
 			<InformationRegister>ИнцидентыОтложенныеПроверки</InformationRegister>
 			<InformationRegister>ИсключенныеИзПерепроведенияМесяцы</InformationRegister>
 			<InformationRegister>ИспользованиеДополнительныхОтчетовИОбработокСервисаВАвтономномРабочемМесте</InformationRegister>
+			<InformationRegister>ИспользованиеОбменаЗарплата30Бухгалтерия21ПоОрганизациям</InformationRegister>
 			<InformationRegister>ИспользованиеПоставляемыхДополнительныхОтчетовИОбработокВОбластяхДанных</InformationRegister>
 			<InformationRegister>ИспользованиеПоставляемыхРасширенийВОбластяхДанных</InformationRegister>
 			<InformationRegister>КадроваяИсторияСотрудников</InformationRegister>
@@ -4039,8 +4059,8 @@
 			<InformationRegister>ХранилищеСертификатов</InformationRegister>
 			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
 			<InformationRegister>ШкалаСтавокНалогов</InformationRegister>
-			<InformationRegister>ЭлектронныеПодписи</InformationRegister>
 			<InformationRegister>а_ПаспортныеДанные</InformationRegister>
+			<InformationRegister>ЭлектронныеПодписи</InformationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоВзносамВФонды</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоУдержаниям</AccumulationRegister>
@@ -4056,6 +4076,7 @@
 			<AccumulationRegister>НДСНалоговыеОбязательства</AccumulationRegister>
 			<AccumulationRegister>НДСНалоговыйКредит</AccumulationRegister>
 			<AccumulationRegister>НДФЛПоСотрудникам</AccumulationRegister>
+			<AccumulationRegister>ОжидаемыеНалоговыеРазницы</AccumulationRegister>
 			<AccumulationRegister>ОжидаемыйИПодтвержденныйНДСПриобретений</AccumulationRegister>
 			<AccumulationRegister>ОжидаемыйИПодтвержденныйНДСПродаж</AccumulationRegister>
 			<AccumulationRegister>ПереоценкаОСБухгалтерскийУчет</AccumulationRegister>

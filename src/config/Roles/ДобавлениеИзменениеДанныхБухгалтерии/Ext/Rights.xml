@@ -366,6 +366,10 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Edit</name>
 			<value>true</value>
 		</right>
@@ -382,11 +386,31 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>ReadDataHistory</name>
 			<value>true</value>
 		</right>
 		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -1356,6 +1380,26 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>Catalog.НаборыДополнительныхРеквизитовИСведений.StandardAttribute.Predefined</name>
@@ -1892,68 +1936,18 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
-			<restrictionByCondition>
-				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
-#ДляОбъекта("")
-#Иначе
-// ОсновноеУсловиеЧтение
-// Можно читать если есть доступ к (по или)
-// Организации
-#ПоЗначениям("Документ.а_ПриказНаВВодВЭксплуатацию", "Чтение", "",
-"Организации", "Организация",
-"","",
-"","",
-"","",
-"","","","","","","","",
-"","","","","","","","",
-"","","","","","","",""
-)
-#КонецЕсли</condition>
-			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Insert</name>
 			<value>true</value>
-			<restrictionByCondition>
-				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
-#ДляОбъекта("")
-#Иначе
-// ОсновноеУсловиеЗапись
-// Можно добавлять если есть доступ к (по или)
-// Организации
-#ПоЗначениям("Документ.а_ПриказНаВВодВЭксплуатацию", "", "",
-"Организации", "Организация",
-"","",
-"","",
-"","",
-"","","","","","","","",
-"","","","","","","","",
-"","","","","","","",""
-)
-#КонецЕсли</condition>
-			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Update</name>
 			<value>true</value>
-			<restrictionByCondition>
-				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
-#ДляОбъекта("")
-#Иначе
-// ОсновноеУсловиеЗапись
-// Можно изменять если есть доступ к (по или)
-// Организации
-#ПоЗначениям("Документ.а_ПриказНаВВодВЭксплуатацию", "", "",
-"Организации", "Организация",
-"","",
-"","",
-"","",
-"","","","","","","","",
-"","","","","","","","",
-"","","","","","","",""
-)
-#КонецЕсли</condition>
-			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>true</value>
 		</right>
 		<right>
 			<name>Posting</name>
@@ -1968,10 +1962,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveInsert</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>true</value>
 		</right>
@@ -1981,6 +1971,10 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -2005,10 +1999,6 @@
 		</right>
 		<right>
 			<name>ReadDataHistory</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>UpdateDataHistory</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -3982,10 +3972,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveInsert</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>true</value>
 		</right>
@@ -3994,11 +3980,27 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveClearDeletionMark</name>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>InputByString</name>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -4422,6 +4424,10 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Edit</name>
 			<value>true</value>
 		</right>
@@ -4438,7 +4444,31 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -4698,7 +4728,23 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InputByString</name>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -9634,6 +9680,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ExchangePlan.ОбменЗарплата30Бухгалтерия21</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ВариантыОтчетов.TabularSection.Размещение</name>
 		<right>
 			<name>View</name>
@@ -12062,6 +12119,26 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -17165,6 +17242,45 @@
 		</right>
 		<right>
 			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ГруппыУчетаНачисленийИУдержаний</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -24197,6 +24313,26 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>Document.ВедомостьНаВыплатуЗарплатыВКассу.Attribute.Комментарий</name>
@@ -25803,68 +25939,18 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
-			<restrictionByCondition>
-				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
-#ДляОбъекта("")
-#Иначе
-// ОсновноеУсловиеЧтение
-// Можно читать если есть доступ к (по или)
-// Организации
-#ПоЗначениям("Документ.а_ПриказНаПокупку", "Чтение", "",
-"Организации", "Организация",
-"","",
-"","",
-"","",
-"","","","","","","","",
-"","","","","","","","",
-"","","","","","","",""
-)
-#КонецЕсли</condition>
-			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Insert</name>
 			<value>true</value>
-			<restrictionByCondition>
-				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
-#ДляОбъекта("")
-#Иначе
-// ОсновноеУсловиеЗапись
-// Можно добавлять если есть доступ к (по или)
-// Организации
-#ПоЗначениям("Документ.а_ПриказНаПокупку", "", "",
-"Организации", "Организация",
-"","",
-"","",
-"","",
-"","","","","","","","",
-"","","","","","","","",
-"","","","","","","",""
-)
-#КонецЕсли</condition>
-			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Update</name>
 			<value>true</value>
-			<restrictionByCondition>
-				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
-#ДляОбъекта("")
-#Иначе
-// ОсновноеУсловиеЗапись
-// Можно изменять если есть доступ к (по или)
-// Организации
-#ПоЗначениям("Документ.а_ПриказНаПокупку", "", "",
-"Организации", "Организация",
-"","",
-"","",
-"","",
-"","","","","","","","",
-"","","","","","","","",
-"","","","","","","",""
-)
-#КонецЕсли</condition>
-			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>true</value>
 		</right>
 		<right>
 			<name>Posting</name>
@@ -25907,15 +25993,15 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
 		<right>
 			<name>ReadDataHistory</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>UpdateDataHistory</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -28755,10 +28841,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Delete</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
@@ -28795,7 +28877,19 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -30981,6 +31075,65 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ОжидаемыеНалоговыеРазницы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляРегистра("ИдентификаторыОбъектовМетаданных.ОжидаемыеНалоговыеРазницы", "Организация", "", "", "", "")
+#Иначе
+// ОсновноеУсловиеЧтение
+// Можно читать если есть доступ к (по или)
+// Организации
+#ПоЗначениям("РегистрНакопления.ОжидаемыеНалоговыеРазницы", "Чтение", "",
+"Организации", "Организация",
+"","",
+"","",
+"","",
+"","","","","","","","",
+"","","","","","","","",
+"","","","","","","",""
+)
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
+#ДляРегистра("ИдентификаторыОбъектовМетаданных.ОжидаемыеНалоговыеРазницы", "Организация", "", "", "", "")
+#Иначе
+// ОсновноеУсловиеЗапись
+// Можно изменять если есть доступ к (по или)
+// Организации
+#ПоЗначениям("РегистрНакопления.ОжидаемыеНалоговыеРазницы", "", "",
+"Организации", "Организация",
+"","",
+"","",
+"","",
+"","","","","","","","",
+"","","","","","","","",
+"","","","","","","",""
+)
+#КонецЕсли</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.НазначениеДополнительныхОбработок.Resource.ИспользоватьОтчеты</name>
 		<right>
 			<name>View</name>
@@ -31305,6 +31458,34 @@
 		</right>
 		<right>
 			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
 		</right>
 	</object>

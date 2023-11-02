@@ -40,6 +40,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УчетЗарплаты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОтражениеЗарплатыВБухучетеПрисоединенныеФайлы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УчетЗарплатыПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыУчетаНачисленийИУдержаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыГруппУчетаНачисленийИУдержаний</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

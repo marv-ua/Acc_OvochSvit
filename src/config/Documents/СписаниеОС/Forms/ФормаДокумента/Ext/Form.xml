@@ -483,15 +483,6 @@
 									</ToolTip>
 									<ExtendedTooltip name="ОСГруппаАмортизацияНУРасширеннаяПодсказка" id="146"/>
 									<ChildItems>
-										<InputField name="ОСАмортизацияЗаМесяцНУ" id="96">
-											<DataPath>Объект.ОС.АмортизацияЗаМесяцНУ</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ОСАмортизацияЗаМесяцНУКонтекстноеМеню" id="97"/>
-											<ExtendedTooltip name="ОСАмортизацияЗаМесяцНУРасширеннаяПодсказка" id="147"/>
-											<Events>
-												<Event name="OnChange">ОСАмортизацияЗаМесяцНУПриИзменении</Event>
-											</Events>
-										</InputField>
 										<InputField name="ОСАмортизацияНУ" id="98">
 											<DataPath>Объект.ОС.АмортизацияНУ</DataPath>
 											<EditMode>EnterOnInput</EditMode>
@@ -499,6 +490,15 @@
 											<ExtendedTooltip name="ОСАмортизацияНУРасширеннаяПодсказка" id="148"/>
 											<Events>
 												<Event name="OnChange">ОСАмортизацияНУПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ОСАмортизацияЗаМесяцНУ" id="96">
+											<DataPath>Объект.ОС.АмортизацияЗаМесяцНУ</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ОСАмортизацияЗаМесяцНУКонтекстноеМеню" id="97"/>
+											<ExtendedTooltip name="ОСАмортизацияЗаМесяцНУРасширеннаяПодсказка" id="147"/>
+											<Events>
+												<Event name="OnChange">ОСАмортизацияЗаМесяцНУПриИзменении</Event>
 											</Events>
 										</InputField>
 									</ChildItems>
@@ -1195,6 +1195,7 @@
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
 				<dcsset:selection>
 					<dcsset:item>
 						<dcsset:field>ОССтоимостьНУ</dcsset:field>

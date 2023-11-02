@@ -679,6 +679,7 @@
 							</SearchControlAddition>
 							<Events>
 								<Event name="OnEditEnd">ТоварыПриОкончанииРедактирования</Event>
+								<Event name="AfterDeleteRow">ТоварыПослеУдаления</Event>
 								<Event name="OnChange">ТоварыПриИзменении</Event>
 							</Events>
 							<ChildItems>
@@ -713,6 +714,7 @@
 									<ContextMenu name="ТоварыКодУКТВЭДКонтекстноеМеню" id="171"/>
 									<ExtendedTooltip name="ТоварыКодУКТВЭДРасширеннаяПодсказка" id="172"/>
 									<Events>
+										<Event name="OnChange">ТоварыКодУКТВЭДПриИзменении</Event>
 										<Event name="StartChoice">ТоварыКодУКТВЭДНачалоВыбора</Event>
 										<Event name="ChoiceProcessing">ТоварыКодУКТВЭДОбработкаВыбора</Event>
 									</Events>
@@ -1249,6 +1251,7 @@
 							</SearchControlAddition>
 							<Events>
 								<Event name="OnEditEnd">УслугиПриОкончанииРедактирования</Event>
+								<Event name="AfterDeleteRow">УслугиПослеУдаления</Event>
 								<Event name="OnChange">УслугиПриИзменении</Event>
 							</Events>
 							<ChildItems>
@@ -1289,6 +1292,7 @@
 									<ContextMenu name="УслугиКодУКТВЭДКонтекстноеМеню" id="661"/>
 									<ExtendedTooltip name="УслугиКодУКТВЭДРасширеннаяПодсказка" id="662"/>
 									<Events>
+										<Event name="OnChange">УслугиКодУКТВЭДПриИзменении</Event>
 										<Event name="StartChoice">УслугиКодУКТВЭДНачалоВыбора</Event>
 										<Event name="ChoiceProcessing">УслугиКодУКТВЭДОбработкаВыбора</Event>
 									</Events>
@@ -1589,6 +1593,7 @@
 							</SearchControlAddition>
 							<Events>
 								<Event name="OnEditEnd">ОСПриОкончанииРедактирования</Event>
+								<Event name="AfterDeleteRow">ОСПослеУдаления</Event>
 								<Event name="OnChange">ОСПриИзменении</Event>
 							</Events>
 							<ChildItems>
@@ -1622,6 +1627,9 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ОСКодУКТВЭДКонтекстноеМеню" id="294"/>
 									<ExtendedTooltip name="ОСКодУКТВЭДРасширеннаяПодсказка" id="295"/>
+									<Events>
+										<Event name="OnChange">ОСКодУКТВЭДПриИзменении</Event>
+									</Events>
 								</InputField>
 								<LabelField name="ОСКодУКТВЭДВид" id="666">
 									<DataPath>Объект.ОС.КодУКТВЭД.Вид</DataPath>
@@ -1905,6 +1913,7 @@
 							</SearchControlAddition>
 							<Events>
 								<Event name="OnEditEnd">НМАПриОкончанииРедактирования</Event>
+								<Event name="AfterDeleteRow">НМАПослеУдаления</Event>
 								<Event name="OnChange">НМАПриИзменении</Event>
 							</Events>
 							<ChildItems>
@@ -1938,6 +1947,9 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="НМАКодУКТВЭДКонтекстноеМеню" id="345"/>
 									<ExtendedTooltip name="НМАКодУКТВЭДРасширеннаяПодсказка" id="346"/>
+									<Events>
+										<Event name="OnChange">НМАКодУКТВЭДПриИзменении</Event>
+									</Events>
 								</InputField>
 								<LabelField name="НМАКодУКТВЭДВид" id="669">
 									<DataPath>Объект.НМА.КодУКТВЭД.Вид</DataPath>

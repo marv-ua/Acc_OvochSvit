@@ -2677,6 +2677,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>AccumulationRegister.ОжидаемыеНалоговыеРазницы</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Catalog.ПараметрыСинхронизацииV77</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>

@@ -1653,6 +1653,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>AccumulationRegister.ОжидаемыеНалоговыеРазницы</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Constant.ОтложенноеОбновлениеВГлавномУзлеЗавершеноУспешно</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>

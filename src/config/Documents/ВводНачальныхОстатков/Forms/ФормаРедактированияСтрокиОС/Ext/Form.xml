@@ -295,7 +295,7 @@
 											<v8:content>Група рахунок амортизації</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Group>Horizontal</Group>
+									<Group>AlwaysHorizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаСчетАмортизацииРасширеннаяПодсказка" id="694"/>
@@ -351,7 +351,7 @@
 											<v8:content>Група рахунок амортизації</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Group>Horizontal</Group>
+									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаНалогиАмортизацияРасширеннаяПодсказка" id="705"/>
@@ -361,14 +361,14 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Начислять амортизации (БУ)</v8:content>
+													<v8:content>Начислять амортизацию</v8:content>
 												</v8:item>
 												<v8:item>
 													<v8:lang>uk</v8:lang>
-													<v8:content>Нараховувати амортизації (БО)</v8:content>
+													<v8:content>Нараховувати амортизацію</v8:content>
 												</v8:item>
 											</Title>
-											<TitleLocation>Right</TitleLocation>
+											<TitleLocation>Left</TitleLocation>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="НачислятьАмортизациюБУКонтекстноеМеню" id="707"/>
 											<ExtendedTooltip name="НачислятьАмортизациюБУРасширеннаяПодсказка" id="708"/>
@@ -570,7 +570,7 @@
 											<v8:content>Група рахунок амортизації</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Group>Horizontal</Group>
+									<Group>AlwaysHorizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЛиквидационнаСтоимостьРасширеннаяПодсказка" id="728"/>
@@ -681,7 +681,7 @@
 													<v8:content>Група термін використання БО</v8:content>
 												</v8:item>
 											</ToolTip>
-											<Group>Horizontal</Group>
+											<Group>AlwaysHorizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаСрокИспользованияБУРасширеннаяПодсказка" id="874"/>
@@ -703,7 +703,7 @@
 														</v8:item>
 														<v8:item>
 															<v8:lang>uk</v8:lang>
-															<v8:content>&lt;&lt;Розшифровка строк закінчується тиждень використання для обчислення амортизації БО&gt;&gt;</v8:content>
+															<v8:content>&lt;&lt;Розшифровка строк використання для обчислення амортизації БО&gt;&gt;</v8:content>
 														</v8:item>
 													</Title>
 													<ContextMenu name="РасшифровкаСрокаПолезногоИспользованияБУКонтекстноеМеню" id="876"/>
@@ -732,7 +732,7 @@
 													<v8:content>Група термін використання БО</v8:content>
 												</v8:item>
 											</ToolTip>
-											<Group>Horizontal</Group>
+											<Group>AlwaysHorizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаСрокИспользованияНУРасширеннаяПодсказка" id="879"/>

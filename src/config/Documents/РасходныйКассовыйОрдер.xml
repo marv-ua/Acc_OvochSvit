@@ -1458,7 +1458,13 @@
 					<FillValue xsi:nil="true"/>
 					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Document.РасходныйКассовыйОрдер.Attribute.Организация</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
 					<ChoiceParameters/>
 					<QuickChoice>Auto</QuickChoice>
 					<CreateOnInput>Auto</CreateOnInput>
@@ -1642,8 +1648,8 @@
 					<ChoiceParameters>
 						<app:item name="Отбор.Вид">
 							<app:value xsi:type="v8:FixedArray">
-								<v8:Value xsi:type="xr:DesignTimeRef">195e505d-d40e-4c76-b1f1-be25d65c4144.05c36118-0b6b-4864-8e38-1d091d0651f3</v8:Value>
-								<v8:Value xsi:type="xr:DesignTimeRef">195e505d-d40e-4c76-b1f1-be25d65c4144.4392f3b3-dde5-4608-9573-91063e0958e3</v8:Value>
+								<v8:Value xsi:type="xr:DesignTimeRef">Enum.ВидыГруппУчетаНачисленийИУдержаний.EnumValue.Начисления</v8:Value>
+								<v8:Value xsi:type="xr:DesignTimeRef">Enum.ВидыГруппУчетаНачисленийИУдержаний.EnumValue.ОсобыеНачисления</v8:Value>
 							</app:value>
 						</app:item>
 					</ChoiceParameters>
@@ -3115,8 +3121,8 @@
 							<ChoiceParameters>
 								<app:item name="Отбор.Вид">
 									<app:value xsi:type="v8:FixedArray">
-										<v8:Value xsi:type="xr:DesignTimeRef">195e505d-d40e-4c76-b1f1-be25d65c4144.05c36118-0b6b-4864-8e38-1d091d0651f3</v8:Value>
-										<v8:Value xsi:type="xr:DesignTimeRef">195e505d-d40e-4c76-b1f1-be25d65c4144.4392f3b3-dde5-4608-9573-91063e0958e3</v8:Value>
+										<v8:Value xsi:type="xr:DesignTimeRef">Enum.ВидыГруппУчетаНачисленийИУдержаний.EnumValue.Начисления</v8:Value>
+										<v8:Value xsi:type="xr:DesignTimeRef">Enum.ВидыГруппУчетаНачисленийИУдержаний.EnumValue.ОсобыеНачисления</v8:Value>
 									</app:value>
 								</app:item>
 							</ChoiceParameters>

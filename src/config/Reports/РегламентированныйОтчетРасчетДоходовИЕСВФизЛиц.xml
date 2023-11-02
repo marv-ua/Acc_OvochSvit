@@ -592,6 +592,8 @@
 			<Form>ОсновнаяФорма</Form>
 			<Form>ФормаОтчета2021УФ</Form>
 			<Form>ПараметрыОтчета2021УФ</Form>
+			<Form>ФормаОтчета2023Кв3УФ</Form>
+			<Form>ПараметрыОтчета2023Кв3УФ</Form>
 			<Template>ПоказателиЗвит1С</Template>
 			<Template>СоставПоказателей2021УФ</Template>
 			<Template>ФормаОтчета2021УФ_Декларация</Template>
@@ -605,6 +607,18 @@
 			<Template>ФормаОтчета2021УФ_Таблица61</Template>
 			<Template>ФормаОтчета2021УФ_Таблица62</Template>
 			<Template>ФормаОтчета2021УФ_Таблица63</Template>
+			<Template>СоставПоказателей2023Кв3УФ</Template>
+			<Template>ФормаОтчета2023Кв3УФ_Декларация</Template>
+			<Template>ФормаОтчета2023Кв3УФ_Таблица11</Template>
+			<Template>ФормаОтчета2023Кв3УФ_Таблица12</Template>
+			<Template>ФормаОтчета2023Кв3УФ_Таблица13</Template>
+			<Template>ФормаОтчета2023Кв3УФ_Таблица41</Template>
+			<Template>ФормаОтчета2023Кв3УФ_Таблица42</Template>
+			<Template>ФормаОтчета2023Кв3УФ_Таблица43</Template>
+			<Template>ФормаОтчета2023Кв3УФ_Таблица5</Template>
+			<Template>ФормаОтчета2023Кв3УФ_Таблица61</Template>
+			<Template>ФормаОтчета2023Кв3УФ_Таблица62</Template>
+			<Template>ФормаОтчета2023Кв3УФ_Таблица63</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>
