@@ -112,6 +112,11 @@
 					<ContextMenu name="НомерКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="21"/>
 				</LabelField>
+				<LabelField name="НомерПриказа" id="38">
+					<DataPath>Список.НомерПриказа</DataPath>
+					<ContextMenu name="НомерПриказаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="НомерПриказаРасширеннаяПодсказка" id="40"/>
+				</LabelField>
 				<LabelField name="Организация" id="28">
 					<DataPath>Список.Организация</DataPath>
 					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="29"/>

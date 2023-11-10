@@ -53,10 +53,16 @@
 							<ChildItems>
 								<InputField name="Номер" id="1">
 									<DataPath>Объект.Number</DataPath>
+									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
 									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="НомерПриказа" id="70">
+									<DataPath>Объект.НомерПриказа</DataPath>
+									<ContextMenu name="НомерПриказаКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="НомерПриказаРасширеннаяПодсказка" id="72"/>
 								</InputField>
 								<InputField name="Дата" id="4">
 									<DataPath>Объект.Date</DataPath>
