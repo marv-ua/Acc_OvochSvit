@@ -635,30 +635,35 @@
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ПунктыРазгрузкиКонтекстноеМеню" id="77">
 								<ChildItems>
-									<Button name="ПунктыРазгрузкиКонтекстноеМенюЗаменитьВодителя" id="268">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.ЗаменитьВодителя</CommandName>
-										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюЗаменитьВодителяРасширеннаяПодсказка" id="269"/>
-									</Button>
 									<Button name="ПунктыРазгрузкиКонтекстноеМенюОбработано" id="233">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.Обработано</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюОбработаноРасширеннаяПодсказка" id="234"/>
 									</Button>
-									<Button name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаказНаСборку" id="237">
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюЗаменитьВодителя" id="268">
 										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.ПечатьЗаказНаСборку</CommandName>
-										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаказНаСборкуРасширеннаяПодсказка" id="238"/>
+										<CommandName>Form.Command.ЗаменитьВодителя</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюЗаменитьВодителяРасширеннаяПодсказка" id="269"/>
+									</Button>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюСоздатьАкт" id="253">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьАкт</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСоздатьАктРасширеннаяПодсказка" id="254"/>
+									</Button>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюПеренестиВНовуюЗаявку" id="290">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПеренестиВНовуюЗаявку</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюПеренестиВНовуюЗаявкуРасширеннаяПодсказка" id="291"/>
 									</Button>
 									<Button name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаявка" id="255">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ПечатьЗаявка</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаявкаРасширеннаяПодсказка" id="256"/>
 									</Button>
-									<Button name="ПунктыРазгрузкиКонтекстноеМенюСоздатьАкт" id="253">
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаказНаСборку" id="237">
 										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.СоздатьАкт</CommandName>
-										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСоздатьАктРасширеннаяПодсказка" id="254"/>
+										<CommandName>Form.Command.ПечатьЗаказНаСборку</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаказНаСборкуРасширеннаяПодсказка" id="238"/>
 									</Button>
 									<Button name="ПунктыРазгрузкиКонтекстноеМенюПечатьРНПоПР" id="281">
 										<Type>CommandBarButton</Type>
@@ -1313,7 +1318,12 @@
 					<v8:content>Створює документи Акт приймання передачі на всі пункти розвантаження</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗначокДобавитьДокумент16</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>СоздатьАкты</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ПечатьАктаПриемкиПередачиТовара" id="3">
 			<Title>
@@ -1332,7 +1342,12 @@
 					<v8:content>Печать акта приемки передачи товара</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>ПечатьАктаПриемкиПередачиТовара</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ОбновитьПунктыРазгрузки" id="4">
 			<Title>
@@ -1376,7 +1391,12 @@
 					<v8:content>Утвердить</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Успешно</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>Утвердить</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="СохранитьЗначенияПоУмолчанию" id="6">
 			<Title>
@@ -1491,6 +1511,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ПечатьЗаказНаСборку</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="СоздатьЗаявки" id="11">
 			<Title>
@@ -1509,7 +1530,12 @@
 					<v8:content>Создать заявки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗначокДобавитьДокумент16</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>СоздатьЗаявки</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="СоздатьАкт" id="12">
 			<Title>
@@ -1528,7 +1554,12 @@
 					<v8:content>Создать акт</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗначокДобавитьДокумент16</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>СоздатьАкт</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ПечатьЗаявка" id="13">
 			<Title>
@@ -1552,6 +1583,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ПечатьЗаявка</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ЗаменитьВодителя" id="14">
 			<Title>
@@ -1694,6 +1726,30 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ПечатьРНПоПР</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПеренестиВНовуюЗаявку" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выделить в отдельную заявку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Виділити в окрему заявку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Перенести в новую заявку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗаполнитьФорму</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПеренестиВНовуюЗаявку</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
