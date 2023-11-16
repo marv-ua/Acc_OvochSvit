@@ -317,6 +317,100 @@
 								</InputField>
 							</ChildItems>
 						</Table>
+						<UsualGroup name="Группа2" id="311">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Товары без остатков</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Товари без залишків</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Товары без остатков</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Товари без залишків</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<Collapsed>true</Collapsed>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="312"/>
+							<ChildItems>
+								<Table name="ВыделениеНоменклатуры" id="292">
+									<Representation>List</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<RowSelectionMode>Row</RowSelectionMode>
+									<Header>false</Header>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.ВыделениеНоменклатуры</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Товары без остатков</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Товари без залишків</v8:content>
+										</v8:item>
+									</Title>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ВыделениеНоменклатурыКонтекстноеМеню" id="293"/>
+									<AutoCommandBar name="ВыделениеНоменклатурыКоманднаяПанель" id="294"/>
+									<ExtendedTooltip name="ВыделениеНоменклатурыРасширеннаяПодсказка" id="295"/>
+									<SearchStringAddition name="ВыделениеНоменклатурыСтрокаПоиска" id="296">
+										<AdditionSource>
+											<Item>ВыделениеНоменклатуры</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВыделениеНоменклатурыСтрокаПоискаКонтекстноеМеню" id="297"/>
+										<ExtendedTooltip name="ВыделениеНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="298"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ВыделениеНоменклатурыСостояниеПросмотра" id="299">
+										<AdditionSource>
+											<Item>ВыделениеНоменклатуры</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВыделениеНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="300"/>
+										<ExtendedTooltip name="ВыделениеНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="301"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ВыделениеНоменклатурыУправлениеПоиском" id="302">
+										<AdditionSource>
+											<Item>ВыделениеНоменклатуры</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ВыделениеНоменклатурыУправлениеПоискомКонтекстноеМеню" id="303"/>
+										<ExtendedTooltip name="ВыделениеНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="304"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnChange">ВыделениеНоменклатурыНоменклатураПриИзменении</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="ВыделениеНоменклатурыНомерСтроки" id="305">
+											<DataPath>Объект.ВыделениеНоменклатуры.LineNumber</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ВыделениеНоменклатурыНомерСтрокиКонтекстноеМеню" id="306"/>
+											<ExtendedTooltip name="ВыделениеНоменклатурыНомерСтрокиРасширеннаяПодсказка" id="307"/>
+										</LabelField>
+										<InputField name="ВыделениеНоменклатурыНоменклатура" id="308">
+											<DataPath>Объект.ВыделениеНоменклатуры.Номенклатура</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ВыделениеНоменклатурыНоменклатураКонтекстноеМеню" id="309"/>
+											<ExtendedTooltip name="ВыделениеНоменклатурыНоменклатураРасширеннаяПодсказка" id="310"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -1271,6 +1365,29 @@
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветФона</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:Color">style:ДобавленныйРеквизитФон</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТоварыНоменклатура</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Товары.Номенклатура</dcsset:left>
+						<dcsset:comparisonType>InList</dcsset:comparisonType>
+						<dcsset:right xsi:type="v8:ValueListType">
+							<v8:valueType/>
+							<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+						</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:СобытиеОтказ</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
