@@ -734,6 +734,26 @@
 										<CommandName>Form.Command.Обработано</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюОбработаноРасширеннаяПодсказка" id="234"/>
 									</Button>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюСтадияОбработан" id="331">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СтадияОбработан</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСтадияОбработанРасширеннаяПодсказка" id="332"/>
+									</Button>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюСтадияПечатьНаСклад" id="333">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СтадияПечатьНаСклад</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСтадияПечатьНаСкладРасширеннаяПодсказка" id="334"/>
+									</Button>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюСтадияГотовыеДокументы" id="329">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СтадияГотовыеДокументы</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСтадияГотовыеДокументыРасширеннаяПодсказка" id="330"/>
+									</Button>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюСтадияВыполнено" id="327">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СтадияВыполнено</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСтадияВыполненоРасширеннаяПодсказка" id="328"/>
+									</Button>
 									<Button name="ПунктыРазгрузкиКонтекстноеМенюЗаменитьВодителя" id="268">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ЗаменитьВодителя</CommandName>
@@ -839,24 +859,9 @@
 							</Events>
 							<ChildItems>
 								<ColumnGroup name="ПунктыРазгрузкиГруппа9" id="260">
-									<Group>InCell</Group>
+									<Group>Horizontal</Group>
 									<ExtendedTooltip name="ПунктыРазгрузкиГруппа9РасширеннаяПодсказка" id="261"/>
 									<ChildItems>
-										<InputField name="ПунктыРазгрузкиСтатус" id="257">
-											<DataPath>Объект.ПунктыРазгрузки.Статус</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ShowInHeader>false</ShowInHeader>
-											<AutoMaxWidth>false</AutoMaxWidth>
-											<MaxWidth>4</MaxWidth>
-											<InputHint>
-												<v8:item>
-													<v8:lang>uk</v8:lang>
-													<v8:content>Статус...</v8:content>
-												</v8:item>
-											</InputHint>
-											<ContextMenu name="ПунктыРазгрузкиСтатусКонтекстноеМеню" id="258"/>
-											<ExtendedTooltip name="ПунктыРазгрузкиСтатусРасширеннаяПодсказка" id="259"/>
-										</InputField>
 										<LabelField name="ПунктыРазгрузкиНомерСтроки" id="89">
 											<DataPath>Объект.ПунктыРазгрузки.LineNumber</DataPath>
 											<EditMode>EnterOnInput</EditMode>
@@ -864,6 +869,99 @@
 											<ContextMenu name="ПунктыРазгрузкиНомерСтрокиКонтекстноеМеню" id="90"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиНомерСтрокиРасширеннаяПодсказка" id="91"/>
 										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ПунктыРазгрузкиГруппа11" id="313">
+									<ReadOnly>true</ReadOnly>
+									<ExtendedTooltip name="ПунктыРазгрузкиГруппа11РасширеннаяПодсказка" id="314"/>
+									<ChildItems>
+										<LabelField name="ПунктыРазгрузкиСтадияОбработан" id="315">
+											<DataPath>Объект.ПунктыРазгрузки.СтадияОбработан</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<SkipOnInput>true</SkipOnInput>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ShowInFooter>false</ShowInFooter>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<Format>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>БЛ=' '; БИ=оброблено</v8:content>
+												</v8:item>
+											</Format>
+											<Font ref="style:SmallTextFont" kind="StyleItem"/>
+											<ContextMenu name="ПунктыРазгрузкиСтадияОбработанКонтекстноеМеню" id="316"/>
+											<ExtendedTooltip name="ПунктыРазгрузкиСтадияОбработанРасширеннаяПодсказка" id="317"/>
+										</LabelField>
+										<LabelField name="ПунктыРазгрузкиСтадияПечатьСклад" id="318">
+											<DataPath>Объект.ПунктыРазгрузки.СтадияПечатьСклад</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<SkipOnInput>true</SkipOnInput>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ShowInFooter>false</ShowInFooter>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<Format>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>БЛ=' '; БИ='надр. на склад'</v8:content>
+												</v8:item>
+											</Format>
+											<Font ref="style:SmallTextFont" kind="StyleItem"/>
+											<ContextMenu name="ПунктыРазгрузкиСтадияПечатьСкладКонтекстноеМеню" id="319"/>
+											<ExtendedTooltip name="ПунктыРазгрузкиСтадияПечатьСкладРасширеннаяПодсказка" id="320"/>
+										</LabelField>
+										<LabelField name="ПунктыРазгрузкиСтадияГотовыеДокументы" id="321">
+											<DataPath>Объект.ПунктыРазгрузки.СтадияГотовыеДокументы</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<SkipOnInput>true</SkipOnInput>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ShowInFooter>false</ShowInFooter>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<Format>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>БЛ=' '; БИ='готові док.'</v8:content>
+												</v8:item>
+											</Format>
+											<Font ref="style:SmallTextFont" kind="StyleItem"/>
+											<ContextMenu name="ПунктыРазгрузкиСтадияГотовыеДокументыКонтекстноеМеню" id="322"/>
+											<ExtendedTooltip name="ПунктыРазгрузкиСтадияГотовыеДокументыРасширеннаяПодсказка" id="323"/>
+										</LabelField>
+										<LabelField name="ПунктыРазгрузкиСтадияВыполнена" id="324">
+											<DataPath>Объект.ПунктыРазгрузки.СтадияВыполнена</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<SkipOnInput>true</SkipOnInput>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ShowInFooter>false</ShowInFooter>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<Format>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>БЛ=' '; БИ=виконана</v8:content>
+												</v8:item>
+											</Format>
+											<Font ref="style:SmallTextFont" kind="StyleItem"/>
+											<ContextMenu name="ПунктыРазгрузкиСтадияВыполненаКонтекстноеМеню" id="325"/>
+											<ExtendedTooltip name="ПунктыРазгрузкиСтадияВыполненаРасширеннаяПодсказка" id="326"/>
+										</LabelField>
+										<InputField name="ПунктыРазгрузкиСтатус" id="335">
+											<DataPath>Объект.ПунктыРазгрузки.Статус</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПунктыРазгрузкиСтатусКонтекстноеМеню" id="336"/>
+											<ExtendedTooltip name="ПунктыРазгрузкиСтатусРасширеннаяПодсказка" id="337"/>
+										</InputField>
 									</ChildItems>
 								</ColumnGroup>
 								<ColumnGroup name="ПунктыРазгрузкиГруппа1" id="158">
@@ -1391,6 +1489,86 @@
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиСтадияОбработан</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.СтадияОбработан</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиСтадияПечатьСклад</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.СтадияПечатьСклад</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиСтадияГотовыеДокументы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.СтадияГотовыеДокументы</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиСтадияВыполнена</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.СтадияВыполнена</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
 		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
@@ -1868,6 +2046,82 @@
 			</Picture>
 			<Action>ПеренестиВНовуюЗаявку</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СтадияОбработан" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработано</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Оброблено</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Стадия обработан</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СтадияОбработан</Action>
+		</Command>
+		<Command name="СтадияПечатьНаСклад" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Напечатано на склад</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Надруковано на склад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Стадия печать на склад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СтадияПечатьНаСклад</Action>
+		</Command>
+		<Command name="СтадияГотовыеДокументы" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Готовые документы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Готові документи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Стадия готовые документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СтадияГотовыеДокументы</Action>
+		</Command>
+		<Command name="СтадияВыполнено" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнено</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Виконано</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Стадия выполнено</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СтадияВыполнено</Action>
 		</Command>
 	</Commands>
 </Form>

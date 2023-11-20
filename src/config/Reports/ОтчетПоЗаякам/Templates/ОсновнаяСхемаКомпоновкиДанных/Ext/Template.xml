@@ -126,6 +126,22 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтадияВыполнена</dataPath>
+			<field>СтадияВыполнена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтадияОбработан</dataPath>
+			<field>СтадияОбработан</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтадияПечатьСклад</dataPath>
+			<field>СтадияПечатьСклад</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтадияГотовыеДокументы</dataPath>
+			<field>СтадияГотовыеДокументы</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	Заявка.Ссылка КАК Ссылка,
@@ -148,7 +164,11 @@
 	ТТ.Примечание КАК Примечание,
 	ЗаявкаПунктыРазгрузки.Обработано КАК Обработано,
 	Заявка.Регион КАК Регион,
-	НЕ НоменклатураБезОстатка.ВыделеннаяНоменклатура ЕСТЬ NULL КАК НоменклатураБезОстатка
+	НЕ НоменклатураБезОстатка.ВыделеннаяНоменклатура ЕСТЬ NULL КАК НоменклатураБезОстатка,
+	ЗаявкаПунктыРазгрузки.СтадияОбработан КАК СтадияОбработан,
+	ЗаявкаПунктыРазгрузки.СтадияПечатьСклад КАК СтадияПечатьСклад,
+	ЗаявкаПунктыРазгрузки.СтадияГотовыеДокументы КАК СтадияГотовыеДокументы,
+	ЗаявкаПунктыРазгрузки.СтадияВыполнена КАК СтадияВыполнена
 ИЗ
 	Документ.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи.Товары КАК ЗаявкаТовары
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи КАК Заявка
@@ -321,7 +341,45 @@
 					<dcsset:use>false</dcsset:use>
 					<dcsset:field>Количество</dcsset:field>
 				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>70e48d18-21d8-42a0-a495-31297b4f0798</dcsset:userSettingID>
 			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СтадияВыполнена</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>1816acda-3ec9-4501-b92a-3c9cce313594</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СтадияГотовыеДокументы</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>a71aef35-88bb-4e67-8394-2b7823b5f3a2</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СтадияОбработан</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>bf11e7a4-f41d-4883-b21b-a11592124074</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СтадияПечатьСклад</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>dd66ac01-a1a0-45b8-a29f-1f3b6c9d4e13</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>a9c95e87-5115-42db-896c-8421d7e298ad</dcsset:userSettingID>
+			</dcsset:filter>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
@@ -340,6 +398,10 @@
 					<dcsset:userSettingID>e24e1ee6-1f3a-482f-9248-58b2d3dc8f63</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>46f46a08-6bb3-42bd-9922-561a6f3376cf</dcsset:userSettingID>
+			</dcsset:order>
 			<dcsset:conditionalAppearance>
 				<dcsset:item>
 					<dcsset:selection>
@@ -652,6 +714,8 @@
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>e310ec43-5808-4c19-840d-d41c654f892e</dcsset:userSettingID>
 			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -1117,6 +1181,8 @@
 					</dcsset:conditionalAppearance>
 				</dcsset:item>
 			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			<dcsset:itemsUserSettingID>1f27cec6-30ad-4a3d-b1e9-1d07ec94f63c</dcsset:itemsUserSettingID>
 		</dcsset:settings>
 	</settingsVariant>
 </DataCompositionSchema>
