@@ -4,6 +4,13 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>Document.РеализацияТоваровУслуг.Command.а_ОчиститьДок</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.а_ПаспортныеДанные</name>
 		<right>
 			<name>Read</name>
@@ -32,6 +39,28 @@
 	</object>
 	<object>
 		<name>Subsystem.Справочники.Subsystem.а_Прочие</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.РеализацияТоваровУслуг</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.РеализацияТоваровУслуг.Command.а_СохранитьВXLS</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
