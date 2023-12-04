@@ -1223,6 +1223,7 @@
 			<Role>а_ИспользованиеТабеля</Role>
 			<Role>а_ЧтениеДобавлениеИзменениеДанныхБухгалтерии</Role>
 			<Role>а_ДоступностьИзмененияНоменклатурыДоп</Role>
+			<Role>а_УправлениеМаршрутами</Role>
 			<CommonTemplate>ИнструкцияКакВыполнитьУстановкуОбновленияВручную</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие_uk</CommonTemplate>
@@ -3769,6 +3770,7 @@
 			<DataProcessor>ИнструментПроведениеДокументов</DataProcessor>
 			<DataProcessor>ВыгрузкаЗагрузкаДанныхXML</DataProcessor>
 			<DataProcessor>ФормированиеПлатежныхДокументовПоНалогам</DataProcessor>
+			<DataProcessor>а_УправлениеМаршрутами</DataProcessor>
 			<InformationRegister>АвансыСотрудникам</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанныхОбластейДанных</InformationRegister>
