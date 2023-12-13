@@ -1048,6 +1048,9 @@
 			<CommonPicture>Ярлык</CommonPicture>
 			<CommonPicture>ПереключательВыключен</CommonPicture>
 			<CommonPicture>ПереключательВключен</CommonPicture>
+			<CommonPicture>а_АвтомобильЧБ</CommonPicture>
+			<CommonPicture>а_АвтомобильЦвет</CommonPicture>
+			<CommonPicture>уатЗаказТСПеревозкаАвтоГрузовая</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
 			<SessionParameter>ВерсииШаблоновОграниченияДоступа</SessionParameter>
@@ -4064,6 +4067,8 @@
 			<InformationRegister>ШкалаСтавокНалогов</InformationRegister>
 			<InformationRegister>а_ПаспортныеДанные</InformationRegister>
 			<InformationRegister>ЭлектронныеПодписи</InformationRegister>
+			<InformationRegister>а_ЗаявкиКВывозу</InformationRegister>
+			<InformationRegister>а_ДатаВывозаФакт</InformationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоВзносамВФонды</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоУдержаниям</AccumulationRegister>

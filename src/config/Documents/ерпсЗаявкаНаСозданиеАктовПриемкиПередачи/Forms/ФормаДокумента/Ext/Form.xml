@@ -1028,21 +1028,37 @@
 										<InputField name="ПунктыРазгрузкиПунктРазгрузки" id="92">
 											<DataPath>Объект.ПунктыРазгрузки.ПунктРазгрузки</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<HorizontalStretch>false</HorizontalStretch>
 											<ContextMenu name="ПунктыРазгрузкиПунктРазгрузкиКонтекстноеМеню" id="93"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиПунктРазгрузкиРасширеннаяПодсказка" id="94"/>
 											<Events>
 												<Event name="OnChange">ПунктыРазгрузкиПунктРазгрузкиПриИзменении</Event>
 											</Events>
 										</InputField>
-										<InputField name="ПунктыРазгрузкиДатаОтгрузки" id="128">
-											<DataPath>Объект.ПунктыРазгрузки.ДатаОтгрузки</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ПунктыРазгрузкиДатаОтгрузкиКонтекстноеМеню" id="129"/>
-											<ExtendedTooltip name="ПунктыРазгрузкиДатаОтгрузкиРасширеннаяПодсказка" id="130"/>
-											<Events>
-												<Event name="OnChange">ПунктыРазгрузкиДатаОтгрузкиПриИзменении</Event>
-											</Events>
-										</InputField>
+										<ColumnGroup name="ПунктыРазгрузкиГруппа12" id="338">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ПунктыРазгрузкиГруппа12РасширеннаяПодсказка" id="339"/>
+											<ChildItems>
+												<InputField name="ПунктыРазгрузкиДатаОтгрузки" id="128">
+													<DataPath>Объект.ПунктыРазгрузки.ДатаОтгрузки</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="ПунктыРазгрузкиДатаОтгрузкиКонтекстноеМеню" id="129"/>
+													<ExtendedTooltip name="ПунктыРазгрузкиДатаОтгрузкиРасширеннаяПодсказка" id="130"/>
+													<Events>
+														<Event name="OnChange">ПунктыРазгрузкиДатаОтгрузкиПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="ПунктыРазгрузкиДатаВывозаФакт" id="340">
+													<DataPath>Объект.ПунктыРазгрузки.ДатаВывозаФакт</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="ПунктыРазгрузкиДатаВывозаФактКонтекстноеМеню" id="341"/>
+													<ExtendedTooltip name="ПунктыРазгрузкиДатаВывозаФактРасширеннаяПодсказка" id="342"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
 									</ChildItems>
 								</ColumnGroup>
 								<InputField name="ПунктыРазгрузкиКоличество" id="140">
@@ -1188,6 +1204,26 @@
 				<Field>Объект.RegisterRecords</Field>
 			</UseAlways>
 			<Columns>
+				<AdditionalColumns table="Объект.ПунктыРазгрузки">
+					<Column name="ДатаВывозаФакт" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Дата факт</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Дата факт</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>Date</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
 				<AdditionalColumns table="Объект.Товары">
 					<Column name="ЗаказаноВЭтотДень" id="1">
 						<Title>

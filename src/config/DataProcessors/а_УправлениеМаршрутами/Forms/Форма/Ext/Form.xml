@@ -85,6 +85,9 @@
 							<TitleLocation>None</TitleLocation>
 							<ContextMenu name="РезультатКонтекстноеМеню" id="2"/>
 							<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChangeAreaContent">РезультатПриИзмененииСодержимогоОбласти</Event>
+							</Events>
 						</SpreadSheetDocumentField>
 					</ChildItems>
 				</Page>
@@ -114,7 +117,15 @@
 							<DataPath>Объект.Заявки</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ЗаявкиКонтекстноеМеню" id="23"/>
-							<AutoCommandBar name="ЗаявкиКоманднаяПанель" id="24"/>
+							<AutoCommandBar name="ЗаявкиКоманднаяПанель" id="24">
+								<ChildItems>
+									<Button name="ЗаявкиПодбор" id="41">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Подбор</CommandName>
+										<ExtendedTooltip name="ЗаявкиПодборРасширеннаяПодсказка" id="42"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
 							<ExtendedTooltip name="ЗаявкиРасширеннаяПодсказка" id="25"/>
 							<SearchStringAddition name="ЗаявкиСтрокаПоиска" id="26">
 								<AdditionSource>
@@ -140,6 +151,9 @@
 								<ContextMenu name="ЗаявкиУправлениеПоискомКонтекстноеМеню" id="33"/>
 								<ExtendedTooltip name="ЗаявкиУправлениеПоискомРасширеннаяПодсказка" id="34"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ЗаявкиПриИзменении</Event>
+							</Events>
 							<ChildItems>
 								<LabelField name="ЗаявкиНомерСтроки" id="35">
 									<DataPath>Объект.Заявки.LineNumber</DataPath>
@@ -153,6 +167,30 @@
 									<ContextMenu name="ЗаявкиЗаявкаКонтекстноеМеню" id="39"/>
 									<ExtendedTooltip name="ЗаявкиЗаявкаРасширеннаяПодсказка" id="40"/>
 								</InputField>
+								<LabelField name="ЗаявкиЗаявкаРегион" id="43">
+									<DataPath>Объект.Заявки.Заявка.Регион</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаявкиЗаявкаРегионКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ЗаявкиЗаявкаРегионРасширеннаяПодсказка" id="45"/>
+								</LabelField>
+								<LabelField name="ЗаявкиЗаявкаПериодОтгрузки" id="46">
+									<DataPath>Объект.Заявки.Заявка.ПериодОтгрузки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаявкиЗаявкаПериодОтгрузкиКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="ЗаявкиЗаявкаПериодОтгрузкиРасширеннаяПодсказка" id="48"/>
+								</LabelField>
+								<LabelField name="ЗаявкиЗаявкаКомментарий" id="49">
+									<DataPath>Объект.Заявки.Заявка.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаявкиЗаявкаКомментарийКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ЗаявкиЗаявкаКомментарийРасширеннаяПодсказка" id="51"/>
+								</LabelField>
+								<LabelField name="ЗаявкиЗаявкаОтветственный" id="52">
+									<DataPath>Объект.Заявки.Заявка.Ответственный</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаявкиЗаявкаОтветственныйКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ЗаявкиЗаявкаОтветственныйРасширеннаяПодсказка" id="54"/>
+								</LabelField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -220,6 +258,25 @@
 			</Picture>
 			<Action>Заполнить</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Подбор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Підбір</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Подбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Подбор</Action>
 		</Command>
 	</Commands>
 </Form>
