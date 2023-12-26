@@ -524,6 +524,12 @@
 										</Picture>
 										<ExtendedTooltip name="ТоварыЗагрузитьИзВнешнегоФайлаРасширеннаяПодсказка" id="66"/>
 									</Button>
+									<Button name="ТоварыУстановитьНовыйИдентификаторДату" id="343">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УстановитьНовыйИдентификаторДату</CommandName>
+										<ToolTipRepresentation>Button</ToolTipRepresentation>
+										<ExtendedTooltip name="ТоварыУстановитьНовыйИдентификаторДатуРасширеннаяПодсказка" id="344"/>
+									</Button>
 									<ButtonGroup name="ТоварыГруппа2" id="266">
 										<ExtendedTooltip name="ТоварыГруппа2РасширеннаяПодсказка" id="267"/>
 										<ChildItems>
@@ -657,7 +663,6 @@
 								</InputField>
 								<InputField name="ТоварыДатаОтгрузки" id="250">
 									<DataPath>Объект.Товары.ДатаОтгрузки</DataPath>
-									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыДатаОтгрузкиКонтекстноеМеню" id="251"/>
 									<ExtendedTooltip name="ТоварыДатаОтгрузкиРасширеннаяПодсказка" id="252"/>
@@ -2158,6 +2163,30 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СтадияВыполнено</Action>
+		</Command>
+		<Command name="УстановитьНовыйИдентификаторДату" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виділити в окрему</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Виділити в окрему</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Встановити новий ідентифікатор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Встановити новий ідентифікатор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьНовыйИдентификаторДату</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>
