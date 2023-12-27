@@ -6,11 +6,81 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="Группа1" id="43">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<Button name="СписокЗаказНаСборкуУстановитьИнтервал" id="41">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Item.СписокЗаказНаСборку.StandardCommand.SetDateInterval</CommandName>
+					<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+					<ExtendedTooltip name="СписокЗаказНаСборкуУстановитьИнтервалРасширеннаяПодсказка" id="42"/>
+				</Button>
+				<LabelDecoration name="Декорация1" id="54">
+					<Width>10</Width>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="56"/>
+				</LabelDecoration>
+				<UsualGroup name="Группа2" id="48">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<Button name="Обновить" id="57">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Item.СписокЗаказНаСборку.StandardCommand.Refresh</CommandName>
+							<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="58"/>
+						</Button>
+						<Button name="Найти" id="50">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Item.СписокЗаказНаСборку.StandardCommand.Find</CommandName>
+							<ExtendedTooltip name="НайтиРасширеннаяПодсказка" id="51"/>
+						</Button>
+						<Button name="ОтменитьПоиск" id="52">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Item.СписокЗаказНаСборку.StandardCommand.CancelSearch</CommandName>
+							<ExtendedTooltip name="ОтменитьПоискРасширеннаяПодсказка" id="53"/>
+						</Button>
+						<SearchStringAddition name="Дополнение1" id="45">
+							<AdditionSource>
+								<Item>СписокЗаказНаСборку</Item>
+								<Type>SearchStringRepresentation</Type>
+							</AdditionSource>
+							<ContextMenu name="Дополнение1КонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="Дополнение1РасширеннаяПодсказка" id="47"/>
+						</SearchStringAddition>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<Table name="СписокЗаказНаСборку" id="1">
+			<CommandBarLocation>Top</CommandBarLocation>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>СписокЗаказНаСборку</DataPath>
 			<RowPictureDataPath>СписокЗаказНаСборку.DefaultPicture</RowPictureDataPath>
+			<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+			<CommandSet>
+				<ExcludedCommand>ChangeHistory</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>ListSettings</ExcludedCommand>
+				<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+			</CommandSet>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -25,7 +95,9 @@
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<ContextMenu name="СписокЗаказНаСборкуКонтекстноеМеню" id="2"/>
-			<AutoCommandBar name="СписокЗаказНаСборкуКоманднаяПанель" id="3"/>
+			<AutoCommandBar name="СписокЗаказНаСборкуКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
 			<ExtendedTooltip name="СписокЗаказНаСборкуРасширеннаяПодсказка" id="4"/>
 			<SearchStringAddition name="СписокЗаказНаСборкуСтрокаПоиска" id="5">
 				<AdditionSource>
@@ -40,6 +112,7 @@
 					<Item>СписокЗаказНаСборку</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
+				<Font ref="style:ШрифтИтоговМонитораРуководителя" kind="StyleItem"/>
 				<ContextMenu name="СписокЗаказНаСборкуСостояниеПросмотраКонтекстноеМеню" id="9"/>
 				<ExtendedTooltip name="СписокЗаказНаСборкуСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
 			</ViewStatusAddition>
@@ -74,11 +147,10 @@
 					<ContextMenu name="СписокЗаказНаСборкуСобранКонтекстноеМеню" id="33"/>
 					<ExtendedTooltip name="СписокЗаказНаСборкуСобранРасширеннаяПодсказка" id="34"/>
 				</LabelField>
-				<LabelField name="СписокЗаказНаСборкуСсылка" id="23">
-					<DataPath>СписокЗаказНаСборку.Ref</DataPath>
-					<Visible>false</Visible>
-					<ContextMenu name="СписокЗаказНаСборкуСсылкаКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="СписокЗаказНаСборкуСсылкаРасширеннаяПодсказка" id="25"/>
+				<LabelField name="СписокЗаказНаСборкуПунктРазгрузки" id="38">
+					<DataPath>СписокЗаказНаСборку.ПунктРазгрузки</DataPath>
+					<ContextMenu name="СписокЗаказНаСборкуПунктРазгрузкиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СписокЗаказНаСборкуПунктРазгрузкиРасширеннаяПодсказка" id="40"/>
 				</LabelField>
 				<LabelField name="СписокЗаказНаСборкуКомментарий" id="29">
 					<DataPath>СписокЗаказНаСборку.Комментарий</DataPath>
@@ -94,6 +166,12 @@
 					<DataPath>СписокЗаказНаСборку.Ответственный</DataPath>
 					<ContextMenu name="СписокЗаказНаСборкуОтветственныйКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="СписокЗаказНаСборкуОтветственныйРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<LabelField name="СписокЗаказНаСборкуСсылка" id="23">
+					<DataPath>СписокЗаказНаСборку.Ref</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СписокЗаказНаСборкуСсылкаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокЗаказНаСборкуСсылкаРасширеннаяПодсказка" id="25"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -180,7 +258,7 @@
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>Шрифт</dcscor:parameter>
-									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>
