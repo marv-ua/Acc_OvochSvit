@@ -163,6 +163,7 @@
 				</InputField>
 				<InputField name="ТоварыЗаглушка" id="61">
 					<DataPath>Объект.Товары.Заглушка</DataPath>
+					<Enabled>false</Enabled>
 					<EditMode>EnterOnInput</EditMode>
 					<ShowInHeader>false</ShowInHeader>
 					<ShowInFooter>false</ShowInFooter>
