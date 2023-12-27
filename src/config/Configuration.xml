@@ -1227,6 +1227,7 @@
 			<Role>а_ЧтениеДобавлениеИзменениеДанныхБухгалтерии</Role>
 			<Role>а_ДоступностьИзмененияНоменклатурыДоп</Role>
 			<Role>а_УправлениеМаршрутами</Role>
+			<Role>Кладовщик</Role>
 			<CommonTemplate>ИнструкцияКакВыполнитьУстановкуОбновленияВручную</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие_uk</CommonTemplate>
@@ -3285,6 +3286,7 @@
 			<Document>а_Табель</Document>
 			<Document>а_ПриказНаПокупку</Document>
 			<Document>а_ПриказНаВВодВЭксплуатацию</Document>
+			<Document>а_ЗаказНаСборку</Document>
 			<DocumentNumerator>НумераторНалоговыхДокументов</DocumentNumerator>
 			<Sequence>ДокументыОрганизаций</Sequence>
 			<DocumentJournal>Деньги</DocumentJournal>
@@ -3775,6 +3777,7 @@
 			<DataProcessor>ВыгрузкаЗагрузкаДанныхXML</DataProcessor>
 			<DataProcessor>ФормированиеПлатежныхДокументовПоНалогам</DataProcessor>
 			<DataProcessor>а_УправлениеМаршрутами</DataProcessor>
+			<DataProcessor>а_ИнтерфейсКладовщик</DataProcessor>
 			<InformationRegister>АвансыСотрудникам</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанныхОбластейДанных</InformationRegister>

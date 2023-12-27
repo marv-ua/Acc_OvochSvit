@@ -784,6 +784,11 @@
 										<CommandName>Form.Command.ПечатьЗаказНаСборку</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюПечатьЗаказНаСборкуРасширеннаяПодсказка" id="238"/>
 									</Button>
+									<Button name="ПунктыРазгрузкиКонтекстноеМенюСоздатьЗаказНаСборку" id="348">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьЗаказНаСборку</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСоздатьЗаказНаСборкуРасширеннаяПодсказка" id="349"/>
+									</Button>
 									<Button name="ПунктыРазгрузкиКонтекстноеМенюПечатьРНПоПР" id="281">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ПечатьРНПоПР</CommandName>
@@ -1090,6 +1095,12 @@
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
+								<InputField name="ПунктыРазгрузкиЗаказНаЗборку" id="345">
+									<DataPath>Объект.ПунктыРазгрузки.ЗаказНаЗборку</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПунктыРазгрузкиЗаказНаЗборкуКонтекстноеМеню" id="346"/>
+									<ExtendedTooltip name="ПунктыРазгрузкиЗаказНаЗборкуРасширеннаяПодсказка" id="347"/>
+								</InputField>
 								<ColumnGroup name="ПунктыРазгрузкиГруппа3" id="162">
 									<Group>Horizontal</Group>
 									<ExtendedTooltip name="ПунктыРазгрузкиГруппа3РасширеннаяПодсказка" id="163"/>
@@ -2187,6 +2198,29 @@
 			</ToolTip>
 			<Action>УстановитьНовыйИдентификаторДату</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СоздатьЗаказНаСборку" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать заказ на сборку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити замовлення на збірку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Создать заказ на сборку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Document</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьЗаказНаСборку</Action>
 		</Command>
 	</Commands>
 </Form>

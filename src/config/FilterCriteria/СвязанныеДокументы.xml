@@ -28,6 +28,7 @@
 				<v8:Type>cfg:DocumentRef.ОтчетПроизводстваЗаСмену</v8:Type>
 				<v8:Type>cfg:DocumentRef.СписаниеОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПлатежныйОрдерСписаниеДенежныхСредств</v8:Type>
+				<v8:Type>cfg:DocumentRef.а_ЗаказНаСборку</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПередачаОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.СписаниеТоваров</v8:Type>
 				<v8:Type>cfg:DocumentRef.АвансовыйОтчет</v8:Type>
@@ -200,6 +201,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсАктПриемкиПередачиТоваров.Attribute.ЗаявкаНаСозданиеАктовПриемкиПередачи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.а_ПриказНаПокупку.Attribute.ДокументОснование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.а_ПриказНаВВодВЭксплуатацию.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.а_ЗаказНаСборку.Attribute.ДокументОснование</xr:Item>
 			</Content>
 			<DefaultForm/>
 			<AuxiliaryForm/>

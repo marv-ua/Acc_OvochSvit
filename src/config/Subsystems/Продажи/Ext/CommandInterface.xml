@@ -37,6 +37,21 @@
 		</Command>
 	</CommandsPlacement>
 	<CommandsOrder>
+		<Command name="Document.ерпсАктПриемкиПередачиТоваров.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.а_ЗаказНаСборку.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Регионы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.а_УправлениеМаршрутами.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
 		<Command name="CommonCommand.ПолезнаяИнформацияПоРазделуПродажи">
 			<CommandGroup>CommandGroup.Информация</CommandGroup>
 		</Command>
@@ -59,6 +74,7 @@
 		<Subsystem>Subsystem.Продажи.Subsystem.НДС</Subsystem>
 	</SubsystemsOrder>
 	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
 		<Group>NavigationPanelSeeAlso</Group>
 		<Group>ActionsPanelTools</Group>
 		<Group>CommandGroup.Информация</Group>

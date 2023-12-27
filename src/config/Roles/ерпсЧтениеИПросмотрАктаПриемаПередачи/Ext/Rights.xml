@@ -350,6 +350,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ЗаказНаСборку</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Configuration.BASБухгалтерия</name>
 		<right>
 			<name>ThinClient</name>
