@@ -7,6 +7,7 @@
 	<Events>
 		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -17,6 +18,7 @@
 			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="10"/>
 			<ChildItems>
 				<UsualGroup name="Группа1" id="7">
+					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="8"/>
@@ -40,15 +42,10 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="ПунктРазгрузки" id="51">
-							<DataPath>Объект.ПунктРазгрузки</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<ContextMenu name="ПунктРазгрузкиКонтекстноеМеню" id="52"/>
-							<ExtendedTooltip name="ПунктРазгрузкиРасширеннаяПодсказка" id="53"/>
-						</InputField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Группа3" id="11">
+					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="12"/>
@@ -58,18 +55,61 @@
 							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="15"/>
 						</InputField>
+						<InputField name="Склад" id="75">
+							<DataPath>Объект.Склад</DataPath>
+							<ContextMenu name="СкладКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="77"/>
+						</InputField>
+						<InputField name="ПунктРазгрузки" id="51">
+							<DataPath>Объект.ПунктРазгрузки</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ПунктРазгрузкиКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="ПунктРазгрузкиРасширеннаяПодсказка" id="53"/>
+						</InputField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<Button name="ФормаСобран" id="49">
-			<Type>UsualButton</Type>
-			<DefaultButton>true</DefaultButton>
-			<Width>12</Width>
-			<Height>2</Height>
-			<CommandName>Form.Command.Собран</CommandName>
-			<ExtendedTooltip name="ФормаСобранРасширеннаяПодсказка" id="50"/>
-		</Button>
+		<UsualGroup name="Группа8" id="78">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<Button name="ФормаСобран" id="49">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<Width>12</Width>
+					<Height>2</Height>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<CommandName>Form.Command.Собран</CommandName>
+					<Font ref="style:LargeTextFont" kind="StyleItem"/>
+					<ExtendedTooltip name="ФормаСобранРасширеннаяПодсказка" id="50"/>
+				</Button>
+				<UsualGroup name="Группа9" id="80">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="81"/>
+					<ChildItems>
+						<InputField name="Комментарий" id="18">
+							<DataPath>Объект.Комментарий</DataPath>
+							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+							<Font ref="style:LargeTextFont" kind="StyleItem"/>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="20"/>
+						</InputField>
+						<InputField name="Примечание" id="82">
+							<DataPath>Объект.Примечание</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+							<Font ref="style:LargeTextFont" kind="StyleItem"/>
+							<ContextMenu name="ПримечаниеКонтекстноеМеню" id="83"/>
+							<ExtendedTooltip name="ПримечаниеРасширеннаяПодсказка" id="84"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<Table name="Товары" id="24">
 			<Footer>true</Footer>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -183,11 +223,6 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="65"/>
 					<ChildItems>
-						<InputField name="Комментарий" id="18">
-							<DataPath>Объект.Комментарий</DataPath>
-							<ContextMenu name="КомментарийКонтекстноеМеню" id="19"/>
-							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="20"/>
-						</InputField>
 						<LabelField name="Идентификатор" id="66">
 							<DataPath>Объект.Идентификатор</DataPath>
 							<ContextMenu name="ИдентификаторКонтекстноеМеню" id="67"/>
@@ -196,7 +231,6 @@
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Группа5" id="54">
-					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="55"/>
@@ -267,6 +301,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Собран</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 	</Commands>
 </Form>

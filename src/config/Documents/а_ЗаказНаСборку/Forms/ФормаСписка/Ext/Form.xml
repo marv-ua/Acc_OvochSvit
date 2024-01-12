@@ -57,7 +57,7 @@
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
-			<AutoRefresh>false</AutoRefresh>
+			<AutoRefresh>true</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
 				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
@@ -112,6 +112,11 @@
 					<ContextMenu name="НомерКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="21"/>
 				</LabelField>
+				<LabelField name="Склад" id="50">
+					<DataPath>Список.Склад</DataPath>
+					<ContextMenu name="СкладКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="52"/>
+				</LabelField>
 				<LabelField name="ПунктРазгрузки" id="43">
 					<DataPath>Список.ПунктРазгрузки</DataPath>
 					<ContextMenu name="ПунктРазгрузкиКонтекстноеМеню" id="44"/>
@@ -121,6 +126,11 @@
 					<DataPath>Список.Комментарий</DataPath>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="33"/>
+				</LabelField>
+				<LabelField name="Примечание" id="53">
+					<DataPath>Список.Примечание</DataPath>
+					<ContextMenu name="ПримечаниеКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ПримечаниеРасширеннаяПодсказка" id="55"/>
 				</LabelField>
 				<LabelField name="Кладовщик" id="28">
 					<DataPath>Список.Кладовщик</DataPath>
@@ -170,6 +180,12 @@
 				<MainTable>Document.а_ЗаказНаСборку</MainTable>
 				<ListSettings>
 					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Склад</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>2d720bf7-a666-47a0-b0f4-aee2664d41ed</dcsset:userSettingID>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>

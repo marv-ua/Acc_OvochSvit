@@ -6,54 +6,89 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="Группа1" id="43">
+		<UsualGroup name="ГруппаБыстрыеОтборы" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстрые отборы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Швидкі відбори</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="44"/>
+			<ExtendedTooltip name="ГруппаБыстрыеОтборыExtendedTooltip" id="60"/>
+		</UsualGroup>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Група користувацьких настройок</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="64"/>
 			<ChildItems>
-				<Button name="СписокЗаказНаСборкуУстановитьИнтервал" id="41">
-					<Type>UsualButton</Type>
-					<Representation>PictureAndText</Representation>
-					<CommandName>Form.Item.СписокЗаказНаСборку.StandardCommand.SetDateInterval</CommandName>
-					<LocationInCommandBar>InCommandBar</LocationInCommandBar>
-					<ExtendedTooltip name="СписокЗаказНаСборкуУстановитьИнтервалРасширеннаяПодсказка" id="42"/>
-				</Button>
-				<LabelDecoration name="Декорация1" id="54">
-					<Width>10</Width>
-					<ContextMenu name="Декорация1КонтекстноеМеню" id="55"/>
-					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="56"/>
-				</LabelDecoration>
-				<UsualGroup name="Группа2" id="48">
+				<UsualGroup name="Группа1" id="43">
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="49"/>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="44"/>
 					<ChildItems>
-						<Button name="Обновить" id="57">
+						<Button name="СписокЗаказНаСборкуУстановитьИнтервал" id="41">
 							<Type>UsualButton</Type>
-							<Representation>Picture</Representation>
-							<CommandName>Form.Item.СписокЗаказНаСборку.StandardCommand.Refresh</CommandName>
-							<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="58"/>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Item.СписокЗаказНаСборку.StandardCommand.SetDateInterval</CommandName>
+							<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+							<ExtendedTooltip name="СписокЗаказНаСборкуУстановитьИнтервалРасширеннаяПодсказка" id="42"/>
 						</Button>
-						<Button name="Найти" id="50">
-							<Type>UsualButton</Type>
-							<Representation>Picture</Representation>
-							<CommandName>Form.Item.СписокЗаказНаСборку.StandardCommand.Find</CommandName>
-							<ExtendedTooltip name="НайтиРасширеннаяПодсказка" id="51"/>
-						</Button>
-						<Button name="ОтменитьПоиск" id="52">
-							<Type>UsualButton</Type>
-							<Representation>Picture</Representation>
-							<CommandName>Form.Item.СписокЗаказНаСборку.StandardCommand.CancelSearch</CommandName>
-							<ExtendedTooltip name="ОтменитьПоискРасширеннаяПодсказка" id="53"/>
-						</Button>
-						<SearchStringAddition name="Дополнение1" id="45">
-							<AdditionSource>
-								<Item>СписокЗаказНаСборку</Item>
-								<Type>SearchStringRepresentation</Type>
-							</AdditionSource>
-							<ContextMenu name="Дополнение1КонтекстноеМеню" id="46"/>
-							<ExtendedTooltip name="Дополнение1РасширеннаяПодсказка" id="47"/>
-						</SearchStringAddition>
+						<LabelDecoration name="Декорация1" id="54">
+							<Width>10</Width>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="56"/>
+						</LabelDecoration>
+						<UsualGroup name="Группа2" id="48">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="49"/>
+							<ChildItems>
+								<Button name="Обновить" id="57">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Item.СписокЗаказНаСборку.StandardCommand.Refresh</CommandName>
+									<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="58"/>
+								</Button>
+								<Button name="Найти" id="50">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Item.СписокЗаказНаСборку.StandardCommand.Find</CommandName>
+									<ExtendedTooltip name="НайтиРасширеннаяПодсказка" id="51"/>
+								</Button>
+								<Button name="ОтменитьПоиск" id="52">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Item.СписокЗаказНаСборку.StandardCommand.CancelSearch</CommandName>
+									<ExtendedTooltip name="ОтменитьПоискРасширеннаяПодсказка" id="53"/>
+								</Button>
+								<SearchStringAddition name="Дополнение1" id="45">
+									<AdditionSource>
+										<Item>СписокЗаказНаСборку</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="Дополнение1КонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="Дополнение1РасширеннаяПодсказка" id="47"/>
+								</SearchStringAddition>
+								<UsualGroup name="Группа3" id="65">
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="66"/>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -81,7 +116,7 @@
 				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
 				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 			</CommandSet>
-			<AutoRefresh>false</AutoRefresh>
+			<AutoRefresh>true</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
 				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
@@ -94,6 +129,7 @@
 			<ShowRoot>true</ShowRoot>
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>Группа3</UserSettingsGroup>
 			<ContextMenu name="СписокЗаказНаСборкуКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="СписокЗаказНаСборкуКоманднаяПанель" id="3">
 				<Autofill>false</Autofill>
@@ -203,6 +239,12 @@
 							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Склад</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>4dfb9ba1-c5ad-405b-97ea-7961be595124</dcsset:userSettingID>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
