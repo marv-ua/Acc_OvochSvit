@@ -49,7 +49,7 @@
 		<Command name="Catalog.Регионы.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
-		<Command name="DataProcessor.а_УправлениеМаршрутами.StandardCommand.Open">
+		<Command name="0:2ea26437-c173-4264-b0c8-c2f51657c6d6">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
 		<Command name="CommonCommand.ПолезнаяИнформацияПоРазделуПродажи">

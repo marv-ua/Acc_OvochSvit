@@ -32,7 +32,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Регионы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсАктПриемкиПередачиТоваров</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоЗаякам</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.а_УправлениеМаршрутами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">2ea26437-c173-4264-b0c8-c2f51657c6d6</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.а_ЗаказНаСборку</xr:Item>
 			</Content>
 		</Properties>

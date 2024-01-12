@@ -4381,6 +4381,7 @@
 			<Template>ПФ_MXL_Накладная1</Template>
 			<Template>ПФ_MXL_Накладная2</Template>
 			<Template>а_МакетВыгрузкиВXLS</Template>
+			<Template>а_МакетВыгрузкиВXLS1</Template>
 			<Command uuid="89e531ba-bbf0-428f-ba54-2d0522d73b1e">
 				<Properties>
 					<Name>а_СохранитьВXLS</Name>
@@ -4395,7 +4396,7 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<Group>FormCommandBarImportant</Group>
+					<Group>CommandGroup.а_Сохранить</Group>
 					<CommandParameterType>
 						<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
 					</CommandParameterType>
@@ -4464,6 +4465,66 @@
 					<Representation>Auto</Representation>
 					<ToolTip/>
 					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="24bf46e9-af4e-40f2-aa3e-9138cb1575d7">
+				<Properties>
+					<Name>а_СохранитьВXLS1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Cсохранить в XLS Трейд Гранит</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Зберегти в XLS Трейд Граніт</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.а_Сохранить</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>PictureAndText</Representation>
+					<ToolTip/>
+					<Picture>
+						<xr:Ref>CommonPicture.СохранитьСписок</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="b944d6f3-c843-49c7-b4d5-e60136930253">
+				<Properties>
+					<Name>а_СохранитьВXML</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранить в XML</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Зберегти в XML</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.а_Сохранить</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>PictureAndText</Representation>
+					<ToolTip/>
+					<Picture>
+						<xr:Ref>CommonPicture.СохранитьФайлКак</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
 					<Shortcut/>
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
 				</Properties>

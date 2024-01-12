@@ -2639,6 +2639,7 @@
 			<CommandGroup>Печать</CommandGroup>
 			<CommandGroup>Сервис</CommandGroup>
 			<CommandGroup>СинхронизацияДанных</CommandGroup>
+			<CommandGroup>а_Сохранить</CommandGroup>
 			<Constant>АвтоматическиНастраиватьРазрешенияВПрофиляхБезопасности</Constant>
 			<Constant>АдресДляВосстановленияПароляУчетнойЗаписи</Constant>
 			<Constant>АдресКриптосервиса</Constant>
@@ -3776,7 +3777,6 @@
 			<DataProcessor>ИнструментПроведениеДокументов</DataProcessor>
 			<DataProcessor>ВыгрузкаЗагрузкаДанныхXML</DataProcessor>
 			<DataProcessor>ФормированиеПлатежныхДокументовПоНалогам</DataProcessor>
-			<DataProcessor>а_УправлениеМаршрутами</DataProcessor>
 			<DataProcessor>а_ИнтерфейсКладовщик</DataProcessor>
 			<InformationRegister>АвансыСотрудникам</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>

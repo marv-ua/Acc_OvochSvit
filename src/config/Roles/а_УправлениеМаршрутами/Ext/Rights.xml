@@ -3,15 +3,4 @@
 	<setForNewObjects>false</setForNewObjects>
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
-	<object>
-		<name>DataProcessor.а_УправлениеМаршрутами</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
 </Rights>
