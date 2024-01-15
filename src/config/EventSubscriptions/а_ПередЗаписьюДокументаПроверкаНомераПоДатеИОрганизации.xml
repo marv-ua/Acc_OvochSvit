@@ -15,8 +15,10 @@
 			</Synonym>
 			<Comment/>
 			<Source>
+				<v8:Type>cfg:DocumentObject.а_ЗаказНаСборку</v8:Type>
 				<v8:Type>cfg:DocumentObject.а_ПриказНаВВодВЭксплуатацию</v8:Type>
 				<v8:Type>cfg:DocumentObject.а_ПриказНаПокупку</v8:Type>
+				<v8:Type>cfg:DocumentObject.а_Маршруты</v8:Type>
 			</Source>
 			<Event>BeforeWrite</Event>
 			<Handler>CommonModule.ПрефиксацияОбъектовСобытия.ПроверитьНомерДокументаПоДатеИОрганизации</Handler>

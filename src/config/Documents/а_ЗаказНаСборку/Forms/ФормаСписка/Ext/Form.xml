@@ -165,6 +165,17 @@
 					<ContextMenu name="СсылкаКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="24"/>
 				</LabelField>
+				<CheckBoxField name="Собран1" id="56">
+					<DataPath>Список.Собран</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="Собран1КонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="Собран1РасширеннаяПодсказка" id="58"/>
+				</CheckBoxField>
+				<LabelField name="ДатаСборки" id="59">
+					<DataPath>Список.ДатаСборки</DataPath>
+					<ContextMenu name="ДатаСборкиКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ДатаСборкиРасширеннаяПодсказка" id="61"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -185,6 +196,11 @@
 							<dcsset:left xsi:type="dcscor:Field">Склад</dcsset:left>
 							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:userSettingID>2d720bf7-a666-47a0-b0f4-aee2664d41ed</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Кладовщик</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>

@@ -104,6 +104,7 @@
 				<v8:Type>cfg:DocumentRef.ОтчетОРозничныхПродажах</v8:Type>
 				<v8:Type>cfg:DocumentRef.КомплектацияНоменклатуры</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПриходныйКассовыйОрдер</v8:Type>
+				<v8:Type>cfg:DocumentRef.а_Маршруты</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПоступлениеИзПереработки</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеПараметровРасчетаИндексации</v8:Type>
 				<v8:Type>cfg:DocumentRef.а_ПриказНаПокупку</v8:Type>

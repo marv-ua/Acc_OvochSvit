@@ -429,6 +429,9 @@
 				</v8:item>
 			</ToolTip>
 			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="71"/>
+			<Events>
+				<Event name="OnCurrentPageChange">ГруппаСтраницыПриСменеСтраницы</Event>
+			</Events>
 			<ChildItems>
 				<Page name="ГруппаТовары" id="72">
 					<Title>
@@ -905,26 +908,6 @@
 											<ContextMenu name="ПунктыРазгрузкиСтадияОбработанКонтекстноеМеню" id="316"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиСтадияОбработанРасширеннаяПодсказка" id="317"/>
 										</LabelField>
-										<LabelField name="ПунктыРазгрузкиСтадияПечатьСклад" id="318">
-											<DataPath>Объект.ПунктыРазгрузки.СтадияПечатьСклад</DataPath>
-											<ReadOnly>true</ReadOnly>
-											<SkipOnInput>true</SkipOnInput>
-											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<ShowInHeader>false</ShowInHeader>
-											<ShowInFooter>false</ShowInFooter>
-											<HorizontalStretch>false</HorizontalStretch>
-											<VerticalStretch>false</VerticalStretch>
-											<Format>
-												<v8:item>
-													<v8:lang>uk</v8:lang>
-													<v8:content>БЛ=' '; БИ='надр. на склад'</v8:content>
-												</v8:item>
-											</Format>
-											<Font ref="style:SmallTextFont" kind="StyleItem"/>
-											<ContextMenu name="ПунктыРазгрузкиСтадияПечатьСкладКонтекстноеМеню" id="319"/>
-											<ExtendedTooltip name="ПунктыРазгрузкиСтадияПечатьСкладРасширеннаяПодсказка" id="320"/>
-										</LabelField>
 										<LabelField name="ПунктыРазгрузкиСтадияГотовыеДокументы" id="321">
 											<DataPath>Объект.ПунктыРазгрузки.СтадияГотовыеДокументы</DataPath>
 											<ReadOnly>true</ReadOnly>
@@ -972,6 +955,60 @@
 											<ContextMenu name="ПунктыРазгрузкиСтатусКонтекстноеМеню" id="336"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиСтатусРасширеннаяПодсказка" id="337"/>
 										</InputField>
+										<LabelField name="ПунктыРазгрузкиСтадияПечатьСклад" id="318">
+											<DataPath>Объект.ПунктыРазгрузки.СтадияПечатьСклад</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<SkipOnInput>true</SkipOnInput>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ShowInFooter>false</ShowInFooter>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<Format>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>БЛ=' '; БИ='надр. на склад'</v8:content>
+												</v8:item>
+											</Format>
+											<Font ref="style:SmallTextFont" kind="StyleItem"/>
+											<ContextMenu name="ПунктыРазгрузкиСтадияПечатьСкладКонтекстноеМеню" id="319"/>
+											<ExtendedTooltip name="ПунктыРазгрузкиСтадияПечатьСкладРасширеннаяПодсказка" id="320"/>
+										</LabelField>
+										<LabelField name="ПунктыРазгрузкиСобраноСкладом" id="373">
+											<DataPath>Объект.ПунктыРазгрузки.СобраноСкладом</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<SkipOnInput>true</SkipOnInput>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ShowInFooter>false</ShowInFooter>
+											<Format>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>БЛ=; БИ='Зібрано складом'</v8:content>
+												</v8:item>
+											</Format>
+											<Font ref="style:SmallTextFont" kind="StyleItem"/>
+											<ContextMenu name="ПунктыРазгрузкиСобраноСкладомКонтекстноеМеню" id="374"/>
+											<ExtendedTooltip name="ПунктыРазгрузкиСобраноСкладомРасширеннаяПодсказка" id="375"/>
+										</LabelField>
+										<LabelField name="ПунктыРазгрузкиМаршрутОтправлен" id="370">
+											<DataPath>Объект.ПунктыРазгрузки.МаршрутОтправлен</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<SkipOnInput>true</SkipOnInput>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ShowInFooter>false</ShowInFooter>
+											<Format>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>БЛ=; БИ='Відправлено'</v8:content>
+												</v8:item>
+											</Format>
+											<Font ref="style:SmallTextFont" kind="StyleItem"/>
+											<ContextMenu name="ПунктыРазгрузкиМаршрутОтправленКонтекстноеМеню" id="371"/>
+											<ExtendedTooltip name="ПунктыРазгрузкиМаршрутОтправленРасширеннаяПодсказка" id="372"/>
+										</LabelField>
 									</ChildItems>
 								</ColumnGroup>
 								<ColumnGroup name="ПунктыРазгрузкиГруппа1" id="158">
@@ -1064,6 +1101,7 @@
 													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
 													<HorizontalStretch>false</HorizontalStretch>
+													<BackColor>style:ИзмененноеЗначениеРеквизитаФон</BackColor>
 													<ContextMenu name="ПунктыРазгрузкиДатаВывозаФактКонтекстноеМеню" id="341"/>
 													<ExtendedTooltip name="ПунктыРазгрузкиДатаВывозаФактРасширеннаяПодсказка" id="342"/>
 												</InputField>
@@ -1108,41 +1146,97 @@
 										<ColumnGroup name="ПунктыРазгрузкиГруппа6" id="177">
 											<ExtendedTooltip name="ПунктыРазгрузкиГруппа6РасширеннаяПодсказка" id="178"/>
 											<ChildItems>
-												<InputField name="ПунктыРазгрузкиВодитель" id="146">
-													<DataPath>Объект.ПунктыРазгрузки.Водитель</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ПунктыРазгрузкиВодительКонтекстноеМеню" id="147"/>
-													<ExtendedTooltip name="ПунктыРазгрузкиВодительРасширеннаяПодсказка" id="148"/>
-													<Events>
-														<Event name="OnChange">ПунктыРазгрузкиВодительПриИзменении</Event>
-													</Events>
-												</InputField>
+												<ColumnGroup name="ПунктыРазгрузкиГруппа16" id="365">
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="ПунктыРазгрузкиГруппа16РасширеннаяПодсказка" id="366"/>
+													<ChildItems>
+														<InputField name="ПунктыРазгрузкиВодитель" id="146">
+															<DataPath>Объект.ПунктыРазгрузки.Водитель</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ПунктыРазгрузкиВодительКонтекстноеМеню" id="147"/>
+															<ExtendedTooltip name="ПунктыРазгрузкиВодительРасширеннаяПодсказка" id="148"/>
+															<Events>
+																<Event name="OnChange">ПунктыРазгрузкиВодительПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="ПунктыРазгрузкиВодительФакт" id="367">
+															<DataPath>Объект.ПунктыРазгрузки.ВодительФакт</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<BackColor>style:ИзмененноеЗначениеРеквизитаФон</BackColor>
+															<ContextMenu name="ПунктыРазгрузкиВодительФактКонтекстноеМеню" id="368"/>
+															<ExtendedTooltip name="ПунктыРазгрузкиВодительФактРасширеннаяПодсказка" id="369"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
 												<ColumnGroup name="ПунктыРазгрузкиГруппа7" id="179">
 													<Group>Horizontal</Group>
 													<ExtendedTooltip name="ПунктыРазгрузкиГруппа7РасширеннаяПодсказка" id="180"/>
 													<ChildItems>
-														<InputField name="ПунктыРазгрузкиАвто" id="149">
-															<DataPath>Объект.ПунктыРазгрузки.Авто</DataPath>
-															<EditMode>EnterOnInput</EditMode>
-															<ContextMenu name="ПунктыРазгрузкиАвтоКонтекстноеМеню" id="150"/>
-															<ExtendedTooltip name="ПунктыРазгрузкиАвтоРасширеннаяПодсказка" id="151"/>
-														</InputField>
-														<InputField name="ПунктыРазгрузкиПрицеп" id="152">
-															<DataPath>Объект.ПунктыРазгрузки.Прицеп</DataPath>
-															<EditMode>EnterOnInput</EditMode>
-															<ContextMenu name="ПунктыРазгрузкиПрицепКонтекстноеМеню" id="153"/>
-															<ExtendedTooltip name="ПунктыРазгрузкиПрицепРасширеннаяПодсказка" id="154"/>
-														</InputField>
+														<ColumnGroup name="ПунктыРазгрузкиГруппа13" id="350">
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="ПунктыРазгрузкиГруппа13РасширеннаяПодсказка" id="351"/>
+															<ChildItems>
+																<InputField name="ПунктыРазгрузкиАвто" id="149">
+																	<DataPath>Объект.ПунктыРазгрузки.Авто</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПунктыРазгрузкиАвтоКонтекстноеМеню" id="150"/>
+																	<ExtendedTooltip name="ПунктыРазгрузкиАвтоРасширеннаяПодсказка" id="151"/>
+																</InputField>
+																<InputField name="ПунктыРазгрузкиАвтоФакт" id="354">
+																	<DataPath>Объект.ПунктыРазгрузки.АвтоФакт</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<EditMode>EnterOnInput</EditMode>
+																	<BackColor>style:ИзмененноеЗначениеРеквизитаФон</BackColor>
+																	<ContextMenu name="ПунктыРазгрузкиАвтоФактКонтекстноеМеню" id="355"/>
+																	<ExtendedTooltip name="ПунктыРазгрузкиАвтоФактРасширеннаяПодсказка" id="356"/>
+																</InputField>
+															</ChildItems>
+														</ColumnGroup>
+														<ColumnGroup name="ПунктыРазгрузкиГруппа14" id="352">
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="ПунктыРазгрузкиГруппа14РасширеннаяПодсказка" id="353"/>
+															<ChildItems>
+																<InputField name="ПунктыРазгрузкиПрицеп" id="152">
+																	<DataPath>Объект.ПунктыРазгрузки.Прицеп</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ПунктыРазгрузкиПрицепКонтекстноеМеню" id="153"/>
+																	<ExtendedTooltip name="ПунктыРазгрузкиПрицепРасширеннаяПодсказка" id="154"/>
+																</InputField>
+																<InputField name="ПунктыРазгрузкиПрицепФакт" id="357">
+																	<DataPath>Объект.ПунктыРазгрузки.ПрицепФакт</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<EditMode>EnterOnInput</EditMode>
+																	<BackColor>style:ИзмененноеЗначениеРеквизитаФон</BackColor>
+																	<ContextMenu name="ПунктыРазгрузкиПрицепФактКонтекстноеМеню" id="358"/>
+																	<ExtendedTooltip name="ПунктыРазгрузкиПрицепФактРасширеннаяПодсказка" id="359"/>
+																</InputField>
+															</ChildItems>
+														</ColumnGroup>
 													</ChildItems>
 												</ColumnGroup>
 											</ChildItems>
 										</ColumnGroup>
-										<InputField name="ПунктыРазгрузкиПеревозчик" id="155">
-											<DataPath>Объект.ПунктыРазгрузки.Перевозчик</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ПунктыРазгрузкиПеревозчикКонтекстноеМеню" id="156"/>
-											<ExtendedTooltip name="ПунктыРазгрузкиПеревозчикРасширеннаяПодсказка" id="157"/>
-										</InputField>
+										<ColumnGroup name="ПунктыРазгрузкиГруппа15" id="360">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ПунктыРазгрузкиГруппа15РасширеннаяПодсказка" id="361"/>
+											<ChildItems>
+												<InputField name="ПунктыРазгрузкиПеревозчик" id="155">
+													<DataPath>Объект.ПунктыРазгрузки.Перевозчик</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПунктыРазгрузкиПеревозчикКонтекстноеМеню" id="156"/>
+													<ExtendedTooltip name="ПунктыРазгрузкиПеревозчикРасширеннаяПодсказка" id="157"/>
+												</InputField>
+												<InputField name="ПунктыРазгрузкиПеревозчикФакт" id="362">
+													<DataPath>Объект.ПунктыРазгрузки.ПеревозчикФакт</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<BackColor>style:ИзмененноеЗначениеРеквизитаФон</BackColor>
+													<ContextMenu name="ПунктыРазгрузкиПеревозчикФактКонтекстноеМеню" id="363"/>
+													<ExtendedTooltip name="ПунктыРазгрузкиПеревозчикФактРасширеннаяПодсказка" id="364"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
 									</ChildItems>
 								</ColumnGroup>
 							</ChildItems>
@@ -1225,11 +1319,11 @@
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
-								<v8:content>Дата факт</v8:content>
+								<v8:content>Дата вивоза</v8:content>
 							</v8:item>
 							<v8:item>
 								<v8:lang>uk</v8:lang>
-								<v8:content>Дата факт</v8:content>
+								<v8:content>Дата вивозу</v8:content>
 							</v8:item>
 						</Title>
 						<Type>
@@ -1237,6 +1331,88 @@
 							<v8:DateQualifiers>
 								<v8:DateFractions>Date</v8:DateFractions>
 							</v8:DateQualifiers>
+						</Type>
+					</Column>
+					<Column name="ВодительФакт" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Водитель</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Водій</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+						</Type>
+					</Column>
+					<Column name="АвтоФакт" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Авто</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Авто</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Авто</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ПрицепФакт" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Прицеп</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Причіп</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Прицепы</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ПеревозчикФакт" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Перевозчик</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Перевізник</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+						</Type>
+					</Column>
+					<Column name="МаршрутОтправлен" id="6">
+						<Title>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Маршрут отправлен</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="СобраноСкладом" id="7">
+						<Title>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Собрано складом</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
 				</AdditionalColumns>
@@ -1612,6 +1788,216 @@
 						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.СтадияВыполнена</dcsset:left>
 						<dcsset:comparisonType>Equal</dcsset:comparisonType>
 						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиМаршрутОтправлен</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.МаршрутОтправлен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиДатаОтгрузки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.ДатаВывозаФакт</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиДатаВывозаФакт</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.ДатаВывозаФакт</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиВодитель</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.ВодительФакт</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиВодительФакт</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.ВодительФакт</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиАвто</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.АвтоФакт</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиАвтоФакт</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.АвтоФакт</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиПрицеп</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.ПрицепФакт</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиПрицепФакт</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.ПрицепФакт</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиПеревозчик</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.ПеревозчикФакт</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПунктыРазгрузкиПеревозчикФакт</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПунктыРазгрузки.ПеревозчикФакт</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
 					</dcsset:item>
 				</dcsset:filter>
 				<dcsset:appearance>

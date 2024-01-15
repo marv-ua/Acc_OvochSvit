@@ -92,6 +92,7 @@
 				<v8:Type>cfg:DocumentObject.ИзменениеСпособовОтраженияРасходовПоАмортизацииОС</v8:Type>
 				<v8:Type>cfg:DocumentObject.ИнвентаризацияРасчетовСКонтрагентами</v8:Type>
 				<v8:Type>cfg:DocumentObject.ПодготовкаКПередачеОС</v8:Type>
+				<v8:Type>cfg:DocumentObject.а_Маршруты</v8:Type>
 				<v8:Type>cfg:DocumentObject.ПеремещениеНМА</v8:Type>
 				<v8:Type>cfg:DocumentObject.ИзменениеСпособовОтраженияРасходовПоАмортизацииНМА</v8:Type>
 				<v8:Type>cfg:DocumentObject.ИзменениеГрафиковАмортизацииОС</v8:Type>

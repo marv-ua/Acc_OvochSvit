@@ -3288,6 +3288,7 @@
 			<Document>а_ПриказНаПокупку</Document>
 			<Document>а_ПриказНаВВодВЭксплуатацию</Document>
 			<Document>а_ЗаказНаСборку</Document>
+			<Document>а_Маршруты</Document>
 			<DocumentNumerator>НумераторНалоговыхДокументов</DocumentNumerator>
 			<Sequence>ДокументыОрганизаций</Sequence>
 			<DocumentJournal>Деньги</DocumentJournal>
@@ -3538,6 +3539,7 @@
 			<Enum>а_ТипыФайловЗагрузки</Enum>
 			<Enum>а_СтатусыЗаявок</Enum>
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
+			<Enum>а_ТипыСтатусов</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализДвиженийДенежныхСредств</Report>
 			<Report>АнализЖурналаРегистрации</Report>
@@ -4072,6 +4074,7 @@
 			<InformationRegister>ЭлектронныеПодписи</InformationRegister>
 			<InformationRegister>а_ЗаявкиКВывозу</InformationRegister>
 			<InformationRegister>а_ДатаВывозаФакт</InformationRegister>
+			<InformationRegister>а_СтатусыЗаявок</InformationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоВзносамВФонды</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоУдержаниям</AccumulationRegister>

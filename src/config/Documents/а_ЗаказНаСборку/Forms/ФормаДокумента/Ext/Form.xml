@@ -188,7 +188,6 @@
 				</InputField>
 				<InputField name="ТоварыКоличество" id="43">
 					<DataPath>Объект.Товары.Количество</DataPath>
-					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<FooterDataPath>Объект.Товары.TotalКоличество</FooterDataPath>
 					<ContextMenu name="ТоварыКоличествоКонтекстноеМеню" id="44"/>
