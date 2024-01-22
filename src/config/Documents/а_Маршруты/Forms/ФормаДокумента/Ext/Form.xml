@@ -96,6 +96,24 @@
 											<ContextMenu name="РегионКонтекстноеМеню" id="29"/>
 											<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="30"/>
 										</InputField>
+										<UsualGroup name="Группа3" id="127">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="128"/>
+											<ChildItems>
+												<InputField name="ПериодНачало" id="129">
+													<DataPath>Объект.ПериодНачало</DataPath>
+													<ContextMenu name="ПериодНачалоКонтекстноеМеню" id="130"/>
+													<ExtendedTooltip name="ПериодНачалоРасширеннаяПодсказка" id="131"/>
+												</InputField>
+												<InputField name="ПериодОкончание" id="132">
+													<DataPath>Объект.ПериодОкончание</DataPath>
+													<ContextMenu name="ПериодОкончаниеКонтекстноеМеню" id="133"/>
+													<ExtendedTooltip name="ПериодОкончаниеРасширеннаяПодсказка" id="134"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 										<InputField name="ПериодОтгрузки" id="31">
 											<DataPath>Объект.ПериодОтгрузки</DataPath>
 											<HorizontalStretch>false</HorizontalStretch>
@@ -170,7 +188,15 @@
 							<DataPath>ИтогиПоВодителям</DataPath>
 							<Font ref="style:SmallTextFont" kind="StyleItem"/>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ИтогиПоВодителямКонтекстноеМеню" id="84"/>
+							<ContextMenu name="ИтогиПоВодителямКонтекстноеМеню" id="84">
+								<ChildItems>
+									<Button name="ИтогиПоВодителямКонтекстноеМенюПечатьЗаявкиПоВодителю" id="137">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПечатьЗаявкиПоВодителю</CommandName>
+										<ExtendedTooltip name="ИтогиПоВодителямКонтекстноеМенюПечатьЗаявкиПоВодителюРасширеннаяПодсказка" id="138"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
 							<AutoCommandBar name="ИтогиПоВодителямКоманднаяПанель" id="85"/>
 							<ExtendedTooltip name="ИтогиПоВодителямРасширеннаяПодсказка" id="86"/>
 							<SearchStringAddition name="ИтогиПоВодителямСтрокаПоиска" id="87">
@@ -246,6 +272,11 @@
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.Обработан</CommandName>
 						<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюОбработанРасширеннаяПодсказка" id="126"/>
+					</Button>
+					<Button name="ПунктыРазгрузкиКонтекстноеМенюЗаменаВодителя" id="135">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаменаВодителя</CommandName>
+						<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюЗаменаВодителяРасширеннаяПодсказка" id="136"/>
 					</Button>
 				</ChildItems>
 			</ContextMenu>
@@ -347,6 +378,7 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="Selection">ПунктыРазгрузкиВыбор</Event>
+				<Event name="OnChange">ПунктыРазгрузкиПриИзменении</Event>
 			</Events>
 			<ChildItems>
 				<LabelField name="ПунктыРазгрузкиНомерСтроки" id="53">
@@ -385,6 +417,9 @@
 					<BackColor>style:ToolTipBackColor</BackColor>
 					<ContextMenu name="ПунктыРазгрузкиВодительКонтекстноеМеню" id="69"/>
 					<ExtendedTooltip name="ПунктыРазгрузкиВодительРасширеннаяПодсказка" id="70"/>
+					<Events>
+						<Event name="OnChange">ПунктыРазгрузкиВодительПриИзменении</Event>
+					</Events>
 				</InputField>
 				<InputField name="ПунктыРазгрузкиАвто" id="71">
 					<DataPath>Объект.ПунктыРазгрузки.Авто</DataPath>
@@ -642,6 +677,54 @@
 			<Action>Обработан</Action>
 			<Representation>TextPicture</Representation>
 			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ЗаменаВодителя" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Замена водителя</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заміна водія</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Замена водителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗначокКадры16</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаменаВодителя</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПечатьЗаявкиПоВодителю" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать заявки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк заявки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Печать заявки по водителю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьЗаявкиПоВодителю</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>

@@ -193,6 +193,30 @@
 				</v8:DateQualifiers>
 			</valueType>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураЗаказНаСборку</dataPath>
+			<field>НоменклатураЗаказНаСборку</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Номенклатура заказ на сборку</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоСобрано</dataPath>
+			<field>КоличествоСобрано</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Вывезен</dataPath>
+			<field>Вывезен</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вывезен</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	Заявка.Ссылка КАК Ссылка,
@@ -238,9 +262,28 @@
 		КОГДА ЗаявкаПунктыРазгрузки.ЗаказНаЗборку = ЗНАЧЕНИЕ(Документ.а_ЗаказНаСборку.ПустаяСсылка)
 			ТОГДА ДАТАВРЕМЯ(1, 1, 1)
 		ИНАЧЕ а_ЗаказНаСборку.ДатаСборки
-	КОНЕЦ КАК ДатаСборки
+	КОНЕЦ КАК ДатаСборки,
+	ВЫБОР
+		КОГДА ЗаказНаСборкуТоварыСобранные.Номенклатура = ЗНАЧЕНИЕ(Справочник.Номенклатура.ПустаяСсылка)
+			ТОГДА ЗаказНаСборкуТоварыСобранные.НоменклатураЗаявка
+		ИНАЧЕ ЗаказНаСборкуТоварыСобранные.Номенклатура
+	КОНЕЦ КАК НоменклатураЗаказНаСборку,
+	ВЫБОР
+		КОГДА ВЫБОР
+				КОГДА ЗаявкаПунктыРазгрузки.ЗаказНаЗборку = ЗНАЧЕНИЕ(Документ.а_ЗаказНаСборку.ПустаяСсылка)
+					ТОГДА ЛОЖЬ
+				ИНАЧЕ а_ЗаказНаСборку.Собран
+			КОНЕЦ = ИСТИНА
+			ТОГДА ЗаказНаСборкуТоварыСобранные.КоличествоСобрано
+		ИНАЧЕ 0
+	КОНЕЦ КАК КоличествоСобрано,
+	а_СтатусыЗаявок.СтатусОбработан КАК Вывезен
 ИЗ
 	Документ.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи.Товары КАК ЗаявкаТовары
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.а_ЗаказНаСборку.Товары КАК ЗаказНаСборкуТоварыСобранные
+		ПО ЗаявкаТовары.Ссылка = ЗаказНаСборкуТоварыСобранные.Ссылка.ДокументОснование
+			И ЗаявкаТовары.Идентификатор = ЗаказНаСборкуТоварыСобранные.Ссылка.Идентификатор
+			И (ЗаказНаСборкуТоварыСобранные.НоменклатураЗаявка = ЗаявкаТовары.Номенклатура)
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи КАК Заявка
 		ПО ЗаявкаТовары.Ссылка = Заявка.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи.ПунктыРазгрузки КАК ЗаявкаПунктыРазгрузки
@@ -248,7 +291,12 @@
 			ПО ЗаявкаПунктыРазгрузки.Ссылка = Факт.Объект
 				И ЗаявкаПунктыРазгрузки.Идентификатор = Факт.Идентификатор
 			ЛЕВОЕ СОЕДИНЕНИЕ Документ.а_ЗаказНаСборку КАК а_ЗаказНаСборку
-			ПО ЗаявкаПунктыРазгрузки.ЗаказНаЗборку = а_ЗаказНаСборку.Ссылка
+			ПО ЗаявкаПунктыРазгрузки.Ссылка = а_ЗаказНаСборку.ДокументОснование
+				И ЗаявкаПунктыРазгрузки.Идентификатор = а_ЗаказНаСборку.Идентификатор
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.а_СтатусыЗаявок КАК а_СтатусыЗаявок
+			ПО ЗаявкаПунктыРазгрузки.Ссылка = а_СтатусыЗаявок.Объект
+				И ЗаявкаПунктыРазгрузки.Идентификатор = а_СтатусыЗаявок.Идентификатор
+				И (а_СтатусыЗаявок.ТипСтатуса = ЗНАЧЕНИЕ(Перечисление.а_ТипыСтатусов.СтатусВывоза))
 		ПО ЗаявкаТовары.Ссылка = ЗаявкаПунктыРазгрузки.Ссылка
 			И ЗаявкаТовары.ПунктРазгрузки = ЗаявкаПунктыРазгрузки.ПунктРазгрузки
 			И ЗаявкаТовары.Идентификатор = ЗаявкаПунктыРазгрузки.Идентификатор
@@ -291,9 +339,27 @@
 			</v8:item>
 		</title>
 	</calculatedField>
+	<calculatedField>
+		<dataPath>КоличествоЗаявка</dataPath>
+		<expression>Количество - КоличествоСобрано</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Количество заявка</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
 	<totalField>
 		<dataPath>Количество</dataPath>
 		<expression>Сумма(Количество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоСобрано</dataPath>
+		<expression>Сумма(КоличествоСобрано)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоЗаявка</dataPath>
+		<expression>Сумма(КоличествоЗаявка)</expression>
 	</totalField>
 	<parameter>
 		<name>ПериодОтчета</name>
@@ -431,6 +497,10 @@
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:use>false</dcsset:use>
 					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>КоличествоЗаявка</dcsset:field>
 				</dcsset:item>
 				<dcsset:viewMode>Normal</dcsset:viewMode>
 				<dcsset:userSettingID>70e48d18-21d8-42a0-a495-31297b4f0798</dcsset:userSettingID>
@@ -610,6 +680,9 @@
 						<dcsset:item>
 							<dcsset:field>Количество</dcsset:field>
 						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>КоличествоСобрано</dcsset:field>
+						</dcsset:item>
 					</dcsset:selection>
 					<dcsset:filter/>
 					<dcsset:appearance>
@@ -682,6 +755,9 @@
 						</dcsset:item>
 						<dcsset:item>
 							<dcsset:field>Количество</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>КоличествоСобрано</dcsset:field>
 						</dcsset:item>
 					</dcsset:selection>
 					<dcsset:filter/>
@@ -798,6 +874,61 @@
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>МаксимальнаяВысота</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Идентификатор</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>СтильГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+								<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+							</dcscor:value>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>СтильГраницы.Слева</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>СтильГраницы.Сверху</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>СтильГраницы.Справа</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>СтильГраницы.Снизу</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Line" width="0" gap="false">
+									<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">None</v8ui:style>
+								</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
 							<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
 						</dcscor:item>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -955,6 +1086,13 @@
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
 								<dcsset:field>Обработано</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Идентификатор</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
@@ -1208,7 +1346,11 @@
 					</dcsset:row>
 					<dcsset:selection>
 						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
 							<dcsset:field>Количество</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КоличествоСобрано</dcsset:field>
 						</dcsset:item>
 					</dcsset:selection>
 				</dcsset:item>

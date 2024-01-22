@@ -26,6 +26,28 @@
 			</Title>
 			<CommandSource>Form</CommandSource>
 			<ExtendedTooltip name="ОсновнаяКоманднаяПанельРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<ButtonGroup name="ФормаГруппа1" id="15">
+					<Representation>Compact</Representation>
+					<ExtendedTooltip name="ФормаГруппа1РасширеннаяПодсказка" id="16"/>
+					<ChildItems>
+						<Button name="ФормаСвернутьВсеГруппы" id="11">
+							<Type>CommandBarButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Item.Результат.StandardCommand.CollapseAllGroups</CommandName>
+							<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+							<ExtendedTooltip name="ФормаСвернутьВсеГруппыРасширеннаяПодсказка" id="12"/>
+						</Button>
+						<Button name="ФормаРазвернутьВсеГруппы" id="13">
+							<Type>CommandBarButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Item.Результат.StandardCommand.ExpandAllGroups</CommandName>
+							<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+							<ExtendedTooltip name="ФормаРазвернутьВсеГруппыРасширеннаяПодсказка" id="14"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+			</ChildItems>
 		</CommandBar>
 		<InputField name="Период" id="8">
 			<DataPath>Период</DataPath>
