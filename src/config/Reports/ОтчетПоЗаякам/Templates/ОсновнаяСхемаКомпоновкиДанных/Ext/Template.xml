@@ -217,6 +217,10 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объект</dataPath>
+			<field>Объект</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	Заявка.Ссылка КАК Ссылка,
@@ -287,7 +291,7 @@
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи КАК Заявка
 		ПО ЗаявкаТовары.Ссылка = Заявка.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи.ПунктыРазгрузки КАК ЗаявкаПунктыРазгрузки
-			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.а_ДатаВывозаФакт КАК Факт
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.а_ДатаВывозаФакт.СрезПоследних КАК Факт
 			ПО ЗаявкаПунктыРазгрузки.Ссылка = Факт.Объект
 				И ЗаявкаПунктыРазгрузки.Идентификатор = Факт.Идентификатор
 			ЛЕВОЕ СОЕДИНЕНИЕ Документ.а_ЗаказНаСборку КАК а_ЗаказНаСборку
@@ -467,6 +471,23 @@
 		<value xsi:nil="true"/>
 		<useRestriction>false</useRestriction>
 		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
 	</parameter>
 	<template>
 		<name>Макет1</name>

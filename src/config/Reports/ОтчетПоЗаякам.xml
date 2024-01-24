@@ -28,9 +28,9 @@
 			<DefaultForm>Report.ОтчетПоЗаякам.Form.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ОтчетПоЗаякам.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ВспомогательнаяФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
