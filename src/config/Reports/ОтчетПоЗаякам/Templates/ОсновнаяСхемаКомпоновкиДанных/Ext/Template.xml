@@ -217,6 +217,10 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объект</dataPath>
+			<field>Объект</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	Заявка.Ссылка КАК Ссылка,
@@ -277,7 +281,7 @@
 			ТОГДА ЗаказНаСборкуТоварыСобранные.КоличествоСобрано
 		ИНАЧЕ 0
 	КОНЕЦ КАК КоличествоСобрано,
-	а_СтатусыЗаявок.СтатусОбработан КАК Вывезен
+	ЕСТЬNULL(а_СтатусыЗаявок.СтатусОбработан, ЛОЖЬ) КАК Вывезен
 ИЗ
 	Документ.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи.Товары КАК ЗаявкаТовары
 		ЛЕВОЕ СОЕДИНЕНИЕ Документ.а_ЗаказНаСборку.Товары КАК ЗаказНаСборкуТоварыСобранные
@@ -287,7 +291,7 @@
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи КАК Заявка
 		ПО ЗаявкаТовары.Ссылка = Заявка.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи.ПунктыРазгрузки КАК ЗаявкаПунктыРазгрузки
-			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.а_ДатаВывозаФакт КАК Факт
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.а_ДатаВывозаФакт.СрезПоследних КАК Факт
 			ПО ЗаявкаПунктыРазгрузки.Ссылка = Факт.Объект
 				И ЗаявкаПунктыРазгрузки.Идентификатор = Факт.Идентификатор
 			ЛЕВОЕ СОЕДИНЕНИЕ Документ.а_ЗаказНаСборку КАК а_ЗаказНаСборку
@@ -468,6 +472,23 @@
 		<useRestriction>false</useRestriction>
 		<valueListAllowed>true</valueListAllowed>
 	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
 	<template>
 		<name>Макет1</name>
 		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
@@ -508,35 +529,26 @@
 			<dcsset:filter>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">СтадияВыполнена</dcsset:left>
+					<dcsset:left xsi:type="dcscor:Field">Контрагент</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>1816acda-3ec9-4501-b92a-3c9cce313594</dcsset:userSettingID>
+					<dcsset:userSettingID>809624cd-31b8-456b-8878-165e90ebe04b</dcsset:userSettingID>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">СтадияГотовыеДокументы</dcsset:left>
+					<dcsset:left xsi:type="dcscor:Field">ЗаказСобран</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>a71aef35-88bb-4e67-8394-2b7823b5f3a2</dcsset:userSettingID>
+					<dcsset:userSettingID>0786421f-ccdf-4588-b4bf-1d172ac53a0a</dcsset:userSettingID>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">СтадияОбработан</dcsset:left>
+					<dcsset:left xsi:type="dcscor:Field">Вывезен</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>bf11e7a4-f41d-4883-b21b-a11592124074</dcsset:userSettingID>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">СтадияПечатьСклад</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>dd66ac01-a1a0-45b8-a29f-1f3b6c9d4e13</dcsset:userSettingID>
+					<dcsset:userSettingID>a0d38911-a6c7-44a0-b2cb-4bc49b04162b</dcsset:userSettingID>
 				</dcsset:item>
 				<dcsset:viewMode>Normal</dcsset:viewMode>
 				<dcsset:userSettingID>a9c95e87-5115-42db-896c-8421d7e298ad</dcsset:userSettingID>
@@ -550,7 +562,7 @@
 						<v8:startDate>2023-07-20T00:00:00</v8:startDate>
 						<v8:endDate>2023-07-22T23:59:59</v8:endDate>
 					</dcscor:value>
-					<dcsset:userSettingID>f082e3f8-7454-41bf-bfe2-e9464402d3af</dcsset:userSettingID>
+					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>

@@ -199,6 +199,9 @@
 					<FooterDataPath>Объект.Товары.TotalКоличествоСобрано</FooterDataPath>
 					<ContextMenu name="ТоварыКоличествоСобраноКонтекстноеМеню" id="47"/>
 					<ExtendedTooltip name="ТоварыКоличествоСобраноРасширеннаяПодсказка" id="48"/>
+					<Events>
+						<Event name="OnChange">ТоварыКоличествоСобраноПриИзменении</Event>
+					</Events>
 				</InputField>
 				<InputField name="ТоварыЗаглушка" id="61">
 					<DataPath>Объект.Товары.Заглушка</DataPath>
