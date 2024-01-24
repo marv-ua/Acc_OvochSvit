@@ -198,6 +198,36 @@
 									<ContextMenu name="РегионКонтекстноеМеню" id="275"/>
 									<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="276"/>
 								</InputField>
+								<InputField name="ОтборПунктРазгрузки" id="378">
+									<DataPath>ОтборПунктРазгрузки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отбор</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Відбір</v8:content>
+										</v8:item>
+									</Title>
+									<ClearButton>true</ClearButton>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>пункт разгрузки</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>пункт розвантаження</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ОтборПунктРазгрузкиКонтекстноеМеню" id="379"/>
+									<ExtendedTooltip name="ОтборПунктРазгрузкиРасширеннаяПодсказка" id="380"/>
+									<Events>
+										<Event name="EditTextChange">ОтборПунктРазгрузкиИзменениеТекстаРедактирования</Event>
+										<Event name="Clearing">ОтборПунктРазгрузкиОчистка</Event>
+									</Events>
+								</InputField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -1422,6 +1452,21 @@
 							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
+					<Column name="НаименованиеТочкаДоставки" id="8">
+						<Title>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Наименование точка доставки</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.Товары">
 					<Column name="ЗаказаноВЭтотДень" id="1">
@@ -1442,6 +1487,21 @@
 								<v8:FractionDigits>3</v8:FractionDigits>
 								<v8:AllowedSign>Any</v8:AllowedSign>
 							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="НаименованиеТочкаДоставки" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Наименование точка доставки</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
 						</Type>
 					</Column>
 				</AdditionalColumns>
@@ -1576,6 +1636,25 @@
 				</v8:item>
 			</Title>
 			<Type/>
+		</Attribute>
+		<Attribute name="ОтборПунктРазгрузки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор пункт разгрузки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відбір пункт розвантаження</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
@@ -1834,6 +1913,7 @@
 				</dcsset:appearance>
 			</dcsset:item>
 			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
 				<dcsset:selection>
 					<dcsset:item>
 						<dcsset:field>ПунктыРазгрузкиДатаОтгрузки</dcsset:field>
@@ -1853,6 +1933,7 @@
 				</dcsset:appearance>
 			</dcsset:item>
 			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
 				<dcsset:selection>
 					<dcsset:item>
 						<dcsset:field>ПунктыРазгрузкиДатаВывозаФакт</dcsset:field>
