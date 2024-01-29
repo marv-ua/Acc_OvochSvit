@@ -196,6 +196,11 @@
 										<CommandName>Form.Command.ПечатьЗаявкиПоВодителю</CommandName>
 										<ExtendedTooltip name="ИтогиПоВодителямКонтекстноеМенюПечатьЗаявкиПоВодителюРасширеннаяПодсказка" id="138"/>
 									</Button>
+									<Button name="ИтогиПоВодителямКонтекстноеМенюОбработанВодитель" id="143">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбработанВодитель</CommandName>
+										<ExtendedTooltip name="ИтогиПоВодителямКонтекстноеМенюОбработанВодительРасширеннаяПодсказка" id="144"/>
+									</Button>
 								</ChildItems>
 							</ContextMenu>
 							<AutoCommandBar name="ИтогиПоВодителямКоманднаяПанель" id="85"/>
@@ -772,6 +777,31 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>СортироватьВывезено</Action>
+		</Command>
+		<Command name="ОбработанВодитель" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправлен</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Відправлено</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Обработан</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.уатЗаказТСПеревозкаАвтоГрузовая</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбработанПоВодителю</Action>
+			<Representation>TextPicture</Representation>
+			<ModifiesSavedData>true</ModifiesSavedData>
 		</Command>
 	</Commands>
 </Form>
