@@ -289,6 +289,7 @@
 			<Form>ФормаОтчета2019</Form>
 			<Form>ФормаОтчета2021УФ</Form>
 			<Form>ФормаОтчета2022УФ</Form>
+			<Form>ФормаОтчета2023УФ</Form>
 			<Template>АрхивСхемXSD</Template>
 			<Template>ПоказателиЗвит1С</Template>
 			<Template>СоставПоказателей2015</Template>
@@ -307,6 +308,8 @@
 			<Template>ФормаОтчета2021УФ_ДекларацияАкциз</Template>
 			<Template>СоставПоказателей2022УФ</Template>
 			<Template>ФормаОтчета2022УФ_ДекларацияАкциз</Template>
+			<Template>СоставПоказателей2023УФ</Template>
+			<Template>ФормаОтчета2023УФ_ДекларацияАкциз</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

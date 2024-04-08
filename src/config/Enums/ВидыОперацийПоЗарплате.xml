@@ -480,6 +480,22 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="8708e945-c6af-4ba7-a235-30ed8de330b8">
+				<Properties>
+					<Name>ЕжегодныйОтпускОценочныеОбязательстваИРезервы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ежегодный отпуск за счет оценочных обязательств и резервов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Щорічна відпустка за рахунок оціночних зобов'язань і резервів</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

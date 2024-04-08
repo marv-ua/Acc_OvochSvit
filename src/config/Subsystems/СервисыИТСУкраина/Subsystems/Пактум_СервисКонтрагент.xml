@@ -26,6 +26,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Пактум_ПрогрессБар</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Пактум_Настройка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Пактум_ФоновыеЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Пактум_КлиентПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Пактум_СерверПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Пактум_ДополнительныеСведенияОКонтрагентах</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

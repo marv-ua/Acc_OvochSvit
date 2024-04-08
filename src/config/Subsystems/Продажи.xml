@@ -40,6 +40,8 @@
 			<Subsystem>ПродажиГлавное</Subsystem>
 			<Subsystem>РасчетыСКонтрагентами</Subsystem>
 			<Subsystem>НДС</Subsystem>
+			<Subsystem>Маршруты</Subsystem>
+			<Subsystem>а_Дополнительно</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

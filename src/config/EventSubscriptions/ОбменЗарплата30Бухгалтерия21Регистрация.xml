@@ -18,8 +18,8 @@
 				<v8:Type>cfg:CatalogObject.Организации</v8:Type>
 				<v8:Type>cfg:CatalogObject.ФизическиеЛица</v8:Type>
 				<v8:Type>cfg:CatalogObject.СтраныМира</v8:Type>
-				<v8:Type>cfg:CatalogObject.Должности</v8:Type>
 				<v8:Type>cfg:CatalogObject.Пользователи</v8:Type>
+				<v8:Type>cfg:CatalogObject.ВидыПрочихДоходовФизЛиц</v8:Type>
 				<v8:Type>cfg:CatalogObject.БанковскиеСчета</v8:Type>
 				<v8:Type>cfg:CatalogObject.Контрагенты</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВидыКонтактнойИнформации</v8:Type>

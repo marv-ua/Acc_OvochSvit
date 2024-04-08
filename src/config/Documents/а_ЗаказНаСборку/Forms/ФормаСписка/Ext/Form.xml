@@ -122,6 +122,11 @@
 					<ContextMenu name="ПунктРазгрузкиКонтекстноеМеню" id="44"/>
 					<ExtendedTooltip name="ПунктРазгрузкиРасширеннаяПодсказка" id="45"/>
 				</LabelField>
+				<LabelField name="Контрагент" id="62">
+					<DataPath>Список.Контрагент</DataPath>
+					<ContextMenu name="КонтрагентКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="64"/>
+				</LabelField>
 				<LabelField name="Комментарий" id="31">
 					<DataPath>Список.Комментарий</DataPath>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="32"/>

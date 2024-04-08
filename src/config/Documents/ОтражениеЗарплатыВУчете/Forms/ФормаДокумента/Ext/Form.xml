@@ -259,11 +259,11 @@
 						<Presentation>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
-								<v8:content>ЗУП 2.5</v8:content>
+								<v8:content>ЗУП 2.1</v8:content>
 							</v8:item>
 							<v8:item>
 								<v8:lang>uk</v8:lang>
-								<v8:content>ЗУП 2.5</v8:content>
+								<v8:content>ЗУП 2.1</v8:content>
 							</v8:item>
 						</Presentation>
 						<Value xsi:type="xs:boolean">false</Value>
@@ -291,6 +291,61 @@
 			<ExtendedTooltip name="ФорматОбмена30РасширеннаяПодсказка" id="172"/>
 			<Events>
 				<Event name="OnChange">ФорматОбмена30ПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ВидДокумента" id="407">
+			<DataPath>Объект.ДокументОценочныеОбязательства</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид документа</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вид документу</v8:content>
+				</v8:item>
+			</Title>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Зарплата</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Зарплата</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:boolean">false</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Оценочные обязательства</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Оціночні зобов'язання</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:boolean">true</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ВидДокументаКонтекстноеМеню" id="408"/>
+			<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="409"/>
+			<Events>
+				<Event name="OnChange">ВидДокументаПриИзменении</Event>
 			</Events>
 		</InputField>
 		<Pages name="ГруппаТабличныеЧасти" id="173">
@@ -1162,6 +1217,98 @@
 						</Table>
 					</ChildItems>
 				</Page>
+				<Page name="ОценочныеОбязательстваСтраница" id="371">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оценочные обязательства</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Оціночні зобов'язання</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оценочные обязательства страница</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Оціночні зобов'язання сторінка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<TitleDataPath>Объект.ОценочныеОбязательства.RowsCount</TitleDataPath>
+					<ExtendedTooltip name="ОценочныеОбязательстваСтраницаРасширеннаяПодсказка" id="372"/>
+					<ChildItems>
+						<Table name="ОценочныеОбязательства" id="373">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ОценочныеОбязательства</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОценочныеОбязательстваКонтекстноеМеню" id="374"/>
+							<AutoCommandBar name="ОценочныеОбязательстваКоманднаяПанель" id="375"/>
+							<ExtendedTooltip name="ОценочныеОбязательстваРасширеннаяПодсказка" id="376"/>
+							<SearchStringAddition name="ОценочныеОбязательстваСтрокаПоиска" id="377">
+								<AdditionSource>
+									<Item>ОценочныеОбязательства</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОценочныеОбязательстваСтрокаПоискаКонтекстноеМеню" id="378"/>
+								<ExtendedTooltip name="ОценочныеОбязательстваСтрокаПоискаРасширеннаяПодсказка" id="379"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОценочныеОбязательстваСостояниеПросмотра" id="380">
+								<AdditionSource>
+									<Item>ОценочныеОбязательства</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОценочныеОбязательстваСостояниеПросмотраКонтекстноеМеню" id="381"/>
+								<ExtendedTooltip name="ОценочныеОбязательстваСостояниеПросмотраРасширеннаяПодсказка" id="382"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОценочныеОбязательстваУправлениеПоиском" id="383">
+								<AdditionSource>
+									<Item>ОценочныеОбязательства</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОценочныеОбязательстваУправлениеПоискомКонтекстноеМеню" id="384"/>
+								<ExtendedTooltip name="ОценочныеОбязательстваУправлениеПоискомРасширеннаяПодсказка" id="385"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОценочныеОбязательстваНомерСтроки" id="386">
+									<DataPath>Объект.ОценочныеОбязательства.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОценочныеОбязательстваНомерСтрокиКонтекстноеМеню" id="387"/>
+									<ExtendedTooltip name="ОценочныеОбязательстваНомерСтрокиРасширеннаяПодсказка" id="388"/>
+								</LabelField>
+								<InputField name="ОценочныеОбязательстваПодразделение" id="389">
+									<DataPath>Объект.ОценочныеОбязательства.Подразделение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОценочныеОбязательстваПодразделениеКонтекстноеМеню" id="390"/>
+									<ExtendedTooltip name="ОценочныеОбязательстваПодразделениеРасширеннаяПодсказка" id="391"/>
+								</InputField>
+								<InputField name="ОценочныеОбязательстваСпособОтраженияЗарплатыВБухучете" id="392">
+									<DataPath>Объект.ОценочныеОбязательства.СпособОтраженияЗарплатыВБухучете</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОценочныеОбязательстваСпособОтраженияЗарплатыВБухучетеКонтекстноеМеню" id="393"/>
+									<ExtendedTooltip name="ОценочныеОбязательстваСпособОтраженияЗарплатыВБухучетеРасширеннаяПодсказка" id="394"/>
+								</InputField>
+								<InputField name="ОценочныеОбязательстваСуммаРезерва" id="395">
+									<DataPath>Объект.ОценочныеОбязательства.СуммаРезерва</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОценочныеОбязательстваСуммаРезерваКонтекстноеМеню" id="396"/>
+									<ExtendedTooltip name="ОценочныеОбязательстваСуммаРезерваРасширеннаяПодсказка" id="397"/>
+								</InputField>
+								<InputField name="ОценочныеОбязательстваСуммаРезерваСтраховыхВзносов" id="398">
+									<DataPath>Объект.ОценочныеОбязательства.СуммаРезерваСтраховыхВзносов</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОценочныеОбязательстваСуммаРезерваСтраховыхВзносовКонтекстноеМеню" id="399"/>
+									<ExtendedTooltip name="ОценочныеОбязательстваСуммаРезерваСтраховыхВзносовРасширеннаяПодсказка" id="400"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 		<UsualGroup name="ГруппаПодвал" id="60">
@@ -1412,6 +1559,38 @@
 					<Width>12</Width>
 					<ContextMenu name="НачисленныеПроцентыПоЗаймамИтогСуммаКонтекстноеМеню" id="369"/>
 					<ExtendedTooltip name="НачисленныеПроцентыПоЗаймамИтогСуммаРасширеннаяПодсказка" id="370"/>
+				</InputField>
+				<InputField name="ОценочныеОбязательстваСумма" id="401">
+					<DataPath>Объект.ОценочныеОбязательства.TotalСуммаРезерва</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обязательства (начисления)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Зобов'язання (нарахування)</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОценочныеОбязательстваСуммаКонтекстноеМеню" id="402"/>
+					<ExtendedTooltip name="ОценочныеОбязательстваСуммаРасширеннаяПодсказка" id="403"/>
+				</InputField>
+				<InputField name="ОценочныеОбязательстваСуммаВзносы" id="404">
+					<DataPath>Объект.ОценочныеОбязательства.TotalСуммаРезерваСтраховыхВзносов</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обязательства (взносы)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Зобов'язання (внески)</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОценочныеОбязательстваСуммаВзносыКонтекстноеМеню" id="405"/>
+					<ExtendedTooltip name="ОценочныеОбязательстваСуммаВзносыРасширеннаяПодсказка" id="406"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>

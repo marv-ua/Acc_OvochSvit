@@ -4,7 +4,39 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.РеализацияТоваровУслуг.Command.а_СохранитьВXLS2</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.РеализацияТоваровУслуг.Command.а_СохранитьВXLS1</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.РеализацияТоваровУслуг.Command.а_ОчиститьДок</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.РеализацияТоваровУслуг.Command.а_ЗагрузитьСканыДокументов</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -60,7 +92,36 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.а_СтатусыЗаявок</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_ЗаявкиКВывозу</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.РеализацияТоваровУслуг.Command.а_СохранитьВXLS</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.РеализацияТоваровУслуг.Command.а_СохранитьВXML</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -114,6 +175,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.РеализацияТоваровУслуг.Command.а_ОбновитьЦены</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.а_ПроверятьЗаполненностьНоменклатуры</name>
 		<right>
 			<name>Read</name>
@@ -129,6 +197,17 @@
 		</right>
 		<right>
 			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ДополнительныеАртикулы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

@@ -285,6 +285,7 @@
 			<Form>ФормаОтчета2013УФ</Form>
 			<Form>ФормаОтчета2021УФ</Form>
 			<Form>ФормаОтчета2022УФ</Form>
+			<Form>ФормаОтчета2023УФ</Form>
 			<Template>ПоказателиЗвит1С</Template>
 			<Template>СоставПоказателей</Template>
 			<Template>СоставПоказателей2008</Template>
@@ -298,6 +299,9 @@
 			<Template>ФормаОтчета2022УФ_ОтчетОДебиторскойИКредиторскойЗадолженности</Template>
 			<Template>ФормаОтчета2022УФ_СлужебныеДанные</Template>
 			<Template>S0210115</Template>
+			<Template>СоставПоказателей2023</Template>
+			<Template>ФормаОтчета2023УФ_ОтчетОДебиторскойИКредиторскойЗадолженности</Template>
+			<Template>ФормаОтчета2023УФ_СлужебныеДанные</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

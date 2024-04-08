@@ -45,7 +45,7 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
-		<Metadata>Catalog.Должности</Metadata>
+		<Metadata>Catalog.ВидыПрочихДоходовФизЛиц</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>

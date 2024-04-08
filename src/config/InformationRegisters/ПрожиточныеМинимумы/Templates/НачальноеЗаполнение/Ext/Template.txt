@@ -203,4 +203,8 @@
 	<Item Period="01.12.2022" SocialGroups="НеТрудоспособные" Size="2093"/>
 	<Item Period="01.12.2022" SocialGroups="ДетиДо6" Size="2272"/>
 	<Item Period="01.12.2022" SocialGroups="ДетиДо18" Size="2833"/>
+	<Item Period="01.01.2024" SocialGroups="Трудоспособные" Size="3028"/>
+	<Item Period="01.01.2024" SocialGroups="НеТрудоспособные" Size="2361"/>
+	<Item Period="01.01.2024" SocialGroups="ДетиДо6" Size="2563"/>
+	<Item Period="01.01.2024" SocialGroups="ДетиДо18" Size="3196"/>
 </Items>

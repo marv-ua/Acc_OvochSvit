@@ -2653,6 +2653,7 @@
 			<Form>ФормаВыбора</Form>
 			<Form>ФормаВыбораГруппы</Form>
 			<Form>ФормаГруппы</Form>
+			<Form>ФормаПактумСписокЕДРПОУ</Form>
 			<Command uuid="17becc88-2e47-4c52-8ff5-a395366d3ec1">
 				<Properties>
 					<Name>Документы</Name>

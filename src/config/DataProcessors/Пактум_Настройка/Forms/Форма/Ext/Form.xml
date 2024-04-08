@@ -121,6 +121,7 @@
 											<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="94"/>
 											<ChildItems>
 												<LabelDecoration name="Декорация3" id="95">
+													<Font ref="style:NormalTextFont" height="6" kind="StyleItem" scale="100"/>
 													<ContextMenu name="Декорация3КонтекстноеМеню" id="96"/>
 													<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="97"/>
 												</LabelDecoration>
@@ -502,6 +503,13 @@
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="15"/>
+			<ChildItems>
+				<Button name="НастройкаВыводаРеквизитов" id="118">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.НастройкаВыводаРеквизитов</CommandName>
+					<ExtendedTooltip name="НастройкаВыводаРеквизитовРасширеннаяПодсказка" id="119"/>
+				</Button>
+			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
 	<Attributes>
@@ -679,6 +687,29 @@
 			</ToolTip>
 			<Action>ЗаписатьНастройкиПодключения</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НастройкаВыводаРеквизитов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка отображения расширенных данных</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Налаштування відображення розширених даних</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налаштування відображення розширених даних безпосередньо в картці контрагента</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Налаштування відображення розширених даних безпосередньо в картці контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаВыводаРеквизитов</Action>
 		</Command>
 	</Commands>
 </Form>

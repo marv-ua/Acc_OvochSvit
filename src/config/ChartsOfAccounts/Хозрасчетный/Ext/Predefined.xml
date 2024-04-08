@@ -6106,6 +6106,130 @@
 									</ExtDimensionType>
 								</ExtDimensionTypes>
 							</Item>
+							<Item id="8e57b686-29fa-451b-910f-487c8b03539a">
+								<Name>РасчетыПоДолгосрочнымФинансовымИнвестициямУчастиеВКапитале</Name>
+								<Code>6854</Code>
+								<Description>Расчеты по приобретению долгосрочных финансовых инвестиций, учитываемые методом участия в капитале, в гривне</Description>
+								<AccountType>ActivePassive</AccountType>
+								<OffBalance>false</OffBalance>
+								<Order>6854    </Order>
+								<AccountingFlags>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+								</AccountingFlags>
+								<ExtDimensionTypes>
+									<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Контрагенты">
+										<Turnover>false</Turnover>
+										<AccountingFlags>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+										</AccountingFlags>
+									</ExtDimensionType>
+									<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.ФинансовыеИнвестиции">
+										<Turnover>false</Turnover>
+										<AccountingFlags>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+										</AccountingFlags>
+									</ExtDimensionType>
+								</ExtDimensionTypes>
+							</Item>
+							<Item id="1ecd9a95-e664-415a-89db-2814051e4a59">
+								<Name>РасчетыПоДолгосрочнымФинансовымИнвестициямУчастиеВКапиталеВалюта</Name>
+								<Code>6855</Code>
+								<Description>Расчеты по приобретению долгосрочных финансовых инвестиций, учитываемые методом участия в капитале, в иностранной валюте</Description>
+								<AccountType>ActivePassive</AccountType>
+								<OffBalance>false</OffBalance>
+								<Order>6855    </Order>
+								<AccountingFlags>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">true</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+								</AccountingFlags>
+								<ExtDimensionTypes>
+									<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Контрагенты">
+										<Turnover>false</Turnover>
+										<AccountingFlags>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+										</AccountingFlags>
+									</ExtDimensionType>
+									<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.ФинансовыеИнвестиции">
+										<Turnover>false</Turnover>
+										<AccountingFlags>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+										</AccountingFlags>
+									</ExtDimensionType>
+								</ExtDimensionTypes>
+							</Item>
+							<Item id="c22bd5b9-01f7-4103-987a-11918addd300">
+								<Name>РасчетыПоПрочимДолгосрочнымФинансовымИнвестициям</Name>
+								<Code>6856</Code>
+								<Description>Расчеты по приобретению других долгосрочных финансовых инвестиций в гривне</Description>
+								<AccountType>ActivePassive</AccountType>
+								<OffBalance>false</OffBalance>
+								<Order>6856    </Order>
+								<AccountingFlags>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+								</AccountingFlags>
+								<ExtDimensionTypes>
+									<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Контрагенты">
+										<Turnover>false</Turnover>
+										<AccountingFlags>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+										</AccountingFlags>
+									</ExtDimensionType>
+									<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.ФинансовыеИнвестиции">
+										<Turnover>false</Turnover>
+										<AccountingFlags>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+										</AccountingFlags>
+									</ExtDimensionType>
+								</ExtDimensionTypes>
+							</Item>
+							<Item id="ebb706d3-ef51-47bd-bc6d-0484e46a2910">
+								<Name>РасчетыПоПрочимДолгосрочнымФинансовымИнвестициямВалюта</Name>
+								<Code>6857</Code>
+								<Description>Расчеты по приобретению других долгосрочных финансовых инвестиций в иностранной валюте</Description>
+								<AccountType>ActivePassive</AccountType>
+								<OffBalance>false</OffBalance>
+								<Order>6857    </Order>
+								<AccountingFlags>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">true</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+								</AccountingFlags>
+								<ExtDimensionTypes>
+									<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Контрагенты">
+										<Turnover>false</Turnover>
+										<AccountingFlags>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+										</AccountingFlags>
+									</ExtDimensionType>
+									<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.ФинансовыеИнвестиции">
+										<Turnover>false</Turnover>
+										<AccountingFlags>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+											<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+										</AccountingFlags>
+									</ExtDimensionType>
+								</ExtDimensionTypes>
+							</Item>
 						</ChildItems>
 					</Item>
 				</ChildItems>

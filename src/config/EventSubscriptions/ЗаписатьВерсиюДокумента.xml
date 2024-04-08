@@ -49,6 +49,7 @@
 				<v8:Type>cfg:DocumentObject.КомандировкиОрганизаций</v8:Type>
 				<v8:Type>cfg:DocumentObject.ОпределениеФинансовыхРезультатов</v8:Type>
 				<v8:Type>cfg:DocumentObject.ПлатежныйОрдерСписаниеДенежныхСредств</v8:Type>
+				<v8:Type>cfg:DocumentObject.а_ДекларацияПоставщика</v8:Type>
 				<v8:Type>cfg:DocumentObject.Доверенность</v8:Type>
 				<v8:Type>cfg:DocumentObject.ПоступлениеТоваровУслуг</v8:Type>
 				<v8:Type>cfg:DocumentObject.ИзменениеПараметровНачисленияАмортизацииНМА</v8:Type>

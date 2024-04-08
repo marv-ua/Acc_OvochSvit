@@ -53,6 +53,52 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт.StandardAttribute.Active</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт.StandardAttribute.LineNumber</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт.StandardAttribute.Period</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ерпсПапкаТоваровФОП</name>
 		<right>
 			<name>Read</name>
@@ -144,6 +190,13 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт.Resource.Прицеп</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.АдресПубликацииИнформационнойБазыВИнтернете</name>
 		<right>
 			<name>Read</name>
@@ -166,6 +219,13 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт.Dimension.Идентификатор</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -376,6 +436,13 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт.Resource.ДатаОтгрузки</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.СписокЗапрещенныхРасширенийОбластиДанных</name>
 		<right>
 			<name>Read</name>
@@ -398,6 +465,13 @@
 	</object>
 	<object>
 		<name>Constant.СтатусСверткиИнформационнойБазы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_Маршруты</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -553,6 +627,13 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт.Resource.Перевозчик</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -715,6 +796,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.а_Маршруты</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.МаксимальноеКоличествоИсполняющихФоновыхЗаданий</name>
 		<right>
 			<name>Read</name>
@@ -852,6 +944,13 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт.Resource.Водитель</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1076,6 +1175,13 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт.Resource.Авто</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.СвойстваБИП</name>
 		<right>
 			<name>Read</name>
@@ -1129,6 +1235,13 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_ДатаВывозаФакт.Dimension.Объект</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>

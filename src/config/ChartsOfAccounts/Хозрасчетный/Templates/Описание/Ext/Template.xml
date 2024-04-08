@@ -17766,6 +17766,254 @@
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
+				<i>1</i>
+				<c>
+					<f>29</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>24</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>    На субсчете 6854 ведется учет расчетов в гривне по приобретению долгосрочных финансовых инвестиций, учитываемых методом участия в капитале.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>   На субрахунку 6854 ведеться облік розрахунків у гривні з придбання довгострокових фінансових інвестицій, що обліковуються методом участі в капіталі.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>314</index>
+		<row>
+			<formatIndex>22</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>29</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>24</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>    На субсчете 6855 ведется учет расчетов в валюте по приобретению долгосрочных финансовых инвестиций, учитываемых методом участия в капитале.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>   На субрахунку 6855 ведеться облік розрахунків у валюті з придбання довгострокових фінансових інвестицій, що обліковуються методом участі в капіталі.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>315</index>
+		<row>
+			<formatIndex>22</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>29</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>24</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>    На субсчете 6856 ведется учет расчетов в гривне по приобретению других долгосрочных финансовых инвестиций.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>   На субрахунку 6856 ведеться облік розрахунків у гривні з придбання інших довгострокових фінансових інвестицій.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>316</index>
+		<row>
+			<formatIndex>22</formatIndex>
+			<c>
+				<i>1</i>
+				<c>
+					<f>29</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>24</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>    На субсчете 6857 ведется учет расчетов в валюте по приобретению других долгосрочных финансовых инвестиций.</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>   На субрахунку 6857 ведеться облік розрахунків у валюті з придбання інших довгострокових фінансових інвестицій.</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>25</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>26</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>317</index>
+		<row>
+			<formatIndex>22</formatIndex>
+			<c>
 				<i>2</i>
 				<c>
 					<f>24</f>
@@ -17819,7 +18067,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>314</index>
+		<index>318</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -17876,7 +18124,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>315</index>
+		<index>319</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -17937,7 +18185,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>316</index>
+		<index>320</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -17994,7 +18242,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>317</index>
+		<index>321</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18051,7 +18299,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>318</index>
+		<index>322</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18108,7 +18356,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>319</index>
+		<index>323</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18165,7 +18413,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>320</index>
+		<index>324</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18222,7 +18470,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>321</index>
+		<index>325</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18279,7 +18527,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>322</index>
+		<index>326</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18338,7 +18586,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>323</index>
+		<index>327</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18397,7 +18645,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>324</index>
+		<index>328</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18454,7 +18702,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>325</index>
+		<index>329</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18511,7 +18759,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>326</index>
+		<index>330</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18568,7 +18816,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>327</index>
+		<index>331</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18625,7 +18873,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>328</index>
+		<index>332</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18682,7 +18930,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>329</index>
+		<index>333</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18739,7 +18987,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>330</index>
+		<index>334</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18796,7 +19044,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>331</index>
+		<index>335</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18853,7 +19101,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>332</index>
+		<index>336</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18910,7 +19158,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>333</index>
+		<index>337</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -18967,7 +19215,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>334</index>
+		<index>338</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19024,7 +19272,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>335</index>
+		<index>339</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19081,7 +19329,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>336</index>
+		<index>340</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19138,7 +19386,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>337</index>
+		<index>341</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19195,7 +19443,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>338</index>
+		<index>342</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19252,7 +19500,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>339</index>
+		<index>343</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19309,7 +19557,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>340</index>
+		<index>344</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19366,7 +19614,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>341</index>
+		<index>345</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19423,7 +19671,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>342</index>
+		<index>346</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19480,7 +19728,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>343</index>
+		<index>347</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19537,7 +19785,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>344</index>
+		<index>348</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19595,7 +19843,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>345</index>
+		<index>349</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19652,7 +19900,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>346</index>
+		<index>350</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19711,7 +19959,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>347</index>
+		<index>351</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19768,7 +20016,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>348</index>
+		<index>352</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19825,7 +20073,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>349</index>
+		<index>353</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19882,7 +20130,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>350</index>
+		<index>354</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19939,7 +20187,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>351</index>
+		<index>355</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -19996,7 +20244,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>352</index>
+		<index>356</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20053,7 +20301,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>353</index>
+		<index>357</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20110,7 +20358,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>354</index>
+		<index>358</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20167,7 +20415,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>355</index>
+		<index>359</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20224,7 +20472,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>356</index>
+		<index>360</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20281,7 +20529,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>357</index>
+		<index>361</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20338,7 +20586,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>358</index>
+		<index>362</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20395,7 +20643,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>359</index>
+		<index>363</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20452,7 +20700,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>360</index>
+		<index>364</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20509,7 +20757,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>361</index>
+		<index>365</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20566,7 +20814,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>362</index>
+		<index>366</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20623,7 +20871,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>363</index>
+		<index>367</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20680,7 +20928,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>364</index>
+		<index>368</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20737,7 +20985,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>365</index>
+		<index>369</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20794,7 +21042,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>366</index>
+		<index>370</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20851,7 +21099,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>367</index>
+		<index>371</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20908,7 +21156,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>368</index>
+		<index>372</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -20965,7 +21213,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>369</index>
+		<index>373</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21022,7 +21270,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>370</index>
+		<index>374</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21079,7 +21327,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>371</index>
+		<index>375</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21136,7 +21384,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>372</index>
+		<index>376</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21193,7 +21441,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>373</index>
+		<index>377</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21250,7 +21498,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>374</index>
+		<index>378</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21307,7 +21555,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>375</index>
+		<index>379</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21364,7 +21612,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>376</index>
+		<index>380</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21421,7 +21669,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>377</index>
+		<index>381</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21478,7 +21726,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>378</index>
+		<index>382</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21535,7 +21783,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>379</index>
+		<index>383</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21592,7 +21840,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>380</index>
+		<index>384</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21649,7 +21897,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>381</index>
+		<index>385</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21706,7 +21954,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>382</index>
+		<index>386</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21763,7 +22011,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>383</index>
+		<index>387</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21820,7 +22068,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>384</index>
+		<index>388</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21877,7 +22125,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>385</index>
+		<index>389</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21934,7 +22182,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>386</index>
+		<index>390</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -21991,7 +22239,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>387</index>
+		<index>391</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22048,7 +22296,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>388</index>
+		<index>392</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22105,7 +22353,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>389</index>
+		<index>393</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22162,7 +22410,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>390</index>
+		<index>394</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22219,7 +22467,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>391</index>
+		<index>395</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22276,7 +22524,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>392</index>
+		<index>396</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22333,7 +22581,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>393</index>
+		<index>397</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22390,7 +22638,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>394</index>
+		<index>398</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22447,7 +22695,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>395</index>
+		<index>399</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22504,7 +22752,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>396</index>
+		<index>400</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22562,7 +22810,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>397</index>
+		<index>401</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22619,7 +22867,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>398</index>
+		<index>402</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22676,7 +22924,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>399</index>
+		<index>403</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22733,7 +22981,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>400</index>
+		<index>404</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22790,7 +23038,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>401</index>
+		<index>405</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22847,7 +23095,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>402</index>
+		<index>406</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22904,7 +23152,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>403</index>
+		<index>407</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -22961,7 +23209,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>404</index>
+		<index>408</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23018,7 +23266,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>405</index>
+		<index>409</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23075,7 +23323,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>406</index>
+		<index>410</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23132,7 +23380,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>407</index>
+		<index>411</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23189,7 +23437,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>408</index>
+		<index>412</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23246,7 +23494,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>409</index>
+		<index>413</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23303,7 +23551,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>410</index>
+		<index>414</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23360,7 +23608,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>411</index>
+		<index>415</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23417,7 +23665,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>412</index>
+		<index>416</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23474,7 +23722,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>413</index>
+		<index>417</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23533,7 +23781,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>414</index>
+		<index>418</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23590,7 +23838,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>415</index>
+		<index>419</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23647,7 +23895,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>416</index>
+		<index>420</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23704,7 +23952,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>417</index>
+		<index>421</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23761,7 +24009,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>418</index>
+		<index>422</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23818,7 +24066,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>419</index>
+		<index>423</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23875,7 +24123,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>420</index>
+		<index>424</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23932,7 +24180,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>421</index>
+		<index>425</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -23989,7 +24237,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>422</index>
+		<index>426</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24046,7 +24294,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>423</index>
+		<index>427</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24103,7 +24351,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>424</index>
+		<index>428</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24160,7 +24408,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>425</index>
+		<index>429</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24217,7 +24465,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>426</index>
+		<index>430</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24274,7 +24522,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>427</index>
+		<index>431</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24331,7 +24579,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>428</index>
+		<index>432</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24388,7 +24636,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>429</index>
+		<index>433</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24445,7 +24693,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>430</index>
+		<index>434</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24502,7 +24750,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>431</index>
+		<index>435</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24559,7 +24807,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>432</index>
+		<index>436</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24616,7 +24864,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>433</index>
+		<index>437</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24673,7 +24921,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>434</index>
+		<index>438</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24730,7 +24978,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>435</index>
+		<index>439</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24787,7 +25035,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>436</index>
+		<index>440</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24844,7 +25092,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>437</index>
+		<index>441</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24901,7 +25149,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>438</index>
+		<index>442</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -24958,7 +25206,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>439</index>
+		<index>443</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -25015,7 +25263,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>440</index>
+		<index>444</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -25072,7 +25320,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>441</index>
+		<index>445</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -25129,7 +25377,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>442</index>
+		<index>446</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -25186,7 +25434,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>443</index>
+		<index>447</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -25243,7 +25491,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>444</index>
+		<index>448</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -25300,7 +25548,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>445</index>
+		<index>449</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -25357,7 +25605,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>446</index>
+		<index>450</index>
 		<row>
 			<formatIndex>22</formatIndex>
 			<c>
@@ -25433,8 +25681,8 @@
 	</rightFooter>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>30</defaultFormatIndex>
-	<height>447</height>
-	<vgRows>447</vgRows>
+	<height>451</height>
+	<vgRows>451</vgRows>
 	<merge>
 		<r>1</r>
 		<c>1</c>
@@ -27645,6 +27893,26 @@
 		<c>2</c>
 		<w>7</w>
 	</merge>
+	<merge>
+		<r>447</r>
+		<c>2</c>
+		<w>7</w>
+	</merge>
+	<merge>
+		<r>448</r>
+		<c>2</c>
+		<w>7</w>
+	</merge>
+	<merge>
+		<r>449</r>
+		<c>2</c>
+		<w>7</w>
+	</merge>
+	<merge>
+		<r>450</r>
+		<c>2</c>
+		<w>7</w>
+	</merge>
 	<namedItem xsi:type="NamedItemCells">
 		<name>АвторскиеИСмежныеСНимиПрава</name>
 		<area>
@@ -27659,8 +27927,8 @@
 		<name>АдминистративныеРасходы</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>390</beginRow>
-			<endRow>390</endRow>
+			<beginRow>394</beginRow>
+			<endRow>394</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -27669,8 +27937,8 @@
 		<name>АктивыНаОтветственномХранении</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>422</beginRow>
-			<endRow>422</endRow>
+			<beginRow>426</beginRow>
+			<endRow>426</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -27679,8 +27947,8 @@
 		<name>АмортизационныеОтчисления</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>442</beginRow>
-			<endRow>442</endRow>
+			<beginRow>446</beginRow>
+			<endRow>446</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -27689,8 +27957,8 @@
 		<name>Амортизация</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>376</beginRow>
-			<endRow>376</endRow>
+			<beginRow>380</beginRow>
+			<endRow>380</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -27699,8 +27967,8 @@
 		<name>АмортизацияДругихНеоборотныхМатериальныхАктивов</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>378</beginRow>
-			<endRow>378</endRow>
+			<beginRow>382</beginRow>
+			<endRow>382</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -27709,8 +27977,8 @@
 		<name>АмортизацияНематериальныхАктивов</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>379</beginRow>
-			<endRow>379</endRow>
+			<beginRow>383</beginRow>
+			<endRow>383</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -27719,8 +27987,8 @@
 		<name>АмортизацияОсновныхСредств</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>377</beginRow>
-			<endRow>377</endRow>
+			<beginRow>381</beginRow>
+			<endRow>381</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -27729,8 +27997,8 @@
 		<name>АрендованныеНеоборотныеАктивы</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>421</beginRow>
-			<endRow>421</endRow>
+			<beginRow>425</beginRow>
+			<endRow>425</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -27779,8 +28047,8 @@
 		<name>БланкиСтрогогоУчета</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>441</beginRow>
-			<endRow>441</endRow>
+			<beginRow>445</beginRow>
+			<endRow>445</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -27829,8 +28097,8 @@
 		<name>ВозмещениеРанееСписанныхАктивов</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>331</beginRow>
-			<endRow>331</endRow>
+			<beginRow>335</beginRow>
+			<endRow>335</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -27869,24 +28137,14 @@
 		<name>ВыплатыПоОкладамИТарифам</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>367</beginRow>
-			<endRow>367</endRow>
+			<beginRow>371</beginRow>
+			<endRow>371</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
 		<name>ВычетыИзДохода</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>319</beginRow>
-			<endRow>319</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ВычетыИзДоходаОтРозницы</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>323</beginRow>
@@ -27896,11 +28154,21 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
+		<name>ВычетыИзДоходаОтРозницы</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>327</beginRow>
+			<endRow>327</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
 		<name>ГарантииИОбеспечениеПолученные</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>437</beginRow>
-			<endRow>437</endRow>
+			<beginRow>441</beginRow>
+			<endRow>441</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -27909,8 +28177,8 @@
 		<name>ГарантииИОбеспечениеПредоставленные</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>436</beginRow>
-			<endRow>436</endRow>
+			<beginRow>440</beginRow>
+			<endRow>440</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28029,8 +28297,8 @@
 		<name>ДивидендыПолученные</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>340</beginRow>
-			<endRow>340</endRow>
+			<beginRow>344</beginRow>
+			<endRow>344</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28309,14 +28577,24 @@
 		<name>ДоходОтБезвозмездноПолученныхОборотныхАктивов</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>333</beginRow>
-			<endRow>333</endRow>
+			<beginRow>337</beginRow>
+			<endRow>337</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
 		<name>ДоходОтБесплатноПолученныхАктивов</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>352</beginRow>
+			<endRow>352</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтИзмененияСтоимостиФинансовыхИнструментов</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>348</beginRow>
@@ -28326,21 +28604,11 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтИзмененияСтоимостиФинансовыхИнструментов</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>344</beginRow>
-			<endRow>344</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
 		<name>ДоходОтИнвестицийВАссоциированныеПредприятия</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>336</beginRow>
-			<endRow>336</endRow>
+			<beginRow>340</beginRow>
+			<endRow>340</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28349,8 +28617,8 @@
 		<name>ДоходОтИнвестицийВДочерниеПредприятия</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>338</beginRow>
-			<endRow>338</endRow>
+			<beginRow>342</beginRow>
+			<endRow>342</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28359,144 +28627,14 @@
 		<name>ДоходОтНеоперационнойКурсовойРазницы</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>347</beginRow>
-			<endRow>347</endRow>
+			<beginRow>351</beginRow>
+			<endRow>351</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
 		<name>ДоходОтОперационнойАрендыАктивов</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>328</beginRow>
-			<endRow>328</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтОперационнойКурсовойРазницы</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>329</beginRow>
-			<endRow>329</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтПервоначальногоПризнанияИИзмененияСтоимостиАктивовПоСправедливойСтоимости</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>325</beginRow>
-			<endRow>325</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтРеализацииГотовойПродукции</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>316</beginRow>
-			<endRow>316</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтРеализацииДругихОборотныхАктивов</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>327</beginRow>
-			<endRow>327</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтРеализацииИностраннойВалюты</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>326</beginRow>
-			<endRow>326</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтРеализацииНеоборотныхАктивов</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>346</beginRow>
-			<endRow>346</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтРеализацииРаботИУслуг</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>318</beginRow>
-			<endRow>318</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтРеализацииТоваров</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>317</beginRow>
-			<endRow>317</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтРеализацииФинансовыхИнвестиций</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>345</beginRow>
-			<endRow>345</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтРозницы</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>322</beginRow>
-			<endRow>322</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтРозничныхПродаж</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>321</beginRow>
-			<endRow>321</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтСовместнойДеятельности</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>337</beginRow>
-			<endRow>337</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ДоходОтСписанияКредиторскойЗадолженности</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>332</beginRow>
@@ -28506,11 +28644,141 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтОперационнойКурсовойРазницы</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>333</beginRow>
+			<endRow>333</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтПервоначальногоПризнанияИИзмененияСтоимостиАктивовПоСправедливойСтоимости</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>329</beginRow>
+			<endRow>329</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтРеализацииГотовойПродукции</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>320</beginRow>
+			<endRow>320</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтРеализацииДругихОборотныхАктивов</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>331</beginRow>
+			<endRow>331</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтРеализацииИностраннойВалюты</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>330</beginRow>
+			<endRow>330</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтРеализацииНеоборотныхАктивов</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>350</beginRow>
+			<endRow>350</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтРеализацииРаботИУслуг</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>322</beginRow>
+			<endRow>322</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтРеализацииТоваров</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>321</beginRow>
+			<endRow>321</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтРеализацииФинансовыхИнвестиций</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>349</beginRow>
+			<endRow>349</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтРозницы</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>326</beginRow>
+			<endRow>326</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтРозничныхПродаж</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>325</beginRow>
+			<endRow>325</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтСовместнойДеятельности</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>341</beginRow>
+			<endRow>341</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДоходОтСписанияКредиторскойЗадолженности</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>336</beginRow>
+			<endRow>336</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
 		<name>ДоходОтУчастияВКапитале</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>335</beginRow>
-			<endRow>335</endRow>
+			<beginRow>339</beginRow>
+			<endRow>339</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28519,8 +28787,8 @@
 		<name>ДоходыБудущихПериодов</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>313</beginRow>
-			<endRow>313</endRow>
+			<beginRow>317</beginRow>
+			<endRow>317</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28529,8 +28797,8 @@
 		<name>ДоходыИРезультатыДеятельности</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>314</beginRow>
-			<endRow>314</endRow>
+			<beginRow>318</beginRow>
+			<endRow>318</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28539,8 +28807,8 @@
 		<name>ДоходыОтРеализации</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>315</beginRow>
-			<endRow>315</endRow>
+			<beginRow>319</beginRow>
+			<endRow>319</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28559,8 +28827,8 @@
 		<name>ДругиеДоходы</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>343</beginRow>
-			<endRow>343</endRow>
+			<beginRow>347</beginRow>
+			<endRow>347</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28569,8 +28837,8 @@
 		<name>ДругиеДоходыОтОбычнойДеятельности</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>349</beginRow>
-			<endRow>349</endRow>
+			<beginRow>353</beginRow>
+			<endRow>353</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28579,8 +28847,8 @@
 		<name>ДругиеДоходыОтОперационнойДеятельности</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>334</beginRow>
-			<endRow>334</endRow>
+			<beginRow>338</beginRow>
+			<endRow>338</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28589,8 +28857,8 @@
 		<name>ДругиеЗатратыДеятельности</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>410</beginRow>
-			<endRow>410</endRow>
+			<beginRow>414</beginRow>
+			<endRow>414</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28599,8 +28867,8 @@
 		<name>ДругиеЗатратыНаОплатуТруда</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>372</beginRow>
-			<endRow>372</endRow>
+			<beginRow>376</beginRow>
+			<endRow>376</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28609,8 +28877,8 @@
 		<name>ДругиеЗатратыОбычнойДеятельности</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>417</beginRow>
-			<endRow>417</endRow>
+			<beginRow>421</beginRow>
+			<endRow>421</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28619,8 +28887,8 @@
 		<name>ДругиеЗатратыОперационнойДеятельности</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>402</beginRow>
-			<endRow>402</endRow>
+			<beginRow>406</beginRow>
+			<endRow>406</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28629,8 +28897,8 @@
 		<name>ДругиеЗатратыОперационнойДеятельностиГруппа</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>392</beginRow>
-			<endRow>392</endRow>
+			<beginRow>396</beginRow>
+			<endRow>396</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28639,8 +28907,8 @@
 		<name>ДругиеЗатратыПоЭлементам</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>381</beginRow>
-			<endRow>381</endRow>
+			<beginRow>385</beginRow>
+			<endRow>385</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28649,8 +28917,8 @@
 		<name>ДругиеЗатратыПоЭлементамНалогНаПрибыль</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>382</beginRow>
-			<endRow>382</endRow>
+			<beginRow>386</beginRow>
+			<endRow>386</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28679,8 +28947,8 @@
 		<name>ДругиеМатериальныеЗатраты</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>365</beginRow>
-			<endRow>365</endRow>
+			<beginRow>369</beginRow>
+			<endRow>369</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28729,8 +28997,8 @@
 		<name>ДругиеОперационныеЗатраты</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>380</beginRow>
-			<endRow>380</endRow>
+			<beginRow>384</beginRow>
+			<endRow>384</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28779,8 +29047,8 @@
 		<name>ДругиеФинансовыеЗатраты</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>405</beginRow>
-			<endRow>405</endRow>
+			<beginRow>409</beginRow>
+			<endRow>409</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28829,8 +29097,8 @@
 		<name>ДругойОперационныйДоход</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>324</beginRow>
-			<endRow>324</endRow>
+			<beginRow>328</beginRow>
+			<endRow>328</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28849,8 +29117,8 @@
 		<name>ЗабалансовыеСчета</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>420</beginRow>
-			<endRow>420</endRow>
+			<beginRow>424</beginRow>
+			<endRow>424</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28869,8 +29137,8 @@
 		<name>ЗакупкиУЕдинщиковЧерезПодотчетников</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>446</beginRow>
-			<endRow>446</endRow>
+			<beginRow>450</beginRow>
+			<endRow>450</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -28919,44 +29187,14 @@
 		<name>ЗатратыДеятельности</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>383</beginRow>
-			<endRow>383</endRow>
+			<beginRow>387</beginRow>
+			<endRow>387</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
 		<name>ЗатратыЗапасныхЧастей</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>362</beginRow>
-			<endRow>362</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ЗатратыМатериаловСельскохозяйственногоНазначения</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>363</beginRow>
-			<endRow>363</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ЗатратыНаИсследованияИРазработки</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>394</beginRow>
-			<endRow>394</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ЗатратыНаОплатуТруда</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>366</beginRow>
@@ -28966,27 +29204,17 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
-		<name>ЗатратыОтИзмененияCтоимостиФинансовыхИнструментов</name>
+		<name>ЗатратыМатериаловСельскохозяйственногоНазначения</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>411</beginRow>
-			<endRow>411</endRow>
+			<beginRow>367</beginRow>
+			<endRow>367</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
-		<name>ЗатратыОтОбесцениванияЗапасов</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>399</beginRow>
-			<endRow>399</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ЗатратыОтОперационнойКурсовойРазницы</name>
+		<name>ЗатратыНаИсследованияИРазработки</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>398</beginRow>
@@ -28996,11 +29224,51 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
+		<name>ЗатратыНаОплатуТруда</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>370</beginRow>
+			<endRow>370</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ЗатратыОтИзмененияCтоимостиФинансовыхИнструментов</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>415</beginRow>
+			<endRow>415</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ЗатратыОтОбесцениванияЗапасов</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>403</beginRow>
+			<endRow>403</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ЗатратыОтОперационнойКурсовойРазницы</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>402</beginRow>
+			<endRow>402</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
 		<name>ЗатратыОтПервоначальногоПризнанияИИзмененияСтоимостиАктивовПоСправедливойСтоимости</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>393</beginRow>
-			<endRow>393</endRow>
+			<beginRow>397</beginRow>
+			<endRow>397</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29009,8 +29277,8 @@
 		<name>ЗатратыПокупныхПолуфабрикатовИКомплектующихИзделий</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>358</beginRow>
-			<endRow>358</endRow>
+			<beginRow>362</beginRow>
+			<endRow>362</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29019,14 +29287,24 @@
 		<name>ЗатратыПоЭлементам</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>355</beginRow>
-			<endRow>355</endRow>
+			<beginRow>359</beginRow>
+			<endRow>359</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
 		<name>ЗатратыСтроительныхМатериалов</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>365</beginRow>
+			<endRow>365</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ЗатратыСырьяИМатериалов</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>361</beginRow>
@@ -29036,27 +29314,7 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
-		<name>ЗатратыСырьяИМатериалов</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>357</beginRow>
-			<endRow>357</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
 		<name>ЗатратыТарыИТарныхМатериалов</name>
-		<area>
-			<type>Rows</type>
-			<beginRow>360</beginRow>
-			<endRow>360</endRow>
-			<beginColumn>-1</beginColumn>
-			<endColumn>-1</endColumn>
-		</area>
-	</namedItem>
-	<namedItem xsi:type="NamedItemCells">
-		<name>ЗатратыТоваров</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>364</beginRow>
@@ -29066,11 +29324,21 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
+		<name>ЗатратыТоваров</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>368</beginRow>
+			<endRow>368</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
 		<name>ЗатратыТопливаИЭнергии</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>359</beginRow>
-			<endRow>359</endRow>
+			<beginRow>363</beginRow>
+			<endRow>363</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29209,8 +29477,8 @@
 		<name>ИмуществоВДоверительномУправлении</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>431</beginRow>
-			<endRow>431</endRow>
+			<beginRow>435</beginRow>
+			<endRow>435</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29329,8 +29597,8 @@
 		<name>КомпенсационныеВыплаты</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>369</beginRow>
-			<endRow>369</endRow>
+			<beginRow>373</beginRow>
+			<endRow>373</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29339,8 +29607,8 @@
 		<name>КонтрактныеОбязательства</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>432</beginRow>
-			<endRow>432</endRow>
+			<beginRow>436</beginRow>
+			<endRow>436</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29369,8 +29637,8 @@
 		<name>КорректировкиНормируемыхЗатратНУ</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>445</beginRow>
-			<endRow>445</endRow>
+			<beginRow>449</beginRow>
+			<endRow>449</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29469,8 +29737,8 @@
 		<name>МалоценныеАктивыВЭксплуатации</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>443</beginRow>
-			<endRow>443</endRow>
+			<beginRow>447</beginRow>
+			<endRow>447</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29549,8 +29817,8 @@
 		<name>МатериалыПринятыеВПереработку</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>425</beginRow>
-			<endRow>425</endRow>
+			<beginRow>429</beginRow>
+			<endRow>429</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29559,8 +29827,8 @@
 		<name>МатериалыПринятыеВПереработкуВПроизводстве</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>426</beginRow>
-			<endRow>426</endRow>
+			<beginRow>430</beginRow>
+			<endRow>430</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29569,8 +29837,8 @@
 		<name>МатериалыПринятыеВПереработкуВсего</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>424</beginRow>
-			<endRow>424</endRow>
+			<beginRow>428</beginRow>
+			<endRow>428</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29589,8 +29857,8 @@
 		<name>МатериальныеЗатраты</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>356</beginRow>
-			<endRow>356</endRow>
+			<beginRow>360</beginRow>
+			<endRow>360</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29599,8 +29867,8 @@
 		<name>МатериальныеЦенностиНаОтветственномХранении</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>427</beginRow>
-			<endRow>427</endRow>
+			<beginRow>431</beginRow>
+			<endRow>431</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29659,8 +29927,8 @@
 		<name>НалогНаПрибыль</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>418</beginRow>
-			<endRow>418</endRow>
+			<beginRow>422</beginRow>
+			<endRow>422</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29669,8 +29937,8 @@
 		<name>НалогНаПрибыльОтОбычнойДеятельности</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>419</beginRow>
-			<endRow>419</endRow>
+			<beginRow>423</beginRow>
+			<endRow>423</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29749,8 +30017,8 @@
 		<name>НевозмещенныеНедостачиИПотериОтПорчиЦенностей</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>440</beginRow>
-			<endRow>440</endRow>
+			<beginRow>444</beginRow>
+			<endRow>444</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29759,8 +30027,8 @@
 		<name>НедостачиИПотериОтПорчиЦенностей</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>400</beginRow>
-			<endRow>400</endRow>
+			<beginRow>404</beginRow>
+			<endRow>404</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29849,8 +30117,8 @@
 		<name>НепредвиденныеАктивы</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>434</beginRow>
-			<endRow>434</endRow>
+			<beginRow>438</beginRow>
+			<endRow>438</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29859,8 +30127,8 @@
 		<name>НепредвиденныеАктивыИОбязательства</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>433</beginRow>
-			<endRow>433</endRow>
+			<beginRow>437</beginRow>
+			<endRow>437</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29869,8 +30137,8 @@
 		<name>НепредвиденныеОбязательства</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>435</beginRow>
-			<endRow>435</endRow>
+			<beginRow>439</beginRow>
+			<endRow>439</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -29979,8 +30247,8 @@
 		<name>ОборудованиеПринятоеДляМонтажа</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>423</beginRow>
-			<endRow>423</endRow>
+			<beginRow>427</beginRow>
+			<endRow>427</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30009,8 +30277,8 @@
 		<name>ОбщепроизводственныеРасходы</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>389</beginRow>
-			<endRow>389</endRow>
+			<beginRow>393</beginRow>
+			<endRow>393</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30079,8 +30347,8 @@
 		<name>ОплатаДругогоНеотработанногоВремени</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>371</beginRow>
-			<endRow>371</endRow>
+			<beginRow>375</beginRow>
+			<endRow>375</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30089,8 +30357,8 @@
 		<name>ОплатаОтпусков</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>370</beginRow>
-			<endRow>370</endRow>
+			<beginRow>374</beginRow>
+			<endRow>374</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30189,8 +30457,8 @@
 		<name>ОтчисленияНаИндивидуальноеСтрахование</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>375</beginRow>
-			<endRow>375</endRow>
+			<beginRow>379</beginRow>
+			<endRow>379</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30199,8 +30467,8 @@
 		<name>ОтчисленияНаПенсионноеОбеспечение</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>374</beginRow>
-			<endRow>374</endRow>
+			<beginRow>378</beginRow>
+			<endRow>378</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30209,8 +30477,8 @@
 		<name>ОтчисленияНаСоциальныеМероприятия</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>373</beginRow>
-			<endRow>373</endRow>
+			<beginRow>377</beginRow>
+			<endRow>377</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30229,8 +30497,8 @@
 		<name>Перестрахование</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>320</beginRow>
-			<endRow>320</endRow>
+			<beginRow>324</beginRow>
+			<endRow>324</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30309,8 +30577,8 @@
 		<name>ПолученныеШтрафыПениНеустойки</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>330</beginRow>
-			<endRow>330</endRow>
+			<beginRow>334</beginRow>
+			<endRow>334</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30329,8 +30597,8 @@
 		<name>ПотериОтИнвестицийВАссоциированныеПредприятия</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>407</beginRow>
-			<endRow>407</endRow>
+			<beginRow>411</beginRow>
+			<endRow>411</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30339,8 +30607,8 @@
 		<name>ПотериОтИнвестицийВДочерниеПредприятия</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>409</beginRow>
-			<endRow>409</endRow>
+			<beginRow>413</beginRow>
+			<endRow>413</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30349,8 +30617,8 @@
 		<name>ПотериОтНеоперационныхКурсовыхРазниц</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>414</beginRow>
-			<endRow>414</endRow>
+			<beginRow>418</beginRow>
+			<endRow>418</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30359,8 +30627,8 @@
 		<name>ПотериОтСовместнойДеятельности</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>408</beginRow>
-			<endRow>408</endRow>
+			<beginRow>412</beginRow>
+			<endRow>412</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30369,8 +30637,8 @@
 		<name>ПотериОтУчастияВКапитале</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>406</beginRow>
-			<endRow>406</endRow>
+			<beginRow>410</beginRow>
+			<endRow>410</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30429,8 +30697,8 @@
 		<name>ПремииИПоощрения</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>368</beginRow>
-			<endRow>368</endRow>
+			<beginRow>372</beginRow>
+			<endRow>372</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30459,8 +30727,8 @@
 		<name>ПризнанныеШтрафыПениНеустойки</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>401</beginRow>
-			<endRow>401</endRow>
+			<beginRow>405</beginRow>
+			<endRow>405</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30609,8 +30877,8 @@
 		<name>ПроцентыЗаКредит</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>404</beginRow>
-			<endRow>404</endRow>
+			<beginRow>408</beginRow>
+			<endRow>408</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30619,8 +30887,8 @@
 		<name>ПроцентыПолученные</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>341</beginRow>
-			<endRow>341</endRow>
+			<beginRow>345</beginRow>
+			<endRow>345</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30669,8 +30937,8 @@
 		<name>ПрочиеДоходыОтФинансовыхОпераций</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>342</beginRow>
-			<endRow>342</endRow>
+			<beginRow>346</beginRow>
+			<endRow>346</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30709,8 +30977,8 @@
 		<name>ПрочиеФинансовыеДоходы</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>339</beginRow>
-			<endRow>339</endRow>
+			<beginRow>343</beginRow>
+			<endRow>343</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30729,8 +30997,8 @@
 		<name>РасходыНаСбыт</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>391</beginRow>
-			<endRow>391</endRow>
+			<beginRow>395</beginRow>
+			<endRow>395</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -30831,6 +31099,26 @@
 			<type>Rows</type>
 			<beginRow>293</beginRow>
 			<endRow>293</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>РасчетыПоДолгосрочнымФинансовымИнвестициямУчастиеВКапитале</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>313</beginRow>
+			<endRow>313</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>РасчетыПоДолгосрочнымФинансовымИнвестициямУчастиеВКапиталеВалюта</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>314</beginRow>
+			<endRow>314</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31051,6 +31339,26 @@
 			<type>Rows</type>
 			<beginRow>162</beginRow>
 			<endRow>162</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>РасчетыПоПрочимДолгосрочнымФинансовымИнвестициям</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>315</beginRow>
+			<endRow>315</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>РасчетыПоПрочимДолгосрочнымФинансовымИнвестициямВалюта</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>316</beginRow>
+			<endRow>316</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31359,8 +31667,8 @@
 		<name>РезультатДругойОбычнойДеятельности</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>354</beginRow>
-			<endRow>354</endRow>
+			<beginRow>358</beginRow>
+			<endRow>358</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31389,8 +31697,8 @@
 		<name>РезультатОперационнойДеятельности</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>352</beginRow>
-			<endRow>352</endRow>
+			<beginRow>356</beginRow>
+			<endRow>356</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31399,8 +31707,8 @@
 		<name>РезультатФинансовыхОпераций</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>353</beginRow>
-			<endRow>353</endRow>
+			<beginRow>357</beginRow>
+			<endRow>357</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31409,8 +31717,8 @@
 		<name>СебестоимостьРеализации</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>384</beginRow>
-			<endRow>384</endRow>
+			<beginRow>388</beginRow>
+			<endRow>388</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31419,8 +31727,8 @@
 		<name>СебестоимостьРеализованнойГотовойПродукции</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>385</beginRow>
-			<endRow>385</endRow>
+			<beginRow>389</beginRow>
+			<endRow>389</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31429,8 +31737,8 @@
 		<name>СебестоимостьРеализованнойИностраннойВалюты</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>395</beginRow>
-			<endRow>395</endRow>
+			<beginRow>399</beginRow>
+			<endRow>399</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31439,8 +31747,8 @@
 		<name>СебестоимостьРеализованныхНеоборотныхАктивов</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>413</beginRow>
-			<endRow>413</endRow>
+			<beginRow>417</beginRow>
+			<endRow>417</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31449,8 +31757,8 @@
 		<name>СебестоимостьРеализованныхПроизводственныхЗапасов</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>396</beginRow>
-			<endRow>396</endRow>
+			<beginRow>400</beginRow>
+			<endRow>400</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31459,8 +31767,8 @@
 		<name>СебестоимостьРеализованныхРаботИУслуг</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>387</beginRow>
-			<endRow>387</endRow>
+			<beginRow>391</beginRow>
+			<endRow>391</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31469,8 +31777,8 @@
 		<name>СебестоимостьРеализованныхТоваров</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>386</beginRow>
-			<endRow>386</endRow>
+			<beginRow>390</beginRow>
+			<endRow>390</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31479,8 +31787,8 @@
 		<name>СебестоимостьРеализованныхФинансовыхИнвестиций</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>412</beginRow>
-			<endRow>412</endRow>
+			<beginRow>416</beginRow>
+			<endRow>416</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31499,8 +31807,8 @@
 		<name>СомнительныеИБезнадежныеДолги</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>397</beginRow>
-			<endRow>397</endRow>
+			<beginRow>401</beginRow>
+			<endRow>401</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31529,8 +31837,8 @@
 		<name>СписаниеНеоборотныхАктивов</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>416</beginRow>
-			<endRow>416</endRow>
+			<beginRow>420</beginRow>
+			<endRow>420</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31539,8 +31847,8 @@
 		<name>СписаннаяДебиторскаяЗадолженность</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>439</beginRow>
-			<endRow>439</endRow>
+			<beginRow>443</beginRow>
+			<endRow>443</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31549,8 +31857,8 @@
 		<name>СписанныеАктивы</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>438</beginRow>
-			<endRow>438</endRow>
+			<beginRow>442</beginRow>
+			<endRow>442</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31599,8 +31907,8 @@
 		<name>СтраховыеВыплаты</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>388</beginRow>
-			<endRow>388</endRow>
+			<beginRow>392</beginRow>
+			<endRow>392</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31609,8 +31917,8 @@
 		<name>СтраховыеПлатежи</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>350</beginRow>
-			<endRow>350</endRow>
+			<beginRow>354</beginRow>
+			<endRow>354</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31879,8 +32187,8 @@
 		<name>ТоварыПринятыеНаКомиссию</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>429</beginRow>
-			<endRow>429</endRow>
+			<beginRow>433</beginRow>
+			<endRow>433</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31889,8 +32197,8 @@
 		<name>ТоварыПринятыеНаКомиссиюВсего</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>428</beginRow>
-			<endRow>428</endRow>
+			<beginRow>432</beginRow>
+			<endRow>432</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31899,8 +32207,8 @@
 		<name>ТоварыПринятыеНаКомиссиюНаСубкомиссии</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>430</beginRow>
-			<endRow>430</endRow>
+			<beginRow>434</beginRow>
+			<endRow>434</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31979,8 +32287,8 @@
 		<name>УценкаНеоборотныхАктивовИФинансовыхИнвестиций</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>415</beginRow>
-			<endRow>415</endRow>
+			<beginRow>419</beginRow>
+			<endRow>419</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31989,8 +32297,8 @@
 		<name>УценкиЗапасов</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>444</beginRow>
-			<endRow>444</endRow>
+			<beginRow>448</beginRow>
+			<endRow>448</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31999,8 +32307,8 @@
 		<name>ФинансовыеЗатраты</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>403</beginRow>
-			<endRow>403</endRow>
+			<beginRow>407</beginRow>
+			<endRow>407</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -32009,8 +32317,8 @@
 		<name>ФинансовыеРезультаты</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>351</beginRow>
-			<endRow>351</endRow>
+			<beginRow>355</beginRow>
+			<endRow>355</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>

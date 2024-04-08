@@ -277,6 +277,8 @@
 				</Properties>
 			</Attribute>
 			<Form>Форма</Form>
+			<Form>ФормаНастройкаВыводаРеквизитов</Form>
+			<Form>ФормаИнфо</Form>
 			<Command uuid="3e17ac69-f403-4bb9-af1f-7fde2a188c32">
 				<Properties>
 					<Name>Пактум_Настройка_Форма</Name>

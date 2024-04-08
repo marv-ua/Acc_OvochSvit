@@ -113,4 +113,16 @@
 	<Item Period="01.10.2022" VidESV="Больничные" Limit="100500" MinBase="6700" LimitDia="6700"/>
 	<Item Period="01.10.2022" VidESV="Декретные" Limit="100500" MinBase="6700" LimitDia="6700"/>
 	<Item Period="01.10.2022" VidESV="НачисленияМобилизованным" Limit="100500" MinBase="6700" LimitDia="6700"/>
+	<Item Period="01.01.2024" VidESV="ОсновнаяЗарплата" Limit="106500" MinBase="7100" LimitDia="7100"/>
+	<Item Period="01.01.2024" VidESV="ПоДоговорамГПХ" Limit="106500"/>
+	<Item Period="01.01.2024" VidESV="ПоГигКонтрактам" Limit="7100"/>
+	<Item Period="01.01.2024" VidESV="Больничные" Limit="106500" MinBase="7100" LimitDia="7100"/>
+	<Item Period="01.01.2024" VidESV="Декретные" Limit="106500" MinBase="7100" LimitDia="7100"/>
+	<Item Period="01.01.2024" VidESV="НачисленияМобилизованным" Limit="106500" MinBase="7100" LimitDia="7100"/>
+	<Item Period="01.04.2024" VidESV="ОсновнаяЗарплата" Limit="120000" MinBase="8000" LimitDia="8000"/>
+	<Item Period="01.04.2024" VidESV="ПоДоговорамГПХ" Limit="120000"/>
+	<Item Period="01.04.2024" VidESV="ПоГигКонтрактам" Limit="8000"/>
+	<Item Period="01.04.2024" VidESV="Больничные" Limit="120000" MinBase="8000" LimitDia="8000"/>
+	<Item Period="01.04.2024" VidESV="Декретные" Limit="120000" MinBase="8000" LimitDia="8000"/>
+	<Item Period="01.04.2024" VidESV="НачисленияМобилизованным" Limit="120000" MinBase="8000" LimitDia="8000"/>
 </Items>

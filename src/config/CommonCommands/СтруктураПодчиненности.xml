@@ -38,6 +38,7 @@
 				<v8:Type>cfg:DocumentRef.ОтражениеЗарплатыВБухучете</v8:Type>
 				<v8:Type>cfg:DocumentRef.а_ЗаказНаСборку</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПередачаОС</v8:Type>
+				<v8:Type>cfg:DocumentRef.а_ДекларацияПоставщика</v8:Type>
 				<v8:Type>cfg:DocumentRef.СправкаОДоходах</v8:Type>
 				<v8:Type>cfg:DocumentRef.СписаниеТоваров</v8:Type>
 				<v8:Type>cfg:DocumentRef.АвансовыйОтчет</v8:Type>

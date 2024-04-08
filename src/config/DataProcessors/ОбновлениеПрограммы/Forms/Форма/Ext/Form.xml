@@ -258,7 +258,7 @@
 										</v8:item>
 										<v8:item>
 											<v8:lang>uk</v8:lang>
-											<v8:content>Група повідомлення доступно оновлення</v8:content>
+											<v8:content>Група повідомлення доступне оновлення</v8:content>
 										</v8:item>
 									</Title>
 									<Group>Horizontal</Group>
@@ -285,7 +285,7 @@
 												</v8:item>
 												<v8:item>
 													<v8:lang>uk</v8:lang>
-													<v8:content>Декорація повідомлення доступно оновлення</v8:content>
+													<v8:content>Декорація повідомлення доступне оновлення</v8:content>
 												</v8:item>
 											</Title>
 											<VerticalAlign>Center</VerticalAlign>
@@ -3511,7 +3511,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Заголовок доступно оновлення</v8:content>
+					<v8:content>Заголовок доступне оновлення</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

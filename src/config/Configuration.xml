@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>NetHelp</Vendor>
-			<Version>2.1.24.3</Version>
+			<Version>2.1.25.5</Version>
 			<UpdateCatalogAddress>http://downloads.bas-soft.eu/tmplts/</UpdateCatalogAddress>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -231,11 +231,11 @@
 			<Copyright>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Copyright © NetHelp JAROCKI PIOTR, 2018-2023. All rights reserved</v8:content>
+					<v8:content>Copyright © NetHelp JAROCKI PIOTR, 2018-2024. All rights reserved</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Copyright © NetHelp JAROCKI PIOTR, 2018-2023. All rights reserved</v8:content>
+					<v8:content>Copyright © NetHelp JAROCKI PIOTR, 2018-2024. All rights reserved</v8:content>
 				</v8:item>
 			</Copyright>
 			<VendorInformationAddress/>
@@ -1615,7 +1615,9 @@
 			<CommonModule>ОчередьЗаданийСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ОчередьЗаданийСлужебныйРазделениеДанных</CommonModule>
 			<CommonModule>Пактум_Клиент</CommonModule>
+			<CommonModule>Пактум_КлиентПереопределяемый</CommonModule>
 			<CommonModule>Пактум_Сервер</CommonModule>
+			<CommonModule>Пактум_СерверПереопределяемый</CommonModule>
 			<CommonModule>Пактум_ФоновыеЗадания</CommonModule>
 			<CommonModule>ПередачаДанныхВстраивание</CommonModule>
 			<CommonModule>ПередачаДанныхПереопределяемый</CommonModule>
@@ -2006,8 +2008,6 @@
 			<CommonModule>ЭлектроннаяПодписьВМоделиСервисаПереопределяемый</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьКлиент</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьКлиентПереопределяемый</CommonModule>
-			<CommonModule>ЭлектроннаяПодписьКлиентСервер</CommonModule>
-			<CommonModule>ЭлектроннаяПодписьПереопределяемый</CommonModule>
 			<CommonModule>ерпсАктПриемкиПередачиСервер</CommonModule>
 			<CommonModule>КомпоновкаДанныхСервер</CommonModule>
 			<CommonModule>КомпоновкаДанныхКлиент</CommonModule>
@@ -2019,12 +2019,14 @@
 			<CommonModule>ФормыКлиентСервер</CommonModule>
 			<CommonModule>кд_ЭлектроннаяПочта</CommonModule>
 			<CommonModule>а_1ДФ</CommonModule>
+			<CommonModule>ЭлектроннаяПодписьКлиентСервер</CommonModule>
+			<CommonModule>ЭлектроннаяПодписьПереопределяемый</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебный</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиент</CommonModule>
+			<CommonModule>а_ПрограмнаяРаботаСФормами</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйПовтИсп</CommonModule>
-			<CommonModule>а_ПрограмнаяРаботаСФормами</CommonModule>
 			<CommonAttribute>ОбластьДанныхВспомогательныеДанные</CommonAttribute>
 			<CommonAttribute>ОбластьДанныхОсновныеДанные</CommonAttribute>
 			<ExchangePlan>АвтономнаяРабота</ExchangePlan>
@@ -3155,6 +3157,7 @@
 			<Catalog>а_Регионы</Catalog>
 			<Catalog>ЦенныеБумаги</Catalog>
 			<Catalog>ШаблоныЗаданийОчереди</Catalog>
+			<Catalog>а_Маршруты</Catalog>
 			<Document>АвансовыйОтчет</Document>
 			<Document>АктОбОказанииПроизводственныхУслуг</Document>
 			<Document>АктСверкиВзаиморасчетов</Document>
@@ -3289,6 +3292,7 @@
 			<Document>а_ПриказНаВВодВЭксплуатацию</Document>
 			<Document>а_ЗаказНаСборку</Document>
 			<Document>а_Маршруты</Document>
+			<Document>а_ДекларацияПоставщика</Document>
 			<DocumentNumerator>НумераторНалоговыхДокументов</DocumentNumerator>
 			<Sequence>ДокументыОрганизаций</Sequence>
 			<DocumentJournal>Деньги</DocumentJournal>
@@ -3540,6 +3544,7 @@
 			<Enum>а_СтатусыЗаявок</Enum>
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
 			<Enum>а_ТипыСтатусов</Enum>
+			<Enum>а_ВидыПоставщиков</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализДвиженийДенежныхСредств</Report>
 			<Report>АнализЖурналаРегистрации</Report>
@@ -3928,6 +3933,7 @@
 			<InformationRegister>ОчередьИнсталляцииПоставляемыхРасширенийВОбластиДанных</InformationRegister>
 			<InformationRegister>ПакетыДляОтправки</InformationRegister>
 			<InformationRegister>ПакетыИнформацииПриЗапуске</InformationRegister>
+			<InformationRegister>Пактум_ДополнительныеСведенияОКонтрагентах</InformationRegister>
 			<InformationRegister>Пактум_ФоновыеЗадания</InformationRegister>
 			<InformationRegister>ПараметрыАмортизацииОСБухгалтерскийУчет</InformationRegister>
 			<InformationRegister>ПараметрыАмортизацииОСНалоговыйУчет</InformationRegister>
@@ -4069,12 +4075,13 @@
 			<InformationRegister>ФИОФизическихЛиц</InformationRegister>
 			<InformationRegister>ХранилищеСертификатов</InformationRegister>
 			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
-			<InformationRegister>ШкалаСтавокНалогов</InformationRegister>
 			<InformationRegister>а_ПаспортныеДанные</InformationRegister>
-			<InformationRegister>ЭлектронныеПодписи</InformationRegister>
+			<InformationRegister>ШкалаСтавокНалогов</InformationRegister>
 			<InformationRegister>а_ЗаявкиКВывозу</InformationRegister>
 			<InformationRegister>а_ДатаВывозаФакт</InformationRegister>
 			<InformationRegister>а_СтатусыЗаявок</InformationRegister>
+			<InformationRegister>а_ДокументыРеализацииЗаявок</InformationRegister>
+			<InformationRegister>ЭлектронныеПодписи</InformationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоВзносамВФонды</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоУдержаниям</AccumulationRegister>
