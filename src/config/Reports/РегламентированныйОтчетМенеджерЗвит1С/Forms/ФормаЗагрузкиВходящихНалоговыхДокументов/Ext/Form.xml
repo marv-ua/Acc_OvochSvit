@@ -305,6 +305,16 @@
 					<ContextMenu name="ДокументыЗвит1СКонтекстноеМеню" id="33"/>
 					<AutoCommandBar name="ДокументыЗвит1СКоманднаяПанель" id="34">
 						<ChildItems>
+							<Button name="ДокументыЗвит1ССнятьВсеПометки" id="138">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Command.СнятьВсеПометки</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ДокументыЗвит1ССнятьВсеПометкиРасширеннаяПодсказка" id="139"/>
+							</Button>
 							<Button name="ДокументыЗвит1СОбновитьСписок" id="82">
 								<Type>CommandBarButton</Type>
 								<CommandName>Form.Command.ОбновитьСписок</CommandName>
@@ -1447,6 +1457,29 @@
 			</ToolTip>
 			<Action>ПодобратьДокументыБУ</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СнятьВсеПометки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все пометки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зняти всі позначки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все пометки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зняти всі позначки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьВсеПометки</Action>
 		</Command>
 	</Commands>
 </Form>

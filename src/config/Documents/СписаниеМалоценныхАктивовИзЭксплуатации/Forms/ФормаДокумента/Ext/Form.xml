@@ -909,7 +909,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Вибрати склад коміссії</v8:content>
+					<v8:content>Вибрати склад комісії</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -919,7 +919,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>uk</v8:lang>
-					<v8:content>Вибрати склад коміссії</v8:content>
+					<v8:content>Вибрати склад комісії</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ВыбратьСоставКомиссии</Action>

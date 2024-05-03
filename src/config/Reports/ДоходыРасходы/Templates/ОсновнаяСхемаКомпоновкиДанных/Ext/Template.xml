@@ -72,11 +72,11 @@
 				<presentation xsi:type="v8:LocalStringType">
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content>ПрочиеДоходы без НДС</v8:content>
+						<v8:content>Прочие доходы без НДС</v8:content>
 					</v8:item>
 					<v8:item>
 						<v8:lang>uk</v8:lang>
-						<v8:content>ПрочиеДоходы без ПДВ</v8:content>
+						<v8:content>Інші доходи без ПДВ</v8:content>
 					</v8:item>
 				</presentation>
 			</availableValue>

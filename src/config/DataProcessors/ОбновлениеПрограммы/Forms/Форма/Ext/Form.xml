@@ -1681,7 +1681,7 @@
 Можливі причини:
 • Немає підключення до Інтернету;
 • На веб-вузлі виникли неполадки;
-• Брандмауер або інше проміжне (антивіруси і т. п.) блокують 
+• Брандмауер або інше проміжне ПЗ (антивіруси і т.п.) блокують 
    спроби програми підключитися до Інтернету;
 • Підключення до Інтернету через проксі-сервер, але &lt;link open:ProxySettings&gt;параметри проксі-сервера&lt;/&gt; не вказані у програмі.</v8:content>
 														</v8:item>
@@ -1697,11 +1697,11 @@
 													<Title formatted="true">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>При возникновении проблем напишите в &lt;link mailto:webits-info@1c.ru&gt;техподдержку&lt;/&gt;.</v8:content>
+															<v8:content>При возникновении проблем напишите в &lt;link mailto:webits-info@bas-soft.eu&gt;техподдержку&lt;/&gt;.</v8:content>
 														</v8:item>
 														<v8:item>
 															<v8:lang>uk</v8:lang>
-															<v8:content>При виникненні проблем напишіть в &lt;link mailto:webits-info@1c.ru&gt;техпідтримку&lt;/&gt;.</v8:content>
+															<v8:content>При виникненні проблем напишіть у &lt;link mailto:webits-info@bas-soft.eu&gt;техпідтримку&lt;/&gt;.</v8:content>
 														</v8:item>
 													</Title>
 													<ContextMenu name="ДекорацияНаписатьВТехПоддержкуКонтекстноеМеню" id="131"/>

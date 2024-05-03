@@ -20,6 +20,7 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.а_ДекларацияПоставщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПунктыРазгрузки</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

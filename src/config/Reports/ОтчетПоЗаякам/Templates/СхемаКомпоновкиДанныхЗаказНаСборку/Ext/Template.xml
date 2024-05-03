@@ -911,7 +911,7 @@
 								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
-								<dcsset:field>ПунктРазгрузки</dcsset:field>
+								<dcsset:field>ПунктРазгрузки.НаименованиеПолное</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>

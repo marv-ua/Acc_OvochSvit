@@ -67,7 +67,7 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Document.ОтражениеВзаиморасчетовСКонтрагентамиВ1ДФ.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultObjectForm>Document.ОтражениеВзаиморасчетовСКонтрагентамиВ1ДФ.Form.ФормаДокумента_Измененная</DefaultObjectForm>
 			<DefaultListForm>Document.ОтражениеВзаиморасчетовСКонтрагентамиВ1ДФ.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -375,6 +375,7 @@
 			</Attribute>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаДокумента</Form>
+			<Form>ФормаДокумента_Измененная</Form>
 			<TabularSection uuid="f0327f98-24b5-4d01-83e7-6d7b5254b272">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ОтражениеВзаиморасчетовСКонтрагентамиВ1ДФ.Контрагенты" category="TabularSection">

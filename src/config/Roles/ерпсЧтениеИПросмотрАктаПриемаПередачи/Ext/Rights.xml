@@ -138,6 +138,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.а_Заявки.Subsystem.Маршруты</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ерпсАктПриемкиПередачиТоваров.Attribute.ПредставительОрганизации</name>
 		<right>
 			<name>Edit</name>
@@ -149,6 +156,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.а_Заявки</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -315,6 +329,52 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.а_СвязьОбъектов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_СвязьОбъектов.StandardAttribute.Active</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_СвязьОбъектов.StandardAttribute.LineNumber</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_СвязьОбъектов.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_СвязьОбъектов.StandardAttribute.Period</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_СвязьОбъектов.Dimension.ИД</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ерпсАктПриемкиПередачиТоваров.Attribute.Водитель</name>
 		<right>
 			<name>Edit</name>
@@ -348,6 +408,13 @@
 		<right>
 			<name>InputByString</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_СвязьОбъектов.Dimension.ТипОбъекта</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -568,6 +635,13 @@
 			<name>Read</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.Продажи.Subsystem.а_Дополнительно</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

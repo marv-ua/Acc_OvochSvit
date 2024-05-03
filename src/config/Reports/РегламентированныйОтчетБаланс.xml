@@ -284,17 +284,19 @@
 			<Form>ФормаОтчета2013Кв3</Form>
 			<Form>ФормаОтчета2013кв3УФ</Form>
 			<Form>ФормаОтчета2021УФ</Form>
+			<Form>ФормаОтчета2024УФ</Form>
 			<Template>ПоказателиЗвит1С</Template>
 			<Template>СоставПоказателей2012Кв1</Template>
 			<Template>СоставПоказателей2013Кв1</Template>
 			<Template>СоставПоказателей2013Кв3</Template>
 			<Template>ФормаОтчета2013кв3УФ_Баланс</Template>
 			<Template>ФормаОтчета2013кв3УФ_СлужебныеДанные</Template>
-			<Template>J0900108</Template>
-			<Template>S0100113</Template>
 			<Template>СоставПоказателей2021</Template>
 			<Template>ФормаОтчета2021УФ_Баланс</Template>
 			<Template>ФормаОтчета2021УФ_СлужебныеДанные</Template>
+			<Template>СоставПоказателей2024</Template>
+			<Template>ФормаОтчета2024УФ_Баланс</Template>
+			<Template>ФормаОтчета2024УФ_СлужебныеДанные</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

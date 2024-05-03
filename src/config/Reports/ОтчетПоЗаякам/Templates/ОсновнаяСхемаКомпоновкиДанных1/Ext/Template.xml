@@ -850,6 +850,9 @@
 						<dcsset:item>
 							<dcsset:field>ДатаОтгрузки</dcsset:field>
 						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПунктРазгрузки</dcsset:field>
+						</dcsset:item>
 					</dcsset:selection>
 					<dcsset:filter>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
@@ -926,6 +929,10 @@
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>МакетОформления</dcscor:parameter>
 					<dcscor:value xsi:type="xs:string">ОформлениеОтчетовЧерноБелый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
@@ -1085,6 +1092,14 @@
 								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ПунктРазгрузки.НаименованиеПолное</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:use>false</dcsset:use>
 								<dcsset:field>ДатаОтгрузки</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>

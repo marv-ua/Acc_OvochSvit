@@ -82,9 +82,26 @@
 						</InputField>
 						<InputField name="ПунктРазгрузки" id="51">
 							<DataPath>Объект.ПунктРазгрузки</DataPath>
+							<Visible>false</Visible>
 							<ReadOnly>true</ReadOnly>
 							<ContextMenu name="ПунктРазгрузкиКонтекстноеМеню" id="52"/>
 							<ExtendedTooltip name="ПунктРазгрузкиРасширеннаяПодсказка" id="53"/>
+						</InputField>
+						<InputField name="ПунктРазгрузкиНаименованиеПолное" id="115">
+							<DataPath>Объект.ПунктРазгрузки.НаименованиеПолное</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пункт разгрузки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Пункт розвантаження</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПунктРазгрузкиНаименованиеПолноеКонтекстноеМеню" id="116"/>
+							<ExtendedTooltip name="ПунктРазгрузкиНаименованиеПолноеРасширеннаяПодсказка" id="117"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -181,6 +198,54 @@
 					<ContextMenu name="МаршрутКонтекстноеМеню" id="86"/>
 					<ExtendedTooltip name="МаршрутРасширеннаяПодсказка" id="87"/>
 				</SpreadSheetDocumentField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКачествоТараБирки" id="127">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа качество тара бирки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа качество тара бирки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКачествоТараБиркиРасширеннаяПодсказка" id="128"/>
+			<ChildItems>
+				<CheckBoxField name="Бирки" id="124">
+					<DataPath>Объект.Бирки</DataPath>
+					<CheckBoxType>Tumbler</CheckBoxType>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>БЛ=Ні; БИ=Так</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="БиркиКонтекстноеМеню" id="125"/>
+					<ExtendedTooltip name="БиркиРасширеннаяПодсказка" id="126"/>
+				</CheckBoxField>
+				<CheckBoxField name="Тара" id="121">
+					<DataPath>Объект.Тара</DataPath>
+					<CheckBoxType>Tumbler</CheckBoxType>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>БЛ=Ні; БИ=Так</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ТараКонтекстноеМеню" id="122"/>
+					<ExtendedTooltip name="ТараРасширеннаяПодсказка" id="123"/>
+				</CheckBoxField>
+				<InputField name="Качество" id="118">
+					<DataPath>Объект.Качество</DataPath>
+					<ContextMenu name="КачествоКонтекстноеМеню" id="119"/>
+					<ExtendedTooltip name="КачествоРасширеннаяПодсказка" id="120"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<Table name="Товары" id="24">

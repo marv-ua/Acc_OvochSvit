@@ -70,6 +70,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетНаОплатуПоставщика</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ВедомостьНаВыплатуЗарплатыВКассу</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.АвансовыйОтчет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетОРозничныхПродажах</xr:Item>
 			</BasedOn>
 			<InputByString>
 				<xr:Field>Document.РасходныйКассовыйОрдер.StandardAttribute.Number</xr:Field>
