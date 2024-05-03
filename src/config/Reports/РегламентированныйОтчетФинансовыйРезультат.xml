@@ -291,8 +291,6 @@
 			<Template>СоставПоказателей2014Кв2УФ</Template>
 			<Template>ФормаОтчета2014Кв2УФ_ФинРез</Template>
 			<Template>ФормаОтчета2014Кв2УФ_СлужебныеДанные</Template>
-			<Template>J0900207</Template>
-			<Template>S0100213</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

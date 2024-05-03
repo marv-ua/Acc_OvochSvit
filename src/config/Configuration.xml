@@ -57,7 +57,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>NetHelp</Vendor>
-			<Version>2.1.25.5</Version>
+			<Version>2.1.26.5</Version>
 			<UpdateCatalogAddress>http://downloads.bas-soft.eu/tmplts/</UpdateCatalogAddress>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -286,6 +286,7 @@
 			<Subsystem>Справочники</Subsystem>
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
 			<Subsystem>ТехнологияСервиса</Subsystem>
+			<Subsystem>а_Заявки</Subsystem>
 			<StyleItem>БыстрыеОтборыФонГруппы</StyleItem>
 			<StyleItem>ВажноеСобытие</StyleItem>
 			<StyleItem>ВидДняПроизводственногоКалендаряВоскресеньеЦвет</StyleItem>
@@ -1051,6 +1052,7 @@
 			<CommonPicture>а_АвтомобильЧБ</CommonPicture>
 			<CommonPicture>а_АвтомобильЦвет</CommonPicture>
 			<CommonPicture>уатЗаказТСПеревозкаАвтоГрузовая</CommonPicture>
+			<CommonPicture>ЗаказКлиента</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
 			<SessionParameter>ВерсииШаблоновОграниченияДоступа</SessionParameter>
@@ -1228,6 +1230,7 @@
 			<Role>а_ДоступностьИзмененияНоменклатурыДоп</Role>
 			<Role>а_УправлениеМаршрутами</Role>
 			<Role>Кладовщик</Role>
+			<Role>а_ЧтениеИзменениеЗаказНаСборку</Role>
 			<CommonTemplate>ИнструкцияКакВыполнитьУстановкуОбновленияВручную</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие_uk</CommonTemplate>
@@ -3545,6 +3548,8 @@
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
 			<Enum>а_ТипыСтатусов</Enum>
 			<Enum>а_ВидыПоставщиков</Enum>
+			<Enum>а_ТипыОбъектов</Enum>
+			<Enum>а_Качество</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализДвиженийДенежныхСредств</Report>
 			<Report>АнализЖурналаРегистрации</Report>
@@ -4082,6 +4087,7 @@
 			<InformationRegister>а_СтатусыЗаявок</InformationRegister>
 			<InformationRegister>а_ДокументыРеализацииЗаявок</InformationRegister>
 			<InformationRegister>ЭлектронныеПодписи</InformationRegister>
+			<InformationRegister>а_СвязьОбъектов</InformationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоВзносамВФонды</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоУдержаниям</AccumulationRegister>

@@ -480,6 +480,40 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="d0db19fe-1841-4d81-8e59-4d106c1a7f3b">
+				<Properties>
+					<Name>БезЦен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Без цен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
 			<Form>Форма</Form>
 			<Template>ПФ_MXL_UK_ТТН</Template>
 			<Template>ПФ_MXL_UK_ТТН2014</Template>
@@ -488,6 +522,8 @@
 			<Template>ПФ_MXL_UK_ТТН2019_Упрощенная</Template>
 			<Template>ПФ_MXL_UK_ТТН2021</Template>
 			<Template>ПФ_MXL_UK_ТТН2022</Template>
+			<Template>ПФ_MXL_UK_ТТН2024_Упрощенная_БезЦен</Template>
+			<Template>ПФ_MXL_UK_ТТН2024_доп</Template>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

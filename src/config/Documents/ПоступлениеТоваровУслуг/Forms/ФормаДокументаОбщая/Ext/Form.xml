@@ -305,12 +305,25 @@
 								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
-						<CheckBoxField name="ПолученоВ_ЭлектронномВиде" id="564">
-							<DataPath>Объект.ПолученоВ_ЭлектронномВиде</DataPath>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ПолученоВ_ЭлектронномВидеКонтекстноеМеню" id="565"/>
-							<ExtendedTooltip name="ПолученоВ_ЭлектронномВидеРасширеннаяПодсказка" id="566"/>
-						</CheckBoxField>
+						<UsualGroup name="Группа7" id="636">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="637"/>
+							<ChildItems>
+								<CheckBoxField name="ПолученоВ_ЭлектронномВиде" id="564">
+									<DataPath>Объект.ПолученоВ_ЭлектронномВиде</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПолученоВ_ЭлектронномВидеКонтекстноеМеню" id="565"/>
+									<ExtendedTooltip name="ПолученоВ_ЭлектронномВидеРасширеннаяПодсказка" id="566"/>
+								</CheckBoxField>
+								<CheckBoxField name="ЕстьТТН" id="633">
+									<DataPath>Объект.ЕстьТТН</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЕстьТТНКонтекстноеМеню" id="634"/>
+									<ExtendedTooltip name="ЕстьТТНРасширеннаяПодсказка" id="635"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
 						<LabelDecoration name="НадписьДокументПолученИзЗвит1С" id="531">
 							<TextColor>style:ТекстИнформационнойНадписи</TextColor>
 							<Title formatted="false">

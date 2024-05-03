@@ -1592,6 +1592,23 @@
 											<ContextMenu name="ПунктРазгрузкиКонтекстноеМеню" id="598"/>
 											<ExtendedTooltip name="ПунктРазгрузкиРасширеннаяПодсказка" id="599"/>
 										</InputField>
+										<UsualGroup name="Группа1" id="645">
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="646"/>
+											<ChildItems>
+												<InputField name="ИДЗаявкиКлиента" id="642">
+													<DataPath>Объект.ИДЗаявкиКлиента</DataPath>
+													<ContextMenu name="ИДЗаявкиКлиентаКонтекстноеМеню" id="643"/>
+													<ExtendedTooltip name="ИДЗаявкиКлиентаРасширеннаяПодсказка" id="644"/>
+												</InputField>
+												<InputField name="ДатаЗаявкиКлиента" id="647">
+													<DataPath>Объект.ДатаЗаявкиКлиента</DataPath>
+													<ContextMenu name="ДатаЗаявкиКлиентаКонтекстноеМеню" id="648"/>
+													<ExtendedTooltip name="ДатаЗаявкиКлиентаРасширеннаяПодсказка" id="649"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ГруппаОтветственныеЛица" id="247">

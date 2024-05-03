@@ -478,6 +478,16 @@
 									</Button>
 								</ChildItems>
 							</ButtonGroup>
+							<Button name="ТаблицаДокументовСнятьВсеПометки" id="234">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Command.СнятьВсеПометки</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ТаблицаДокументовСнятьВсеПометкиРасширеннаяПодсказка" id="235"/>
+							</Button>
 							<Button name="ТаблицаДокументовОбновить" id="100">
 								<Type>CommandBarButton</Type>
 								<Representation>PictureAndText</Representation>
@@ -2626,6 +2636,29 @@
 			</ToolTip>
 			<Action>Подбор</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СнятьВсеПометки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все пометки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зняти всі позначки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все пометки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зняти всі позначки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьВсеПометки</Action>
 		</Command>
 	</Commands>
 	<Parameters>

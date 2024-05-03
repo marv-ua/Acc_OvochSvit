@@ -31,6 +31,7 @@
 				<ChildItems>
 					<Button name="ФормаСоздатьРТУПоКонтрагенту" id="118">
 						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
 						<CommandName>Form.Command.СоздатьАкты</CommandName>
 						<ExtendedTooltip name="ФормаСоздатьРТУПоКонтрагентуРасширеннаяПодсказка" id="119"/>
 					</Button>
@@ -303,6 +304,16 @@
 										<CommandName>Form.Command.ПечатьТТНПоВодителю</CommandName>
 										<ExtendedTooltip name="ИтогиПоВодителямКонтекстноеМенюПечатьТТНПоВодителюРасширеннаяПодсказка" id="280"/>
 									</Button>
+									<Button name="ИтогиПоВодителямКонтекстноеМенюПечатьТТНПоВодителюБезЦен" id="412">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПечатьТТНПоВодителюБезЦен</CommandName>
+										<ExtendedTooltip name="ИтогиПоВодителямКонтекстноеМенюПечатьТТНПоВодителюБезЦенРасширеннаяПодсказка" id="413"/>
+									</Button>
+									<Button name="ИтогиПоВодителямКонтекстноеМенюПечатьАктОтгрузкиПоВодителю" id="410">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПечатьАктОтгрузкиПоВодителю</CommandName>
+										<ExtendedTooltip name="ИтогиПоВодителямКонтекстноеМенюПечатьАктОтгрузкиПоВодителюРасширеннаяПодсказка" id="411"/>
+									</Button>
 									<Button name="ИтогиПоВодителямКонтекстноеМенюПечатьДекларацииПоставщиков" id="400">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ПечатьДекларацииПоставщиков</CommandName>
@@ -520,33 +531,6 @@
 							</ContextMenu>
 							<AutoCommandBar name="ТоварыКоманднаяПанель" id="21">
 								<ChildItems>
-									<Popup name="ТоварыГруппаЗагрузка" id="193">
-										<Title>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Загрузка</v8:content>
-											</v8:item>
-											<v8:item>
-												<v8:lang>uk</v8:lang>
-												<v8:content>Завантаження</v8:content>
-											</v8:item>
-										</Title>
-										<ToolTip>
-											<v8:item>
-												<v8:lang>uk</v8:lang>
-												<v8:content>Товары группа загрузка</v8:content>
-											</v8:item>
-										</ToolTip>
-										<ExtendedTooltip name="ТоварыГруппаЗагрузкаРасширеннаяПодсказка" id="194"/>
-										<ChildItems>
-											<Button name="ТоварыЗагрузитьЗаявку" id="195">
-												<Type>CommandBarButton</Type>
-												<Visible>false</Visible>
-												<CommandName>Form.Command.ЗагрузитьЗаявку</CommandName>
-												<ExtendedTooltip name="ТоварыЗагрузитьЗаявкуРасширеннаяПодсказка" id="196"/>
-											</Button>
-										</ChildItems>
-									</Popup>
 									<ButtonGroup name="ТоварыГруппа1" id="226">
 										<ExtendedTooltip name="ТоварыГруппа1РасширеннаяПодсказка" id="227"/>
 										<ChildItems>
@@ -564,16 +548,53 @@
 											</Button>
 										</ChildItems>
 									</ButtonGroup>
-									<Button name="ТоварыЗагрузитьИзВнешнегоФайла" id="65">
-										<Type>CommandBarButton</Type>
-										<Representation>PictureAndText</Representation>
-										<CommandName>Form.Command.ЗагрузитьИзВнешнегоФайла</CommandName>
+									<Popup name="ТоварыГруппаЗагрузка" id="193">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Загрузка</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Завантаження</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Товары группа загрузка</v8:content>
+											</v8:item>
+										</ToolTip>
 										<Picture>
-											<xr:Ref>CommonPicture.ФорматExcel2007</xr:Ref>
+											<xr:Ref>CommonPicture.ФорматExcel</xr:Ref>
 											<xr:LoadTransparent>true</xr:LoadTransparent>
 										</Picture>
-										<ExtendedTooltip name="ТоварыЗагрузитьИзВнешнегоФайлаРасширеннаяПодсказка" id="66"/>
-									</Button>
+										<Representation>PictureAndText</Representation>
+										<ExtendedTooltip name="ТоварыГруппаЗагрузкаРасширеннаяПодсказка" id="194"/>
+										<ChildItems>
+											<Button name="ТоварыЗагрузитьИзВнешнегоФайла" id="65">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Command.ЗагрузитьИзВнешнегоФайла</CommandName>
+												<Picture>
+													<xr:Ref>CommonPicture.ФорматExcel2007</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="ТоварыЗагрузитьИзВнешнегоФайлаРасширеннаяПодсказка" id="66"/>
+											</Button>
+											<Button name="ТоварыЗагрузитьЗаявку" id="195">
+												<Type>CommandBarButton</Type>
+												<Visible>false</Visible>
+												<CommandName>Form.Command.ЗагрузитьЗаявку</CommandName>
+												<ExtendedTooltip name="ТоварыЗагрузитьЗаявкуРасширеннаяПодсказка" id="196"/>
+											</Button>
+											<Button name="ТоварыЗагрузитьЗаявкуКПР" id="427">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗагрузитьЗаявкуКПР</CommandName>
+												<ExtendedTooltip name="ТоварыЗагрузитьЗаявкуКПРРасширеннаяПодсказка" id="428"/>
+											</Button>
+										</ChildItems>
+									</Popup>
 									<Button name="ТоварыУстановитьНовыйИдентификаторДату" id="343">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.УстановитьНовыйИдентификаторДату</CommandName>
@@ -717,13 +738,6 @@
 									<ContextMenu name="ТоварыДатаОтгрузкиКонтекстноеМеню" id="251"/>
 									<ExtendedTooltip name="ТоварыДатаОтгрузкиРасширеннаяПодсказка" id="252"/>
 								</InputField>
-								<InputField name="ТоварыИдентификатор" id="181">
-									<DataPath>Объект.Товары.Идентификатор</DataPath>
-									<Visible>false</Visible>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТоварыИдентификаторКонтекстноеМеню" id="182"/>
-									<ExtendedTooltip name="ТоварыИдентификаторРасширеннаяПодсказка" id="183"/>
-								</InputField>
 								<InputField name="ТоварыЗаказаноВЭтотДень" id="247">
 									<DataPath>Объект.Товары.ЗаказаноВЭтотДень</DataPath>
 									<Title>
@@ -745,6 +759,18 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыПримечаниеКонтекстноеМеню" id="45"/>
 									<ExtendedTooltip name="ТоварыПримечаниеРасширеннаяПодсказка" id="46"/>
+								</InputField>
+								<InputField name="ТоварыИДЗаявкиКлиента" id="407">
+									<DataPath>Объект.Товары.ИДЗаявкиКлиента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыИДЗаявкиКлиентаКонтекстноеМеню" id="408"/>
+									<ExtendedTooltip name="ТоварыИДЗаявкиКлиентаРасширеннаяПодсказка" id="409"/>
+								</InputField>
+								<InputField name="ТоварыИдентификатор" id="181">
+									<DataPath>Объект.Товары.Идентификатор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыИдентификаторКонтекстноеМеню" id="182"/>
+									<ExtendedTooltip name="ТоварыИдентификаторРасширеннаяПодсказка" id="183"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -791,21 +817,25 @@
 									</Button>
 									<Button name="ПунктыРазгрузкиКонтекстноеМенюСтадияОбработан" id="331">
 										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
 										<CommandName>Form.Command.СтадияОбработан</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСтадияОбработанРасширеннаяПодсказка" id="332"/>
 									</Button>
 									<Button name="ПунктыРазгрузкиКонтекстноеМенюСтадияПечатьНаСклад" id="333">
 										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
 										<CommandName>Form.Command.СтадияПечатьНаСклад</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСтадияПечатьНаСкладРасширеннаяПодсказка" id="334"/>
 									</Button>
 									<Button name="ПунктыРазгрузкиКонтекстноеМенюСтадияГотовыеДокументы" id="329">
 										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
 										<CommandName>Form.Command.СтадияГотовыеДокументы</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСтадияГотовыеДокументыРасширеннаяПодсказка" id="330"/>
 									</Button>
 									<Button name="ПунктыРазгрузкиКонтекстноеМенюСтадияВыполнено" id="327">
 										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
 										<CommandName>Form.Command.СтадияВыполнено</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСтадияВыполненоРасширеннаяПодсказка" id="328"/>
 									</Button>
@@ -821,6 +851,7 @@
 									</Button>
 									<Button name="ПунктыРазгрузкиКонтекстноеМенюСоздатьАкт" id="253">
 										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
 										<CommandName>Form.Command.СоздатьАкт</CommandName>
 										<ExtendedTooltip name="ПунктыРазгрузкиКонтекстноеМенюСоздатьАктРасширеннаяПодсказка" id="254"/>
 									</Button>
@@ -1171,6 +1202,37 @@
 									<ContextMenu name="ПунктыРазгрузкиКоличествоКонтекстноеМеню" id="141"/>
 									<ExtendedTooltip name="ПунктыРазгрузкиКоличествоРасширеннаяПодсказка" id="142"/>
 								</InputField>
+								<ColumnGroup name="ПунктыРазгрузкиГруппа19" id="414">
+									<ExtendedTooltip name="ПунктыРазгрузкиГруппа19РасширеннаяПодсказка" id="415"/>
+									<ChildItems>
+										<InputField name="ПунктыРазгрузкиКачество" id="416">
+											<DataPath>Объект.ПунктыРазгрузки.Качество</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПунктыРазгрузкиКачествоКонтекстноеМеню" id="417"/>
+											<ExtendedTooltip name="ПунктыРазгрузкиКачествоРасширеннаяПодсказка" id="418"/>
+										</InputField>
+										<ColumnGroup name="ПунктыРазгрузкиГруппа20" id="425">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ПунктыРазгрузкиГруппа20РасширеннаяПодсказка" id="426"/>
+											<ChildItems>
+												<CheckBoxField name="ПунктыРазгрузкиТара" id="419">
+													<DataPath>Объект.ПунктыРазгрузки.Тара</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ПунктыРазгрузкиТараКонтекстноеМеню" id="420"/>
+													<ExtendedTooltip name="ПунктыРазгрузкиТараРасширеннаяПодсказка" id="421"/>
+												</CheckBoxField>
+												<CheckBoxField name="ПунктыРазгрузкиБирки" id="422">
+													<DataPath>Объект.ПунктыРазгрузки.Бирки</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ПунктыРазгрузкиБиркиКонтекстноеМеню" id="423"/>
+													<ExtendedTooltip name="ПунктыРазгрузкиБиркиРасширеннаяПодсказка" id="424"/>
+												</CheckBoxField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
 								<ColumnGroup name="ПунктыРазгрузкиГруппа2" id="160">
 									<ExtendedTooltip name="ПунктыРазгрузкиГруппа2РасширеннаяПодсказка" id="161"/>
 									<ChildItems>
@@ -1303,13 +1365,24 @@
 													<ContextMenu name="ПунктыРазгрузкиПеревозчикФактКонтекстноеМеню" id="363"/>
 													<ExtendedTooltip name="ПунктыРазгрузкиПеревозчикФактРасширеннаяПодсказка" id="364"/>
 												</InputField>
-												<InputField name="ПунктыРазгрузкиИдентификатор" id="381">
-													<DataPath>Объект.ПунктыРазгрузки.Идентификатор</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ПунктыРазгрузкиИдентификаторКонтекстноеМеню" id="382"/>
-													<ExtendedTooltip name="ПунктыРазгрузкиИдентификаторРасширеннаяПодсказка" id="383"/>
-												</InputField>
+												<ColumnGroup name="ПунктыРазгрузкиГруппа18" id="405">
+													<ExtendedTooltip name="ПунктыРазгрузкиГруппа18РасширеннаяПодсказка" id="406"/>
+													<ChildItems>
+														<InputField name="ПунктыРазгрузкиИДЗаявкиКлиента" id="402">
+															<DataPath>Объект.ПунктыРазгрузки.ИДЗаявкиКлиента</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ПунктыРазгрузкиИДЗаявкиКлиентаКонтекстноеМеню" id="403"/>
+															<ExtendedTooltip name="ПунктыРазгрузкиИДЗаявкиКлиентаРасширеннаяПодсказка" id="404"/>
+														</InputField>
+														<InputField name="ПунктыРазгрузкиИдентификатор" id="381">
+															<DataPath>Объект.ПунктыРазгрузки.Идентификатор</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ПунктыРазгрузкиИдентификаторКонтекстноеМеню" id="382"/>
+															<ExtendedTooltip name="ПунктыРазгрузкиИдентификаторРасширеннаяПодсказка" id="383"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
 											</ChildItems>
 										</ColumnGroup>
 									</ChildItems>
@@ -2863,6 +2936,67 @@
 			</Picture>
 			<Action>ПечатьДекларацииПоставщиков</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПечатьАктОтгрузкиПоВодителю" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать акт отгрузки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк відвантажувальний акт</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьАктОтгрузкиПоВодителю</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПечатьТТНПоВодителюБезЦен" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать ТТН доп.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк ТТН дод.</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Печать ТТНПо водителю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьТТНПоВодителюБезЦен</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗагрузитьЗаявкуКПР" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить заявку КПР</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити заявку КПР</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загрузить заявку КПР</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьЗаявкуКПР</Action>
 		</Command>
 	</Commands>
 </Form>

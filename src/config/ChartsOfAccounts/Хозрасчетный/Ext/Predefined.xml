@@ -2500,6 +2500,34 @@
 						</AccountingFlags>
 						<ExtDimensionTypes/>
 					</Item>
+					<Item id="f10c8d35-064d-4a6c-9ef5-9b3c9e43c18e">
+						<Name>РозничнаяВыручкаВКассахККМ</Name>
+						<Code>308</Code>
+						<Description>Наличные деньги в национальной валюте по операциям, проведенным с использованием РРО</Description>
+						<AccountType>Active</AccountType>
+						<OffBalance>false</OffBalance>
+						<Order>308</Order>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+						</AccountingFlags>
+						<ExtDimensionTypes/>
+					</Item>
+					<Item id="d986212d-b454-4b8e-8a33-d893b65a56d1">
+						<Name>НаличныеДеньгиПоОперациямРРОВИностраннойВалюте</Name>
+						<Code>309</Code>
+						<Description>Наличные деньги в иностранной валюте по операциям, проведенным с использованием РРО</Description>
+						<AccountType>Active</AccountType>
+						<OffBalance>false</OffBalance>
+						<Order>309</Order>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+						</AccountingFlags>
+						<ExtDimensionTypes/>
+					</Item>
 				</ChildItems>
 			</Item>
 			<Item id="7bd3ba03-96ff-48c3-8de6-dea998482ae8">
@@ -3323,7 +3351,7 @@
 					<Item id="412ee7bd-ddc2-4319-80d5-0eb84c26f258">
 						<Name>РасчетыПоСсудамЧленамКредитныхСоюзов</Name>
 						<Code>376</Code>
-						<Description>Расчеты по ссудам членам кредитных союзов</Description>
+						<Description>Расчеты по ссудам и кредитам</Description>
 						<AccountType>Active</AccountType>
 						<OffBalance>false</OffBalance>
 						<Order>376</Order>
@@ -6232,6 +6260,20 @@
 							</Item>
 						</ChildItems>
 					</Item>
+					<Item id="2fb47898-784b-4fb4-ba34-ef0c6cd846d9">
+						<Name>РасчетыПоОперациямПредоставленияПлатежныхУслуг</Name>
+						<Code>686</Code>
+						<Description>Расчеты по операциям по переводу</Description>
+						<AccountType>ActivePassive</AccountType>
+						<OffBalance>false</OffBalance>
+						<Order>686</Order>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+						</AccountingFlags>
+						<ExtDimensionTypes/>
+					</Item>
 				</ChildItems>
 			</Item>
 			<Item id="8ed171d1-20a0-40ae-9a38-e056e3c85f75">
@@ -6434,6 +6476,68 @@
 						</AccountingFlags>
 						<ExtDimensionTypes>
 							<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.СтатьиДоходов">
+								<Turnover>true</Turnover>
+								<AccountingFlags>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+								</AccountingFlags>
+							</ExtDimensionType>
+						</ExtDimensionTypes>
+					</Item>
+					<Item id="bb0b6791-6842-4e68-9056-b443b9157faf">
+						<Name>ДоходПроцентныйОтФинансовыхУслуг</Name>
+						<Code>706</Code>
+						<Description>Доход процентный от финансовых услуг</Description>
+						<AccountType>Passive</AccountType>
+						<OffBalance>false</OffBalance>
+						<Order>706     </Order>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">true</Flag>
+						</AccountingFlags>
+						<ExtDimensionTypes>
+							<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.СтатьиДоходов">
+								<Turnover>true</Turnover>
+								<AccountingFlags>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+								</AccountingFlags>
+							</ExtDimensionType>
+							<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.НоменклатурныеГруппы">
+								<Turnover>true</Turnover>
+								<AccountingFlags>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+								</AccountingFlags>
+							</ExtDimensionType>
+						</ExtDimensionTypes>
+					</Item>
+					<Item id="beef2537-a4ac-4b60-84bf-9ae980f3cf05">
+						<Name>ДоходКомиссионныйОтФинансовыхПлатежныхУслуг</Name>
+						<Code>707</Code>
+						<Description>Доход комиссионный от финансовых платежных услуг</Description>
+						<AccountType>Passive</AccountType>
+						<OffBalance>false</OffBalance>
+						<Order>707</Order>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">true</Flag>
+						</AccountingFlags>
+						<ExtDimensionTypes>
+							<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.СтатьиДоходов">
+								<Turnover>true</Turnover>
+								<AccountingFlags>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+								</AccountingFlags>
+							</ExtDimensionType>
+							<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.НоменклатурныеГруппы">
 								<Turnover>true</Turnover>
 								<AccountingFlags>
 									<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>

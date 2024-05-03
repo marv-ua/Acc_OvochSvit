@@ -117,6 +117,21 @@
 					<ContextMenu name="СкладКонтекстноеМеню" id="51"/>
 					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="52"/>
 				</LabelField>
+				<LabelField name="ПунктРазгрузкиНаименованиеПолное" id="65">
+					<DataPath>Список.ПунктРазгрузки.НаименованиеПолное</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пункт разгрузки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Пункт розвантаження</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПунктРазгрузкиНаименованиеПолноеКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ПунктРазгрузкиНаименованиеПолноеРасширеннаяПодсказка" id="67"/>
+				</LabelField>
 				<LabelField name="ПунктРазгрузки" id="43">
 					<DataPath>Список.ПунктРазгрузки</DataPath>
 					<ContextMenu name="ПунктРазгрузкиКонтекстноеМеню" id="44"/>
