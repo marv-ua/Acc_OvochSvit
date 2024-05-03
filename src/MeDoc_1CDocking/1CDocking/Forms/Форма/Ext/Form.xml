@@ -3672,6 +3672,22 @@
 									<ContextMenu name="ТаблицаДокументов1ТочностьЕдиницыИзмеренияКонтекстноеМеню" id="632"/>
 									<ExtendedTooltip name="ТаблицаДокументов1ТочностьЕдиницыИзмеренияРасширеннаяПодсказка" id="633"/>
 								</InputField>
+								<InputField name="ТаблицаДокументов1ЧаркодОтчета" id="1193">
+									<DataPath>ТаблицаОтчетов.ЧаркодОтчета</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Код отчета</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Код звіту</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаДокументов1ЧаркодОтчетаКонтекстноеМеню" id="1194"/>
+									<ExtendedTooltip name="ТаблицаДокументов1ЧаркодОтчетаРасширеннаяПодсказка" id="1195"/>
+								</InputField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -6805,6 +6821,21 @@
 						<v8:DateQualifiers>
 							<v8:DateFractions>Date</v8:DateFractions>
 						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЧаркодОтчета" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Чаркод отчета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
