@@ -34,6 +34,7 @@
 		</Properties>
 		<ChildObjects>
 			<Subsystem>Маршруты</Subsystem>
+			<Subsystem>Авто</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
