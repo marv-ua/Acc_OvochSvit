@@ -363,6 +363,37 @@
 )
 }</query>
 	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Авто</dataPath>
+			<field>Авто</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаАвто</dataPath>
+			<field>ГруппаАвто</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ставка</dataPath>
+			<field>Ставка</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	а_ОпределениеГруппАвтоСрезПоследних.ГруппаАвто КАК ГруппаАвто,
+	а_ОпределениеГруппАвтоСрезПоследних.Ставка КАК Ставка,
+	а_ОпределениеГруппАвтоСрезПоследних.Авто КАК Авто
+ИЗ
+	РегистрСведений.а_ОпределениеГруппАвто.СрезПоследних({(&amp;ПериодКонец)}, ) КАК а_ОпределениеГруппАвтоСрезПоследних</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>НаборДанных1</sourceDataSet>
+		<destinationDataSet>НаборДанных2</destinationDataSet>
+		<sourceExpression>Авто</sourceExpression>
+		<destinationExpression>Авто</destinationExpression>
+	</dataSetLink>
 	<calculatedField>
 		<dataPath>Контакты</dataPath>
 		<expression>КонтактныеДанные + ", "+
@@ -417,6 +448,16 @@
 	<totalField>
 		<dataPath>КоличествоЗаявкаСОбрано</dataPath>
 		<expression>Сумма(КоличествоЗаявкаСОбрано)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Ставка</dataPath>
+		<expression>Сумма(Ставка)</expression>
+		<group>Авто</group>
+	</totalField>
+	<totalField>
+		<dataPath>Ставка</dataPath>
+		<expression>0</expression>
+		<group>ОбщийИтог</group>
 	</totalField>
 	<parameter>
 		<name>ПериодОтчета</name>

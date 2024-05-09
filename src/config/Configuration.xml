@@ -3161,6 +3161,7 @@
 			<Catalog>ЦенныеБумаги</Catalog>
 			<Catalog>ШаблоныЗаданийОчереди</Catalog>
 			<Catalog>а_Маршруты</Catalog>
+			<Catalog>а_ГруппыАвто</Catalog>
 			<Document>АвансовыйОтчет</Document>
 			<Document>АктОбОказанииПроизводственныхУслуг</Document>
 			<Document>АктСверкиВзаиморасчетов</Document>
@@ -4088,6 +4089,7 @@
 			<InformationRegister>а_ДокументыРеализацииЗаявок</InformationRegister>
 			<InformationRegister>ЭлектронныеПодписи</InformationRegister>
 			<InformationRegister>а_СвязьОбъектов</InformationRegister>
+			<InformationRegister>а_ОпределениеГруппАвто</InformationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоВзносамВФонды</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоУдержаниям</AccumulationRegister>
