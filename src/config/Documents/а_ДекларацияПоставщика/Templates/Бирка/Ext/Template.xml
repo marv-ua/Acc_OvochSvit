@@ -368,6 +368,7 @@
 	<rowsItem>
 		<index>31</index>
 		<row>
+			<formatIndex>12</formatIndex>
 			<c>
 				<c>
 					<f>11</f>
@@ -456,7 +457,7 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>12</defaultFormatIndex>
+	<defaultFormatIndex>13</defaultFormatIndex>
 	<height>40</height>
 	<vgRows>40</vgRows>
 	<namedItem xsi:type="NamedItemCells">
@@ -619,6 +620,9 @@
 		<font>0</font>
 		<horizontalAlignment>Left</horizontalAlignment>
 		<textPlacement>Wrap</textPlacement>
+	</format>
+	<format>
+		<height>0</height>
 	</format>
 	<format>
 		<width>72</width>

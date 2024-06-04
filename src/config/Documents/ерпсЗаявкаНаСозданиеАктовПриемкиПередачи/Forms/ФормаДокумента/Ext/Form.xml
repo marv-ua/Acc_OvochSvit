@@ -131,6 +131,105 @@
 						<Event name="Click">ДокументОснованиеНадписьНажатие</Event>
 					</Events>
 				</LabelField>
+				<UsualGroup name="Группа4" id="451">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплект документов</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Комплект документів</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комлпект документів для швидкого друку</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Комлпект документів для швидкого друку</v8:content>
+						</v8:item>
+					</ToolTip>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Behavior>PopUp</Behavior>
+					<CollapsedRepresentationTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коплект документів</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Коплект документів</v8:content>
+						</v8:item>
+					</CollapsedRepresentationTitle>
+					<Collapsed>true</Collapsed>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="452"/>
+					<ChildItems>
+						<Table name="КомплектДокументовДляПечати" id="453">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>КомплектДокументовДляПечати</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КомплектДокументовДляПечатиКонтекстноеМеню" id="454"/>
+							<AutoCommandBar name="КомплектДокументовДляПечатиКоманднаяПанель" id="455">
+								<ChildItems>
+									<Button name="КомплектДокументовДляПечатиОчиститьНастройки" id="472">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОчиститьНастройки</CommandName>
+										<ExtendedTooltip name="КомплектДокументовДляПечатиОчиститьНастройкиРасширеннаяПодсказка" id="473"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="КомплектДокументовДляПечатиРасширеннаяПодсказка" id="456"/>
+							<SearchStringAddition name="КомплектДокументовДляПечатиСтрокаПоиска" id="457">
+								<AdditionSource>
+									<Item>КомплектДокументовДляПечати</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КомплектДокументовДляПечатиСтрокаПоискаКонтекстноеМеню" id="458"/>
+								<ExtendedTooltip name="КомплектДокументовДляПечатиСтрокаПоискаРасширеннаяПодсказка" id="459"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КомплектДокументовДляПечатиСостояниеПросмотра" id="460">
+								<AdditionSource>
+									<Item>КомплектДокументовДляПечати</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КомплектДокументовДляПечатиСостояниеПросмотраКонтекстноеМеню" id="461"/>
+								<ExtendedTooltip name="КомплектДокументовДляПечатиСостояниеПросмотраРасширеннаяПодсказка" id="462"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КомплектДокументовДляПечатиУправлениеПоиском" id="463">
+								<AdditionSource>
+									<Item>КомплектДокументовДляПечати</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КомплектДокументовДляПечатиУправлениеПоискомКонтекстноеМеню" id="464"/>
+								<ExtendedTooltip name="КомплектДокументовДляПечатиУправлениеПоискомРасширеннаяПодсказка" id="465"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">КомплектДокументовДляПечатиПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="КомплектДокументовДляПечатиДокумент" id="469">
+									<DataPath>КомплектДокументовДляПечати.Документ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КомплектДокументовДляПечатиДокументКонтекстноеМеню" id="470"/>
+									<ExtendedTooltip name="КомплектДокументовДляПечатиДокументРасширеннаяПодсказка" id="471"/>
+								</InputField>
+								<InputField name="КомплектДокументовДляПечатиКоличество" id="466">
+									<DataPath>КомплектДокументовДляПечати.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КомплектДокументовДляПечатиКоличествоКонтекстноеМеню" id="467"/>
+									<ExtendedTooltip name="КомплектДокументовДляПечатиКоличествоРасширеннаяПодсказка" id="468"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаШапка" id="47">
@@ -319,6 +418,11 @@
 										<CommandName>Form.Command.ПечатьДекларацииПоставщиков</CommandName>
 										<ExtendedTooltip name="ИтогиПоВодителямКонтекстноеМенюПечатьДекларацииПоставщиковРасширеннаяПодсказка" id="401"/>
 									</Button>
+									<Button name="ИтогиПоВодителямКонтекстноеМенюПечатьКомплектаДокументов" id="474">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПечатьКомплектаДокументов</CommandName>
+										<ExtendedTooltip name="ИтогиПоВодителямКонтекстноеМенюПечатьКомплектаДокументовРасширеннаяПодсказка" id="475"/>
+									</Button>
 								</ChildItems>
 							</ContextMenu>
 							<AutoCommandBar name="ИтогиПоВодителямКоманднаяПанель" id="205"/>
@@ -375,41 +479,13 @@
 								</InputField>
 							</ChildItems>
 						</Table>
-						<UsualGroup name="Группа2" id="311">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Товары без остатков</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>Товари без залишків</v8:content>
-								</v8:item>
-							</Title>
-							<Behavior>Collapsible</Behavior>
-							<CollapsedRepresentationTitle>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Товары без остатков</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>Товари без залишків</v8:content>
-								</v8:item>
-							</CollapsedRepresentationTitle>
-							<Collapsed>true</Collapsed>
-							<ControlRepresentation>Picture</ControlRepresentation>
-							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="312"/>
+						<UsualGroup name="Группа3" id="449">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="450"/>
 							<ChildItems>
-								<Table name="ВыделениеНоменклатуры" id="292">
-									<Representation>List</Representation>
-									<CommandBarLocation>None</CommandBarLocation>
-									<RowSelectionMode>Row</RowSelectionMode>
-									<Header>false</Header>
-									<AutoInsertNewRow>true</AutoInsertNewRow>
-									<EnableStartDrag>true</EnableStartDrag>
-									<EnableDrag>true</EnableDrag>
-									<DataPath>Объект.ВыделениеНоменклатуры</DataPath>
+								<UsualGroup name="Группа2" id="311">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -420,53 +496,89 @@
 											<v8:content>Товари без залишків</v8:content>
 										</v8:item>
 									</Title>
-									<RowFilter xsi:nil="true"/>
-									<ContextMenu name="ВыделениеНоменклатурыКонтекстноеМеню" id="293"/>
-									<AutoCommandBar name="ВыделениеНоменклатурыКоманднаяПанель" id="294"/>
-									<ExtendedTooltip name="ВыделениеНоменклатурыРасширеннаяПодсказка" id="295"/>
-									<SearchStringAddition name="ВыделениеНоменклатурыСтрокаПоиска" id="296">
-										<AdditionSource>
-											<Item>ВыделениеНоменклатуры</Item>
-											<Type>SearchStringRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="ВыделениеНоменклатурыСтрокаПоискаКонтекстноеМеню" id="297"/>
-										<ExtendedTooltip name="ВыделениеНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="298"/>
-									</SearchStringAddition>
-									<ViewStatusAddition name="ВыделениеНоменклатурыСостояниеПросмотра" id="299">
-										<AdditionSource>
-											<Item>ВыделениеНоменклатуры</Item>
-											<Type>ViewStatusRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="ВыделениеНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="300"/>
-										<ExtendedTooltip name="ВыделениеНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="301"/>
-									</ViewStatusAddition>
-									<SearchControlAddition name="ВыделениеНоменклатурыУправлениеПоиском" id="302">
-										<AdditionSource>
-											<Item>ВыделениеНоменклатуры</Item>
-											<Type>SearchControl</Type>
-										</AdditionSource>
-										<ContextMenu name="ВыделениеНоменклатурыУправлениеПоискомКонтекстноеМеню" id="303"/>
-										<ExtendedTooltip name="ВыделениеНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="304"/>
-									</SearchControlAddition>
-									<Events>
-										<Event name="OnChange">ВыделениеНоменклатурыНоменклатураПриИзменении</Event>
-									</Events>
+									<Behavior>Collapsible</Behavior>
+									<CollapsedRepresentationTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Товары без остатков</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Товари без залишків</v8:content>
+										</v8:item>
+									</CollapsedRepresentationTitle>
+									<Collapsed>true</Collapsed>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="312"/>
 									<ChildItems>
-										<LabelField name="ВыделениеНоменклатурыНомерСтроки" id="305">
-											<DataPath>Объект.ВыделениеНоменклатуры.LineNumber</DataPath>
-											<Visible>false</Visible>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВыделениеНоменклатурыНомерСтрокиКонтекстноеМеню" id="306"/>
-											<ExtendedTooltip name="ВыделениеНоменклатурыНомерСтрокиРасширеннаяПодсказка" id="307"/>
-										</LabelField>
-										<InputField name="ВыделениеНоменклатурыНоменклатура" id="308">
-											<DataPath>Объект.ВыделениеНоменклатуры.Номенклатура</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ВыделениеНоменклатурыНоменклатураКонтекстноеМеню" id="309"/>
-											<ExtendedTooltip name="ВыделениеНоменклатурыНоменклатураРасширеннаяПодсказка" id="310"/>
-										</InputField>
+										<Table name="ВыделениеНоменклатуры" id="292">
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<RowSelectionMode>Row</RowSelectionMode>
+											<Header>false</Header>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.ВыделениеНоменклатуры</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Товары без остатков</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Товари без залишків</v8:content>
+												</v8:item>
+											</Title>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ВыделениеНоменклатурыКонтекстноеМеню" id="293"/>
+											<AutoCommandBar name="ВыделениеНоменклатурыКоманднаяПанель" id="294"/>
+											<ExtendedTooltip name="ВыделениеНоменклатурыРасширеннаяПодсказка" id="295"/>
+											<SearchStringAddition name="ВыделениеНоменклатурыСтрокаПоиска" id="296">
+												<AdditionSource>
+													<Item>ВыделениеНоменклатуры</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ВыделениеНоменклатурыСтрокаПоискаКонтекстноеМеню" id="297"/>
+												<ExtendedTooltip name="ВыделениеНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="298"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ВыделениеНоменклатурыСостояниеПросмотра" id="299">
+												<AdditionSource>
+													<Item>ВыделениеНоменклатуры</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ВыделениеНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="300"/>
+												<ExtendedTooltip name="ВыделениеНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="301"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ВыделениеНоменклатурыУправлениеПоиском" id="302">
+												<AdditionSource>
+													<Item>ВыделениеНоменклатуры</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ВыделениеНоменклатурыУправлениеПоискомКонтекстноеМеню" id="303"/>
+												<ExtendedTooltip name="ВыделениеНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="304"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnChange">ВыделениеНоменклатурыНоменклатураПриИзменении</Event>
+											</Events>
+											<ChildItems>
+												<LabelField name="ВыделениеНоменклатурыНомерСтроки" id="305">
+													<DataPath>Объект.ВыделениеНоменклатуры.LineNumber</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВыделениеНоменклатурыНомерСтрокиКонтекстноеМеню" id="306"/>
+													<ExtendedTooltip name="ВыделениеНоменклатурыНомерСтрокиРасширеннаяПодсказка" id="307"/>
+												</LabelField>
+												<InputField name="ВыделениеНоменклатурыНоменклатура" id="308">
+													<DataPath>Объект.ВыделениеНоменклатуры.Номенклатура</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ВыделениеНоменклатурыНоменклатураКонтекстноеМеню" id="309"/>
+													<ExtendedTooltip name="ВыделениеНоменклатурыНоменклатураРасширеннаяПодсказка" id="310"/>
+												</InputField>
+											</ChildItems>
+										</Table>
 									</ChildItems>
-								</Table>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -592,6 +704,11 @@
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.ЗагрузитьЗаявкуКПР</CommandName>
 												<ExtendedTooltip name="ТоварыЗагрузитьЗаявкуКПРРасширеннаяПодсказка" id="428"/>
+											</Button>
+											<Button name="ТоварыЗагрузитьЗаявкуХарьковская" id="476">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗагрузитьЗаявкуХарьковская</CommandName>
+												<ExtendedTooltip name="ТоварыЗагрузитьЗаявкуХарьковскаяРасширеннаяПодсказка" id="477"/>
 											</Button>
 										</ChildItems>
 									</Popup>
@@ -913,6 +1030,36 @@
 											</Button>
 										</ChildItems>
 									</ButtonGroup>
+									<Popup name="ПунктыРазгрузкиГруппа22" id="434">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Загрузить сканы</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Завантажити скани</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ПунктыРазгрузкиГруппа22РасширеннаяПодсказка" id="435"/>
+										<ChildItems>
+											<Button name="ПунктыРазгрузкиЗагрузитьСканыРеализации" id="436">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗагрузитьСканыРеализации</CommandName>
+												<ExtendedTooltip name="ПунктыРазгрузкиЗагрузитьСканыРеализацииРасширеннаяПодсказка" id="437"/>
+											</Button>
+											<Button name="ПунктыРазгрузкиЗагрузитьСканыТТН" id="438">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗагрузитьСканыТТН</CommandName>
+												<ExtendedTooltip name="ПунктыРазгрузкиЗагрузитьСканыТТНРасширеннаяПодсказка" id="439"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+									<Button name="ПунктыРазгрузкиОткрытьПрисоединенныеФайлы" id="443">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОткрытьПрисоединенныеФайлы</CommandName>
+										<ExtendedTooltip name="ПунктыРазгрузкиОткрытьПрисоединенныеФайлыРасширеннаяПодсказка" id="444"/>
+									</Button>
 									<Button name="ПунктыРазгрузкиОбновитьПунктыРазгрузки" id="187">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ОбновитьПунктыРазгрузки</CommandName>
@@ -1038,6 +1185,7 @@
 											<DataPath>Объект.ПунктыРазгрузки.Статус</DataPath>
 											<Visible>false</Visible>
 											<EditMode>EnterOnInput</EditMode>
+											<ShowInFooter>false</ShowInFooter>
 											<ContextMenu name="ПунктыРазгрузкиСтатусКонтекстноеМеню" id="336"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиСтатусРасширеннаяПодсказка" id="337"/>
 										</InputField>
@@ -1103,6 +1251,7 @@
 										<InputField name="ПунктыРазгрузкиОрганизация" id="143">
 											<DataPath>Объект.ПунктыРазгрузки.Организация</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<ShowInFooter>false</ShowInFooter>
 											<ContextMenu name="ПунктыРазгрузкиОрганизацияКонтекстноеМеню" id="144"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиОрганизацияРасширеннаяПодсказка" id="145"/>
 										</InputField>
@@ -1113,12 +1262,14 @@
 												<InputField name="ПунктыРазгрузкиСклад" id="170">
 													<DataPath>Объект.ПунктыРазгрузки.Склад</DataPath>
 													<EditMode>EnterOnInput</EditMode>
+													<ShowInFooter>false</ShowInFooter>
 													<ContextMenu name="ПунктыРазгрузкиСкладКонтекстноеМеню" id="171"/>
 													<ExtendedTooltip name="ПунктыРазгрузкиСкладРасширеннаяПодсказка" id="172"/>
 												</InputField>
 												<InputField name="ПунктыРазгрузкиРегион" id="287">
 													<DataPath>Объект.ПунктыРазгрузки.Регион</DataPath>
 													<EditMode>EnterOnInput</EditMode>
+													<ShowInFooter>false</ShowInFooter>
 													<ContextMenu name="ПунктыРазгрузкиРегионКонтекстноеМеню" id="288"/>
 													<ExtendedTooltip name="ПунктыРазгрузкиРегионРасширеннаяПодсказка" id="289"/>
 												</InputField>
@@ -1132,12 +1283,14 @@
 										<InputField name="ПунктыРазгрузкиКонтрагент" id="95">
 											<DataPath>Объект.ПунктыРазгрузки.Контрагент</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<ShowInFooter>false</ShowInFooter>
 											<ContextMenu name="ПунктыРазгрузкиКонтрагентКонтекстноеМеню" id="96"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиКонтрагентРасширеннаяПодсказка" id="97"/>
 										</InputField>
 										<InputField name="ПунктыРазгрузкиДоговор" id="122">
 											<DataPath>Объект.ПунктыРазгрузки.Договор</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<ShowInFooter>false</ShowInFooter>
 											<ChoiceParameterLinks>
 												<xr:Link>
 													<xr:Name>Отбор.Владелец</xr:Name>
@@ -1161,6 +1314,7 @@
 										<InputField name="ПунктыРазгрузкиПунктРазгрузки" id="92">
 											<DataPath>Объект.ПунктыРазгрузки.ПунктРазгрузки</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<ShowInFooter>false</ShowInFooter>
 											<HorizontalStretch>false</HorizontalStretch>
 											<ContextMenu name="ПунктыРазгрузкиПунктРазгрузкиКонтекстноеМеню" id="93"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиПунктРазгрузкиРасширеннаяПодсказка" id="94"/>
@@ -1175,6 +1329,7 @@
 												<InputField name="ПунктыРазгрузкиДатаОтгрузки" id="128">
 													<DataPath>Объект.ПунктыРазгрузки.ДатаОтгрузки</DataPath>
 													<EditMode>EnterOnInput</EditMode>
+													<ShowInFooter>false</ShowInFooter>
 													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="ПунктыРазгрузкиДатаОтгрузкиКонтекстноеМеню" id="129"/>
 													<ExtendedTooltip name="ПунктыРазгрузкиДатаОтгрузкиРасширеннаяПодсказка" id="130"/>
@@ -1186,6 +1341,7 @@
 													<DataPath>Объект.ПунктыРазгрузки.ДатаВывозаФакт</DataPath>
 													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
+													<ShowInFooter>false</ShowInFooter>
 													<HorizontalStretch>false</HorizontalStretch>
 													<BackColor>style:ИзмененноеЗначениеРеквизитаФон</BackColor>
 													<ContextMenu name="ПунктыРазгрузкиДатаВывозаФактКонтекстноеМеню" id="341"/>
@@ -1208,6 +1364,7 @@
 										<InputField name="ПунктыРазгрузкиКачество" id="416">
 											<DataPath>Объект.ПунктыРазгрузки.Качество</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<ShowInFooter>false</ShowInFooter>
 											<ContextMenu name="ПунктыРазгрузкиКачествоКонтекстноеМеню" id="417"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиКачествоРасширеннаяПодсказка" id="418"/>
 										</InputField>
@@ -1218,6 +1375,7 @@
 												<CheckBoxField name="ПунктыРазгрузкиТара" id="419">
 													<DataPath>Объект.ПунктыРазгрузки.Тара</DataPath>
 													<EditMode>EnterOnInput</EditMode>
+													<ShowInFooter>false</ShowInFooter>
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="ПунктыРазгрузкиТараКонтекстноеМеню" id="420"/>
 													<ExtendedTooltip name="ПунктыРазгрузкиТараРасширеннаяПодсказка" id="421"/>
@@ -1225,6 +1383,7 @@
 												<CheckBoxField name="ПунктыРазгрузкиБирки" id="422">
 													<DataPath>Объект.ПунктыРазгрузки.Бирки</DataPath>
 													<EditMode>EnterOnInput</EditMode>
+													<ShowInFooter>false</ShowInFooter>
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="ПунктыРазгрузкиБиркиКонтекстноеМеню" id="423"/>
 													<ExtendedTooltip name="ПунктыРазгрузкиБиркиРасширеннаяПодсказка" id="424"/>
@@ -1239,12 +1398,14 @@
 										<InputField name="ПунктыРазгрузкиКонтактноеЛицо" id="164">
 											<DataPath>Объект.ПунктыРазгрузки.КонтактноеЛицо</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<ShowInFooter>false</ShowInFooter>
 											<ContextMenu name="ПунктыРазгрузкиКонтактноеЛицоКонтекстноеМеню" id="165"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиКонтактноеЛицоРасширеннаяПодсказка" id="166"/>
 										</InputField>
 										<InputField name="ПунктыРазгрузкиКонтактныеДанные" id="167">
 											<DataPath>Объект.ПунктыРазгрузки.КонтактныеДанные</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<ShowInFooter>false</ShowInFooter>
 											<ContextMenu name="ПунктыРазгрузкиКонтактныеДанныеКонтекстноеМеню" id="168"/>
 											<ExtendedTooltip name="ПунктыРазгрузкиКонтактныеДанныеРасширеннаяПодсказка" id="169"/>
 										</InputField>
@@ -1257,16 +1418,62 @@
 											<DataPath>Объект.ПунктыРазгрузки.кЗаказНаСборку</DataPath>
 											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
+											<ShowInFooter>false</ShowInFooter>
 											<ContextMenu name="ПунктыРазгрузкикЗаказНаСборкуКонтекстноеМеню" id="388"/>
 											<ExtendedTooltip name="ПунктыРазгрузкикЗаказНаСборкуРасширеннаяПодсказка" id="389"/>
 										</InputField>
-										<InputField name="ПунктыРазгрузкиРеализация" id="397">
-											<DataPath>Объект.ПунктыРазгрузки.Реализация</DataPath>
-											<ReadOnly>true</ReadOnly>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ПунктыРазгрузкиРеализацияКонтекстноеМеню" id="398"/>
-											<ExtendedTooltip name="ПунктыРазгрузкиРеализацияРасширеннаяПодсказка" id="399"/>
-										</InputField>
+										<ColumnGroup name="ПунктыРазгрузкиГруппа24" id="447">
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="ПунктыРазгрузкиГруппа24РасширеннаяПодсказка" id="448"/>
+											<ChildItems>
+												<ColumnGroup name="ПунктыРазгрузкиГруппа21" id="429">
+													<Group>InCell</Group>
+													<ExtendedTooltip name="ПунктыРазгрузкиГруппа21РасширеннаяПодсказка" id="430"/>
+													<ChildItems>
+														<PictureField name="ПунктыРазгрузкиСканТТН" id="431">
+															<DataPath>Объект.ПунктыРазгрузки.СканТТН</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<TitleLocation>None</TitleLocation>
+															<EditMode>EnterOnInput</EditMode>
+															<ShowInHeader>false</ShowInHeader>
+															<ShowInFooter>false</ShowInFooter>
+															<MaxWidth>1</MaxWidth>
+															<Hyperlink>true</Hyperlink>
+															<ValuesPicture>
+																<xr:Ref>CommonPicture.ПиктограммаФайла_TXT</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</ValuesPicture>
+															<ContextMenu name="ПунктыРазгрузкиСканТТНКонтекстноеМеню" id="432"/>
+															<ExtendedTooltip name="ПунктыРазгрузкиСканТТНРасширеннаяПодсказка" id="433"/>
+														</PictureField>
+														<PictureField name="ПунктыРазгрузкиСкан" id="440">
+															<DataPath>Объект.ПунктыРазгрузки.Скан</DataPath>
+															<Visible>false</Visible>
+															<ReadOnly>true</ReadOnly>
+															<TitleLocation>None</TitleLocation>
+															<EditMode>EnterOnInput</EditMode>
+															<ShowInFooter>false</ShowInFooter>
+															<MaxWidth>1</MaxWidth>
+															<Hyperlink>true</Hyperlink>
+															<ValuesPicture>
+																<xr:Ref>CommonPicture.ЗаказКлиента</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</ValuesPicture>
+															<ContextMenu name="ПунктыРазгрузкиСканКонтекстноеМеню" id="441"/>
+															<ExtendedTooltip name="ПунктыРазгрузкиСканРасширеннаяПодсказка" id="442"/>
+														</PictureField>
+														<InputField name="ПунктыРазгрузкиРеализация" id="397">
+															<DataPath>Объект.ПунктыРазгрузки.Реализация</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<EditMode>EnterOnInput</EditMode>
+															<ShowInFooter>false</ShowInFooter>
+															<ContextMenu name="ПунктыРазгрузкиРеализацияКонтекстноеМеню" id="398"/>
+															<ExtendedTooltip name="ПунктыРазгрузкиРеализацияРасширеннаяПодсказка" id="399"/>
+														</InputField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
 									</ChildItems>
 								</ColumnGroup>
 								<ColumnGroup name="ПунктыРазгрузкиГруппа3" id="162">
@@ -1283,6 +1490,7 @@
 														<InputField name="ПунктыРазгрузкиВодитель" id="146">
 															<DataPath>Объект.ПунктыРазгрузки.Водитель</DataPath>
 															<EditMode>EnterOnInput</EditMode>
+															<ShowInFooter>false</ShowInFooter>
 															<ContextMenu name="ПунктыРазгрузкиВодительКонтекстноеМеню" id="147"/>
 															<ExtendedTooltip name="ПунктыРазгрузкиВодительРасширеннаяПодсказка" id="148"/>
 															<Events>
@@ -1293,6 +1501,7 @@
 															<DataPath>Объект.ПунктыРазгрузки.ВодительФакт</DataPath>
 															<ReadOnly>true</ReadOnly>
 															<EditMode>EnterOnInput</EditMode>
+															<ShowInFooter>false</ShowInFooter>
 															<BackColor>style:ИзмененноеЗначениеРеквизитаФон</BackColor>
 															<ContextMenu name="ПунктыРазгрузкиВодительФактКонтекстноеМеню" id="368"/>
 															<ExtendedTooltip name="ПунктыРазгрузкиВодительФактРасширеннаяПодсказка" id="369"/>
@@ -1310,6 +1519,7 @@
 																<InputField name="ПунктыРазгрузкиАвто" id="149">
 																	<DataPath>Объект.ПунктыРазгрузки.Авто</DataPath>
 																	<EditMode>EnterOnInput</EditMode>
+																	<ShowInFooter>false</ShowInFooter>
 																	<ContextMenu name="ПунктыРазгрузкиАвтоКонтекстноеМеню" id="150"/>
 																	<ExtendedTooltip name="ПунктыРазгрузкиАвтоРасширеннаяПодсказка" id="151"/>
 																</InputField>
@@ -1317,6 +1527,7 @@
 																	<DataPath>Объект.ПунктыРазгрузки.АвтоФакт</DataPath>
 																	<ReadOnly>true</ReadOnly>
 																	<EditMode>EnterOnInput</EditMode>
+																	<ShowInFooter>false</ShowInFooter>
 																	<BackColor>style:ИзмененноеЗначениеРеквизитаФон</BackColor>
 																	<ContextMenu name="ПунктыРазгрузкиАвтоФактКонтекстноеМеню" id="355"/>
 																	<ExtendedTooltip name="ПунктыРазгрузкиАвтоФактРасширеннаяПодсказка" id="356"/>
@@ -1330,6 +1541,7 @@
 																<InputField name="ПунктыРазгрузкиПрицеп" id="152">
 																	<DataPath>Объект.ПунктыРазгрузки.Прицеп</DataPath>
 																	<EditMode>EnterOnInput</EditMode>
+																	<ShowInFooter>false</ShowInFooter>
 																	<ContextMenu name="ПунктыРазгрузкиПрицепКонтекстноеМеню" id="153"/>
 																	<ExtendedTooltip name="ПунктыРазгрузкиПрицепРасширеннаяПодсказка" id="154"/>
 																</InputField>
@@ -1337,6 +1549,7 @@
 																	<DataPath>Объект.ПунктыРазгрузки.ПрицепФакт</DataPath>
 																	<ReadOnly>true</ReadOnly>
 																	<EditMode>EnterOnInput</EditMode>
+																	<ShowInFooter>false</ShowInFooter>
 																	<BackColor>style:ИзмененноеЗначениеРеквизитаФон</BackColor>
 																	<ContextMenu name="ПунктыРазгрузкиПрицепФактКонтекстноеМеню" id="358"/>
 																	<ExtendedTooltip name="ПунктыРазгрузкиПрицепФактРасширеннаяПодсказка" id="359"/>
@@ -1354,6 +1567,7 @@
 												<InputField name="ПунктыРазгрузкиПеревозчик" id="155">
 													<DataPath>Объект.ПунктыРазгрузки.Перевозчик</DataPath>
 													<EditMode>EnterOnInput</EditMode>
+													<ShowInFooter>false</ShowInFooter>
 													<ContextMenu name="ПунктыРазгрузкиПеревозчикКонтекстноеМеню" id="156"/>
 													<ExtendedTooltip name="ПунктыРазгрузкиПеревозчикРасширеннаяПодсказка" id="157"/>
 												</InputField>
@@ -1361,6 +1575,7 @@
 													<DataPath>Объект.ПунктыРазгрузки.ПеревозчикФакт</DataPath>
 													<ReadOnly>true</ReadOnly>
 													<EditMode>EnterOnInput</EditMode>
+													<ShowInFooter>false</ShowInFooter>
 													<BackColor>style:ИзмененноеЗначениеРеквизитаФон</BackColor>
 													<ContextMenu name="ПунктыРазгрузкиПеревозчикФактКонтекстноеМеню" id="363"/>
 													<ExtendedTooltip name="ПунктыРазгрузкиПеревозчикФактРасширеннаяПодсказка" id="364"/>
@@ -1371,6 +1586,7 @@
 														<InputField name="ПунктыРазгрузкиИДЗаявкиКлиента" id="402">
 															<DataPath>Объект.ПунктыРазгрузки.ИДЗаявкиКлиента</DataPath>
 															<EditMode>EnterOnInput</EditMode>
+															<ShowInFooter>false</ShowInFooter>
 															<ContextMenu name="ПунктыРазгрузкиИДЗаявкиКлиентаКонтекстноеМеню" id="403"/>
 															<ExtendedTooltip name="ПунктыРазгрузкиИДЗаявкиКлиентаРасширеннаяПодсказка" id="404"/>
 														</InputField>
@@ -1378,6 +1594,7 @@
 															<DataPath>Объект.ПунктыРазгрузки.Идентификатор</DataPath>
 															<ReadOnly>true</ReadOnly>
 															<EditMode>EnterOnInput</EditMode>
+															<ShowInFooter>false</ShowInFooter>
 															<ContextMenu name="ПунктыРазгрузкиИдентификаторКонтекстноеМеню" id="382"/>
 															<ExtendedTooltip name="ПунктыРазгрузкиИдентификаторРасширеннаяПодсказка" id="383"/>
 														</InputField>
@@ -1608,6 +1825,46 @@
 							<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
 						</Type>
 					</Column>
+					<Column name="СканТТН" id="11">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Скан ТТН</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Скан ТТН</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>1</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Скан" id="12">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Скан ТТН</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>uk</v8:lang>
+								<v8:content>Скан</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>1</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
 				</AdditionalColumns>
 				<AdditionalColumns table="Объект.Товары">
 					<Column name="ЗаказаноВЭтотДень" id="1">
@@ -1814,6 +2071,58 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="КомплектДокументовДляПечати" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплект документов для печати</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Комплект документів для друку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Количество" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Кількість</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Документ" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
@@ -2997,6 +3306,131 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьЗаявкуКПР</Action>
+		</Command>
+		<Command name="ЗагрузитьСканыРеализации" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить скан реализации</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити скан Реалізації</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загрузить сканы реализации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСканыРеализации</Action>
+		</Command>
+		<Command name="ЗагрузитьСканыТТН" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить скан ТТН</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити скан ТТН</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загрузить сканы реализации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСканыТТН</Action>
+		</Command>
+		<Command name="ОткрытьПрисоединенныеФайлы" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Открыть присоединенные файлы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Открыть присоединенные файлы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьПрисоединенныеФайлы</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ОчиститьНастройки" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить настройки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистити налаштування</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Очистить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОчиститьНастройки</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПечатьКомплектаДокументов" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Друк комплекта документів</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Друк комплекта документів</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Печать комплекта документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.PrintImmediately</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьКомплектаДокументов</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗагрузитьЗаявкуХарьковская" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завантажити заявку ХАРКІВСЬКА</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити заявку ХАРКІВСЬКА</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загрузить заявку харьковская</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьЗаявкуХарьковская</Action>
 		</Command>
 	</Commands>
 </Form>
