@@ -127,6 +127,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Поставщики.Attribute.Адрес</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ИспользоватьЭлектронныеПодписи</name>
 		<right>
 			<name>Read</name>
@@ -152,6 +163,17 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.Attribute.РегистрационныйНомерМощностей</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -197,6 +219,28 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары.Attribute.Товар</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары.Attribute.СрокХранения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.АдресПубликацииИнформационнойБазыВИнтернете</name>
 		<right>
 			<name>Read</name>
@@ -229,6 +273,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары.Attribute.ДополнительныеАртикулы</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.АдресПрограммногоИнтерфейсаСлужбыПоддержки</name>
 		<right>
 			<name>Read</name>
@@ -240,6 +295,17 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ТоварыДоп.Attribute.Идентификатор</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -289,6 +355,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары.Attribute.УсловияХраненияВлажность</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.СписокРасширенийФайловOpenDocumentОбластиДанных</name>
 		<right>
 			<name>Read</name>
@@ -300,6 +377,17 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары.Attribute.ДатаУпаковки</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -317,6 +405,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.Attribute.Организация</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.РежимИспользованияИнформационнойБазы</name>
 		<right>
 			<name>Read</name>
@@ -328,6 +427,17 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Поставщики.Attribute.ВидПоставщика</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -387,6 +497,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.а_СвязьОбъектов.Resource.Объект</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ДатаПоследнегоСтартаКлиентскогоСеанса</name>
 		<right>
 			<name>Read</name>
@@ -412,6 +533,17 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары.Attribute.Тара</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -471,6 +603,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ДополнительныеСведения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.а_Маршруты</name>
 		<right>
 			<name>Read</name>
@@ -485,6 +628,79 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.StandardAttribute.Posted</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.StandardAttribute.Ref</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.StandardAttribute.Date</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.StandardAttribute.Number</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ДопАртикулыТоваров</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.СписокРасширенийТекстовыхФайлов</name>
 		<right>
 			<name>Read</name>
@@ -493,6 +709,13 @@
 	</object>
 	<object>
 		<name>Constant.ДатаТекущейВерсии</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Контрагенты</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -517,6 +740,17 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ТоварыДоп.Attribute.Калорийность</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -623,6 +857,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары.Attribute.УпотребитьДо</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ИзвлекатьТекстыФайловНаСервере</name>
 		<right>
 			<name>Read</name>
@@ -705,6 +950,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Поставщики.Attribute.Контрагент</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.МаксимальныйРазмерФайла</name>
 		<right>
 			<name>Read</name>
@@ -723,6 +979,28 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.Attribute.ВидТранспорту</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.Attribute.ОтветственноеЛицо</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -754,10 +1032,54 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ТоварыДоп.Attribute.ПищеваяЦенность</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ПриоритетОбновленияВОбластяхДанных</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.Attribute.НомерВходящий</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Поставщики</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.Attribute.БригадаУпаковщиков</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -796,6 +1118,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ДопАртикулыТоваров.Attribute.ДополнительныеАртикулы</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.а_Маршруты</name>
 		<right>
 			<name>Read</name>
@@ -828,10 +1161,32 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ТоварыДоп.Attribute.Урожай</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.УдалитьВыполнятьЗамерыПроизводительности</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ТоварыДоп.Attribute.УДАЛИТЬУпотребитьДо</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -877,6 +1232,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ТоварыДоп.Attribute.МассаНетто</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ДатаНачалаПереоценкиВалютыПоПравиламПриказа627</name>
 		<right>
 			<name>Read</name>
@@ -895,6 +1261,50 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_СвязьОбъектов.StandardAttribute.Active</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_СвязьОбъектов.StandardAttribute.LineNumber</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_СвязьОбъектов.StandardAttribute.Recorder</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.а_СвязьОбъектов.StandardAttribute.Period</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -940,6 +1350,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.а_СвязьОбъектов.Dimension.ИД</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.КаталогСообщенийОбменаДаннымиДляLinux</name>
 		<right>
 			<name>Read</name>
@@ -972,6 +1393,17 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары.Attribute.УсловияХраненияТемпература</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1045,6 +1477,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.а_СвязьОбъектов.Dimension.ТипОбъекта</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ИспользоватьМеханизмОнлайнСервисовРО</name>
 		<right>
 			<name>Read</name>
@@ -1087,6 +1530,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары.Attribute.Количество</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ИспользоватьГруппыПользователей</name>
 		<right>
 			<name>Read</name>
@@ -1122,6 +1576,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары.Attribute.СтранаПроизводитель</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ИспользоватьНесколькоОрганизаций</name>
 		<right>
 			<name>Read</name>
@@ -1147,6 +1612,17 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары.Attribute.Идентификатор</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1189,10 +1665,32 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.Attribute.Комментарий</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ВедетсяРозничнаяТорговля</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары.Attribute.ДСТУ</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1239,6 +1737,17 @@
 	</object>
 	<object>
 		<name>InformationRegister.а_ДатаВывозаФакт.Dimension.Объект</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.Attribute.Ответственный</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1364,6 +1873,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.а_ОпределениеГруппАвто</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ИспользоватьРучнуюКорректировкуДвижений</name>
 		<right>
 			<name>Read</name>
@@ -1396,10 +1916,32 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.Attribute.НомерПартии</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ВыполнятьСинхронизациюV77</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.Товары</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1469,6 +2011,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ДопАртикулыТоваров.Attribute.Идентификатор</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.АдресСервисаПодключенияЭлектроннойПодписиВМоделиСервиса</name>
 		<right>
 			<name>Read</name>
@@ -1529,6 +2082,28 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ТоварыДоп</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ДополнительныеСведения.Attribute.Сведения</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.АдресПубликацииИнформационнойБазыВЛокальнойСети</name>
 		<right>
 			<name>Read</name>
@@ -1554,6 +2129,17 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.Attribute.ДатаОтправки</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1599,10 +2185,32 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.а_ДекларацияПоставщика.TabularSection.ТоварыДоп.Attribute.УДАЛИТЬДатаФасовки</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ВедетсяПроизводственнаяДеятельность</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.а_ДекларацияПоставщика.Attribute.ДатаВходящая</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>

@@ -376,6 +376,7 @@
 								</InputField>
 								<InputField name="ТоварыАртикул" id="194">
 									<DataPath>Объект.Товары.ДополнительныеАртикулы</DataPath>
+									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыАртикулКонтекстноеМеню" id="195"/>
 									<ExtendedTooltip name="ТоварыАртикулРасширеннаяПодсказка" id="196"/>

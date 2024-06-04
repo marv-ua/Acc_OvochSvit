@@ -1511,87 +1511,164 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаДополнительноВерхРасширеннаяПодсказка" id="530"/>
 							<ChildItems>
-								<UsualGroup name="ГруппаДоставка" id="246">
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа доставка</v8:content>
-										</v8:item>
-										<v8:item>
-											<v8:lang>uk</v8:lang>
-											<v8:content>Група доставка</v8:content>
-										</v8:item>
-									</ToolTip>
+								<UsualGroup name="Группа4" id="657">
 									<Group>Vertical</Group>
-									<Representation>None</Representation>
-									<United>false</United>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаДоставкаРасширеннаяПодсказка" id="531"/>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="658"/>
 									<ChildItems>
-										<InputField name="Грузополучатель" id="17">
-											<DataPath>Объект.Грузополучатель</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ГрузополучательКонтекстноеМеню" id="18"/>
-											<ExtendedTooltip name="ГрузополучательРасширеннаяПодсказка" id="532"/>
-											<Events>
-												<Event name="OnChange">ГрузополучательПриИзменении</Event>
-											</Events>
-										</InputField>
-										<InputField name="АдресДоставки" id="7">
-											<DataPath>Объект.АдресДоставки</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<Width>30</Width>
-											<ChoiceButton>true</ChoiceButton>
-											<ChoiceListButton>true</ChoiceListButton>
-											<ContextMenu name="АдресДоставкиКонтекстноеМеню" id="8"/>
-											<ExtendedTooltip name="АдресДоставкиРасширеннаяПодсказка" id="533"/>
-											<Events>
-												<Event name="StartChoice">АдресДоставкиНачалоВыбора</Event>
-											</Events>
-										</InputField>
-										<InputField name="БанковскийСчетОрганизации" id="9">
-											<DataPath>Объект.БанковскийСчетОрганизации</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Банковский счет</v8:content>
-												</v8:item>
-												<v8:item>
-													<v8:lang>uk</v8:lang>
-													<v8:content>Банківський рахунок</v8:content>
-												</v8:item>
-											</Title>
-											<TitleLocation>Left</TitleLocation>
-											<TitleHeight>2</TitleHeight>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="БанковскийСчетОрганизацииКонтекстноеМеню" id="10"/>
-											<ExtendedTooltip name="БанковскийСчетОрганизацииРасширеннаяПодсказка" id="534"/>
-										</InputField>
-										<InputField name="Авто" id="594">
-											<DataPath>Объект.Авто</DataPath>
-											<ContextMenu name="АвтоКонтекстноеМеню" id="595"/>
-											<ExtendedTooltip name="АвтоРасширеннаяПодсказка" id="596"/>
-										</InputField>
-										<InputField name="Водитель" id="603">
-											<DataPath>Объект.Водитель</DataPath>
-											<ContextMenu name="ВодительКонтекстноеМеню" id="604"/>
-											<ExtendedTooltip name="ВодительРасширеннаяПодсказка" id="605"/>
-										</InputField>
-										<InputField name="Прицеп" id="606">
-											<DataPath>Объект.Прицеп</DataPath>
-											<ContextMenu name="ПрицепКонтекстноеМеню" id="607"/>
-											<ExtendedTooltip name="ПрицепРасширеннаяПодсказка" id="608"/>
-										</InputField>
-										<InputField name="ерпсПунктПогрузки" id="636">
-											<DataPath>Объект.ерпсПунктПогрузки</DataPath>
-											<ContextMenu name="ерпсПунктПогрузкиКонтекстноеМеню" id="637"/>
-											<ExtendedTooltip name="ерпсПунктПогрузкиРасширеннаяПодсказка" id="638"/>
-										</InputField>
-										<InputField name="ПунктРазгрузки" id="597">
-											<DataPath>Объект.ПунктРазгрузки</DataPath>
-											<ContextMenu name="ПунктРазгрузкиКонтекстноеМеню" id="598"/>
-											<ExtendedTooltip name="ПунктРазгрузкиРасширеннаяПодсказка" id="599"/>
-										</InputField>
+										<UsualGroup name="Группа3" id="655">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="656"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаДоставка" id="246">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа доставка</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Група доставка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<United>false</United>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаДоставкаРасширеннаяПодсказка" id="531"/>
+													<ChildItems>
+														<InputField name="Грузополучатель" id="17">
+															<DataPath>Объект.Грузополучатель</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="ГрузополучательКонтекстноеМеню" id="18"/>
+															<ExtendedTooltip name="ГрузополучательРасширеннаяПодсказка" id="532"/>
+															<Events>
+																<Event name="OnChange">ГрузополучательПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="АдресДоставки" id="7">
+															<DataPath>Объект.АдресДоставки</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<Width>30</Width>
+															<ChoiceButton>true</ChoiceButton>
+															<ChoiceListButton>true</ChoiceListButton>
+															<ContextMenu name="АдресДоставкиКонтекстноеМеню" id="8"/>
+															<ExtendedTooltip name="АдресДоставкиРасширеннаяПодсказка" id="533"/>
+															<Events>
+																<Event name="StartChoice">АдресДоставкиНачалоВыбора</Event>
+															</Events>
+														</InputField>
+														<InputField name="БанковскийСчетОрганизации" id="9">
+															<DataPath>Объект.БанковскийСчетОрганизации</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Банковский счет</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>uk</v8:lang>
+																	<v8:content>Банківський рахунок</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Left</TitleLocation>
+															<TitleHeight>2</TitleHeight>
+															<EditMode>EnterOnInput</EditMode>
+															<ContextMenu name="БанковскийСчетОрганизацииКонтекстноеМеню" id="10"/>
+															<ExtendedTooltip name="БанковскийСчетОрганизацииРасширеннаяПодсказка" id="534"/>
+														</InputField>
+														<InputField name="Авто" id="594">
+															<DataPath>Объект.Авто</DataPath>
+															<ContextMenu name="АвтоКонтекстноеМеню" id="595"/>
+															<ExtendedTooltip name="АвтоРасширеннаяПодсказка" id="596"/>
+														</InputField>
+														<InputField name="Водитель" id="603">
+															<DataPath>Объект.Водитель</DataPath>
+															<ContextMenu name="ВодительКонтекстноеМеню" id="604"/>
+															<ExtendedTooltip name="ВодительРасширеннаяПодсказка" id="605"/>
+														</InputField>
+														<InputField name="Прицеп" id="606">
+															<DataPath>Объект.Прицеп</DataPath>
+															<ContextMenu name="ПрицепКонтекстноеМеню" id="607"/>
+															<ExtendedTooltip name="ПрицепРасширеннаяПодсказка" id="608"/>
+														</InputField>
+														<InputField name="ерпсПунктПогрузки" id="636">
+															<DataPath>Объект.ерпсПунктПогрузки</DataPath>
+															<ContextMenu name="ерпсПунктПогрузкиКонтекстноеМеню" id="637"/>
+															<ExtendedTooltip name="ерпсПунктПогрузкиРасширеннаяПодсказка" id="638"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаОтветственныеЛица" id="247">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа ответственные лица</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Група відповідальні особи</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<United>false</United>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаОтветственныеЛицаРасширеннаяПодсказка" id="535"/>
+													<ChildItems>
+														<InputField name="МестоСоставленияДокумента" id="354">
+															<DataPath>Объект.МестоСоставленияДокумента</DataPath>
+															<ContextMenu name="МестоСоставленияДокументаКонтекстноеМеню" id="355"/>
+															<ExtendedTooltip name="МестоСоставленияДокументаРасширеннаяПодсказка" id="536"/>
+														</InputField>
+														<InputField name="ПредставительОрганизации" id="356">
+															<DataPath>Объект.ПредставительОрганизации</DataPath>
+															<ContextMenu name="ПредставительОрганизацииКонтекстноеМеню" id="357"/>
+															<ExtendedTooltip name="ПредставительОрганизацииРасширеннаяПодсказка" id="537"/>
+														</InputField>
+														<InputField name="Получил" id="358">
+															<DataPath>Объект.Получил</DataPath>
+															<ChoiceButton>true</ChoiceButton>
+															<ContextMenu name="ПолучилКонтекстноеМеню" id="359"/>
+															<ExtendedTooltip name="ПолучилРасширеннаяПодсказка" id="538"/>
+															<Events>
+																<Event name="StartChoice">ПолучилНачалоВыбора</Event>
+															</Events>
+														</InputField>
+														<InputField name="Перевозчик" id="622">
+															<DataPath>Объект.ЕРПСПеревозчик</DataPath>
+															<ContextMenu name="ПеревозчикКонтекстноеМеню" id="623"/>
+															<ExtendedTooltip name="ПеревозчикРасширеннаяПодсказка" id="624"/>
+														</InputField>
+														<InputField name="ерпсВес" id="633">
+															<DataPath>Объект.ерпсВес</DataPath>
+															<ContextMenu name="ерпсВесКонтекстноеМеню" id="634"/>
+															<ExtendedTooltip name="ерпсВесРасширеннаяПодсказка" id="635"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа2" id="650">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="651"/>
+											<ChildItems>
+												<InputField name="ПунктРазгрузки" id="597">
+													<DataPath>Объект.ПунктРазгрузки</DataPath>
+													<ContextMenu name="ПунктРазгрузкиКонтекстноеМеню" id="598"/>
+													<ExtendedTooltip name="ПунктРазгрузкиРасширеннаяПодсказка" id="599"/>
+												</InputField>
+												<LabelField name="ПунктРазгрузкиНаименованиеПолное" id="652">
+													<DataPath>Объект.ПунктРазгрузки.НаименованиеПолное</DataPath>
+													<TitleTextColor>#3366FF</TitleTextColor>
+													<TitleLocation>None</TitleLocation>
+													<ContextMenu name="ПунктРазгрузкиНаименованиеПолноеКонтекстноеМеню" id="653"/>
+													<ExtendedTooltip name="ПунктРазгрузкиНаименованиеПолноеРасширеннаяПодсказка" id="654"/>
+												</LabelField>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="Группа1" id="645">
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
@@ -1609,54 +1686,6 @@
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="ГруппаОтветственныеЛица" id="247">
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа ответственные лица</v8:content>
-										</v8:item>
-										<v8:item>
-											<v8:lang>uk</v8:lang>
-											<v8:content>Група відповідальні особи</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Group>Vertical</Group>
-									<Representation>None</Representation>
-									<United>false</United>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаОтветственныеЛицаРасширеннаяПодсказка" id="535"/>
-									<ChildItems>
-										<InputField name="МестоСоставленияДокумента" id="354">
-											<DataPath>Объект.МестоСоставленияДокумента</DataPath>
-											<ContextMenu name="МестоСоставленияДокументаКонтекстноеМеню" id="355"/>
-											<ExtendedTooltip name="МестоСоставленияДокументаРасширеннаяПодсказка" id="536"/>
-										</InputField>
-										<InputField name="ПредставительОрганизации" id="356">
-											<DataPath>Объект.ПредставительОрганизации</DataPath>
-											<ContextMenu name="ПредставительОрганизацииКонтекстноеМеню" id="357"/>
-											<ExtendedTooltip name="ПредставительОрганизацииРасширеннаяПодсказка" id="537"/>
-										</InputField>
-										<InputField name="Получил" id="358">
-											<DataPath>Объект.Получил</DataPath>
-											<ChoiceButton>true</ChoiceButton>
-											<ContextMenu name="ПолучилКонтекстноеМеню" id="359"/>
-											<ExtendedTooltip name="ПолучилРасширеннаяПодсказка" id="538"/>
-											<Events>
-												<Event name="StartChoice">ПолучилНачалоВыбора</Event>
-											</Events>
-										</InputField>
-										<InputField name="Перевозчик" id="622">
-											<DataPath>Объект.ЕРПСПеревозчик</DataPath>
-											<ContextMenu name="ПеревозчикКонтекстноеМеню" id="623"/>
-											<ExtendedTooltip name="ПеревозчикРасширеннаяПодсказка" id="624"/>
-										</InputField>
-										<InputField name="ерпсВес" id="633">
-											<DataPath>Объект.ерпсВес</DataPath>
-											<ContextMenu name="ерпсВесКонтекстноеМеню" id="634"/>
-											<ExtendedTooltip name="ерпсВесРасширеннаяПодсказка" id="635"/>
-										</InputField>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>

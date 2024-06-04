@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
 		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -56,139 +58,237 @@
 					</ToolTip>
 					<ExtendedTooltip name="Шаг1РасширеннаяПодсказка" id="4"/>
 					<ChildItems>
-						<UsualGroup name="Группа1" id="5">
-							<Group>Horizontal</Group>
+						<UsualGroup name="Группа5" id="213">
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="6"/>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="214"/>
 							<ChildItems>
-								<InputField name="ДатаАкта" id="7">
-									<DataPath>Объект.Дата</DataPath>
-									<Visible>false</Visible>
+								<UsualGroup name="Группа4" id="211">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="212"/>
+									<ChildItems>
+										<UsualGroup name="Группа1" id="5">
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="6"/>
+											<ChildItems>
+												<InputField name="ДатаАкта" id="7">
+													<DataPath>Объект.Дата</DataPath>
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дата акта</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Дата Акту</v8:content>
+														</v8:item>
+													</Title>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ДФ=dd.MM.yyyy</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>ДФ=dd.MM.yyyy</v8:content>
+														</v8:item>
+													</EditFormat>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ContextMenu name="ДатаАктаКонтекстноеМеню" id="8"/>
+													<ExtendedTooltip name="ДатаАктаРасширеннаяПодсказка" id="9"/>
+												</InputField>
+												<InputField name="Контрагент" id="10">
+													<DataPath>Объект.Контрагент</DataPath>
+													<Visible>false</Visible>
+													<Width>21</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<AutoMarkIncomplete>false</AutoMarkIncomplete>
+													<ContextMenu name="КонтрагентКонтекстноеМеню" id="11"/>
+													<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="12"/>
+												</InputField>
+												<Button name="ВыбратьМестоДоставки" id="13">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ВыбратьМестоДоставки</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Обрати пункт разгрузки</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Обрати пункти розвантаження</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ВыбратьМестоДоставкиРасширеннаяПодсказка" id="14"/>
+												</Button>
+												<Button name="ОткрытьНастройки" id="187">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ОткрытьНастройки</CommandName>
+													<ExtendedTooltip name="ОткрытьНастройкиРасширеннаяПодсказка" id="188"/>
+												</Button>
+												<Button name="ЗагрузитьСФайла" id="189">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ЗагрузитьСФайла</CommandName>
+													<ExtendedTooltip name="ЗагрузитьСФайлаРасширеннаяПодсказка" id="190"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Шаг2Информация" id="15">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаг2 информация</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Шаг2 інформація</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Шаг2 информация</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Шаг2 інформація</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Шаг2ИнформацияРасширеннаяПодсказка" id="16"/>
+											<ChildItems>
+												<PictureDecoration name="Шаг2Картинка1" id="17">
+													<Width>6</Width>
+													<Height>2</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Шаг2 картинка1</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Крок2 картинка1</v8:content>
+														</v8:item>
+													</Title>
+													<Picture>
+														<xr:Ref>CommonPicture.Информация32</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Шаг2Картинка1КонтекстноеМеню" id="18"/>
+													<ExtendedTooltip name="Шаг2Картинка1ExtendedTooltip" id="19"/>
+												</PictureDecoration>
+												<LabelDecoration name="Шаг2Надпись1" id="20">
+													<Width>56</Width>
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Необходимо скопировать колонки в таблицу из внешнего файла (Excel, Word и пр.) через буфер обмена. Обязательно должна быть заполнена одна из колонок — "Дополнительный артикул" или "Номенклатура".</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Необхідно скопіювати колонки у таблицю із зовнішнього файлу (Excel, Word та ін) через буфер обміну. Обов'язково повинна бути заповнена одна з колонок — "Додатковий артикул" або "Номенклатура".</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<ContextMenu name="Шаг2Надпись1КонтекстноеМеню" id="21"/>
+													<ExtendedTooltip name="Шаг2Надпись1ExtendedTooltip" id="22"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа3" id="191">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Дата акта</v8:content>
+											<v8:content>Номери колонок для завантаження з файлу</v8:content>
 										</v8:item>
 										<v8:item>
 											<v8:lang>uk</v8:lang>
-											<v8:content>Дата Акту</v8:content>
+											<v8:content>Номери колонок для завантаження з файлу</v8:content>
 										</v8:item>
 									</Title>
-									<EditFormat>
+									<Behavior>Collapsible</Behavior>
+									<CollapsedRepresentationTitle>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+											<v8:content>Номери колонок для завантаження з файлу</v8:content>
 										</v8:item>
 										<v8:item>
 											<v8:lang>uk</v8:lang>
-											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+											<v8:content>Номери колонок для завантаження з файлу</v8:content>
 										</v8:item>
-									</EditFormat>
-									<AutoMarkIncomplete>true</AutoMarkIncomplete>
-									<ContextMenu name="ДатаАктаКонтекстноеМеню" id="8"/>
-									<ExtendedTooltip name="ДатаАктаРасширеннаяПодсказка" id="9"/>
-								</InputField>
-								<InputField name="Контрагент" id="10">
-									<DataPath>Объект.Контрагент</DataPath>
-									<Visible>false</Visible>
-									<Width>21</Width>
-									<HorizontalStretch>false</HorizontalStretch>
-									<AutoMarkIncomplete>false</AutoMarkIncomplete>
-									<ContextMenu name="КонтрагентКонтекстноеМеню" id="11"/>
-									<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="12"/>
-								</InputField>
-								<Button name="ВыбратьМестоДоставки" id="13">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ВыбратьМестоДоставки</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Обрати пункт разгрузки</v8:content>
-										</v8:item>
-										<v8:item>
-											<v8:lang>uk</v8:lang>
-											<v8:content>Обрати пункти розвантаження</v8:content>
-										</v8:item>
-									</Title>
-									<ExtendedTooltip name="ВыбратьМестоДоставкиРасширеннаяПодсказка" id="14"/>
-								</Button>
-								<Button name="ОткрытьНастройки" id="187">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ОткрытьНастройки</CommandName>
-									<ExtendedTooltip name="ОткрытьНастройкиРасширеннаяПодсказка" id="188"/>
-								</Button>
-								<Button name="ЗагрузитьСФайла" id="189">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ЗагрузитьСФайла</CommandName>
-									<ExtendedTooltip name="ЗагрузитьСФайлаРасширеннаяПодсказка" id="190"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="Шаг2Информация" id="15">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Шаг2 информация</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>Шаг2 інформація</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Шаг2 информация</v8:content>
-								</v8:item>
-								<v8:item>
-									<v8:lang>uk</v8:lang>
-									<v8:content>Шаг2 інформація</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>Horizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Шаг2ИнформацияРасширеннаяПодсказка" id="16"/>
-							<ChildItems>
-								<PictureDecoration name="Шаг2Картинка1" id="17">
-									<Width>6</Width>
-									<Height>2</Height>
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Шаг2 картинка1</v8:content>
-										</v8:item>
-										<v8:item>
-											<v8:lang>uk</v8:lang>
-											<v8:content>Крок2 картинка1</v8:content>
-										</v8:item>
-									</Title>
-									<Picture>
-										<xr:Ref>CommonPicture.Информация32</xr:Ref>
-										<xr:LoadTransparent>false</xr:LoadTransparent>
-									</Picture>
-									<FileDragMode>AsFile</FileDragMode>
-									<ContextMenu name="Шаг2Картинка1КонтекстноеМеню" id="18"/>
-									<ExtendedTooltip name="Шаг2Картинка1ExtendedTooltip" id="19"/>
-								</PictureDecoration>
-								<LabelDecoration name="Шаг2Надпись1" id="20">
-									<Width>56</Width>
-									<TextColor>style:ПоясняющийТекст</TextColor>
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Необходимо скопировать колонки в таблицу из внешнего файла (Excel, Word и пр.) через буфер обмена. Обязательно должна быть заполнена одна из колонок — "Дополнительный артикул" или "Номенклатура".</v8:content>
-										</v8:item>
-										<v8:item>
-											<v8:lang>uk</v8:lang>
-											<v8:content>Необхідно скопіювати колонки у таблицю із зовнішнього файлу (Excel, Word та ін) через буфер обміну. Обов'язково повинна бути заповнена одна з колонок — "Додатковий артикул" або "Номенклатура".</v8:content>
-										</v8:item>
-									</Title>
-									<VerticalAlign>Center</VerticalAlign>
-									<ContextMenu name="Шаг2Надпись1КонтекстноеМеню" id="21"/>
-									<ExtendedTooltip name="Шаг2Надпись1ExtendedTooltip" id="22"/>
-								</LabelDecoration>
+									</CollapsedRepresentationTitle>
+									<Collapsed>true</Collapsed>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="192"/>
+									<ChildItems>
+										<UsualGroup name="Группа6" id="215">
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="216"/>
+											<ChildItems>
+												<InputField name="Колонка_1" id="196">
+													<DataPath>Колонка_ИДЗаявкиКлиента</DataPath>
+													<ContextMenu name="Колонка_1КонтекстноеМеню" id="197"/>
+													<ExtendedTooltip name="Колонка_1РасширеннаяПодсказка" id="198"/>
+												</InputField>
+												<InputField name="Колонка_2" id="199">
+													<DataPath>Колонка_ДатаОтгрузки</DataPath>
+													<ContextMenu name="Колонка_2КонтекстноеМеню" id="200"/>
+													<ExtendedTooltip name="Колонка_2РасширеннаяПодсказка" id="201"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа7" id="217">
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="218"/>
+											<ChildItems>
+												<InputField name="Колонка_4" id="205">
+													<DataPath>Колонка_ПунктРазгрузкиПоиск</DataPath>
+													<ContextMenu name="Колонка_4КонтекстноеМеню" id="206"/>
+													<ExtendedTooltip name="Колонка_4РасширеннаяПодсказка" id="207"/>
+												</InputField>
+												<InputField name="Колонка_5" id="208">
+													<DataPath>Колонка_ЗагруженныйДополнительныеАртикулы</DataPath>
+													<ContextMenu name="Колонка_5КонтекстноеМеню" id="209"/>
+													<ExtendedTooltip name="Колонка_5РасширеннаяПодсказка" id="210"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа8" id="219">
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="220"/>
+											<ChildItems>
+												<InputField name="Колонка_3" id="202">
+													<DataPath>Колонка_ЗагруженнаяНоменклатура</DataPath>
+													<ContextMenu name="Колонка_3КонтекстноеМеню" id="203"/>
+													<ExtendedTooltip name="Колонка_3РасширеннаяПодсказка" id="204"/>
+												</InputField>
+												<InputField name="Колонка_" id="193">
+													<DataPath>Колонка_ЗагруженноеКоличество</DataPath>
+													<ContextMenu name="Колонка_КонтекстноеМеню" id="194"/>
+													<ExtendedTooltip name="Колонка_РасширеннаяПодсказка" id="195"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="Шаг2ТабличныйДокумент" id="23">
@@ -1635,6 +1735,144 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="Колонка_ЗагруженноеКоличество" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кількість</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Кількість</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Колонка_ЗагруженноеКоличество</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Колонка_ИДЗаявкиКлиента" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ІД замовлення</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>ІД замовлення</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Колонка_ИДЗаявкиКлиента</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Колонка_ДатаОтгрузки" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата відвантаж.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дата відвантаж.</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Колонка_ДатаОтгрузки</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Колонка_ЗагруженнаяНоменклатура" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Колонка_ЗагруженнаяНоменклатура</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Колонка_ПунктРазгрузкиПоиск" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пункт розвантаж.</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Пункт розвантаж.</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Колонка_ПунктРазгрузкиПоиск</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Колонка_ЗагруженныйДополнительныеАртикулы" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Артикул</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Артикул</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>Колонка_ЗагруженныйДополнительныеАртикулы</Field>
+			</Save>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
