@@ -1231,6 +1231,7 @@
 			<Role>а_УправлениеМаршрутами</Role>
 			<Role>Кладовщик</Role>
 			<Role>а_ЧтениеИзменениеЗаказНаСборку</Role>
+			<Role>а_ЗагрузкаСБота</Role>
 			<CommonTemplate>ИнструкцияКакВыполнитьУстановкуОбновленияВручную</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие</CommonTemplate>
 			<CommonTemplate>ИнформационныеСсылки_Общие_uk</CommonTemplate>
@@ -2030,6 +2031,7 @@
 			<CommonModule>а_ПрограмнаяРаботаСФормами</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЭлектроннаяПодписьСлужебныйПовтИсп</CommonModule>
+			<CommonModule>а_ОбменСБотомСервер</CommonModule>
 			<CommonAttribute>ОбластьДанныхВспомогательныеДанные</CommonAttribute>
 			<CommonAttribute>ОбластьДанныхОсновныеДанные</CommonAttribute>
 			<ExchangePlan>АвтономнаяРабота</ExchangePlan>
@@ -2321,6 +2323,7 @@
 			<ScheduledJob>ЧтениеНовостейСлужбыПоддержки</ScheduledJob>
 			<ScheduledJob>ЭкспортОценкиПроизводительности</ScheduledJob>
 			<ScheduledJob>ЗагрузкаКурсовВалют</ScheduledJob>
+			<ScheduledJob>а_ЗагрузкаСБота</ScheduledJob>
 			<SettingsStorage>ХранилищеВариантовОтчетов</SettingsStorage>
 			<FunctionalOption>АктуальнаяДатаОбновленияПовторноИспользуемыхЗначенийМРО</FunctionalOption>
 			<FunctionalOption>ВариантыВерсионированияОбъектов</FunctionalOption>
@@ -2630,6 +2633,7 @@
 			<CommonCommand>ФормированиеПлатежныхДокументовПоНалогам</CommonCommand>
 			<CommonCommand>ШахматнаяВедомость</CommonCommand>
 			<CommonCommand>ЭкспрессПроверкаВеденияУчета</CommonCommand>
+			<CommonCommand>а_ОбработкаЗаявок</CommonCommand>
 			<CommandGroup>Выгрузка</CommandGroup>
 			<CommandGroup>Документы</CommandGroup>
 			<CommandGroup>Информация</CommandGroup>
@@ -4090,6 +4094,7 @@
 			<InformationRegister>ЭлектронныеПодписи</InformationRegister>
 			<InformationRegister>а_СвязьОбъектов</InformationRegister>
 			<InformationRegister>а_ОпределениеГруппАвто</InformationRegister>
+			<InformationRegister>а_ЗагруженныеДанныеСБота</InformationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоВзносамВФонды</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоУдержаниям</AccumulationRegister>

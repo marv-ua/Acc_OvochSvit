@@ -30,6 +30,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.а_ДекларацияПоставщика</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсАктПриемкиПередачиТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.а_ОбработкаЗаявок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.а_ЗагруженныеДанныеСБота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.а_ЗагрузкаСБота</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
