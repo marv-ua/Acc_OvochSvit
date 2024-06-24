@@ -443,6 +443,11 @@
 								<LocationInCommandBar>InCommandBar</LocationInCommandBar>
 								<ExtendedTooltip name="ПунктыРазгрузкиСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="111"/>
 							</Button>
+							<Button name="ПунктыРазгрузкиСортировкаГрупповая" id="171">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СортировкаГрупповая</CommandName>
+								<ExtendedTooltip name="ПунктыРазгрузкиСортировкаГрупповаяРасширеннаяПодсказка" id="172"/>
+							</Button>
 						</ChildItems>
 					</ButtonGroup>
 					<ButtonGroup name="ПунктыРазгрузкиГруппаПоиск" id="116">
@@ -1123,6 +1128,25 @@
 			<Action>ОбработанПоВодителю</Action>
 			<Representation>TextPicture</Representation>
 			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="СортировкаГрупповая" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сортировка групповая</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Сортировка групповая</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СортировкаКомпоновки</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СортировкаГрупповая1</Action>
 		</Command>
 	</Commands>
 </Form>
