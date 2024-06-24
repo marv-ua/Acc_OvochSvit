@@ -296,6 +296,7 @@
 		ПО ЗаявкаТовары.Ссылка = а_СтатусыЗаявок.Объект
 			И ЗаявкаТовары.Идентификатор = а_СтатусыЗаявок.Идентификатор
 			И (а_СтатусыЗаявок.ТипСтатуса = ЗНАЧЕНИЕ(Перечисление.а_ТипыСтатусов.СтатусВывоза))
+			И а_СтатусыЗаявок.СтатусОбработан
 		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи.ПунктыРазгрузки КАК ЗаявкаПунктыРазгрузки
 		ПО ЗаявкаТовары.Ссылка = ЗаявкаПунктыРазгрузки.Ссылка
 			И ЗаявкаТовары.ПунктРазгрузки = ЗаявкаПунктыРазгрузки.ПунктРазгрузки
@@ -568,6 +569,7 @@
 						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
 						<v8:date>0001-01-01T00:00:00</v8:date>
 					</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
@@ -577,6 +579,14 @@
 						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
 						<v8:date>0001-01-01T00:00:00</v8:date>
 					</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Количество</dcsset:left>
+					<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 				</dcsset:item>
 				<dcsset:viewMode>Normal</dcsset:viewMode>
 				<dcsset:userSettingID>a67665b8-8f33-4a1c-a557-1acbb4655692</dcsset:userSettingID>
