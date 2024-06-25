@@ -33,6 +33,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.а_ОбработкаЗаявок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.а_ЗагруженныеДанныеСБота</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.а_ЗагрузкаСБота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополнительныеАртикулы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
