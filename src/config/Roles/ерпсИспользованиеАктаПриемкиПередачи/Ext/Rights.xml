@@ -394,6 +394,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.РеализацияТоваровУслуг</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.а_ДекларацияПоставщика</name>
 		<right>
 			<name>Read</name>
