@@ -1388,6 +1388,23 @@
 													<ContextMenu name="ПунктыРазгрузкиБиркиКонтекстноеМеню" id="423"/>
 													<ExtendedTooltip name="ПунктыРазгрузкиБиркиРасширеннаяПодсказка" id="424"/>
 												</CheckBoxField>
+												<CheckBoxField name="ПунктыРазгрузкиОригиналыСертификатов" id="478">
+													<DataPath>Объект.ПунктыРазгрузки.ОригиналыСертификатов</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ориг. сертиф.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Ориг. сертиф.</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ПунктыРазгрузкиОригиналыСертификатовКонтекстноеМеню" id="479"/>
+													<ExtendedTooltip name="ПунктыРазгрузкиОригиналыСертификатовРасширеннаяПодсказка" id="480"/>
+												</CheckBoxField>
 											</ChildItems>
 										</ColumnGroup>
 									</ChildItems>

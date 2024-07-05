@@ -356,6 +356,18 @@
 							<ContextMenu name="БиркиКонтекстноеМеню" id="81"/>
 							<ExtendedTooltip name="БиркиРасширеннаяПодсказка" id="82"/>
 						</CheckBoxField>
+						<CheckBoxField name="НужныОригиналыСертификатов" id="83">
+							<DataPath>Объект.НужныОригиналыСертификатов</DataPath>
+							<CheckBoxType>Tumbler</CheckBoxType>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>БЛ=Ні; БИ=Так</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="НужныОригиналыСертификатовКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="НужныОригиналыСертификатовРасширеннаяПодсказка" id="85"/>
+						</CheckBoxField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>

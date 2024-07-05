@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>IdOrder</dataPath>
+			<field>IdOrder</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПутьКФайлу</dataPath>
+			<field>ПутьКФайлу</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>CreationDate</dataPath>
+			<field>CreationDate</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтрокиФайла</dataPath>
+			<field>НомерСтрокиФайла</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>TitleOrder</dataPath>
+			<field>TitleOrder</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ResponsibleName</dataPath>
+			<field>ResponsibleName</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ResponsiblePhone</dataPath>
+			<field>ResponsiblePhone</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>UserLastName</dataPath>
+			<field>UserLastName</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>UserName</dataPath>
+			<field>UserName</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>UserPhoneNumber</dataPath>
+			<field>UserPhoneNumber</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>StageName</dataPath>
+			<field>StageName</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Tags</dataPath>
+			<field>Tags</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>GoodsEdits</dataPath>
+			<field>GoodsEdits</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Photo</dataPath>
+			<field>Photo</field>
+			<presentationExpression>Photo</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>NeedDelivery</dataPath>
+			<field>NeedDelivery</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>InvoiceNumber</dataPath>
+			<field>InvoiceNumber</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаписаноВДокумент</dataPath>
+			<field>ЗаписаноВДокумент</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	а_РазобранныеДанныеСБота.ПутьКФайлу КАК ПутьКФайлу,
+	а_РазобранныеДанныеСБота.НомерСтрокиФайла КАК НомерСтрокиФайла,
+	а_РазобранныеДанныеСБота.IdOrder КАК IdOrder,
+	а_РазобранныеДанныеСБота.CreationDate КАК CreationDate,
+	а_РазобранныеДанныеСБота.TitleOrder КАК TitleOrder,
+	а_РазобранныеДанныеСБота.ResponsibleName КАК ResponsibleName,
+	а_РазобранныеДанныеСБота.ResponsiblePhone КАК ResponsiblePhone,
+	а_РазобранныеДанныеСБота.UserName КАК UserName,
+	а_РазобранныеДанныеСБота.UserLastName КАК UserLastName,
+	а_РазобранныеДанныеСБота.UserPhoneNumber КАК UserPhoneNumber,
+	а_РазобранныеДанныеСБота.StageName КАК StageName,
+	а_РазобранныеДанныеСБота.Tags КАК Tags,
+	а_РазобранныеДанныеСБота.GoodsEdits КАК GoodsEdits,
+	а_РазобранныеДанныеСБота.Photo КАК Photo,
+	а_РазобранныеДанныеСБота.NeedDelivery КАК NeedDelivery,
+	а_РазобранныеДанныеСБота.InvoiceNumber КАК InvoiceNumber,
+	а_РазобранныеДанныеСБота.ЗаписаноВДокумент КАК ЗаписаноВДокумент
+ИЗ
+	РегистрСведений.а_РазобранныеДанныеСБота КАК а_РазобранныеДанныеСБота
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.а_ЗагруженныеДанныеСБота КАК а_ЗагруженныеДанныеСБота
+		ПО а_РазобранныеДанныеСБота.ПутьКФайлу = а_ЗагруженныеДанныеСБота.ПутьКФайлу
+			И а_РазобранныеДанныеСБота.НомерСтрокиФайла = а_ЗагруженныеДанныеСБота.НомерСтрокиФайла
+			И а_ЗагруженныеДанныеСБота.ДатаЗагрузки МЕЖДУ &amp;Дата1 И КонецПериода(&amp;Дата2, ДЕНЬ)</query>
+	</dataSet>
+	<parameter>
+		<name>Дата1</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Дата1</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>Дата2</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Дата2</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>ПериодОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>uk</v8:lang>
+				<v8:content>Період</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Photo</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">PhotoExt</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Photo</dcsat:name>
+			<dcsat:expression>Photo</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>PhotoExt</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>Photo</dcsat:field>
+			</dcsat:fieldExpression>
+		</parameter>
+	</template>
+	<groupTemplate>
+		<groupField>Photo</groupField>
+		<templateType>Header</templateType>
+		<template>Макет1</template>
+	</groupTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основний</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПутьКФайлу</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерСтрокиФайла</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗаписаноВДокумент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>IdOrder</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>CreationDate</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>TitleOrder</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ResponsibleName</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ResponsiblePhone</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>UserName</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>UserLastName</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>UserPhoneNumber</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>StageName</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Tags</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>GoodsEdits</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Photo</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>NeedDelivery</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>InvoiceNumber</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>7d355b62-29d2-462e-9d31-91a2fe3554bb</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Photo</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:ГиперссылкаЦвет</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

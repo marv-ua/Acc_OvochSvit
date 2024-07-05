@@ -3668,6 +3668,7 @@
 			<Report>ерпсСравнениеАтковПриемкиПередачиТоваров</Report>
 			<Report>БазовыйОтчет</Report>
 			<Report>ОтчетПоЗаякам</Report>
+			<Report>а_ОтчетПоДаннымБота</Report>
 			<DataProcessor>АвтоматическоеИзвлечениеТекстов</DataProcessor>
 			<DataProcessor>АктивныеПользователи</DataProcessor>
 			<DataProcessor>БлокировкаРаботыПользователей</DataProcessor>
@@ -4096,6 +4097,7 @@
 			<InformationRegister>а_СвязьОбъектов</InformationRegister>
 			<InformationRegister>а_ОпределениеГруппАвто</InformationRegister>
 			<InformationRegister>а_ЗагруженныеДанныеСБота</InformationRegister>
+			<InformationRegister>а_РазобранныеДанныеСБота</InformationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоВзносамВФонды</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыПоУдержаниям</AccumulationRegister>

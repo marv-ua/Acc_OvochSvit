@@ -22,6 +22,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Авто</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.а_ГруппыАвто</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.а_ОпределениеГруппАвто</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Прицепы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

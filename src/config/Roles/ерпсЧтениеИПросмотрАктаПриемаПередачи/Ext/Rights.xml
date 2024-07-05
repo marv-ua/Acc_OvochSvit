@@ -217,6 +217,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.а_ЗагруженныеДанныеСБота</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.а_Регионы</name>
 		<right>
 			<name>Read</name>
@@ -318,6 +329,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.а_РазобранныеДанныеСБота</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ерпсСравнениеДвухФайловЕксель</name>
 		<right>
 			<name>Use</name>
@@ -407,6 +429,17 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.а_ОтчетПоДаннымБота</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

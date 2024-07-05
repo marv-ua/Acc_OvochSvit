@@ -34,11 +34,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.а_ЗагруженныеДанныеСБота</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.а_ЗагрузкаСБота</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополнительныеАртикулы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.а_ОтчетПоДаннымБота</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>Маршруты</Subsystem>
 			<Subsystem>Авто</Subsystem>
+			<Subsystem>ОбменСБотом</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

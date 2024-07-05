@@ -175,19 +175,59 @@
 					<ChildItems>
 						<InputField name="Комментарий" id="18">
 							<DataPath>Объект.Комментарий</DataPath>
+							<Visible>false</Visible>
 							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
 							<Font ref="style:LargeTextFont" kind="StyleItem"/>
 							<ContextMenu name="КомментарийКонтекстноеМеню" id="19"/>
 							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="20"/>
 						</InputField>
+						<InputField name="ПунктРазгрузкиПримечание" id="129">
+							<DataPath>Объект.ПунктРазгрузки.Примечание</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Примітка пункта розвантаження</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+							<TitleLocation>Top</TitleLocation>
+							<Width>20</Width>
+							<Font ref="style:LargeTextFont" kind="StyleItem"/>
+							<ContextMenu name="ПунктРазгрузкиПримечаниеКонтекстноеМеню" id="130"/>
+							<ExtendedTooltip name="ПунктРазгрузкиПримечаниеРасширеннаяПодсказка" id="131"/>
+						</InputField>
 						<InputField name="Примечание" id="82">
 							<DataPath>Объект.Примечание</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Примітка заявка</v8:content>
+								</v8:item>
+							</Title>
 							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+							<TitleLocation>Top</TitleLocation>
 							<Font ref="style:LargeTextFont" kind="StyleItem"/>
 							<ContextMenu name="ПримечаниеКонтекстноеМеню" id="83"/>
 							<ExtendedTooltip name="ПримечаниеРасширеннаяПодсказка" id="84"/>
 						</InputField>
+						<CheckBoxField name="ОзнакомленСПримечаниями" id="132">
+							<DataPath>Объект.ОзнакомленСПримечаниями</DataPath>
+							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
+							<CheckBoxType>Tumbler</CheckBoxType>
+							<Font ref="style:LargeTextFont" kind="StyleItem"/>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>БЛ=Ні; БИ=Так</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ОзнакомленСПримечаниямиКонтекстноеМеню" id="133"/>
+							<ExtendedTooltip name="ОзнакомленСПримечаниямиРасширеннаяПодсказка" id="134"/>
+							<Events>
+								<Event name="OnChange">ОзнакомленСПримечаниямиПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
 					</ChildItems>
 				</UsualGroup>
 				<SpreadSheetDocumentField name="Маршрут" id="85">
