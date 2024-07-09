@@ -11,6 +11,26 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="InformationRegister.а_СвязьОбъектов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.а_ДокументыРеализацииЗаявок.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.а_ОпределениеГруппАвто.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.а_СтатусыЗаявок.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="CommonCommand.а_ОбработкаЗаявок">
 			<Visibility>
 				<xr:Common>true</xr:Common>
@@ -26,6 +46,22 @@
 			<CommandGroup>NavigationPanelImportant</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
+		<Command name="InformationRegister.а_СвязьОбъектов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.а_ДокументыРеализацииЗаявок.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.а_ОпределениеГруппАвто.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.а_СтатусыЗаявок.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
 		<Command name="CommonCommand.а_ОбработкаЗаявок">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 			<Placement>Auto</Placement>
@@ -38,6 +74,18 @@
 		<Command name="Document.а_ЗаказНаСборку.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelImportant</CommandGroup>
 		</Command>
+		<Command name="InformationRegister.а_СвязьОбъектов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.а_ДокументыРеализацииЗаявок.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.а_ОпределениеГруппАвто.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.а_СтатусыЗаявок.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
 		<Command name="CommonCommand.а_ОбработкаЗаявок">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
@@ -45,9 +93,11 @@
 	<SubsystemsOrder>
 		<Subsystem>Subsystem.а_Заявки.Subsystem.Маршруты</Subsystem>
 		<Subsystem>Subsystem.а_Заявки.Subsystem.Авто</Subsystem>
+		<Subsystem>Subsystem.а_Заявки.Subsystem.ОбменСБотом</Subsystem>
 	</SubsystemsOrder>
 	<GroupsOrder>
 		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelSeeAlso</Group>
 		<Group>ActionsPanelTools</Group>
 	</GroupsOrder>
 </CommandInterface>

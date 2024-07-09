@@ -710,6 +710,11 @@
 												<CommandName>Form.Command.ЗагрузитьЗаявкуХарьковская</CommandName>
 												<ExtendedTooltip name="ТоварыЗагрузитьЗаявкуХарьковскаяРасширеннаяПодсказка" id="477"/>
 											</Button>
+											<Button name="ТоварыЗагрузитьЗаявкуТоварСверху" id="481">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗагрузитьЗаявкуТоварСверху</CommandName>
+												<ExtendedTooltip name="ТоварыЗагрузитьЗаявкуТоварСверхуРасширеннаяПодсказка" id="482"/>
+											</Button>
 										</ChildItems>
 									</Popup>
 									<Button name="ТоварыУстановитьНовыйИдентификаторДату" id="343">
@@ -3448,6 +3453,25 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьЗаявкуХарьковская</Action>
+		</Command>
+		<Command name="ЗагрузитьЗаявкуТоварСверху" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить заявку "товар сверху"</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити заявку "товар зверху"</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загрузить заявку товар сверху</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьЗаявкуТоварСверху</Action>
 		</Command>
 	</Commands>
 </Form>

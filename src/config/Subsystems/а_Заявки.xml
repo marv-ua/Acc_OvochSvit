@@ -31,10 +31,24 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсЗаявкаНаСозданиеАктовПриемкиПередачи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ерпсАктПриемкиПередачиТоваров</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.а_ОбработкаЗаявок</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.а_ЗагруженныеДанныеСБота</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.а_ЗагрузкаСБота</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополнительныеАртикулы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.а_ОтчетПоДаннымБота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.а_СвязьОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.а_ОпределениеГруппАвто</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.а_ДокументыРеализацииЗаявок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.а_СтатусыЗаявок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.а_ДатаВывозаФакт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.а_ЗаявкиКВывозу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ерпсАктПриемкиПередачиПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ерпсАктПриемкиПередачиСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.а_ТипыОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.а_Качество</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.а_ТипыСтатусов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.а_ВидыПоставщиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.а_СтатусыЗаявок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.а_ТипыФайловЗагрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ерпсСтатусыАктовПриемкиПередачи</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
