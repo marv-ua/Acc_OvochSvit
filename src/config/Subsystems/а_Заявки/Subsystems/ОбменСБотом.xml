@@ -23,6 +23,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.а_ЗагруженныеДанныеСБота</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.а_ЗагрузкаСБота</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.а_ЗагрузкаСБота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.а_ИспользоватьЗагрузкуСБотаВНакладные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.а_ОбменСБотомСервер</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

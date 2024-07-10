@@ -2843,6 +2843,7 @@
 			<Constant>ерпсПапкаТоваровТОВ</Constant>
 			<Constant>а_ПроверятьЗаполненностьНоменклатуры</Constant>
 			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
+			<Constant>а_ИспользоватьЗагрузкуСБотаВНакладные</Constant>
 			<CommonForm>АвтономнаяРабота</CommonForm>
 			<CommonForm>АвтономнаяРаботаВМоделиСервиса</CommonForm>
 			<CommonForm>АутентификацияВСервисе</CommonForm>

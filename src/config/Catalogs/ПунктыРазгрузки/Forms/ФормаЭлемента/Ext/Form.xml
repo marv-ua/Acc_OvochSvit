@@ -45,6 +45,11 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="Примечание" id="86">
+							<DataPath>Объект.Примечание</DataPath>
+							<ContextMenu name="ПримечаниеКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ПримечаниеРасширеннаяПодсказка" id="88"/>
+						</InputField>
 						<UsualGroup name="ГруппаКонтрагент" id="39">
 							<Title>
 								<v8:item>
