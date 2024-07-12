@@ -710,6 +710,11 @@
 												<CommandName>Form.Command.ЗагрузитьЗаявкуХарьковская</CommandName>
 												<ExtendedTooltip name="ТоварыЗагрузитьЗаявкуХарьковскаяРасширеннаяПодсказка" id="477"/>
 											</Button>
+											<Button name="ТоварыЗагрузитьЗаявкуТрейдГранит" id="483">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗагрузитьЗаявкуТрейдГранит</CommandName>
+												<ExtendedTooltip name="ТоварыЗагрузитьЗаявкуТрейдГранитРасширеннаяПодсказка" id="484"/>
+											</Button>
 											<Button name="ТоварыЗагрузитьЗаявкуТоварСверху" id="481">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.ЗагрузитьЗаявкуТоварСверху</CommandName>
@@ -3472,6 +3477,25 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьЗаявкуТоварСверху</Action>
+		</Command>
+		<Command name="ЗагрузитьЗаявкуТрейдГранит" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завантажити заявку Трейд Гранит</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Завантажити заявку Трейд Граніт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Загрузить заявку харьковская</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьЗаявкуТрейдГранит</Action>
 		</Command>
 	</Commands>
 </Form>
