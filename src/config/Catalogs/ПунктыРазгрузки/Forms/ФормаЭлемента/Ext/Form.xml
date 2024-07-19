@@ -122,6 +122,11 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="ОТГ" id="89">
+							<DataPath>Объект.ОТГ</DataPath>
+							<ContextMenu name="ОТГКонтекстноеМеню" id="90"/>
+							<ExtendedTooltip name="ОТГРасширеннаяПодсказка" id="91"/>
+						</InputField>
 						<UsualGroup name="Группа2" id="55">
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
