@@ -1032,6 +1032,13 @@
 		</right>
 	</object>
 	<object>
+		<name>CommonCommand.а_ОбработкаЗаявок</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.а_ДокументыРеализацииЗаявок</name>
 		<right>
 			<name>Read</name>
